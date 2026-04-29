@@ -13,7 +13,7 @@ Documenting my learning path for the Claude Certified Architect certification, i
 
 ## Study Site
 
-- Homepage for GitHub Pages: [index.md](./index.md)
+- Homepage for GitHub Pages: [View Live Site](https://zulqarnayn.github.io/Claude-Certified-Architect-Self-Study/)
 - Configure Pages in repository settings:
 1. Open Settings
 2. Open Pages
