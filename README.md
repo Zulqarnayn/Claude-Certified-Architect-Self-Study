@@ -9,7 +9,7 @@ Documenting my learning path for the Claude Certified Architect certification, i
 | Week-Day | Weekday | Topic | Status | Link |
 |---|---|---|---|---|
 | W1-D1 | Tue | LLMs Explained From Scratch | Completed | [W1-D1 Note](./W1-D1_LLMs_Explained_From_Scratch.md) |
-| W1-D2 | Wed | Claude vs Other AI Models | Planned | Pending |
+| W1-D2 | Wed | Claude vs Other AI Models | Completed | [W1-D2 Note](./W1-D2_Claude_vs_Other_AI_Models.md) |
 
 ## Study Site
 

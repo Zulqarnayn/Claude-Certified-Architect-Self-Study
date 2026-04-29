@@ -18,7 +18,7 @@ This site documents my learning path for Claude Certified Architect certificatio
 | Week-Day | Weekday | Topic | Status | Study Note | Summary |
 |---|---|---|---|---|---|
 | W1-D1 | Tue | LLMs Explained From Scratch | Completed | [Open](./W1-D1_LLMs_Explained_From_Scratch.md) | Prediction vs understanding, tokens/context window, product vs model distinctions. |
-| W1-D2 | Wed | Claude vs Other AI Models | Planned | Pending | Comparison framework for architecture decisions. |
+| W1-D2 | Wed | Claude vs Other AI Models | Completed | [Open](./W1-D2_Claude_vs_Other_AI_Models.md) | Comparison framework for architecture decisions. |
 
 ## Day Note Template
 

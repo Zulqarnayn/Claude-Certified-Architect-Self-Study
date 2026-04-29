@@ -180,7 +180,7 @@ Discovered through discussion — these instincts from iOS app building map dire
 - [x] Hands-on task completed
 - [x] Q&A answered
 - [x] Instructor feedback received
-- [ ] Next target: W1-D2 — Claude vs other AI models (Planned)
+- [x] Next target: W1-D2 — Claude vs other AI models (Completed)
 
 ---
 
