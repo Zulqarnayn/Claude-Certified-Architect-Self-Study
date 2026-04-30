@@ -37,14 +37,6 @@ test("getLevelForXp returns current and next level metadata", () => {
   assert.equal(level.next.title, "Agent Crafter");
 });
 
-test("getLessonXp returns configured xp for lesson states", () => {
-  assert.equal(getLessonXp(LESSON_STATES.NOT_STARTED), 0);
-  assert.equal(getLessonXp(LESSON_STATES.STUDIED), 25);
-  assert.equal(getLessonXp(LESSON_STATES.COMPLETED), 75);
-  assert.equal(getLessonXp(LESSON_STATES.MASTERED), 125);
-  assert.equal(getLessonXp("broken"), 0);
-});
-
 test("deriveStats recomputes xp, gems, weeks, and mastery from lesson states", () => {
   const progress = normalizeProgress({
     schemaVersion: 1,
@@ -59,6 +51,11 @@ test("deriveStats recomputes xp, gems, weeks, and mastery from lesson states", (
 
   const stats = deriveStats(LESSONS, progress, "2026-04-30");
 
+  assert.equal(getLessonXp(LESSON_STATES.NOT_STARTED), 0);
+  assert.equal(getLessonXp(LESSON_STATES.STUDIED), 25);
+  assert.equal(getLessonXp(LESSON_STATES.COMPLETED), 75);
+  assert.equal(getLessonXp(LESSON_STATES.MASTERED), 125);
+  assert.equal(getLessonXp("broken"), 0);
   assert.equal(stats.totalXp, 25 + 75 + 125 + 125);
   assert.equal(stats.gems.knowledge, 3);
   assert.equal(stats.gems.architect, 2);
