@@ -20,14 +20,14 @@ Documenting my learning path for the Claude Certified Architect certification, i
 | W2-D5 | Thu | Prompt Iteration Practice | Completed | [W2-D5 Note](./W2-D5_Prompt_Iteration_Practice.md) |
 | W3-D1 | Fri | Few Shot Examples | Completed | [W3-D1 Note](./W3-D1_Few_Shot_Examples.md) |
 | W3-D2 | Sat | Structured Output JSON Basics | Completed | [W3-D2 Note](./W3-D2_Structured_Output_JSON_Basics.md) |
-| W3-D3 | Sun | Advanced JSON and Validation | In Progress | [W3-D3 Note](./W3-D3_Advanced_JSON_and_Validation.md) |
-| W3-D4 | Mon | Vision and Multimodal Inputs | In Progress | [W3-D4 Note](./W3-D4_Vision_and_Multimodal_Inputs.md) |
-| W3-D5 | Tue | Batching and API Optimization | In Progress | [W3-D5 Note](./W3-D5_Batching_and_API_Optimization.md) |
-| W4-D1 | Wed | Agentic Patterns | In Progress | [W4-D1 Note](./W4-D1_Agentic_Patterns.md) |
-| W4-D2 | Thu | Tool Use and Function Calling | In Progress | [W4-D2 Note](./W4-D2_Tool_Use_and_Function_Calling.md) |
-| W4-D3 | Fri | Memory and Context Management | In Progress | [W4-D3 Note](./W4-D3_Memory_and_Context_Management.md) |
-| W4-D4 | Sat | Error Handling and Robustness | In Progress | [W4-D4 Note](./W4-D4_Error_Handling_and_Robustness.md) |
-| W4-D5 | Sun | Production Considerations | In Progress | [W4-D5 Note](./W4-D5_Production_Considerations.md) |
+| W3-D3 | Sun | JSON Schema Enforcement | In Progress | [W3-D3 Note](./W3-D3_JSON_Schema_Enforcement.md) |
+| W3-D4 | Mon | Validation & Retry Loops | In Progress | [W3-D4 Note](./W3-D4_Validation_and_Retry_Loops.md) |
+| W3-D5 | Tue | When NOT to Use Structured Output | In Progress | [W3-D5 Note](./W3-D5_When_NOT_to_Use_Structured_Output.md) |
+| W4-D1 | Wed | Messages API Anatomy | In Progress | [W4-D1 Note](./W4-D1_Messages_API_Anatomy.md) |
+| W4-D2 | Thu | Multi-Turn Conversations | In Progress | [W4-D2 Note](./W4-D2_Multi_Turn_Conversations.md) |
+| W4-D3 | Fri | Streaming Responses | In Progress | [W4-D3 Note](./W4-D3_Streaming_Responses.md) |
+| W4-D4 | Sat | Token Counting & Cost | In Progress | [W4-D4 Note](./W4-D4_Token_Counting_and_Cost.md) |
+| W4-D5 | Sun | Rate Limits & Error Handling | In Progress | [W4-D5 Note](./W4-D5_Rate_Limits_and_Error_Handling.md) |
 | W5-D1 | Mon | Advanced Agentic Patterns | In Progress | [W5-D1 Note](./W5-D1_Advanced_Agentic_Patterns.md) |
 | W5-D2 | Tue | Scaling and Performance | In Progress | [W5-D2 Note](./W5-D2_Scaling_and_Performance.md) |
 

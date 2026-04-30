@@ -39,19 +39,19 @@ This site documents my learning path for Claude Certified Architect certificatio
 |---|---|---|---|---|---|
 | W3-D1 | Fri | Few Shot Examples | Completed | [Open](./W3-D1_Few_Shot_Examples.md) | In-context learning with examples. |
 | W3-D2 | Sat | Structured Output JSON Basics | Completed | [Open](./W3-D2_Structured_Output_JSON_Basics.md) | JSON schema and validation. |
-| W3-D3 | Sun | Advanced JSON and Validation | In Progress | [Open](./W3-D3_Advanced_JSON_and_Validation.md) | Schema validation patterns. |
-| W3-D4 | Mon | Vision and Multimodal Inputs | In Progress | [Open](./W3-D4_Vision_and_Multimodal_Inputs.md) | Image processing and analysis. |
-| W3-D5 | Tue | Batching and API Optimization | In Progress | [Open](./W3-D5_Batching_and_API_Optimization.md) | Cost optimization strategies. |
+| W3-D3 | Sun | JSON Schema Enforcement | In Progress | [Open](./W3-D3_JSON_Schema_Enforcement.md) | Schema validation patterns. |
+| W3-D4 | Mon | Validation & Retry Loops | In Progress | [Open](./W3-D4_Validation_and_Retry_Loops.md) | Error recovery and retry strategies. |
+| W3-D5 | Tue | When NOT to Use Structured Output | In Progress | [Open](./W3-D5_When_NOT_to_Use_Structured_Output.md) | Edge cases and limitations. |
 
 ## Week 4 Progress
 
 | Week-Day | Weekday | Topic | Status | Study Note | Summary |
 |---|---|---|---|---|---|
-| W4-D1 | Wed | Agentic Patterns | In Progress | [Open](./W4-D1_Agentic_Patterns.md) | Agent architecture fundamentals. |
-| W4-D2 | Thu | Tool Use and Function Calling | In Progress | [Open](./W4-D2_Tool_Use_and_Function_Calling.md) | Tool-use workflows. |
-| W4-D3 | Fri | Memory and Context Management | In Progress | [Open](./W4-D3_Memory_and_Context_Management.md) | Conversation memory patterns. |
-| W4-D4 | Sat | Error Handling and Robustness | In Progress | [Open](./W4-D4_Error_Handling_and_Robustness.md) | Failure modes and recovery. |
-| W4-D5 | Sun | Production Considerations | In Progress | [Open](./W4-D5_Production_Considerations.md) | Deployment and monitoring. |
+| W4-D1 | Wed | Messages API Anatomy | In Progress | [Open](./W4-D1_Messages_API_Anatomy.md) | Core API parameters and behavior. |
+| W4-D2 | Thu | Multi-Turn Conversations | In Progress | [Open](./W4-D2_Multi_Turn_Conversations.md) | Managing stateful conversations. |
+| W4-D3 | Fri | Streaming Responses | In Progress | [Open](./W4-D3_Streaming_Responses.md) | Real-time output streaming. |
+| W4-D4 | Sat | Token Counting & Cost | In Progress | [Open](./W4-D4_Token_Counting_and_Cost.md) | Cost optimization and tracking. |
+| W4-D5 | Sun | Rate Limits & Error Handling | In Progress | [Open](./W4-D5_Rate_Limits_and_Error_Handling.md) | Resilient error recovery. |
 
 ## Week 5 Progress
 
