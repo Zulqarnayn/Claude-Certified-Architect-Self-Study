@@ -126,10 +126,6 @@
             <span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
             <span>Dashboard</span>
         </div>
-        <div class="text-slate-500 py-4 px-6 flex items-center gap-3 font-label-caps text-xs hover:bg-slate-800/50 hover:text-teal-300 transition-all cursor-pointer group">
-            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="explore">explore</span>
-            <span>Quests</span>
-        </div>
         <div id="reset-progress" class="text-red-500/60 mt-auto py-4 px-6 flex items-center gap-3 font-label-caps text-xs hover:bg-red-500/10 hover:text-red-400 transition-all cursor-pointer group">
             <span class="material-symbols-outlined group-hover:rotate-12 transition-transform" data-icon="restart_alt">restart_alt</span>
             <span>Reset Progress</span>
@@ -196,9 +192,9 @@
     </section>
 
     <!-- Lower Grid Content -->
-    <div class="flex-1 flex gap-8 overflow-hidden pb-8">
+    <div class="flex-1 flex gap-8 overflow-hidden pb-12">
         <!-- Quest Cards Scrolling Section -->
-        <section class="flex-1 overflow-y-auto custom-scrollbar pr-4">
+        <section class="flex-1 overflow-y-auto custom-scrollbar pr-4 pb-8">
             <div class="flex justify-between items-center mb-6">
                 <h3 class="font-headline-md text-on-surface uppercase tracking-widest">Active Operations</h3>
                 <div class="flex gap-2">
@@ -212,7 +208,7 @@
         </section>
 
         <!-- Domain Mastery Side Panel -->
-        <aside id="dashboard" class="w-80 flex flex-col gap-6 shrink-0 h-full">
+        <aside id="dashboard" class="w-80 flex flex-col gap-6 shrink-0 h-full overflow-y-auto custom-scrollbar pr-2 pb-8">
             <!-- Mastery readout will be injected here -->
         </aside>
     </div>
