@@ -6,6 +6,7 @@ import {
   LESSON_STATES,
   normalizeProgress,
   getLevelForXp,
+  getLessonXp,
   deriveStats,
 } from "../../tracker/tracker.js";
 
@@ -36,6 +37,14 @@ test("getLevelForXp returns current and next level metadata", () => {
   assert.equal(level.next.title, "Agent Crafter");
 });
 
+test("getLessonXp returns configured xp for lesson states", () => {
+  assert.equal(getLessonXp(LESSON_STATES.NOT_STARTED), 0);
+  assert.equal(getLessonXp(LESSON_STATES.STUDIED), 25);
+  assert.equal(getLessonXp(LESSON_STATES.COMPLETED), 75);
+  assert.equal(getLessonXp(LESSON_STATES.MASTERED), 125);
+  assert.equal(getLessonXp("broken"), 0);
+});
+
 test("deriveStats recomputes xp, gems, weeks, and mastery from lesson states", () => {
   const progress = normalizeProgress({
     schemaVersion: 1,
@@ -54,7 +63,16 @@ test("deriveStats recomputes xp, gems, weeks, and mastery from lesson states", (
   assert.equal(stats.gems.knowledge, 3);
   assert.equal(stats.gems.architect, 2);
   assert.equal(stats.gems.battle, 1);
+  assert.equal(stats.gems.master, 1);
   assert.equal(stats.currentStreak, 1);
+  assert.equal(stats.weekStats[1].totalLessons, 5);
+  assert.equal(stats.weekStats[1].completedLessons, 2);
+  assert.equal(stats.weekStats[1].masteredLessons, 1);
+  assert.equal(stats.weekStats[1].isComplete, false);
+  assert.equal(stats.weekStats[12].totalLessons, 1);
+  assert.equal(stats.weekStats[12].completedLessons, 1);
+  assert.equal(stats.weekStats[12].masteredLessons, 1);
+  assert.equal(stats.weekStats[12].isComplete, true);
   assert.ok(stats.domainMastery.context > 0);
   assert.ok(stats.domainMastery.agentic > 0);
 });
