@@ -55,51 +55,51 @@ This site documents my learning path for Claude Certified Architect certificatio
 
 ## Week 5 Progress
 
-| Week-Day | Weekday | Topic | Status | Study Note | Summary |
-|---|---|---|---|---|---|
-| W5-D1 | Wed | Multi-Agent Systems | In Progress | [Open](./W5-D1_Multi_Agent_Systems.md) | Agent specialization and coordination. |
-| W5-D2 | Thu | Agent Reliability and Testing | In Progress | [Open](./W5-D2_Agent_Reliability_and_Testing.md) | Testing multi-agent interactions. |
-| W5-D3 | Fri | Retrieval Augmented Generation | In Progress | [Open](./W5-D3_Retrieval_Augmented_Generation.md) | RAG systems and external knowledge. |
-| W5-D4 | Sat | Fine-Tuning Considerations | In Progress | [Open](./W5-D4_Fine_Tuning_Considerations.md) | When and how to fine-tune models. |
-| W5-D5 | Sun | Cost Optimization at Scale | In Progress | [Open](./W5-D5_Cost_Optimization_at_Scale.md) | Token optimization and budgeting. |
+| Week-Day | Weekday | Topic | Status | Quick | Deep Dive | Summary |
+|---|---|---|---|---|---|---|
+| W5-D1 | Wed | Multi-Agent Systems | In Progress | [Open](./W5-D1_What_Is_Tool_Use.md) | [Open](./W5-D1_Multi_Agent_Systems.md) | Agent specialization and coordination. |
+| W5-D2 | Thu | Agent Reliability and Testing | In Progress | [Open](./W5-D2_Defining_Your_First_Tool.md) | [Open](./W5-D2_Agent_Reliability_and_Testing.md) | Testing multi-agent interactions. |
+| W5-D3 | Fri | Retrieval Augmented Generation | In Progress | [Open](./W5-D3_Tool_Description_Quality.md) | [Open](./W5-D3_Retrieval_Augmented_Generation.md) | RAG systems and external knowledge. |
+| W5-D4 | Sat | Fine-Tuning Considerations | In Progress | [Open](./W5-D4_Handling_Tool_Results.md) | [Open](./W5-D4_Fine_Tuning_Considerations.md) | When and how to fine-tune models. |
+| W5-D5 | Sun | Cost Optimization at Scale | In Progress | [Open](./W5-D5_Multi_Tool_Conversations.md) | [Open](./W5-D5_Cost_Optimization_at_Scale.md) | Token optimization and budgeting. |
 
 ## Week 6 Progress
 
-| Week-Day | Weekday | Topic | Status | Study Note | Summary |
-|---|---|---|---|---|---|
-| W6-D1 | Mon | Real-World Application Architecture | In Progress | [Open](./W6-D1_Real_World_Application_Architecture.md) | Production system design. |
-| W6-D2 | Tue | Security and Compliance | In Progress | [Open](./W6-D2_Security_and_Compliance.md) | Data privacy and security patterns. |
-| W6-D3 | Wed | Analytics and Observability | In Progress | [Open](./W6-D3_Analytics_and_Observability.md) | Monitoring and metrics. |
-| W6-D4 | Thu | A/B Testing and Experimentation | In Progress | [Open](./W6-D4_A_B_Testing_and_Experimentation.md) | Statistical testing and validation. |
-| W6-D5 | Fri | Case Studies and Synthesis | In Progress | [Open](./W6-D5_Case_Studies_and_Synthesis.md) | Real-world applications and lessons. |
+| Week-Day | Weekday | Topic | Status | Quick | Deep Dive | Summary |
+|---|---|---|---|---|---|---|
+| W6-D1 | Mon | Real-World Application Architecture | In Progress | [Open](./W6-D1_What_Is_MCP_and_Why_It_Exists.md) | [Open](./W6-D1_Real_World_Application_Architecture.md) | Production system design. |
+| W6-D2 | Tue | Security and Compliance | In Progress | [Open](./W6-D2_MCP_Server_Architecture.md) | [Open](./W6-D2_Security_and_Compliance.md) | Data privacy and security patterns. |
+| W6-D3 | Wed | Analytics and Observability | In Progress | [Open](./W6-D3_Build_Your_First_MCP_Server.md) | [Open](./W6-D3_Analytics_and_Observability.md) | Monitoring and metrics. |
+| W6-D4 | Thu | A/B Testing and Experimentation | In Progress | [Open](./W6-D4_Tool_Boundary_Design.md) | [Open](./W6-D4_A_B_Testing_and_Experimentation.md) | Statistical testing and validation. |
+| W6-D5 | Fri | Case Studies and Synthesis | In Progress | [Open](./W6-D5_MCP_in_Production.md) | [Open](./W6-D5_Case_Studies_and_Synthesis.md) | Real-world applications and lessons. |
 
 ## Week 7 Progress
 
-| Week-Day | Weekday | Topic | Status | Study Note | Summary |
-|---|---|---|---|---|---|
-| W7-D1 | Sat | Evaluation Frameworks | Planned | [Open](./W7-D1_Evaluation_Frameworks.md) | Metrics and benchmarks. |
-| W7-D2 | Sun | Human-in-the-Loop Systems | Planned | [Open](./W7-D2_Human_in_the_Loop_Systems.md) | Review workflows and routing. |
-| W7-D3 | Mon | Prompt Lifecycle Management | Planned | [Open](./W7-D3_Prompt_Lifecycle_Management.md) | Versioning and rollback. |
-| W7-D4 | Tue | Cross-Model Validation | Planned | [Open](./W7-D4_Cross_Model_Validation.md) | Model disagreement checks. |
-| W7-D5 | Wed | Deployment and Rollout Strategy | Planned | [Open](./W7-D5_Deployment_and_Rollout_Strategy.md) | Canary and rollback planning. |
+| Week-Day | Weekday | Topic | Status | Quick | Deep Dive | Summary |
+|---|---|---|---|---|---|---|
+| W7-D1 | Sat | Evaluation Frameworks | Planned | [Open](./W7-D1_What_Is_an_Agentic_Loop.md) | [Open](./W7-D1_Evaluation_Frameworks.md) | Metrics and benchmarks. |
+| W7-D2 | Sun | Human-in-the-Loop Systems | Planned | [Open](./W7-D2_Loop_Anatomy_Plan_Act_Observe.md) | [Open](./W7-D2_Human_in_the_Loop_Systems.md) | Review workflows and routing. |
+| W7-D3 | Mon | Prompt Lifecycle Management | Planned | [Open](./W7-D3_Stop_Conditions.md) | [Open](./W7-D3_Prompt_Lifecycle_Management.md) | Versioning and rollback. |
+| W7-D4 | Tue | Cross-Model Validation | Planned | [Open](./W7-D4_Error_Recovery_in_Loops.md) | [Open](./W7-D4_Cross_Model_Validation.md) | Model disagreement checks. |
+| W7-D5 | Wed | Deployment and Rollout Strategy | Planned | [Open](./W7-D5_Build_a_Simple_Agent.md) | [Open](./W7-D5_Deployment_and_Rollout_Strategy.md) | Canary and rollback planning. |
 
 ## Week 8 Progress
 
-| Week-Day | Weekday | Topic | Status | Study Note | Summary |
-|---|---|---|---|---|---|
-| W8-D1 | Thu | Specialized Industry Workflows | Planned | [Open](./W8-D1_Specialized_Industry_Workflows.md) | Industry-specific adaptation. |
-| W8-D2 | Fri | Advanced Personalization | Planned | [Open](./W8-D2_Advanced_Personalization.md) | User-centric behavior design. |
-| W8-D3 | Sat | Context Isolation (Deep Dive) | Planned | [Open](./W8-D3_Context_Isolation_Deep_Dive.md) | Preventing context leakage across subagents. |
-| W8-D4 | Sun | Lifecycle Hooks and Guardrails | Planned | [Open](./W8-D4_Lifecycle_Hooks_and_Guardrails.md) | Deterministic enforcement for safety and cost controls. |
-| W8-D5 | Mon | Build Hub-and-Spoke System | Planned | [Open](./W8-D5_Build_Hub_and_Spoke_System.md) | End-to-end multi-agent integration exercise. |
+| Week-Day | Weekday | Topic | Status | Quick | Deep Dive | Summary |
+|---|---|---|---|---|---|---|
+| W8-D1 | Thu | Why Multiple Agents | Planned | [Open](./W8-D1_Specialized_Industry_Workflows.md) | [Open](./W8-D1_Why_Multiple_Agents.md) | Industry-specific adaptation. |
+| W8-D2 | Fri | Hub-and-Spoke Architecture | Planned | [Open](./W8-D2_Advanced_Personalization.md) | [Open](./W8-D2_Hub_and_Spoke_Architecture.md) | User-centric behavior design. |
+| W8-D3 | Sat | Context Isolation | Planned | [Open](./W8-D3_Context_Isolation_Practice.md) | [Open](./W8-D3_Context_Isolation_Deep_Dive.md) | Preventing context leakage across subagents. |
+| W8-D4 | Sun | Lifecycle Hooks and Guardrails | Planned | [Open](./W8-D4_Lifecycle_Hooks_Practice.md) | [Open](./W8-D4_Lifecycle_Hooks_and_Guardrails.md) | Deterministic enforcement for safety and cost controls. |
+| W8-D5 | Mon | Build Hub-and-Spoke System | Planned | [Open](./W8-D5_Multi_Agent_Integration_Practice.md) | [Open](./W8-D5_Build_Hub_and_Spoke_System.md) | End-to-end multi-agent integration exercise. |
 
 ## Week 9 Progress
 
-| Week-Day | Weekday | Topic | Status | Study Note | Summary |
-|---|---|---|---|---|---|
-| W9-D1 | Tue | What Is Claude Code? | Planned | [Open](./W9-D1_What_Is_Claude_Code.md) | Claude Code architecture and workflow basics. |
-| W9-D2 | Wed | CLAUDE.md Configuration | Planned | [Open](./W9-D2_CLAUDE_md_The_Config_File.md) | Hierarchy and rules for project-level guidance. |
-| W9-D3 | Thu | Slash Commands and .claude/commands/ | Planned | [Open](./W9-D3_Slash_Commands_and_claude_commands.md) | Reusable command workflows and team consistency. |
+| Week-Day | Weekday | Topic | Status | Quick | Deep Dive | Summary |
+|---|---|---|---|---|---|---|
+| W9-D1 | Tue | What Is Claude Code? | Planned | [Open](./W9-D1_Claude_Code_Fundamentals.md) | [Open](./W9-D1_What_Is_Claude_Code.md) | Claude Code architecture and workflow basics. |
+| W9-D2 | Wed | CLAUDE.md Configuration | Planned | [Open](./W9-D2_CLAUDE_md_Practice.md) | [Open](./W9-D2_CLAUDE_md_The_Config_File.md) | Hierarchy and rules for project-level guidance. |
+| W9-D3 | Thu | Slash Commands and .claude/commands/ | Planned | [Open](./W9-D3_Slash_Commands_Practice.md) | [Open](./W9-D3_Slash_Commands_and_claude_commands.md) | Reusable command workflows and team consistency. |
 
 ## Day Note Template
 
