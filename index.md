@@ -13,6 +13,28 @@ This site documents my learning path for Claude Certified Architect certificatio
 2. Open each day note for deep learning and self-assessment.
 3. Use the lessons and key terms as revision material before mock tests.
 
+## External Guide Cross-Check
+
+Reference guide: [paullarionov/claude-certified-architect — guide_en.MD](https://github.com/paullarionov/claude-certified-architect/blob/main/guide_en.MD)
+
+### Remarks
+
+- Your current path and the external guide are strongly aligned on core domains.
+- Based on your review note, there is roughly a **20% difference** in emphasis and coverage depth.
+- Most differences are likely in framing, scenario style, and extra edge-case examples rather than core fundamentals.
+
+### How to use it after finishing this path
+
+1. Use your current notes as primary source of truth.
+2. Use the external guide as a **gap-audit pass**:
+   - Mark concepts present there but missing here.
+   - Mark concepts present here but explained more deeply there.
+3. Convert only high-value gaps into:
+   - New mock questions
+   - Short “exam traps” notes
+   - 1-page revision checklists per domain
+4. Re-run final revision using only consolidated notes (avoid context switching across multiple full guides in final week).
+
 ## Week 1 Progress
 
 | Week-Day | Weekday | Topic | Status | Quick | Deep Dive | Summary |
@@ -134,8 +156,3 @@ Use this structure for every new day file:
 5. Lessons learned and architecture takeaways
 6. Key terms
 7. Status and next day target
-
-## Next Up
-
-- Work through W3-D3 through W5-D2 materials.
-- Keep status vocabulary consistent: Planned, In Progress, Completed.
