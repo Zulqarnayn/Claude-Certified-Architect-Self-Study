@@ -28,8 +28,16 @@ Documenting my learning path for the Claude Certified Architect certification, i
 | W4-D3 | Fri | Streaming Responses | In Progress | [W4-D3 Note](./W4-D3_Streaming_Responses.md) |
 | W4-D4 | Sat | Token Counting & Cost | In Progress | [W4-D4 Note](./W4-D4_Token_Counting_and_Cost.md) |
 | W4-D5 | Sun | Rate Limits & Error Handling | In Progress | [W4-D5 Note](./W4-D5_Rate_Limits_and_Error_Handling.md) |
-| W5-D1 | Mon | Advanced Agentic Patterns | In Progress | [W5-D1 Note](./W5-D1_Advanced_Agentic_Patterns.md) |
-| W5-D2 | Tue | Scaling and Performance | In Progress | [W5-D2 Note](./W5-D2_Scaling_and_Performance.md) |
+| W5-D1 | Wed | Multi-Agent Systems | In Progress | [W5-D1 Note](./W5-D1_Multi_Agent_Systems.md) |
+| W5-D2 | Thu | Agent Reliability and Testing | In Progress | [W5-D2 Note](./W5-D2_Agent_Reliability_and_Testing.md) |
+| W5-D3 | Fri | Retrieval Augmented Generation | In Progress | [W5-D3 Note](./W5-D3_Retrieval_Augmented_Generation.md) |
+| W5-D4 | Sat | Fine-Tuning Considerations | In Progress | [W5-D4 Note](./W5-D4_Fine_Tuning_Considerations.md) |
+| W5-D5 | Sun | Cost Optimization at Scale | In Progress | [W5-D5 Note](./W5-D5_Cost_Optimization_at_Scale.md) |
+| W6-D1 | Mon | Real-World Application Architecture | In Progress | [W6-D1 Note](./W6-D1_Real_World_Application_Architecture.md) |
+| W6-D2 | Tue | Security and Compliance | In Progress | [W6-D2 Note](./W6-D2_Security_and_Compliance.md) |
+| W6-D3 | Wed | Analytics and Observability | In Progress | [W6-D3 Note](./W6-D3_Analytics_and_Observability.md) |
+| W6-D4 | Thu | A/B Testing and Experimentation | In Progress | [W6-D4 Note](./W6-D4_A_B_Testing_and_Experimentation.md) |
+| W6-D5 | Fri | Case Studies and Synthesis | In Progress | [W6-D5 Note](./W6-D5_Case_Studies_and_Synthesis.md) |
 
 ## Study Site
 

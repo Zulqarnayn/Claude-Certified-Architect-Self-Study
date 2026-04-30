@@ -57,8 +57,21 @@ This site documents my learning path for Claude Certified Architect certificatio
 
 | Week-Day | Weekday | Topic | Status | Study Note | Summary |
 |---|---|---|---|---|---|
-| W5-D1 | Mon | Advanced Agentic Patterns | In Progress | [Open](./W5-D1_Advanced_Agentic_Patterns.md) | Multi-agent systems. |
-| W5-D2 | Tue | Scaling and Performance | In Progress | [Open](./W5-D2_Scaling_and_Performance.md) | Production scaling strategies. |
+| W5-D1 | Wed | Multi-Agent Systems | In Progress | [Open](./W5-D1_Multi_Agent_Systems.md) | Agent specialization and coordination. |
+| W5-D2 | Thu | Agent Reliability and Testing | In Progress | [Open](./W5-D2_Agent_Reliability_and_Testing.md) | Testing multi-agent interactions. |
+| W5-D3 | Fri | Retrieval Augmented Generation | In Progress | [Open](./W5-D3_Retrieval_Augmented_Generation.md) | RAG systems and external knowledge. |
+| W5-D4 | Sat | Fine-Tuning Considerations | In Progress | [Open](./W5-D4_Fine_Tuning_Considerations.md) | When and how to fine-tune models. |
+| W5-D5 | Sun | Cost Optimization at Scale | In Progress | [Open](./W5-D5_Cost_Optimization_at_Scale.md) | Token optimization and budgeting. |
+
+## Week 6 Progress
+
+| Week-Day | Weekday | Topic | Status | Study Note | Summary |
+|---|---|---|---|---|---|
+| W6-D1 | Mon | Real-World Application Architecture | In Progress | [Open](./W6-D1_Real_World_Application_Architecture.md) | Production system design. |
+| W6-D2 | Tue | Security and Compliance | In Progress | [Open](./W6-D2_Security_and_Compliance.md) | Data privacy and security patterns. |
+| W6-D3 | Wed | Analytics and Observability | In Progress | [Open](./W6-D3_Analytics_and_Observability.md) | Monitoring and metrics. |
+| W6-D4 | Thu | A/B Testing and Experimentation | In Progress | [Open](./W6-D4_A_B_Testing_and_Experimentation.md) | Statistical testing and validation. |
+| W6-D5 | Fri | Case Studies and Synthesis | In Progress | [Open](./W6-D5_Case_Studies_and_Synthesis.md) | Real-world applications and lessons. |
 
 ## Day Note Template
 
