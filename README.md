@@ -43,8 +43,14 @@ Documenting my learning path for the Claude Certified Architect certification, i
 | W7-D3 | Mon | Prompt Lifecycle Management | Planned | [W7-D3 Note](./W7-D3_Prompt_Lifecycle_Management.md) |
 | W7-D4 | Tue | Cross-Model Validation | Planned | [W7-D4 Note](./W7-D4_Cross_Model_Validation.md) |
 | W7-D5 | Wed | Deployment and Rollout Strategy | Planned | [W7-D5 Note](./W7-D5_Deployment_and_Rollout_Strategy.md) |
-| W8-D1 | Thu | Specialized Industry Workflows | Planned | [W8-D1 Note](./W8-D1_Specialized_Industry_Workflows.md) |
-| W8-D2 | Fri | Advanced Personalization | Planned | [W8-D2 Note](./W8-D2_Advanced_Personalization.md) |
+| W8-D1 | Thu | Why Multiple Agents | Planned | [W8-D1 Note](./W8-D1_Why_Multiple_Agents.md) |
+| W8-D2 | Fri | Hub-and-Spoke Architecture | Planned | [W8-D2 Note](./W8-D2_Hub_and_Spoke_Architecture.md) |
+| W8-D3 | Sat | Context Isolation Deep Dive | Planned | [W8-D3 Note](./W8-D3_Context_Isolation_Deep_Dive.md) |
+| W8-D4 | Sun | Lifecycle Hooks and Guardrails | Planned | [W8-D4 Note](./W8-D4_Lifecycle_Hooks_and_Guardrails.md) |
+| W8-D5 | Mon | Build Hub-and-Spoke System | Planned | [W8-D5 Note](./W8-D5_Build_Hub_and_Spoke_System.md) |
+| W9-D1 | Tue | What Is Claude Code | Planned | [W9-D1 Note](./W9-D1_What_Is_Claude_Code.md) |
+| W9-D2 | Wed | CLAUDE.md: The Config File | Planned | [W9-D2 Note](./W9-D2_CLAUDE_md_The_Config_File.md) |
+| W9-D3 | Thu | Slash Commands and .claude/commands/ | Planned | [W9-D3 Note](./W9-D3_Slash_Commands_and_claude_commands.md) |
 
 ## Study Site
 
