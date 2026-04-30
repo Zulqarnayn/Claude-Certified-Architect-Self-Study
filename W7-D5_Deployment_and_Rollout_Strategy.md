@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 7, Day 5
+---
+
 # CCA Self-Study — Week 7, Day 5
 ## Deployment and Rollout Strategy
 

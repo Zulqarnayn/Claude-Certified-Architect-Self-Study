@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 9, Day 5
+---
+
 # CCA Self-Study — Week 9, Day 5
 ## Prompt Caching
 

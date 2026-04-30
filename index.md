@@ -7,6 +7,11 @@ title: CCA Self-Study Hub
 
 This site documents my learning path for Claude Certified Architect certification, including concept summaries, experiments, and practical architecture lessons.
 
+## Study Modes
+
+- [Study Tracker](./tracker/) for XP, gems, streaks, and mastery tracking
+- [Main Curriculum](./index.md) for week-by-week lesson tables
+
 ## How To Use This Study Material
 
 1. Start from the current week table.

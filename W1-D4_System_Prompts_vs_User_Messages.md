@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 1, Day 4
+---
+
 # CCA Self-Study — Week 1, Day 4
 ## System Prompts vs User Messages
 

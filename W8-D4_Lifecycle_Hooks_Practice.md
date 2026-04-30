@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 8, Day 4
+---
+
 # CCA Self-Study — Week 8, Day 4
 ## Lifecycle Hooks Practice
 

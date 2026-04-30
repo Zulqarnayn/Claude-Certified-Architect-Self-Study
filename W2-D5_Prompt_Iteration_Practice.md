@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 2, Day 5
+---
+
 # CCA Self-Study — Week 2, Day 5
 ## Prompt Iteration Practice
 

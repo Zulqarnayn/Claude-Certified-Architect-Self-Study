@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 6, Day 3
+---
+
 # CCA Self-Study — Week 6, Day 3
 ## Build Your First MCP Server
 

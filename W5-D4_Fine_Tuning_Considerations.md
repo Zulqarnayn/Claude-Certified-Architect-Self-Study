@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 5, Day 4
+---
+
 # CCA Self-Study — Week 5, Day 4
 ## Fine-Tuning Considerations
 

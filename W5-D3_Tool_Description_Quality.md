@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 5, Day 3
+---
+
 # CCA Self-Study — Week 5, Day 3
 ## Tool Description Quality
 

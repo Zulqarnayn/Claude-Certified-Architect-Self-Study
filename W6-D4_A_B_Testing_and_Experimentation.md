@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 6, Day 4
+---
+
 # CCA Self-Study — Week 6, Day 4
 ## A/B Testing and Experimentation
 

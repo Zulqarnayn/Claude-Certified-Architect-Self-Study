@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 3, Day 2
+---
+
 # CCA Self-Study — Week 3, Day 2
 ## Structured Output — JSON Basics
 

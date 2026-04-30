@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 7, Day 2
+---
+
 # CCA Self-Study — Week 7, Day 2
 ## Human-in-the-Loop Systems
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 8, Day 3
+---
+
 # CCA Self-Study — Week 8, Day 3
 ## Context Isolation — Deep Dive
 

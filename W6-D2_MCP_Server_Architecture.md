@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 6, Day 2
+---
+
 # CCA Self-Study — Week 6, Day 2
 ## MCP Server Architecture
 

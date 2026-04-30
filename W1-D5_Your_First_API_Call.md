@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 1, Day 5
+---
+
 # CCA Self-Study — Week 1, Day 5
 ## Your First API Call
 

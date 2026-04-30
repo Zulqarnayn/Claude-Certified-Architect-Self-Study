@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 5, Day 2
+---
+
 # CCA Self-Study — Week 5, Day 2
 ## Defining Your First Tool
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 9, Day 1
+---
+
 # CCA Self-Study — Week 9, Day 1
 ## What Is Claude Code?
 

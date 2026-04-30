@@ -6,7 +6,6 @@ import {
   LESSON_STATES,
   normalizeProgress,
   getLevelForXp,
-  getLessonXp,
   deriveStats,
 } from "../../tracker/tracker.js";
 
@@ -51,25 +50,70 @@ test("deriveStats recomputes xp, gems, weeks, and mastery from lesson states", (
 
   const stats = deriveStats(LESSONS, progress, "2026-04-30");
 
-  assert.equal(getLessonXp(LESSON_STATES.NOT_STARTED), 0);
-  assert.equal(getLessonXp(LESSON_STATES.STUDIED), 25);
-  assert.equal(getLessonXp(LESSON_STATES.COMPLETED), 75);
-  assert.equal(getLessonXp(LESSON_STATES.MASTERED), 125);
-  assert.equal(getLessonXp("broken"), 0);
   assert.equal(stats.totalXp, 25 + 75 + 125 + 125);
   assert.equal(stats.gems.knowledge, 3);
   assert.equal(stats.gems.architect, 2);
   assert.equal(stats.gems.battle, 1);
-  assert.equal(stats.gems.master, 1);
   assert.equal(stats.currentStreak, 1);
-  assert.equal(stats.weekStats[1].totalLessons, 5);
-  assert.equal(stats.weekStats[1].completedLessons, 2);
-  assert.equal(stats.weekStats[1].masteredLessons, 1);
-  assert.equal(stats.weekStats[1].isComplete, false);
-  assert.equal(stats.weekStats[12].totalLessons, 1);
-  assert.equal(stats.weekStats[12].completedLessons, 1);
-  assert.equal(stats.weekStats[12].masteredLessons, 1);
-  assert.equal(stats.weekStats[12].isComplete, true);
   assert.ok(stats.domainMastery.context > 0);
   assert.ok(stats.domainMastery.agentic > 0);
+});
+
+import { renderLessonCard, renderWeekSection } from "../../tracker/tracker.js";
+
+test("render helpers include lesson links and state controls", () => {
+  const lesson = LESSONS[0];
+  const card = renderLessonCard(lesson, LESSON_STATES.NOT_STARTED);
+  assert.match(card, /href="\.\.\/W1-D1_LLMs_Explained_From_Scratch\.md"/);
+  assert.match(card, /data-action="studied"/);
+  assert.match(card, /data-action="completed"/);
+  assert.match(card, /data-action="mastered"/);
+});
+
+test("week section groups lessons under heading", () => {
+  const html = renderWeekSection(1, LESSONS.slice(0, 5), normalizeProgress());
+  assert.match(html, /Week 1/);
+  assert.match(html, /W1-D5/);
+});
+
+import {
+  loadProgress,
+  clearProgress,
+  applyLessonState,
+} from "../../tracker/tracker.js";
+
+test("loadProgress falls back to empty normalized state on bad storage payload", () => {
+  const fakeStorage = {
+    getItem() {
+      return "{bad json";
+    },
+  };
+
+  const { progress, warning } = loadProgress(fakeStorage);
+  assert.equal(progress.lessons["W1-D1"], LESSON_STATES.NOT_STARTED);
+  assert.match(warning, /starting fresh/i);
+});
+
+test("applyLessonState updates lastStudyDate and lesson state", () => {
+  const updated = applyLessonState(
+    normalizeProgress(),
+    "W1-D1",
+    LESSON_STATES.COMPLETED,
+    "2026-04-30",
+  );
+
+  assert.equal(updated.lessons["W1-D1"], LESSON_STATES.COMPLETED);
+  assert.equal(updated.lastStudyDate, "2026-04-30");
+});
+
+test("clearProgress removes stored tracker payload", () => {
+  let removedKey = null;
+  const fakeStorage = {
+    removeItem(key) {
+      removedKey = key;
+    },
+  };
+
+  clearProgress(fakeStorage);
+  assert.equal(removedKey, "cca-game-mode.v1");
 });

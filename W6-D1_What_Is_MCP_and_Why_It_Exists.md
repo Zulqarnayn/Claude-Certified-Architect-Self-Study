@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 6, Day 1
+---
+
 # CCA Self-Study — Week 6, Day 1
 ## What Is MCP and Why It Exists
 

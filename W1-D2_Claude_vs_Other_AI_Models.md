@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 1, Day 2
+---
+
 # CCA Self-Study — Week 1, Day 2
 ## Claude vs Other AI Models
 

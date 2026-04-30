@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 9, Day 4
+---
+
 # CCA Self-Study — Week 9, Day 4
 ## Claude Code in CI/CD
 

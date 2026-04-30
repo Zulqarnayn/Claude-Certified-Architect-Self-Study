@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 5, Day 5
+---
+
 # CCA Self-Study — Week 5, Day 5
 ## Cost Optimization at Scale
 

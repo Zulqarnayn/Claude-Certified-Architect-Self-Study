@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 8, Day 2
+---
+
 # CCA Self-Study — Week 8, Day 2
 ## Advanced Personalization
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 3, Day 1
+---
+
 # CCA Self-Study — Week 3, Day 1
 ## Few-Shot Examples
 

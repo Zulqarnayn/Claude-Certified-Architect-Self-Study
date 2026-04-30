@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 12, Day 1
+---
+
 # CCA Self-Study — Week 12, Day 1
 ## Full 60-Question Mock Exam
 

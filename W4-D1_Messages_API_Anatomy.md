@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 4, Day 1
+---
+
 # CCA Self-Study — Week 4, Day 1
 ## Messages API Anatomy
 

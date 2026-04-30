@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 7, Day 1
+---
+
 # CCA Self-Study — Week 7, Day 1
 ## Evaluation Frameworks
 

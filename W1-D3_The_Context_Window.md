@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 1, Day 3
+---
+
 # CCA Self-Study — Week 1, Day 3
 ## The Context Window
 

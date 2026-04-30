@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 8, Day 5
+---
+
 # CCA Self-Study — Week 8, Day 5
 ## Build a Hub-and-Spoke System — Full Integration
 

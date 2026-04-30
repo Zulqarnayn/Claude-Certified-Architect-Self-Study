@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CCA Study Tracker</title>
+    <link rel="stylesheet" href="./tracker.css">
+  </head>
+  <body>
+    <main class="tracker-app">
+      <header class="hero">
+        <div class="hud">
+          <div class="hud-top">
+            <div class="hud-item xp-meter">
+              <span class="hud-label">XP</span>
+              <div class="meter-track"><div id="xp-fill" class="meter-fill"></div></div>
+              <span id="xp-count" class="hud-value">0</span>
+            </div>
+            <div class="hud-item level-badge">
+              <span class="hud-label">Level</span>
+              <span id="level-title" class="hud-value">Prompt Sender</span>
+            </div>
+          </div>
+          <div class="hud-bottom">
+            <div class="inventory">
+              <div class="inventory-item" title="Knowledge Diamonds - Earned by completing lessons">
+                <svg class="icon icon-gem" viewBox="0 0 24 24"><path d="M12 2L3.5 9.5L12 22L20.5 9.5L12 2Z" fill="currentColor"/></svg>
+                <span id="count-knowledge" class="inventory-count">0</span>
+              </div>
+              <div class="inventory-item" title="Architect Gems - Earned by mastering lessons">
+                <svg class="icon icon-master" viewBox="0 0 24 24"><path d="M12 1L4 6V18L12 23L20 18V6L12 1Z" fill="currentColor"/></svg>
+                <span id="count-architect" class="inventory-count">0</span>
+              </div>
+              <div class="inventory-item" title="Battle Medals - Earned by mastering mock exams">
+                <svg class="icon icon-battle" viewBox="0 0 24 24"><path d="M12 2L1 21H23L12 2Z" fill="currentColor"/></svg>
+                <span id="count-battle" class="inventory-count">0</span>
+              </div>
+            </div>
+            <div class="streak-badge">
+              <span id="count-streak" class="streak-value">0</span> Day Streak 🔥
+            </div>
+          </div>
+        </div>
+        <a class="home-link" href="../">Back to Study Hub</a>
+      </header>
+
+      <p id="storage-warning" class="storage-warning" hidden></p>
+      <section class="toolbar">
+        <button id="reset-progress" type="button">Reset Progress</button>
+      </section>
+      <section id="dashboard" class="dashboard"></section>
+      <section id="weeks" class="weeks"></section>
+      <dialog id="mastery-dialog">
+        <form method="dialog" class="mastery-dialog-form">
+          <h2>Confirm mastery</h2>
+          <p id="mastery-dialog-copy"></p>
+          <menu>
+            <button value="cancel">Cancel</button>
+            <button value="confirm">Mark Mastered</button>
+          </menu>
+        </form>
+      </dialog>
+    </main>
+    <script type="module" src="./tracker.js"></script>
+  </body>
+</html>

@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 11, Day 1
+---
+
 # CCA Self-Study — Week 11, Day 1
 ## Exam Scenario 1: Customer Support Resolution Agent
 

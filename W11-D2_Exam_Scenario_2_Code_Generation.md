@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 11, Day 2
+---
+
 # CCA Self-Study — Week 11, Day 2
 ## Exam Scenario 2: Code Generation with Claude Code
 

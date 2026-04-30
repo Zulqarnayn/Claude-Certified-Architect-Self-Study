@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 3, Day 3
+---
+
 # CCA Self-Study — Week 3, Day 3
 ## JSON Schema Enforcement
 

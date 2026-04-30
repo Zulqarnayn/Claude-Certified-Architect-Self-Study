@@ -48,12 +48,6 @@ export const DOMAIN_LABELS = {
   context: "Context",
 };
 
-const VALID_STATES = new Set(Object.values(LESSON_STATES));
-const COMPLETED_OR_BETTER = new Set([
-  LESSON_STATES.COMPLETED,
-  LESSON_STATES.MASTERED,
-]);
-
 export const LESSONS = [
   { id: "W1-D1", week: 1, day: 1, title: "LLMs Explained From Scratch", href: "../W1-D1_LLMs_Explained_From_Scratch.md", isMockExam: false },
   { id: "W1-D2", week: 1, day: 2, title: "Claude vs Other AI Models", href: "../W1-D2_Claude_vs_Other_AI_Models.md", isMockExam: false },
@@ -110,111 +104,308 @@ export const LESSONS = [
   domain: DOMAIN_BY_WEEK[lesson.week],
 }));
 
-export function normalizeProgress(progress = {}) {
-  const rawLessons = progress && typeof progress === "object" ? progress.lessons : {};
-  const lessons = {};
+const VALID_STATES = new Set(Object.values(LESSON_STATES));
 
-  if (rawLessons && typeof rawLessons === "object") {
-    for (const [lessonId, state] of Object.entries(rawLessons)) {
-      lessons[lessonId] = VALID_STATES.has(state)
-        ? state
-        : LESSON_STATES.NOT_STARTED;
-    }
+export function normalizeProgress(raw = {}) {
+  const normalizedLessons = {};
+  const sourceLessons = raw.lessons && typeof raw.lessons === "object" ? raw.lessons : {};
+
+  for (const lesson of LESSONS) {
+    const state = sourceLessons[lesson.id];
+    normalizedLessons[lesson.id] = VALID_STATES.has(state)
+      ? state
+      : LESSON_STATES.NOT_STARTED;
   }
 
   return {
     schemaVersion: SCHEMA_VERSION,
-    lastStudyDate:
-      progress && typeof progress.lastStudyDate === "string"
-        ? progress.lastStudyDate
-        : null,
-    lessons,
+    lastStudyDate: typeof raw.lastStudyDate === "string" ? raw.lastStudyDate : null,
+    lessons: normalizedLessons,
   };
+}
+
+export function getLevelForXp(totalXp) {
+  const current = [...LEVELS].reverse().find((level) => totalXp >= level.minXp) ?? LEVELS[0];
+  const currentIndex = LEVELS.findIndex((level) => level.title === current.title);
+  const next = LEVELS[currentIndex + 1] ?? null;
+  return { current, next };
 }
 
 export function getLessonXp(state) {
   return XP_BY_STATE[state] ?? 0;
 }
 
-export function getLevelForXp(xp) {
-  let current = LEVELS[0];
-
-  for (const level of LEVELS) {
-    if (xp >= level.minXp) {
-      current = level;
-    }
-  }
-
-  const currentIndex = LEVELS.findIndex((level) => level.title === current.title);
-  const next = LEVELS[currentIndex + 1] ?? null;
-
-  return { current, next };
-}
-
 export function deriveStats(lessons, progress, todayIsoDate) {
-  const normalized = normalizeProgress(progress);
-  const domainTotals = Object.fromEntries(
-    Object.keys(DOMAIN_LABELS).map((domain) => [domain, { earned: 0, max: 0 }]),
-  );
-  const weekStats = {};
-  const gems = {
-    knowledge: 0,
-    architect: 0,
-    battle: 0,
-    master: 0,
-  };
+  const domainPoints = Object.fromEntries(Object.keys(DOMAIN_LABELS).map((key) => [key, 0]));
+  const domainMax = Object.fromEntries(Object.keys(DOMAIN_LABELS).map((key) => [key, 0]));
+  const gems = { knowledge: 0, architect: 0, streak: 0, battle: 0, master: 0 };
+  const weekCompletion = {};
   let totalXp = 0;
 
   for (const lesson of lessons) {
-    const state = normalized.lessons[lesson.id] ?? LESSON_STATES.NOT_STARTED;
+    const state = progress.lessons[lesson.id] ?? LESSON_STATES.NOT_STARTED;
     const xp = getLessonXp(state);
-    const weekEntry = weekStats[lesson.week] ?? {
-      totalLessons: 0,
-      completedLessons: 0,
-      masteredLessons: 0,
-      isComplete: false,
-    };
-
     totalXp += xp;
-    domainTotals[lesson.domain].earned += xp;
-    domainTotals[lesson.domain].max += XP_BY_STATE[LESSON_STATES.MASTERED];
+    domainPoints[lesson.domain] += xp;
+    domainMax[lesson.domain] += XP_BY_STATE[LESSON_STATES.MASTERED];
+    weekCompletion[lesson.week] ??= { total: 0, completed: 0, mastered: 0 };
+    weekCompletion[lesson.week].total += 1;
 
-    weekEntry.totalLessons += 1;
-
-    if (COMPLETED_OR_BETTER.has(state)) {
+    if (state === LESSON_STATES.COMPLETED || state === LESSON_STATES.MASTERED) {
       gems.knowledge += 1;
-      weekEntry.completedLessons += 1;
+      weekCompletion[lesson.week].completed += 1;
     }
 
     if (state === LESSON_STATES.MASTERED) {
       gems.architect += 1;
-      weekEntry.masteredLessons += 1;
+      weekCompletion[lesson.week].mastered += 1;
       if (lesson.isMockExam) {
         gems.battle += 1;
       }
     }
-
-    weekStats[lesson.week] = weekEntry;
   }
 
-  for (const weekEntry of Object.values(weekStats)) {
-    weekEntry.isComplete = weekEntry.completedLessons === weekEntry.totalLessons;
-    if (weekEntry.isComplete) {
+  for (const week of Object.values(weekCompletion)) {
+    if (week.completed === week.total) {
       gems.master += 1;
     }
   }
 
-  const domainMastery = {};
-  for (const [domain, totals] of Object.entries(domainTotals)) {
-    domainMastery[domain] = totals.max === 0 ? 0 : Math.round((totals.earned / totals.max) * 100);
-  }
+  const currentStreak = progress.lastStudyDate === todayIsoDate ? 1 : 0;
+  if (currentStreak >= 3) gems.streak += 1;
 
   return {
     totalXp,
-    level: getLevelForXp(totalXp),
+    ...getLevelForXp(totalXp),
+    currentStreak,
     gems,
-    weekStats,
-    currentStreak: normalized.lastStudyDate === todayIsoDate ? 1 : 0,
-    domainMastery,
+    weekCompletion,
+    domainMastery: Object.fromEntries(
+      Object.keys(DOMAIN_LABELS).map((key) => [
+        key,
+        domainMax[key] ? Math.round((domainPoints[key] / domainMax[key]) * 100) : 0,
+      ]),
+    ),
   };
 }
+
+export function renderLessonCard(lesson, state) {
+  // Convert .md links to pretty links for GitHub Pages
+  const prettyHref = lesson.href.replace(/\.md$/, "");
+  
+  return `
+    <article class="lesson-card lesson-state-${state}" data-lesson-id="${lesson.id}">
+      <div class="lesson-card-header">
+        <p class="lesson-meta">${lesson.id}</p>
+        <span class="domain-badge domain-${lesson.domain}">${DOMAIN_LABELS[lesson.domain]}</span>
+      </div>
+      <h3>${lesson.title}</h3>
+      <p class="lesson-state-label">${state.replaceAll("_", " ")}</p>
+      <div class="lesson-actions">
+        <a class="lesson-link" href="${prettyHref}">Open lesson</a>
+        <button type="button" data-action="studied">Studied</button>
+        <button type="button" data-action="completed">Completed</button>
+        <button type="button" data-action="mastered">Mastered</button>
+      </div>
+    </article>
+  `;
+}
+
+export function renderWeekSection(weekNumber, lessons, progress) {
+  const cards = lessons
+    .map((lesson) => renderLessonCard(lesson, progress.lessons[lesson.id] ?? LESSON_STATES.NOT_STARTED))
+    .join("");
+
+  return `
+    <section class="week-section" data-week="${weekNumber}">
+      <div class="week-header">
+        <h2>Week ${weekNumber}</h2>
+      </div>
+      <div class="lesson-grid">
+        ${cards}
+      </div>
+    </section>
+  `;
+}
+
+export function renderDashboard(stats) {
+  const nextDelta = stats.next ? stats.next.minXp - stats.totalXp : 0;
+  
+  // Update HUD elements
+  if (typeof document !== "undefined") {
+    const xpCount = document.querySelector("#xp-count");
+    const levelTitle = document.querySelector("#level-title");
+    const countKnowledge = document.querySelector("#count-knowledge");
+    const countArchitect = document.querySelector("#count-architect");
+    const countBattle = document.querySelector("#count-battle");
+    const countStreak = document.querySelector("#count-streak");
+    const xpFill = document.querySelector("#xp-fill");
+
+    if (xpCount) xpCount.textContent = stats.totalXp;
+    if (levelTitle) levelTitle.textContent = stats.current.title;
+    if (countKnowledge) countKnowledge.textContent = stats.gems.knowledge;
+    if (countArchitect) countArchitect.textContent = stats.gems.architect;
+    if (countBattle) countBattle.textContent = stats.gems.battle;
+    if (countStreak) countStreak.textContent = stats.currentStreak;
+    
+    // Update XP bar
+    if (xpFill) {
+      const currentLevelMin = stats.current.minXp;
+      const nextLevelMin = stats.next ? stats.next.minXp : stats.totalXp + 100;
+      const range = nextLevelMin - currentLevelMin;
+      const progressPercent = range > 0 ? ((stats.totalXp - currentLevelMin) / range) * 100 : 100;
+      xpFill.style.width = `${progressPercent}%`;
+    }
+  }
+
+  return `
+    <section class="panel domain-panel">
+      <p class="panel-label">Domain Mastery</p>
+      ${Object.entries(DOMAIN_LABELS)
+        .map(
+          ([key, label]) => `
+            <div class="domain-row">
+              <span>${label}</span>
+              <div class="domain-bar"><span style="width: ${stats.domainMastery[key]}%"></span></div>
+              <strong>${stats.domainMastery[key]}%</strong>
+            </div>
+          `,
+        )
+        .join("")}
+    </section>
+  `;
+}
+
+export function loadProgress(storage = globalThis.localStorage) {
+  if (!storage?.getItem) {
+    return {
+      progress: normalizeProgress(),
+      warning: "Progress persistence unavailable in this browser. Starting fresh.",
+    };
+  }
+
+  try {
+    const raw = storage.getItem(STORAGE_KEY);
+    return {
+      progress: raw ? normalizeProgress(JSON.parse(raw)) : normalizeProgress(),
+      warning: null,
+    };
+  } catch {
+    return {
+      progress: normalizeProgress(),
+      warning: "Saved progress could not be read. Starting fresh.",
+    };
+  }
+}
+
+export function saveProgress(progress, storage = globalThis.localStorage) {
+  if (!storage?.setItem) return;
+  storage.setItem(STORAGE_KEY, JSON.stringify(progress));
+}
+
+export function clearProgress(storage = globalThis.localStorage) {
+  if (!storage?.removeItem) return;
+  storage.removeItem(STORAGE_KEY);
+}
+
+export function applyLessonState(progress, lessonId, nextState, todayIsoDate) {
+  return {
+    ...progress,
+    lastStudyDate: todayIsoDate,
+    lessons: {
+      ...progress.lessons,
+      [lessonId]: nextState,
+    },
+  };
+}
+
+function renderApp(progress) {
+  const dashboard = document.querySelector("#dashboard");
+  const weeksRoot = document.querySelector("#weeks");
+  const stats = deriveStats(LESSONS, progress, new Date().toISOString().slice(0, 10));
+
+  dashboard.innerHTML = `
+    <div class="dashboard-grid">
+      ${renderDashboard(stats)}
+      <section class="panel gem-panel">
+        <p class="panel-label">Gems</p>
+        <ul>
+          <li>Knowledge: ${stats.gems.knowledge}</li>
+          <li>Architect: ${stats.gems.architect}</li>
+          <li>Battle: ${stats.gems.battle}</li>
+          <li>Master: ${stats.gems.master}</li>
+        </ul>
+      </section>
+      <section class="panel domain-panel">
+        <p class="panel-label">Domain Mastery</p>
+        ${Object.entries(DOMAIN_LABELS)
+          .map(
+            ([key, label]) => `
+              <div class="domain-row">
+                <span>${label}</span>
+                <div class="domain-bar"><span style="width: ${stats.domainMastery[key]}%"></span></div>
+                <strong>${stats.domainMastery[key]}%</strong>
+              </div>
+            `,
+          )
+          .join("")}
+      </section>
+    </div>
+  `;
+
+  const lessonsByWeek = Object.groupBy(LESSONS, ({ week }) => week);
+  weeksRoot.innerHTML = Object.entries(lessonsByWeek)
+    .map(([week, lessons]) => renderWeekSection(Number(week), lessons, progress))
+    .join("");
+}
+
+function boot() {
+  if (typeof document === "undefined") return;
+  const warningNode = document.querySelector("#storage-warning");
+  const loaded = loadProgress();
+  let progress = loaded.progress;
+  warningNode.hidden = !loaded.warning;
+  warningNode.textContent = loaded.warning ?? "";
+  renderApp(progress);
+
+  document.addEventListener("click", (event) => {
+    if (event.target.closest("#reset-progress")) {
+      const confirmed = window.confirm("Reset all tracker progress?");
+      if (!confirmed) return;
+      clearProgress();
+      progress = normalizeProgress();
+      renderApp(progress);
+      return;
+    }
+
+    const action = event.target.closest("[data-action]");
+    if (!action) return;
+
+    const card = action.closest("[data-lesson-id]");
+    const lessonId = card?.dataset.lessonId;
+    const lesson = LESSONS.find((entry) => entry.id === lessonId);
+    if (!lesson) return;
+
+    const requestedState = action.dataset.action;
+    const currentState = progress.lessons[lessonId];
+    if (requestedState === LESSON_STATES.MASTERED && currentState !== LESSON_STATES.COMPLETED) {
+      return;
+    }
+
+    if (requestedState === LESSON_STATES.MASTERED) {
+      const confirmed = window.confirm(
+        lesson.isMockExam
+          ? `Mark ${lesson.id} mastered only if you scored 80% or higher.`
+          : `Mark ${lesson.id} mastered only if you can explain it without notes.`,
+      );
+      if (!confirmed) return;
+    }
+
+    const today = new Date().toISOString().slice(0, 10);
+    progress = applyLessonState(progress, lessonId, requestedState, today);
+    saveProgress(progress);
+    renderApp(progress);
+  });
+}
+
+boot();

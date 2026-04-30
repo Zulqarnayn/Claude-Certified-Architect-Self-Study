@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 7, Day 3
+---
+
 # CCA Self-Study — Week 7, Day 3
 ## Stop Conditions
 

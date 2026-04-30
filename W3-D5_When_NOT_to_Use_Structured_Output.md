@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 3, Day 5
+---
+
 # CCA Self-Study — Week 3, Day 5
 ## When NOT to Use Structured Output
 

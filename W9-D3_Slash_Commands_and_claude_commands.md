@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 9, Day 3
+---
+
 # CCA Self-Study — Week 9, Day 3
 ## Slash Commands & .claude/commands/
 

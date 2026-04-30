@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 6, Day 1
+---
+
 # CCA Self-Study — Week 6, Day 1
 ## Real-World Application Architecture
 

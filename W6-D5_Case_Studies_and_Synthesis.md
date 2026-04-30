@@ -1,3 +1,8 @@
+---
+layout: default
+title: CCA Self-Study — Week 6, Day 5
+---
+
 # CCA Self-Study — Week 6, Day 5
 ## Case Studies and Synthesis
 
