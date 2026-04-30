@@ -19,6 +19,46 @@ This site documents my learning path for Claude Certified Architect certificatio
 |---|---|---|---|---|---|
 | W1-D1 | Tue | LLMs Explained From Scratch | Completed | [Open](./W1-D1_LLMs_Explained_From_Scratch.md) | Prediction vs understanding, tokens/context window, product vs model distinctions. |
 | W1-D2 | Wed | Claude vs Other AI Models | Completed | [Open](./W1-D2_Claude_vs_Other_AI_Models.md) | Comparison framework for architecture decisions. |
+| W1-D3 | Thu | The Context Window | Completed | [Open](./W1-D3_The_Context_Window.md) | Understanding token limits and optimization. |
+| W1-D4 | Fri | System Prompts vs User Messages | Completed | [Open](./W1-D4_System_Prompts_vs_User_Messages.md) | Structuring prompts for consistent behavior. |
+| W1-D5 | Sat | Your First API Call | Completed | [Open](./W1-D5_Your_First_API_Call.md) | Practical API integration and authentication. |
+
+## Week 2 Progress
+
+| Week-Day | Weekday | Topic | Status | Study Note | Summary |
+|---|---|---|---|---|---|
+| W2-D1 | Sun | What Makes a Good Prompt | Completed | [Open](./W2-D1_What_Makes_a_Good_Prompt.md) | Prompt engineering fundamentals. |
+| W2-D2 | Mon | Role Prompting and Persona | Completed | [Open](./W2-D2_Role_Prompting_and_Persona.md) | Persona-driven prompt strategies. |
+| W2-D3 | Tue | Chain of Thought Prompting | Completed | [Open](./W2-D3_Chain_of_Thought_Prompting.md) | Step-by-step reasoning techniques. |
+| W2-D4 | Wed | Negative Prompting | Completed | [Open](./W2-D4_Negative_Prompting.md) | Using constraints to guide outputs. |
+| W2-D5 | Thu | Prompt Iteration Practice | Completed | [Open](./W2-D5_Prompt_Iteration_Practice.md) | Iterative refinement strategies. |
+
+## Week 3 Progress
+
+| Week-Day | Weekday | Topic | Status | Study Note | Summary |
+|---|---|---|---|---|---|
+| W3-D1 | Fri | Few Shot Examples | Completed | [Open](./W3-D1_Few_Shot_Examples.md) | In-context learning with examples. |
+| W3-D2 | Sat | Structured Output JSON Basics | Completed | [Open](./W3-D2_Structured_Output_JSON_Basics.md) | JSON schema and validation. |
+| W3-D3 | Sun | Advanced JSON and Validation | In Progress | [Open](./W3-D3_Advanced_JSON_and_Validation.md) | Schema validation patterns. |
+| W3-D4 | Mon | Vision and Multimodal Inputs | In Progress | [Open](./W3-D4_Vision_and_Multimodal_Inputs.md) | Image processing and analysis. |
+| W3-D5 | Tue | Batching and API Optimization | In Progress | [Open](./W3-D5_Batching_and_API_Optimization.md) | Cost optimization strategies. |
+
+## Week 4 Progress
+
+| Week-Day | Weekday | Topic | Status | Study Note | Summary |
+|---|---|---|---|---|---|
+| W4-D1 | Wed | Agentic Patterns | In Progress | [Open](./W4-D1_Agentic_Patterns.md) | Agent architecture fundamentals. |
+| W4-D2 | Thu | Tool Use and Function Calling | In Progress | [Open](./W4-D2_Tool_Use_and_Function_Calling.md) | Tool-use workflows. |
+| W4-D3 | Fri | Memory and Context Management | In Progress | [Open](./W4-D3_Memory_and_Context_Management.md) | Conversation memory patterns. |
+| W4-D4 | Sat | Error Handling and Robustness | In Progress | [Open](./W4-D4_Error_Handling_and_Robustness.md) | Failure modes and recovery. |
+| W4-D5 | Sun | Production Considerations | In Progress | [Open](./W4-D5_Production_Considerations.md) | Deployment and monitoring. |
+
+## Week 5 Progress
+
+| Week-Day | Weekday | Topic | Status | Study Note | Summary |
+|---|---|---|---|---|---|
+| W5-D1 | Mon | Advanced Agentic Patterns | In Progress | [Open](./W5-D1_Advanced_Agentic_Patterns.md) | Multi-agent systems. |
+| W5-D2 | Tue | Scaling and Performance | In Progress | [Open](./W5-D2_Scaling_and_Performance.md) | Production scaling strategies. |
 
 ## Day Note Template
 
@@ -34,5 +74,5 @@ Use this structure for every new day file:
 
 ## Next Up
 
-- Complete W1-D2 and add the new day link here.
+- Work through W3-D3 through W5-D2 materials.
 - Keep status vocabulary consistent: Planned, In Progress, Completed.
