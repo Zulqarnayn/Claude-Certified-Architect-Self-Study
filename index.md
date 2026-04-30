@@ -73,6 +73,23 @@ This site documents my learning path for Claude Certified Architect certificatio
 | W6-D4 | Thu | A/B Testing and Experimentation | In Progress | [Open](./W6-D4_A_B_Testing_and_Experimentation.md) | Statistical testing and validation. |
 | W6-D5 | Fri | Case Studies and Synthesis | In Progress | [Open](./W6-D5_Case_Studies_and_Synthesis.md) | Real-world applications and lessons. |
 
+## Week 7 Progress
+
+| Week-Day | Weekday | Topic | Status | Study Note | Summary |
+|---|---|---|---|---|---|
+| W7-D1 | Sat | Evaluation Frameworks | Planned | [Open](./W7-D1_Evaluation_Frameworks.md) | Metrics and benchmarks. |
+| W7-D2 | Sun | Human-in-the-Loop Systems | Planned | [Open](./W7-D2_Human_in_the_Loop_Systems.md) | Review workflows and routing. |
+| W7-D3 | Mon | Prompt Lifecycle Management | Planned | [Open](./W7-D3_Prompt_Lifecycle_Management.md) | Versioning and rollback. |
+| W7-D4 | Tue | Cross-Model Validation | Planned | [Open](./W7-D4_Cross_Model_Validation.md) | Model disagreement checks. |
+| W7-D5 | Wed | Deployment and Rollout Strategy | Planned | [Open](./W7-D5_Deployment_and_Rollout_Strategy.md) | Canary and rollback planning. |
+
+## Week 8 Progress
+
+| Week-Day | Weekday | Topic | Status | Study Note | Summary |
+|---|---|---|---|---|---|
+| W8-D1 | Thu | Specialized Industry Workflows | Planned | [Open](./W8-D1_Specialized_Industry_Workflows.md) | Industry-specific adaptation. |
+| W8-D2 | Fri | Advanced Personalization | Planned | [Open](./W8-D2_Advanced_Personalization.md) | User-centric behavior design. |
+
 ## Day Note Template
 
 Use this structure for every new day file:

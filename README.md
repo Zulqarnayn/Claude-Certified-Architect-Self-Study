@@ -38,6 +38,13 @@ Documenting my learning path for the Claude Certified Architect certification, i
 | W6-D3 | Wed | Analytics and Observability | In Progress | [W6-D3 Note](./W6-D3_Analytics_and_Observability.md) |
 | W6-D4 | Thu | A/B Testing and Experimentation | In Progress | [W6-D4 Note](./W6-D4_A_B_Testing_and_Experimentation.md) |
 | W6-D5 | Fri | Case Studies and Synthesis | In Progress | [W6-D5 Note](./W6-D5_Case_Studies_and_Synthesis.md) |
+| W7-D1 | Sat | Evaluation Frameworks | Planned | [W7-D1 Note](./W7-D1_Evaluation_Frameworks.md) |
+| W7-D2 | Sun | Human-in-the-Loop Systems | Planned | [W7-D2 Note](./W7-D2_Human_in_the_Loop_Systems.md) |
+| W7-D3 | Mon | Prompt Lifecycle Management | Planned | [W7-D3 Note](./W7-D3_Prompt_Lifecycle_Management.md) |
+| W7-D4 | Tue | Cross-Model Validation | Planned | [W7-D4 Note](./W7-D4_Cross_Model_Validation.md) |
+| W7-D5 | Wed | Deployment and Rollout Strategy | Planned | [W7-D5 Note](./W7-D5_Deployment_and_Rollout_Strategy.md) |
+| W8-D1 | Thu | Specialized Industry Workflows | Planned | [W8-D1 Note](./W8-D1_Specialized_Industry_Workflows.md) |
+| W8-D2 | Fri | Advanced Personalization | Planned | [W8-D2 Note](./W8-D2_Advanced_Personalization.md) |
 
 ## Study Site
 
