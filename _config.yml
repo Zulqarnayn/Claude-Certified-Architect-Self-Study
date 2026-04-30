@@ -1,6 +1,6 @@
 title: Claude Certified Architect Self-Study
 description: Concepts, summaries, experiments, and lessons learned while preparing for the Claude Certified Architect certification.
-theme: minima
+theme: jekyll-theme-modernist
 markdown: kramdown
 kramdown:
   input: GFM
