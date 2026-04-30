@@ -1,66 +1,230 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CCA Study Tracker</title>
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>CCA Architect Tracker</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./tracker.css">
-  </head>
-  <body>
-    <main class="tracker-app">
-      <header class="hero">
-        <div class="hud">
-          <div class="hud-top">
-            <div class="hud-item xp-meter">
-              <span class="hud-label">XP</span>
-              <div class="meter-track"><div id="xp-fill" class="meter-fill"></div></div>
-              <span id="xp-count" class="hud-value">0</span>
-            </div>
-            <div class="hud-item level-badge">
-              <span class="hud-label">Level</span>
-              <span id="level-title" class="hud-value">Prompt Sender</span>
-            </div>
-          </div>
-          <div class="hud-bottom">
-            <div class="inventory">
-              <div class="inventory-item" title="Knowledge Diamonds - Earned by completing lessons">
-                <svg class="icon icon-gem" viewBox="0 0 24 24"><path d="M12 2L3.5 9.5L12 22L20.5 9.5L12 2Z" fill="currentColor"/></svg>
-                <span id="count-knowledge" class="inventory-count">0</span>
-              </div>
-              <div class="inventory-item" title="Architect Gems - Earned by mastering lessons">
-                <svg class="icon icon-master" viewBox="0 0 24 24"><path d="M12 1L4 6V18L12 23L20 18V6L12 1Z" fill="currentColor"/></svg>
-                <span id="count-architect" class="inventory-count">0</span>
-              </div>
-              <div class="inventory-item" title="Battle Medals - Earned by mastering mock exams">
-                <svg class="icon icon-battle" viewBox="0 0 24 24"><path d="M12 2L1 21H23L12 2Z" fill="currentColor"/></svg>
-                <span id="count-battle" class="inventory-count">0</span>
-              </div>
-            </div>
-            <div class="streak-badge">
-              <span id="count-streak" class="streak-value">0</span> Day Streak 🔥
-            </div>
-          </div>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#62fae3",
+                        "tertiary-container": "#efb515",
+                        "outline-variant": "#3c4a46",
+                        "on-tertiary": "#402d00",
+                        "primary": "#57f1db",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#3cddc7",
+                        "surface-dim": "#0e1513",
+                        "secondary-fixed": "#ffd8e7",
+                        "tertiary-fixed-dim": "#f9bd22",
+                        "surface-bright": "#333b39",
+                        "on-primary-container": "#00574d",
+                        "on-secondary": "#620040",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "surface-container": "#1a211f",
+                        "on-tertiary-fixed": "#261a00",
+                        "on-secondary-fixed": "#3d0026",
+                        "on-primary": "#003731",
+                        "on-background": "#dde4e1",
+                        "on-error": "#690005",
+                        "secondary": "#ffafd3",
+                        "surface-container-high": "#242b2a",
+                        "inverse-primary": "#006b5f",
+                        "surface-container-low": "#161d1b",
+                        "error-container": "#93000a",
+                        "inverse-surface": "#dde4e1",
+                        "tertiary": "#ffd47b",
+                        "surface-container-highest": "#2f3634",
+                        "outline": "#859490",
+                        "on-error-container": "#ffdad6",
+                        "secondary-container": "#85145a",
+                        "tertiary-fixed": "#ffdf9f",
+                        "on-tertiary-container": "#634900",
+                        "on-surface-variant": "#bacac5",
+                        "on-primary-fixed": "#00201c",
+                        "on-secondary-fixed-variant": "#85145a",
+                        "primary-container": "#2dd4bf",
+                        "surface-tint": "#3cddc7",
+                        "on-secondary-container": "#ff93c8",
+                        "secondary-fixed-dim": "#ffafd3",
+                        "background": "#0e1513",
+                        "surface": "#0e1513",
+                        "surface-container-lowest": "#09100e",
+                        "surface-variant": "#2f3634",
+                        "on-primary-fixed-variant": "#005047",
+                        "on-surface": "#dde4e1",
+                        "inverse-on-surface": "#2b3230"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin": "32px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "body-rt": ["Inter"],
+                        "display-lg": ["Space Grotesk"],
+                        "label-caps": ["Space Grotesk"],
+                        "headline-md": ["Space Grotesk"],
+                        "terminal-sm": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "body-rt": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "terminal-sm": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-rt overflow-hidden h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-slate-900/50 backdrop-blur-xl border-b border-teal-500/30 shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+    <div class="flex items-center gap-6">
+        <div class="text-lg font-black tracking-tighter text-teal-400 drop-shadow-[0_0_10px_rgba(45,212,191,0.6)] font-display-lg">
+            MCP ARCHITECT
         </div>
-        <a class="home-link" href="../">Back to Study Hub</a>
-      </header>
+        <nav class="hidden md:flex gap-8">
+            <span class="font-label-caps text-teal-400 drop-shadow-[0_0_5px_rgba(45,212,191,0.8)] cursor-pointer">DASHBOARD</span>
+            <a href="../" class="font-label-caps text-slate-400 hover:text-teal-200 transition-all duration-300 cursor-pointer">STUDY HUB</a>
+        </nav>
+    </div>
+    <div class="flex items-center gap-4">
+        <div class="flex gap-2">
+            <span class="material-symbols-outlined text-teal-400 text-lg hover:bg-teal-400/10 p-2 rounded transition-all cursor-pointer" data-icon="workspace_premium">workspace_premium</span>
+            <span class="material-symbols-outlined text-teal-400 text-lg hover:bg-teal-400/10 p-2 rounded transition-all cursor-pointer" data-icon="diamond">diamond</span>
+            <span class="material-symbols-outlined text-teal-400 text-lg hover:bg-teal-400/10 p-2 rounded transition-all cursor-pointer" data-icon="local_fire_department">local_fire_department</span>
+        </div>
+        <img alt="Architect Profile" class="w-8 h-8 rounded border border-teal-500/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArm3yMLtjZ7cc4y8yh0xUZC-r_WrSMakekpWdWtrq0I-H8aqBXmsqS9DyBR9dpH7BzNMbMfYNBcsfRtsvkCJZ9mva0JjmHr9FFIC2zksf1wY-ELOpysbk8l1KF9OQ4RPgyqNWGorhNzZsjo-oVVWJ0o2KQV4qClpuoJZ2y_b8aC1qKDgKk93l85QhMqLWt2ZmYoY5GeUkNLSTPbIdPt9tEwdDhDfWng0xGdSefCoT0Y5_5Ixi_7hqbzK2nuA7rOogLsZIXIIIYMOS6"/>
+    </div>
+</header>
 
-      <p id="storage-warning" class="storage-warning" hidden></p>
-      <section class="toolbar">
-        <button id="reset-progress" type="button">Reset Progress</button>
-      </section>
-      <section id="dashboard" class="dashboard"></section>
-      <section id="weeks" class="weeks"></section>
-      <dialog id="mastery-dialog">
-        <form method="dialog" class="mastery-dialog-form">
-          <h2>Confirm mastery</h2>
-          <p id="mastery-dialog-copy"></p>
-          <menu>
-            <button value="cancel">Cancel</button>
-            <button value="confirm">Mark Mastered</button>
-          </menu>
-        </form>
-      </dialog>
-    </main>
-    <script type="module" src="./tracker.js"></script>
-  </body>
+<!-- Side Navigation -->
+<aside class="fixed left-0 top-0 h-full z-40 flex flex-col pt-20 bg-slate-950/80 backdrop-blur-2xl h-screen w-64 border-r border-teal-500/20 shadow-2xl">
+    <div class="px-6 mb-8">
+        <div class="font-label-caps text-teal-400 font-bold mb-1">ARCHITECT_STATUS</div>
+        <div id="level-title" class="text-[10px] font-terminal-sm text-slate-500 tracking-tighter uppercase">LEVEL -- MCP // AUTHENTICATED</div>
+    </div>
+    <nav class="flex-1">
+        <div class="bg-teal-400/10 text-teal-400 border-r-4 border-teal-400 shadow-[inset_-10px_0_15px_-10px_rgba(45,212,191,0.5)] py-4 px-6 flex items-center gap-3 font-label-caps text-xs cursor-pointer">
+            <span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+            <span>Dashboard</span>
+        </div>
+        <div class="text-slate-500 py-4 px-6 flex items-center gap-3 font-label-caps text-xs hover:bg-slate-800/50 hover:text-teal-300 transition-all cursor-pointer group">
+            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="explore">explore</span>
+            <span>Quests</span>
+        </div>
+        <div id="reset-progress" class="text-red-500/60 mt-auto py-4 px-6 flex items-center gap-3 font-label-caps text-xs hover:bg-red-500/10 hover:text-red-400 transition-all cursor-pointer group">
+            <span class="material-symbols-outlined group-hover:rotate-12 transition-transform" data-icon="restart_alt">restart_alt</span>
+            <span>Reset Progress</span>
+        </div>
+    </nav>
+</aside>
+
+<!-- Main Content Canvas -->
+<main class="ml-64 mt-16 flex-1 flex flex-col p-8 gap-8 overflow-hidden">
+    <p id="storage-warning" class="bg-red-500/20 text-red-400 p-2 rounded text-xs font-terminal-sm" hidden></p>
+    
+    <!-- Top HUD Section -->
+    <section class="grid grid-cols-12 gap-6 shrink-0">
+        <!-- XP Progress HUD -->
+        <div class="col-span-8 glass-panel p-6 rounded relative overflow-hidden">
+            <div class="flex justify-between items-end mb-4 relative z-10">
+                <div>
+                    <h2 class="font-label-caps text-primary leading-none mb-1">XP PROGRESSION</h2>
+                    <div id="current-rank" class="font-display-lg text-2xl uppercase tracking-widest text-on-surface">--</div>
+                </div>
+                <div class="text-right">
+                    <span id="xp-count" class="font-terminal-sm text-secondary-container font-bold">0</span>
+                    <span id="xp-next" class="font-terminal-sm text-slate-500"> / 0 XP</span>
+                </div>
+            </div>
+            <!-- Animated XP Bar -->
+            <div class="h-4 w-full bg-slate-900/80 rounded-full overflow-hidden border border-slate-800/50 relative">
+                <div id="xp-fill" class="h-full xp-gradient shadow-[0_0_15px_rgba(244,114,182,0.4)] relative transition-all duration-1000" style="width: 0%;">
+                    <div class="absolute inset-0 bg-white/10 opacity-20 animate-pulse"></div>
+                </div>
+            </div>
+            <!-- HUD Details -->
+            <div class="flex gap-6 mt-4 pt-4 border-t border-white/5">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-tertiary-container text-sm" data-icon="local_fire_department">local_fire_department</span>
+                    <span class="font-label-caps text-[10px] text-slate-400">STREAK: </span>
+                    <span id="count-streak" class="font-terminal-sm text-tertiary-fixed text-xs">0 DAYS</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary text-sm" data-icon="radar">radar</span>
+                    <span class="font-label-caps text-[10px] text-slate-400">STATUS: </span>
+                    <span id="system-status" class="font-terminal-sm text-primary-fixed text-xs">ONLINE</span>
+                </div>
+            </div>
+        </div>
+        <!-- Inventory Slots HUD -->
+        <div class="col-span-4 glass-panel p-6 rounded flex flex-col justify-between">
+            <div class="font-label-caps text-slate-500 mb-4 text-[10px]">VAULT INVENTORY</div>
+            <div class="flex justify-between gap-2">
+                <div class="flex-1 aspect-square glass-panel flex flex-col items-center justify-center border-emerald-500/20 group hover:border-emerald-500/50 transition-colors cursor-pointer" title="Knowledge Diamonds - Earned by completing lessons">
+                    <span class="material-symbols-outlined text-emerald-400 text-3xl drop-shadow-[0_0_8px_rgba(52,211,153,0.4)]" data-icon="diamond">diamond</span>
+                    <span id="count-knowledge" class="font-terminal-sm text-[10px] mt-2 text-slate-400">0</span>
+                </div>
+                <div class="flex-1 aspect-square glass-panel flex flex-col items-center justify-center border-purple-500/20 group hover:border-purple-500/50 transition-colors cursor-pointer" title="Architect Gems - Earned by mastering lessons">
+                    <span class="material-symbols-outlined text-purple-400 text-3xl drop-shadow-[0_0_8px_rgba(168,85,247,0.4)]" data-icon="category">category</span>
+                    <span id="count-architect" class="font-terminal-sm text-[10px] mt-2 text-slate-400">0</span>
+                </div>
+                <div class="flex-1 aspect-square glass-panel flex flex-col items-center justify-center border-red-500/20 group hover:border-red-500/50 transition-colors cursor-pointer" title="Battle Medals - Earned by mastering mock exams">
+                    <span class="material-symbols-outlined text-red-400 text-3xl drop-shadow-[0_0_8px_rgba(248,113,113,0.4)]" data-icon="military_tech">military_tech</span>
+                    <span id="count-battle" class="font-terminal-sm text-[10px] mt-2 text-slate-400">0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lower Grid Content -->
+    <div class="flex-1 flex gap-8 overflow-hidden pb-8">
+        <!-- Quest Cards Scrolling Section -->
+        <section class="flex-1 overflow-y-auto custom-scrollbar pr-4">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="font-headline-md text-on-surface uppercase tracking-widest">Active Operations</h3>
+                <div class="flex gap-2">
+                    <button class="bg-surface-variant p-2 rounded material-symbols-outlined text-sm" data-icon="filter_list">filter_list</button>
+                    <button class="bg-surface-variant p-2 rounded material-symbols-outlined text-sm" data-icon="sort">sort</button>
+                </div>
+            </div>
+            <div id="weeks" class="space-y-12">
+                <!-- Weeks and cards will be injected here -->
+            </div>
+        </section>
+
+        <!-- Domain Mastery Side Panel -->
+        <aside id="dashboard" class="w-80 flex flex-col gap-6 shrink-0 h-full">
+            <!-- Mastery readout will be injected here -->
+        </aside>
+    </div>
+</main>
+
+<!-- Background Decoration -->
+<div class="fixed inset-0 -z-10 bg-surface overflow-hidden pointer-events-none">
+    <div class="absolute -top-[20%] -left-[10%] w-[60%] h-[60%] rounded-full bg-primary/5 blur-[120px]"></div>
+    <div class="absolute -bottom-[20%] -right-[10%] w-[60%] h-[60%] rounded-full bg-secondary/5 blur-[120px]"></div>
+    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 40px 40px;"></div>
+</div>
+
+<script type="module" src="./tracker.js"></script>
+</body>
 </html>

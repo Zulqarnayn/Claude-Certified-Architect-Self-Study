@@ -190,24 +190,63 @@ export function deriveStats(lessons, progress, todayIsoDate) {
 }
 
 export function renderLessonCard(lesson, state) {
-  // Convert .md links to pretty links for GitHub Pages
   const prettyHref = lesson.href.replace(/\.md$/, "");
+  const isMastered = state === LESSON_STATES.MASTERED;
+  const isCompleted = state === LESSON_STATES.COMPLETED;
+  const isStudied = state === LESSON_STATES.STUDIED;
   
+  let statusBadge = '';
+  let icon = 'lock';
+  let cardClass = 'glass-panel p-6 rounded-xl transition-all duration-300 cursor-pointer relative group hover:scale-[1.02]';
+  let xpIndicator = '';
+
+  if (isMastered) {
+    cardClass += ' mastered-glow';
+    statusBadge = '<span class="bg-tertiary-container/10 text-tertiary-container px-2 py-1 rounded text-[10px] font-label-caps">MASTERED</span>';
+    icon = 'workspace_premium';
+  } else if (isCompleted) {
+    cardClass += ' border-secondary/40';
+    statusBadge = '<span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-[10px] font-label-caps">COMPLETED</span>';
+    icon = 'check_circle';
+    xpIndicator = '<span class="font-terminal-sm text-[10px] text-secondary">+75 XP</span>';
+  } else if (isStudied) {
+    cardClass += ' border-primary/40 shadow-[0_0_15px_rgba(45,212,191,0.1)]';
+    statusBadge = '<span class="bg-primary/10 text-primary px-2 py-1 rounded text-[10px] font-label-caps">IN PROGRESS</span>';
+    icon = 'pending';
+    xpIndicator = '<div class="font-terminal-sm text-[10px] text-primary">20%</div>';
+  } else {
+    cardClass += ' opacity-60 hover:opacity-100 grayscale hover:grayscale-0';
+    statusBadge = '<span class="bg-slate-800 text-slate-500 px-2 py-1 rounded text-[10px] font-label-caps">NOT STARTED</span>';
+  }
+
   return `
-    <article class="lesson-card lesson-state-${state}" data-lesson-id="${lesson.id}">
-      <div class="lesson-card-header">
-        <p class="lesson-meta">${lesson.id}</p>
-        <span class="domain-badge domain-${lesson.domain}">${DOMAIN_LABELS[lesson.domain]}</span>
+    <div class="${cardClass}" data-lesson-id="${lesson.id}">
+      <div class="absolute top-4 right-4 ${isMastered ? 'text-tertiary-container' : isStudied ? 'text-primary animate-pulse' : isCompleted ? 'text-secondary' : 'text-slate-600'} material-symbols-outlined" data-icon="${icon}">${icon}</div>
+      <div class="font-terminal-sm text-xs text-slate-500 mb-1">${lesson.id}</div>
+      <h4 class="font-headline-md text-lg mb-4 text-white leading-tight">${lesson.title}</h4>
+      
+      ${!isMastered && !isCompleted ? `
+      <div class="flex gap-2 mb-4">
+        <a href="${prettyHref}" class="flex-1 py-2 bg-slate-800 text-center text-primary-fixed text-[10px] font-label-caps border border-primary/20 hover:bg-primary/10 transition-colors">READ</a>
+        <button data-action="${isStudied ? 'completed' : 'studied'}" class="flex-1 py-2 bg-primary text-slate-950 text-[10px] font-label-caps font-black transition-transform active:scale-95">
+            ${isStudied ? 'FINISH' : 'START'}
+        </button>
       </div>
-      <h3>${lesson.title}</h3>
-      <p class="lesson-state-label">${state.replaceAll("_", " ")}</p>
-      <div class="lesson-actions">
-        <a class="lesson-link" href="${prettyHref}">Open lesson</a>
-        <button type="button" data-action="studied">Studied</button>
-        <button type="button" data-action="completed">Completed</button>
-        <button type="button" data-action="mastered">Mastered</button>
+      ` : ''}
+
+      ${isCompleted ? `
+      <div class="flex gap-2 mb-4">
+        <button data-action="mastered" class="w-full py-2 bg-tertiary text-slate-950 text-[10px] font-label-caps font-black transition-transform active:scale-95">
+            MASTER QUEST
+        </button>
       </div>
-    </article>
+      ` : ''}
+
+      <div class="flex items-center justify-between mt-auto">
+        ${statusBadge}
+        ${xpIndicator}
+      </div>
+    </div>
   `;
 }
 
@@ -218,10 +257,11 @@ export function renderWeekSection(weekNumber, lessons, progress) {
 
   return `
     <section class="week-section" data-week="${weekNumber}">
-      <div class="week-header">
-        <h2>Week ${weekNumber}</h2>
+      <div class="flex items-center gap-4 mb-6">
+        <h2 class="font-headline-md text-xl text-on-surface uppercase tracking-[0.2em]">Week ${weekNumber}</h2>
+        <div class="h-px flex-1 bg-gradient-to-r from-teal-500/30 to-transparent"></div>
       </div>
-      <div class="lesson-grid">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         ${cards}
       </div>
     </section>
@@ -229,50 +269,77 @@ export function renderWeekSection(weekNumber, lessons, progress) {
 }
 
 export function renderDashboard(stats) {
-  const nextDelta = stats.next ? stats.next.minXp - stats.totalXp : 0;
+  const nextMin = stats.next ? stats.next.minXp : stats.totalXp;
   
-  // Update HUD elements
   if (typeof document !== "undefined") {
     const xpCount = document.querySelector("#xp-count");
+    const xpNext = document.querySelector("#xp-next");
     const levelTitle = document.querySelector("#level-title");
+    const currentRank = document.querySelector("#current-rank");
     const countKnowledge = document.querySelector("#count-knowledge");
     const countArchitect = document.querySelector("#count-architect");
     const countBattle = document.querySelector("#count-battle");
     const countStreak = document.querySelector("#count-streak");
     const xpFill = document.querySelector("#xp-fill");
 
-    if (xpCount) xpCount.textContent = stats.totalXp;
-    if (levelTitle) levelTitle.textContent = stats.current.title;
+    if (xpCount) xpCount.textContent = stats.totalXp.toLocaleString();
+    if (xpNext) xpNext.textContent = ` / ${nextMin.toLocaleString()} XP`;
+    if (levelTitle) levelTitle.textContent = `LEVEL ${stats.gems.architect + stats.gems.knowledge} MCP // AUTHENTICATED`;
+    if (currentRank) currentRank.textContent = stats.current.title;
     if (countKnowledge) countKnowledge.textContent = stats.gems.knowledge;
     if (countArchitect) countArchitect.textContent = stats.gems.architect;
     if (countBattle) countBattle.textContent = stats.gems.battle;
-    if (countStreak) countStreak.textContent = stats.currentStreak;
+    if (countStreak) countStreak.textContent = `${stats.currentStreak} DAYS`;
     
-    // Update XP bar
     if (xpFill) {
       const currentLevelMin = stats.current.minXp;
-      const nextLevelMin = stats.next ? stats.next.minXp : stats.totalXp + 100;
-      const range = nextLevelMin - currentLevelMin;
+      const range = nextMin - currentLevelMin;
       const progressPercent = range > 0 ? ((stats.totalXp - currentLevelMin) / range) * 100 : 100;
       xpFill.style.width = `${progressPercent}%`;
     }
   }
 
   return `
-    <section class="panel domain-panel">
-      <p class="panel-label">Domain Mastery</p>
-      ${Object.entries(DOMAIN_LABELS)
-        .map(
-          ([key, label]) => `
-            <div class="domain-row">
-              <span>${label}</span>
-              <div class="domain-bar"><span style="width: ${stats.domainMastery[key]}%"></span></div>
-              <strong>${stats.domainMastery[key]}%</strong>
+    <div class="glass-panel p-6 rounded-xl flex-1 flex flex-col">
+        <div class="flex items-center gap-2 mb-6">
+            <span class="material-symbols-outlined text-primary" data-icon="monitoring">monitoring</span>
+            <h3 class="font-headline-md text-sm uppercase tracking-widest text-on-surface">Skill Readout</h3>
+        </div>
+        <div class="space-y-8 flex-1">
+            ${Object.entries(DOMAIN_LABELS)
+              .map(([key, label]) => {
+                const mastery = stats.domainMastery[key];
+                let colorClass = 'bg-primary';
+                if (key === 'context') colorClass = 'bg-blue-500';
+                if (key === 'prompting') colorClass = 'bg-orange-500';
+                if (key === 'agentic') colorClass = 'bg-emerald-500';
+                if (key === 'mcp') colorClass = 'bg-purple-500';
+                if (key === 'claude_code') colorClass = 'bg-red-500';
+
+                return `
+                <div>
+                    <div class="flex justify-between font-label-caps text-[10px] mb-2">
+                        <span class="text-slate-400">${label.toUpperCase()}</span>
+                        <span class="text-primary-fixed">${mastery}%</span>
+                    </div>
+                    <div class="h-1.5 w-full bg-slate-900 rounded-full overflow-hidden">
+                        <div class="h-full ${colorClass} shadow-[0_0_10px_rgba(45,212,191,0.5)]" style="width: ${mastery}%;"></div>
+                    </div>
+                </div>
+                `;
+              }).join('')}
+        </div>
+        <div class="mt-auto pt-6 border-t border-white/5 space-y-4">
+            <div class="glass-panel p-4 rounded bg-white/5">
+                <div class="font-terminal-sm text-[10px] text-slate-500 mb-1">TOTAL MASTERED</div>
+                <div class="text-2xl font-display-lg text-tertiary-container">${stats.gems.architect} / ${LESSONS.length}</div>
             </div>
-          `,
-        )
-        .join("")}
-    </section>
+            <button class="w-full py-4 bg-transparent border border-primary/30 text-primary font-label-caps text-xs tracking-widest hover:bg-primary/10 transition-all flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-sm" data-icon="analytics">analytics</span>
+                EXPAND ANALYTICS
+            </button>
+        </div>
+    </div>
   `;
 }
 
@@ -324,37 +391,11 @@ function renderApp(progress) {
   const weeksRoot = document.querySelector("#weeks");
   const stats = deriveStats(LESSONS, progress, new Date().toISOString().slice(0, 10));
 
-  dashboard.innerHTML = `
-    <div class="dashboard-grid">
-      ${renderDashboard(stats)}
-      <section class="panel gem-panel">
-        <p class="panel-label">Gems</p>
-        <ul>
-          <li>Knowledge: ${stats.gems.knowledge}</li>
-          <li>Architect: ${stats.gems.architect}</li>
-          <li>Battle: ${stats.gems.battle}</li>
-          <li>Master: ${stats.gems.master}</li>
-        </ul>
-      </section>
-      <section class="panel domain-panel">
-        <p class="panel-label">Domain Mastery</p>
-        ${Object.entries(DOMAIN_LABELS)
-          .map(
-            ([key, label]) => `
-              <div class="domain-row">
-                <span>${label}</span>
-                <div class="domain-bar"><span style="width: ${stats.domainMastery[key]}%"></span></div>
-                <strong>${stats.domainMastery[key]}%</strong>
-              </div>
-            `,
-          )
-          .join("")}
-      </section>
-    </div>
-  `;
+  dashboard.innerHTML = renderDashboard(stats);
 
   const lessonsByWeek = Object.groupBy(LESSONS, ({ week }) => week);
   weeksRoot.innerHTML = Object.entries(lessonsByWeek)
+    .sort(([a], [b]) => Number(a) - Number(b))
     .map(([week, lessons]) => renderWeekSection(Number(week), lessons, progress))
     .join("");
 }
@@ -364,8 +405,10 @@ function boot() {
   const warningNode = document.querySelector("#storage-warning");
   const loaded = loadProgress();
   let progress = loaded.progress;
-  warningNode.hidden = !loaded.warning;
-  warningNode.textContent = loaded.warning ?? "";
+  if (warningNode) {
+    warningNode.hidden = !loaded.warning;
+    warningNode.textContent = loaded.warning ?? "";
+  }
   renderApp(progress);
 
   document.addEventListener("click", (event) => {
@@ -378,20 +421,16 @@ function boot() {
       return;
     }
 
-    const action = event.target.closest("[data-action]");
-    if (!action) return;
+    const actionBtn = event.target.closest("[data-action]");
+    if (!actionBtn) return;
 
-    const card = action.closest("[data-lesson-id]");
+    const card = actionBtn.closest("[data-lesson-id]");
     const lessonId = card?.dataset.lessonId;
     const lesson = LESSONS.find((entry) => entry.id === lessonId);
     if (!lesson) return;
 
-    const requestedState = action.dataset.action;
-    const currentState = progress.lessons[lessonId];
-    if (requestedState === LESSON_STATES.MASTERED && currentState !== LESSON_STATES.COMPLETED) {
-      return;
-    }
-
+    const requestedState = actionBtn.dataset.action;
+    
     if (requestedState === LESSON_STATES.MASTERED) {
       const confirmed = window.confirm(
         lesson.isMockExam
