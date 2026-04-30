@@ -13,28 +13,6 @@ This site documents my learning path for Claude Certified Architect certificatio
 2. Open each day note for deep learning and self-assessment.
 3. Use the lessons and key terms as revision material before mock tests.
 
-## External Guide Cross-Check
-
-Reference guide: [paullarionov/claude-certified-architect — guide_en.MD](https://github.com/paullarionov/claude-certified-architect/blob/main/guide_en.MD)
-
-### Remarks
-
-- Your current path and the external guide are strongly aligned on core domains.
-- Based on your review note, there is roughly a **20% difference** in emphasis and coverage depth.
-- Most differences are likely in framing, scenario style, and extra edge-case examples rather than core fundamentals.
-
-### How to use it after finishing this path
-
-1. Use your current notes as primary source of truth.
-2. Use the external guide as a **gap-audit pass**:
-   - Mark concepts present there but missing here.
-   - Mark concepts present here but explained more deeply there.
-3. Convert only high-value gaps into:
-   - New mock questions
-   - Short “exam traps” notes
-   - 1-page revision checklists per domain
-4. Re-run final revision using only consolidated notes (avoid context switching across multiple full guides in final week).
-
 ## Week 1 Progress
 
 | Week-Day | Weekday | Topic | Status | Quick | Deep Dive | Summary |
@@ -144,6 +122,30 @@ Reference guide: [paullarionov/claude-certified-architect — guide_en.MD](https
 | Week-Day | Weekday | Topic | Status | Quick | Deep Dive | Summary |
 |---|---|---|---|---|---|---|
 | W12-D1 | Thu | Full Mock Exam: 60 Questions | Completed | [Open](./W12-D1_Full_Mock_Exam_60_Questions.md) | [Open](./W12-D1_Full_Mock_Exam_60_Questions.md) | Comprehensive final assessment across all domains. |
+
+## External Guide Cross-Check
+
+Reference guide: [paullarionov/claude-certified-architect — guide_en.MD](https://github.com/paullarionov/claude-certified-architect/blob/main/guide_en.MD)
+
+Companion note: [How to Use Paul's Guide After the 12-Week Curriculum](./How_to_Use_Pauls_Guide_After_12_Weeks.md)
+
+### Remarks
+
+- Your current path and the external guide are strongly aligned on core domains.
+- Based on your review note, there is roughly a **20% difference** in emphasis and coverage depth.
+- Most differences are likely in framing, scenario style, and extra edge-case examples rather than core fundamentals.
+
+### How to use it after finishing this path
+
+1. Use your current notes as primary source of truth.
+2. Use the external guide as a gap-audit pass:
+   - Mark concepts present there but missing here.
+   - Mark concepts present here but explained more deeply there.
+3. Convert only high-value gaps into:
+   - New mock questions
+   - Short exam traps notes
+   - 1-page revision checklists per domain
+4. Re-run final revision using only consolidated notes (avoid context switching across multiple full guides in final week).
 
 ## Day Note Template
 
