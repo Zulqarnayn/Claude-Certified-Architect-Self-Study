@@ -89,6 +89,17 @@ This site documents my learning path for Claude Certified Architect certificatio
 |---|---|---|---|---|---|
 | W8-D1 | Thu | Specialized Industry Workflows | Planned | [Open](./W8-D1_Specialized_Industry_Workflows.md) | Industry-specific adaptation. |
 | W8-D2 | Fri | Advanced Personalization | Planned | [Open](./W8-D2_Advanced_Personalization.md) | User-centric behavior design. |
+| W8-D3 | Sat | Context Isolation (Deep Dive) | Planned | [Open](./W8-D3_Context_Isolation_Deep_Dive.md) | Preventing context leakage across subagents. |
+| W8-D4 | Sun | Lifecycle Hooks and Guardrails | Planned | [Open](./W8-D4_Lifecycle_Hooks_and_Guardrails.md) | Deterministic enforcement for safety and cost controls. |
+| W8-D5 | Mon | Build Hub-and-Spoke System | Planned | [Open](./W8-D5_Build_Hub_and_Spoke_System.md) | End-to-end multi-agent integration exercise. |
+
+## Week 9 Progress
+
+| Week-Day | Weekday | Topic | Status | Study Note | Summary |
+|---|---|---|---|---|---|
+| W9-D1 | Tue | What Is Claude Code? | Planned | [Open](./W9-D1_What_Is_Claude_Code.md) | Claude Code architecture and workflow basics. |
+| W9-D2 | Wed | CLAUDE.md Configuration | Planned | [Open](./W9-D2_CLAUDE_md_The_Config_File.md) | Hierarchy and rules for project-level guidance. |
+| W9-D3 | Thu | Slash Commands and .claude/commands/ | Planned | [Open](./W9-D3_Slash_Commands_and_claude_commands.md) | Reusable command workflows and team consistency. |
 
 ## Day Note Template
 
