@@ -5,3 +5,5 @@ markdown: kramdown
 kramdown:
   input: GFM
 show_excerpts: false
+header_pages:
+  - index.md
