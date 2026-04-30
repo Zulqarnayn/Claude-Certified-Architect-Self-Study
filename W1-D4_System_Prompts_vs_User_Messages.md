@@ -214,23 +214,30 @@ If asked anything off-topic, say: "I can only help with BlueSky Phones questions
 
 ---
 
-**Q1 — System prompt vs user message**
+<details>
+<summary><b>Q1 — System prompt vs user message</b></summary>
 
 The system prompt is written by the developer and sets the permanent rules of engagement for the entire conversation. It defines Claude's persona, constraints, and context before any user interaction begins. The user never sees it, and it persists unchanged throughout the session.
 
 The user message is dynamic — it changes every turn and comes from the end user, who may be untrusted. You can't put everything in the user message because there's no guarantee it will be there, correctly formatted, in every conversation. Security rules put in the user message can simply be omitted or overridden by the next user message.
 
+</details>
+
 ---
 
-**Q2 — Legal tool placement**
+<details>
+<summary><b>Q2 — Legal tool placement</b></summary>
 
 **(a) The "not a lawyer" disclaimer** → System prompt. This must appear consistently for every single interaction regardless of what the user asks. It's a legal and ethical constraint that cannot depend on user behaviour.
 
 **(b) The contract text** → User message (or injected into the messages array). This changes per request — different users upload different contracts. Putting it in the system prompt would mean the same contract is in context for all users, which would be a serious data privacy failure.
 
+</details>
+
 ---
 
-**Q3 — Prompt injection**
+<details>
+<summary><b>Q3 — Prompt injection</b></summary>
 
 This is a **prompt injection attack** — the user is attempting to override developer instructions through their input.
 
@@ -238,9 +245,12 @@ Your system prompt is the first line of defence because Claude gives it higher t
 
 However, prompt injection is not 100% impossible to achieve. Never rely solely on Claude's resistance — add programmatic output validation as a second layer (Week 3).
 
+</details>
+
 ---
 
-**Q4 — Assistant prefill for JSON**
+<details>
+<summary><b>Q4 — Assistant prefill for JSON</b></summary>
 
 ```python
 messages=[
@@ -251,9 +261,12 @@ messages=[
 
 By starting the assistant turn with `{"sentiment": "`, Claude is forced to complete the JSON object. It cannot write a prose introduction because it's already mid-JSON. This is more reliable than just asking for JSON in the system prompt, because it removes Claude's choice of format entirely.
 
+</details>
+
 ---
 
-**Q5 — Credentials in system prompt**
+<details>
+<summary><b>Q5 — Credentials in system prompt</b></summary>
 
 **Why it's terrible:**
 
@@ -264,6 +277,8 @@ By starting the assistant turn with `{"sentiment": "`, Claude is forced to compl
 3. **Logging risk:** API calls are often logged for debugging. Credentials in prompts end up in log files — a classic security anti-pattern.
 
 **What should happen instead:** Credentials live in environment variables on your server. Your code uses them to establish connections and expose those as **tools** Claude can call. Claude calls the tool, your server uses the credentials, Claude gets the result. Credentials never enter the conversation.
+
+</details>
 
 ---
 

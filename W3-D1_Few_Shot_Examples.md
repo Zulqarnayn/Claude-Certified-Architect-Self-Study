@@ -237,7 +237,8 @@ Note the output format — is it consistent?
 
 ---
 
-**Q1 — Include reasoning in examples?**
+<details>
+<summary><b>Q1 — Include reasoning in examples?</b></summary>
 
 Yes — include reasoning steps even though the final label is simple.
 
@@ -249,9 +250,12 @@ Example reasoning: <think>The phrase "disappointed but not surprised" signals re
 Label: negative
 ```
 
+</details>
+
 ---
 
-**Q2 — 50 examples trade-offs**
+<details>
+<summary><b>Q2 — 50 examples trade-offs</b></summary>
 
 **Don't include all 50.** The trade-offs:
 
@@ -264,9 +268,12 @@ Label: negative
 
 **Best practice:** Select the 5–10 most representative and diverse examples. Use many-shot only when accuracy requirements justify the token cost.
 
+</details>
+
 ---
 
-**Q3 — Few-shot for non-English inputs**
+<details>
+<summary><b>Q3 — Few-shot for non-English inputs</b></summary>
 
 Few-shot still helps significantly, even with English-only examples. Claude's multilingual training means it understands the output pattern from English examples and applies it to inputs in other languages.
 
@@ -277,9 +284,12 @@ However, language-specific examples improve accuracy further — especially for:
 
 **Practical approach:** Use your English examples as the base. Add 1–2 examples in the most common non-English languages your system handles. Test accuracy on a sample of real non-English inputs before deploying.
 
+</details>
+
 ---
 
-**Q4 — Example 4 makes things worse**
+<details>
+<summary><b>Q4 — Example 4 makes things worse</b></summary>
 
 What's happening: Example 4 introduced a pattern that Claude weighted heavily — perhaps it had a unique format, unusual phrasing, or an edge case structure that Claude is now applying too broadly.
 
@@ -291,9 +301,12 @@ Claude treats all examples as roughly equal demonstrations of the correct behavi
 3. If Example 4 represents a real edge case you need to handle, add 1–2 *counter-examples* that show the common case more clearly — diluting Example 4's weight
 4. Alternatively, add a brief instruction: *"Example 4 is only for [specific condition] — use the format from Examples 1–3 for all other cases"*
 
+</details>
+
 ---
 
-**Q5 — Client-safe example updates**
+<details>
+<summary><b>Q5 — Client-safe example updates</b></summary>
 
 **Risks of client editing examples:**
 1. Client introduces inconsistent formatting — Claude starts producing malformed output
@@ -307,6 +320,8 @@ Claude treats all examples as roughly equal demonstrations of the correct behavi
 3. **Version control examples** — keep history so you can roll back if a new example breaks things.
 4. **Test on a sample** — before activating new examples in production, automatically test the updated prompt against 20 known-good inputs and flag regressions.
 5. **Lock the format contract** — even if clients can change content, enforce that examples must follow the exact input/output structure your parser expects.
+
+</details>
 
 ---
 
