@@ -51,6 +51,13 @@ Documenting my learning path for the Claude Certified Architect certification, i
 | W9-D1 | Tue | What Is Claude Code | Completed | [W9-D1 Note](./W9-D1_What_Is_Claude_Code.md) |
 | W9-D2 | Wed | CLAUDE.md: The Config File | Completed | [W9-D2 Note](./W9-D2_CLAUDE_md_The_Config_File.md) |
 | W9-D3 | Thu | Slash Commands and .claude/commands/ | Completed | [W9-D3 Note](./W9-D3_Slash_Commands_and_claude_commands.md) |
+| W9-D4 | Fri | Claude Code in CI/CD | Completed | [W9-D4 Note](./W9-D4_Claude_Code_in_CICD.md) |
+| W9-D5 | Sat | Prompt Caching | Completed | [W9-D5 Note](./W9-D5_Prompt_Caching.md) |
+| W10-D1 | Sun | Handoff Patterns | Completed | [W10-D1 Note](./W10-D1_Handoff_Patterns.md) |
+| W10-D2 | Mon | Confidence Calibration | Completed | [W10-D2 Note](./W10-D2_Confidence_Calibration.md) |
+| W11-D1 | Tue | Exam Scenario 1: Customer Support | Completed | [W11-D1 Note](./W11-D1_Exam_Scenario_1_Customer_Support.md) |
+| W11-D2 | Wed | Exam Scenario 2: Code Generation | Completed | [W11-D2 Note](./W11-D2_Exam_Scenario_2_Code_Generation.md) |
+| W12-D1 | Thu | Full Mock Exam: 60 Questions | Completed | [W12-D1 Note](./W12-D1_Full_Mock_Exam_60_Questions.md) |
 
 ## Study Site
 

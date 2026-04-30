@@ -100,6 +100,28 @@ This site documents my learning path for Claude Certified Architect certificatio
 | W9-D1 | Tue | What Is Claude Code? | Completed | [Open](./W9-D1_Claude_Code_Fundamentals.md) | [Open](./W9-D1_What_Is_Claude_Code.md) | Claude Code architecture and workflow basics. |
 | W9-D2 | Wed | CLAUDE.md Configuration | Completed | [Open](./W9-D2_CLAUDE_md_Practice.md) | [Open](./W9-D2_CLAUDE_md_The_Config_File.md) | Hierarchy and rules for project-level guidance. |
 | W9-D3 | Thu | Slash Commands and .claude/commands/ | Completed | [Open](./W9-D3_Slash_Commands_Practice.md) | [Open](./W9-D3_Slash_Commands_and_claude_commands.md) | Reusable command workflows and team consistency. |
+| W9-D4 | Fri | Claude Code in CI/CD | Completed | [Open](./W9-D4_Claude_Code_in_CICD.md) | [Open](./W9-D4_Claude_Code_in_CICD.md) | Integrating Claude Code into automated delivery pipelines. |
+| W9-D5 | Sat | Prompt Caching | Completed | [Open](./W9-D5_Prompt_Caching.md) | [Open](./W9-D5_Prompt_Caching.md) | Reducing latency and cost with cache-aware workflows. |
+
+## Week 10 Progress
+
+| Week-Day | Weekday | Topic | Status | Quick | Deep Dive | Summary |
+|---|---|---|---|---|---|---|
+| W10-D1 | Sun | Handoff Patterns | Completed | [Open](./W10-D1_Handoff_Patterns.md) | [Open](./W10-D1_Handoff_Patterns.md) | Reliable task transitions between agents and humans. |
+| W10-D2 | Mon | Confidence Calibration | Completed | [Open](./W10-D2_Confidence_Calibration.md) | [Open](./W10-D2_Confidence_Calibration.md) | Estimating and communicating model confidence effectively. |
+
+## Week 11 Progress
+
+| Week-Day | Weekday | Topic | Status | Quick | Deep Dive | Summary |
+|---|---|---|---|---|---|---|
+| W11-D1 | Tue | Exam Scenario 1: Customer Support | Completed | [Open](./W11-D1_Exam_Scenario_1_Customer_Support.md) | [Open](./W11-D1_Exam_Scenario_1_Customer_Support.md) | End-to-end architecture walkthrough for support systems. |
+| W11-D2 | Wed | Exam Scenario 2: Code Generation | Completed | [Open](./W11-D2_Exam_Scenario_2_Code_Generation.md) | [Open](./W11-D2_Exam_Scenario_2_Code_Generation.md) | System design tradeoffs for coding assistants. |
+
+## Week 12 Progress
+
+| Week-Day | Weekday | Topic | Status | Quick | Deep Dive | Summary |
+|---|---|---|---|---|---|---|
+| W12-D1 | Thu | Full Mock Exam: 60 Questions | Completed | [Open](./W12-D1_Full_Mock_Exam_60_Questions.md) | [Open](./W12-D1_Full_Mock_Exam_60_Questions.md) | Comprehensive final assessment across all domains. |
 
 ## Day Note Template
 
