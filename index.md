@@ -62,31 +62,31 @@ This site documents my learning path for Claude Certified Architect certificatio
 
 | Week-Day | Weekday | Topic | Status | Quick | Deep Dive | Summary |
 |---|---|---|---|---|---|---|
-| W5-D1 | Wed | Multi-Agent Systems | Completed | [Open](./study_materials/W5-D1_What_Is_Tool_Use.md) | [Open](./study_materials/W5-D1_Multi_Agent_Systems.md) | Agent specialization and coordination. |
-| W5-D2 | Thu | Agent Reliability and Testing | Completed | [Open](./study_materials/W5-D2_Defining_Your_First_Tool.md) | [Open](./study_materials/W5-D2_Agent_Reliability_and_Testing.md) | Testing multi-agent interactions. |
-| W5-D3 | Fri | Retrieval Augmented Generation | Completed | [Open](./study_materials/W5-D3_Tool_Description_Quality.md) | [Open](./study_materials/W5-D3_Retrieval_Augmented_Generation.md) | RAG systems and external knowledge. |
-| W5-D4 | Sat | Fine-Tuning Considerations | Completed | [Open](./study_materials/W5-D4_Handling_Tool_Results.md) | [Open](./study_materials/W5-D4_Fine_Tuning_Considerations.md) | When and how to fine-tune models. |
-| W5-D5 | Sun | Cost Optimization at Scale | Completed | [Open](./study_materials/W5-D5_Multi_Tool_Conversations.md) | [Open](./study_materials/W5-D5_Cost_Optimization_at_Scale.md) | Token optimization and budgeting. |
+| W5-D1 | Wed | Multi-Agent Systems | Completed | [Open](./study_materials/W5-D1_Multi_Agent_Systems.md) | [Open](./study_materials/W5-D1_What_Is_Tool_Use.md) | Agent specialization and coordination. |
+| W5-D2 | Thu | Agent Reliability and Testing | Completed | [Open](./study_materials/W5-D2_Agent_Reliability_and_Testing.md) | [Open](./study_materials/W5-D2_Defining_Your_First_Tool.md) | Testing multi-agent interactions. |
+| W5-D3 | Fri | Retrieval Augmented Generation | Completed | [Open](./study_materials/W5-D3_Retrieval_Augmented_Generation.md) | [Open](./study_materials/W5-D3_Tool_Description_Quality.md) | RAG systems and external knowledge. |
+| W5-D4 | Sat | Fine-Tuning Considerations | Completed | [Open](./study_materials/W5-D4_Fine_Tuning_Considerations.md) | [Open](./study_materials/W5-D4_Handling_Tool_Results.md) | When and how to fine-tune models. |
+| W5-D5 | Sun | Cost Optimization at Scale | Completed | [Open](./study_materials/W5-D5_Cost_Optimization_at_Scale.md) | [Open](./study_materials/W5-D5_Multi_Tool_Conversations.md) | Token optimization and budgeting. |
 
 ## Week 6 Progress
 
 | Week-Day | Weekday | Topic | Status | Quick | Deep Dive | Summary |
 |---|---|---|---|---|---|---|
-| W6-D1 | Mon | Real-World Application Architecture | Completed | [Open](./study_materials/W6-D1_What_Is_MCP_and_Why_It_Exists.md) | [Open](./study_materials/W6-D1_Real_World_Application_Architecture.md) | Production system design. |
-| W6-D2 | Tue | Security and Compliance | Completed | [Open](./study_materials/W6-D2_MCP_Server_Architecture.md) | [Open](./study_materials/W6-D2_Security_and_Compliance.md) | Data privacy and security patterns. |
-| W6-D3 | Wed | Analytics and Observability | Completed | [Open](./study_materials/W6-D3_Build_Your_First_MCP_Server.md) | [Open](./study_materials/W6-D3_Analytics_and_Observability.md) | Monitoring and metrics. |
-| W6-D4 | Thu | A/B Testing and Experimentation | Completed | [Open](./study_materials/W6-D4_Tool_Boundary_Design.md) | [Open](./study_materials/W6-D4_A_B_Testing_and_Experimentation.md) | Statistical testing and validation. |
-| W6-D5 | Fri | Case Studies and Synthesis | Completed | [Open](./study_materials/W6-D5_MCP_in_Production.md) | [Open](./study_materials/W6-D5_Case_Studies_and_Synthesis.md) | Real-world applications and lessons. |
+| W6-D1 | Mon | Real-World Application Architecture | Completed | [Open](./study_materials/W6-D1_Real_World_Application_Architecture.md) | [Open](./study_materials/W6-D1_What_Is_MCP_and_Why_It_Exists.md) | Production system design. |
+| W6-D2 | Tue | Security and Compliance | Completed | [Open](./study_materials/W6-D2_Security_and_Compliance.md) | [Open](./study_materials/W6-D2_MCP_Server_Architecture.md) | Data privacy and security patterns. |
+| W6-D3 | Wed | Analytics and Observability | Completed | [Open](./study_materials/W6-D3_Analytics_and_Observability.md) | [Open](./study_materials/W6-D3_Build_Your_First_MCP_Server.md) | Monitoring and metrics. |
+| W6-D4 | Thu | A/B Testing and Experimentation | Completed | [Open](./study_materials/W6-D4_A_B_Testing_and_Experimentation.md) | [Open](./study_materials/W6-D4_Tool_Boundary_Design.md) | Statistical testing and validation. |
+| W6-D5 | Fri | Case Studies and Synthesis | Completed | [Open](./study_materials/W6-D5_Case_Studies_and_Synthesis.md) | [Open](./study_materials/W6-D5_MCP_in_Production.md) | Real-world applications and lessons. |
 
 ## Week 7 Progress
 
 | Week-Day | Weekday | Topic | Status | Quick | Deep Dive | Summary |
 |---|---|---|---|---|---|---|
-| W7-D1 | Sat | Evaluation Frameworks | Completed | [Open](./study_materials/W7-D1_What_Is_an_Agentic_Loop.md) | [Open](./study_materials/W7-D1_Evaluation_Frameworks.md) | Metrics and benchmarks. |
-| W7-D2 | Sun | Human-in-the-Loop Systems | Completed | [Open](./study_materials/W7-D2_Loop_Anatomy_Plan_Act_Observe.md) | [Open](./study_materials/W7-D2_Human_in_the_Loop_Systems.md) | Review workflows and routing. |
-| W7-D3 | Mon | Prompt Lifecycle Management | Completed | [Open](./study_materials/W7-D3_Stop_Conditions.md) | [Open](./study_materials/W7-D3_Prompt_Lifecycle_Management.md) | Versioning and rollback. |
-| W7-D4 | Tue | Cross-Model Validation | Completed | [Open](./study_materials/W7-D4_Error_Recovery_in_Loops.md) | [Open](./study_materials/W7-D4_Cross_Model_Validation.md) | Model disagreement checks. |
-| W7-D5 | Wed | Deployment and Rollout Strategy | Completed | [Open](./study_materials/W7-D5_Build_a_Simple_Agent.md) | [Open](./study_materials/W7-D5_Deployment_and_Rollout_Strategy.md) | Canary and rollback planning. |
+| W7-D1 | Sat | Evaluation Frameworks | Completed | [Open](./study_materials/W7-D1_Evaluation_Frameworks.md) | [Open](./study_materials/W7-D1_What_Is_an_Agentic_Loop.md) | Metrics and benchmarks. |
+| W7-D2 | Sun | Human-in-the-Loop Systems | Completed | [Open](./study_materials/W7-D2_Human_in_the_Loop_Systems.md) | [Open](./study_materials/W7-D2_Loop_Anatomy_Plan_Act_Observe.md) | Review workflows and routing. |
+| W7-D3 | Mon | Prompt Lifecycle Management | Completed | [Open](./study_materials/W7-D3_Prompt_Lifecycle_Management.md) | [Open](./study_materials/W7-D3_Stop_Conditions.md) | Versioning and rollback. |
+| W7-D4 | Tue | Cross-Model Validation | Completed | [Open](./study_materials/W7-D4_Cross_Model_Validation.md) | [Open](./study_materials/W7-D4_Error_Recovery_in_Loops.md) | Model disagreement checks. |
+| W7-D5 | Wed | Deployment and Rollout Strategy | Completed | [Open](./study_materials/W7-D5_Deployment_and_Rollout_Strategy.md) | [Open](./study_materials/W7-D5_Build_a_Simple_Agent.md) | Canary and rollback planning. |
 
 ## Week 8 Progress
 
