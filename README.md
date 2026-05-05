@@ -8,8 +8,8 @@ Documenting my learning path for the Claude Certified Architect certification, i
 
 ## Study Modes
 
-- [Study Tracker](./tracker/) for XP, gems, streaks, and mastery tracking
-- [Main Curriculum](#study-index) for week-by-week lesson tables
+- [Study Tracker](https://zulqarnayn.github.io/Claude-Certified-Architect-Self-Study/tracker/) for XP, gems, streaks, and mastery tracking
+- [Main Curriculum](https://zulqarnayn.github.io/Claude-Certified-Architect-Self-Study/) for week-by-week lesson tables
 
 ## Study Index
 
