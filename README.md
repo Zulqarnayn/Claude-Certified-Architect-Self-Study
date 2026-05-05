@@ -45,3 +45,43 @@ Documenting my learning path for the Claude Certified Architect certification, i
 | W6-D3 | Wed | Analytics and Observability | Completed | [W6-D3 Note](./study_materials/W6-D3_Analytics_and_Observability.md) |
 | W6-D4 | Thu | A/B Testing and Experimentation | Completed | [W6-D4 Note](./study_materials/W6-D4_A_B_Testing_and_Experimentation.md) |
 | W6-D5 | Fri | Case Studies and Synthesis | Completed | [W6-D5 Note](./study_materials/W6-D5_Case_Studies_and_Synthesis.md) |
+| W7-D1 | Sat | Evaluation Frameworks | Completed | [W7-D1 Note](./study_materials/W7-D1_Evaluation_Frameworks.md) |
+| W7-D2 | Sun | Human-in-the-Loop Systems | Completed | [W7-D2 Note](./study_materials/W7-D2_Human_in_the_Loop_Systems.md) |
+| W7-D3 | Mon | Prompt Lifecycle Management | Completed | [W7-D3 Note](./study_materials/W7-D3_Prompt_Lifecycle_Management.md) |
+| W7-D4 | Tue | Cross-Model Validation | Completed | [W7-D4 Note](./study_materials/W7-D4_Cross_Model_Validation.md) |
+| W7-D5 | Wed | Deployment and Rollout Strategy | Completed | [W7-D5 Note](./study_materials/W7-D5_Deployment_and_Rollout_Strategy.md) |
+| W8-D1 | Thu | Why Multiple Agents | Completed | [W8-D1 Note](./study_materials/W8-D1_Why_Multiple_Agents.md) |
+| W8-D2 | Fri | Hub-and-Spoke Architecture | Completed | [W8-D2 Note](./study_materials/W8-D2_Hub_and_Spoke_Architecture.md) |
+| W8-D3 | Sat | Context Isolation | Completed | [W8-D3 Note](./study_materials/W8-D3_Context_Isolation_Deep_Dive.md) |
+| W8-D4 | Sun | Lifecycle Hooks and Guardrails | Completed | [W8-D4 Note](./study_materials/W8-D4_Lifecycle_Hooks_and_Guardrails.md) |
+| W8-D5 | Mon | Build Hub-and-Spoke System | Completed | [W8-D5 Note](./study_materials/W8-D5_Build_Hub_and_Spoke_System.md) |
+| W9-D1 | Tue | What Is Claude Code? | Completed | [W9-D1 Note](./study_materials/W9-D1_What_Is_Claude_Code.md) |
+| W9-D2 | Wed | CLAUDE.md Configuration | Completed | [W9-D2 Note](./study_materials/W9-D2_CLAUDE_md_The_Config_File.md) |
+| W9-D3 | Thu | Slash Commands and .claude/commands/ | Completed | [W9-D3 Note](./study_materials/W9-D3_Slash_Commands_and_claude_commands.md) |
+| W9-D4 | Fri | Claude Code in CI/CD | Completed | [W9-D4 Note](./study_materials/W9-D4_Claude_Code_in_CICD.md) |
+| W9-D5 | Sat | Prompt Caching | Completed | [W9-D5 Note](./study_materials/W9-D5_Prompt_Caching.md) |
+| W10-D1 | Sun | Handoff Patterns | Completed | [W10-D1 Note](./study_materials/W10-D1_Handoff_Patterns.md) |
+| W10-D2 | Mon | Confidence Calibration | Completed | [W10-D2 Note](./study_materials/W10-D2_Confidence_Calibration.md) |
+| W11-D1 | Tue | Exam Scenario 1: Customer Support | Completed | [W11-D1 Note](./study_materials/W11-D1_Exam_Scenario_1_Customer_Support.md) |
+| W11-D2 | Wed | Exam Scenario 2: Code Generation | Completed | [W11-D2 Note](./study_materials/W11-D2_Exam_Scenario_2_Code_Generation.md) |
+| W12-D1 | Thu | Full Mock Exam: 60 Questions | Completed | [W12-D1 Note](./study_materials/W12-D1_Full_Mock_Exam_60_Questions.md) |
+| W7-D1 | Sat | Evaluation Frameworks | Completed | [W7-D1 Note](./study_materials/W7-D1_Evaluation_Frameworks.md) |
+| W7-D2 | Sun | Human-in-the-Loop Systems | Completed | [W7-D2 Note](./study_materials/W7-D2_Human_in_the_Loop_Systems.md) |
+| W7-D3 | Mon | Prompt Lifecycle Management | Completed | [W7-D3 Note](./study_materials/W7-D3_Prompt_Lifecycle_Management.md) |
+| W7-D4 | Tue | Cross-Model Validation | Completed | [W7-D4 Note](./study_materials/W7-D4_Cross_Model_Validation.md) |
+| W7-D5 | Wed | Deployment and Rollout Strategy | Completed | [W7-D5 Note](./study_materials/W7-D5_Deployment_and_Rollout_Strategy.md) |
+| W8-D1 | Thu | Why Multiple Agents | Completed | [W8-D1 Note](./study_materials/W8-D1_Why_Multiple_Agents.md) |
+| W8-D2 | Fri | Hub-and-Spoke Architecture | Completed | [W8-D2 Note](./study_materials/W8-D2_Hub_and_Spoke_Architecture.md) |
+| W8-D3 | Sat | Context Isolation | Completed | [W8-D3 Note](./study_materials/W8-D3_Context_Isolation_Deep_Dive.md) |
+| W8-D4 | Sun | Lifecycle Hooks and Guardrails | Completed | [W8-D4 Note](./study_materials/W8-D4_Lifecycle_Hooks_and_Guardrails.md) |
+| W8-D5 | Mon | Build Hub-and-Spoke System | Completed | [W8-D5 Note](./study_materials/W8-D5_Build_Hub_and_Spoke_System.md) |
+| W9-D1 | Tue | What Is Claude Code? | Completed | [W9-D1 Note](./study_materials/W9-D1_What_Is_Claude_Code.md) |
+| W9-D2 | Wed | CLAUDE.md Configuration | Completed | [W9-D2 Note](./study_materials/W9-D2_CLAUDE_md_The_Config_File.md) |
+| W9-D3 | Thu | Slash Commands and .claude/commands/ | Completed | [W9-D3 Note](./study_materials/W9-D3_Slash_Commands_and_claude_commands.md) |
+| W9-D4 | Fri | Claude Code in CI/CD | Completed | [W9-D4 Note](./study_materials/W9-D4_Claude_Code_in_CICD.md) |
+| W9-D5 | Sat | Prompt Caching | Completed | [W9-D5 Note](./study_materials/W9-D5_Prompt_Caching.md) |
+| W10-D1 | Sun | Handoff Patterns | Completed | [W10-D1 Note](./study_materials/W10-D1_Handoff_Patterns.md) |
+| W10-D2 | Mon | Confidence Calibration | Completed | [W10-D2 Note](./study_materials/W10-D2_Confidence_Calibration.md) |
+| W11-D1 | Tue | Exam Scenario 1: Customer Support | Completed | [W11-D1 Note](./study_materials/W11-D1_Exam_Scenario_1_Customer_Support.md) |
+| W11-D2 | Wed | Exam Scenario 2: Code Generation | Completed | [W11-D2 Note](./study_materials/W11-D2_Exam_Scenario_2_Code_Generation.md) |
+| W12-D1 | Thu | Full Mock Exam: 60 Questions | Completed | [W12-D1 Note](./study_materials/W12-D1_Full_Mock_Exam_60_Questions.md) |
