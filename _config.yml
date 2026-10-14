@@ -7,3 +7,7 @@ kramdown:
 show_excerpts: false
 header_pages:
   - index.md
+exclude:
+  - package.json
+  - tests
+  - docs

@@ -49,59 +49,83 @@ export const DOMAIN_LABELS = {
 };
 
 export const LESSONS = [
-  { id: "W1-D1", week: 1, day: 1, title: "LLMs Explained From Scratch", href: "../W1-D1_LLMs_Explained_From_Scratch.md", isMockExam: false },
-  { id: "W1-D2", week: 1, day: 2, title: "Claude vs Other AI Models", href: "../W1-D2_Claude_vs_Other_AI_Models.md", isMockExam: false },
-  { id: "W1-D3", week: 1, day: 3, title: "The Context Window", href: "../W1-D3_The_Context_Window.md", isMockExam: false },
-  { id: "W1-D4", week: 1, day: 4, title: "System Prompts vs User Messages", href: "../W1-D4_System_Prompts_vs_User_Messages.md", isMockExam: false },
-  { id: "W1-D5", week: 1, day: 5, title: "Your First API Call", href: "../W1-D5_Your_First_API_Call.md", isMockExam: false },
-  { id: "W2-D1", week: 2, day: 1, title: "What Makes a Good Prompt", href: "../W2-D1_What_Makes_a_Good_Prompt.md", isMockExam: false },
-  { id: "W2-D2", week: 2, day: 2, title: "Role Prompting and Persona", href: "../W2-D2_Role_Prompting_and_Persona.md", isMockExam: false },
-  { id: "W2-D3", week: 2, day: 3, title: "Chain of Thought Prompting", href: "../W2-D3_Chain_of_Thought_Prompting.md", isMockExam: false },
-  { id: "W2-D4", week: 2, day: 4, title: "Negative Prompting", href: "../W2-D4_Negative_Prompting.md", isMockExam: false },
-  { id: "W2-D5", week: 2, day: 5, title: "Prompt Iteration Practice", href: "../W2-D5_Prompt_Iteration_Practice.md", isMockExam: false },
-  { id: "W3-D1", week: 3, day: 1, title: "Few Shot Examples", href: "../W3-D1_Few_Shot_Examples.md", isMockExam: false },
-  { id: "W3-D2", week: 3, day: 2, title: "Structured Output JSON Basics", href: "../W3-D2_Structured_Output_JSON_Basics.md", isMockExam: false },
-  { id: "W3-D3", week: 3, day: 3, title: "JSON Schema Enforcement", href: "../W3-D3_JSON_Schema_Enforcement.md", isMockExam: false },
-  { id: "W3-D4", week: 3, day: 4, title: "Validation & Retry Loops", href: "../W3-D4_Validation_and_Retry_Loops.md", isMockExam: false },
-  { id: "W3-D5", week: 3, day: 5, title: "When NOT to Use Structured Output", href: "../W3-D5_When_NOT_to_Use_Structured_Output.md", isMockExam: false },
-  { id: "W4-D1", week: 4, day: 1, title: "Messages API Anatomy", href: "../W4-D1_Messages_API_Anatomy.md", isMockExam: false },
-  { id: "W4-D2", week: 4, day: 2, title: "Multi-Turn Conversations", href: "../W4-D2_Multi_Turn_Conversations.md", isMockExam: false },
-  { id: "W4-D3", week: 4, day: 3, title: "Streaming Responses", href: "../W4-D3_Streaming_Responses.md", isMockExam: false },
-  { id: "W4-D4", week: 4, day: 4, title: "Token Counting & Cost", href: "../W4-D4_Token_Counting_and_Cost.md", isMockExam: false },
-  { id: "W4-D5", week: 4, day: 5, title: "Rate Limits & Error Handling", href: "../W4-D5_Rate_Limits_and_Error_Handling.md", isMockExam: false },
-  { id: "W5-D1", week: 5, day: 1, title: "Multi-Agent Systems", href: "../W5-D1_Multi_Agent_Systems.md", isMockExam: false },
-  { id: "W5-D2", week: 5, day: 2, title: "Agent Reliability and Testing", href: "../W5-D2_Agent_Reliability_and_Testing.md", isMockExam: false },
-  { id: "W5-D3", week: 5, day: 3, title: "Retrieval Augmented Generation", href: "../W5-D3_Retrieval_Augmented_Generation.md", isMockExam: false },
-  { id: "W5-D4", week: 5, day: 4, title: "Fine-Tuning Considerations", href: "../W5-D4_Fine_Tuning_Considerations.md", isMockExam: false },
-  { id: "W5-D5", week: 5, day: 5, title: "Cost Optimization at Scale", href: "../W5-D5_Cost_Optimization_at_Scale.md", isMockExam: false },
-  { id: "W6-D1", week: 6, day: 1, title: "Real-World Application Architecture", href: "../W6-D1_Real_World_Application_Architecture.md", isMockExam: false },
-  { id: "W6-D2", week: 6, day: 2, title: "Security and Compliance", href: "../W6-D2_Security_and_Compliance.md", isMockExam: false },
-  { id: "W6-D3", week: 6, day: 3, title: "Analytics and Observability", href: "../W6-D3_Analytics_and_Observability.md", isMockExam: false },
-  { id: "W6-D4", week: 6, day: 4, title: "A/B Testing and Experimentation", href: "../W6-D4_A_B_Testing_and_Experimentation.md", isMockExam: false },
-  { id: "W6-D5", week: 6, day: 5, title: "Case Studies and Synthesis", href: "../W6-D5_Case_Studies_and_Synthesis.md", isMockExam: false },
-  { id: "W7-D1", week: 7, day: 1, title: "Evaluation Frameworks", href: "../W7-D1_Evaluation_Frameworks.md", isMockExam: false },
-  { id: "W7-D2", week: 7, day: 2, title: "Human-in-the-Loop Systems", href: "../W7-D2_Human_in_the_Loop_Systems.md", isMockExam: false },
-  { id: "W7-D3", week: 7, day: 3, title: "Prompt Lifecycle Management", href: "../W7-D3_Prompt_Lifecycle_Management.md", isMockExam: false },
-  { id: "W7-D4", week: 7, day: 4, title: "Cross-Model Validation", href: "../W7-D4_Cross_Model_Validation.md", isMockExam: false },
-  { id: "W7-D5", week: 7, day: 5, title: "Deployment and Rollout Strategy", href: "../W7-D5_Deployment_and_Rollout_Strategy.md", isMockExam: false },
-  { id: "W8-D1", week: 8, day: 1, title: "Why Multiple Agents", href: "../W8-D1_Why_Multiple_Agents.md", isMockExam: false },
-  { id: "W8-D2", week: 8, day: 2, title: "Hub-and-Spoke Architecture", href: "../W8-D2_Hub_and_Spoke_Architecture.md", isMockExam: false },
-  { id: "W8-D3", week: 8, day: 3, title: "Context Isolation Deep Dive", href: "../W8-D3_Context_Isolation_Deep_Dive.md", isMockExam: false },
-  { id: "W8-D4", week: 8, day: 4, title: "Lifecycle Hooks and Guardrails", href: "../W8-D4_Lifecycle_Hooks_and_Guardrails.md", isMockExam: false },
-  { id: "W8-D5", week: 8, day: 5, title: "Build Hub-and-Spoke System", href: "../W8-D5_Build_Hub_and_Spoke_System.md", isMockExam: false },
-  { id: "W9-D1", week: 9, day: 1, title: "What Is Claude Code", href: "../W9-D1_What_Is_Claude_Code.md", isMockExam: false },
-  { id: "W9-D2", week: 9, day: 2, title: "CLAUDE.md: The Config File", href: "../W9-D2_CLAUDE_md_The_Config_File.md", isMockExam: false },
-  { id: "W9-D3", week: 9, day: 3, title: "Slash Commands and .claude/commands/", href: "../W9-D3_Slash_Commands_and_claude_commands.md", isMockExam: false },
-  { id: "W9-D4", week: 9, day: 4, title: "Claude Code in CI/CD", href: "../W9-D4_Claude_Code_in_CICD.md", isMockExam: false },
-  { id: "W9-D5", week: 9, day: 5, title: "Prompt Caching", href: "../W9-D5_Prompt_Caching.md", isMockExam: false },
-  { id: "W10-D1", week: 10, day: 1, title: "Handoff Patterns", href: "../W10-D1_Handoff_Patterns.md", isMockExam: false },
-  { id: "W10-D2", week: 10, day: 2, title: "Confidence Calibration", href: "../W10-D2_Confidence_Calibration.md", isMockExam: false },
-  { id: "W11-D1", week: 11, day: 1, title: "Exam Scenario 1: Customer Support", href: "../W11-D1_Exam_Scenario_1_Customer_Support.md", isMockExam: false },
-  { id: "W11-D2", week: 11, day: 2, title: "Exam Scenario 2: Code Generation", href: "../W11-D2_Exam_Scenario_2_Code_Generation.md", isMockExam: false },
-  { id: "W12-D1", week: 12, day: 1, title: "Full Mock Exam: 60 Questions", href: "../W12-D1_Full_Mock_Exam_60_Questions.md", isMockExam: true },
+  { id: "W1-D1", week: 1, day: 1, title: "LLMs Explained From Scratch", href: "../study_materials/W1-D1_LLMs_Explained_From_Scratch.md", isMockExam: false },
+  { id: "W1-D2", week: 1, day: 2, title: "Claude vs Other AI Models", href: "../study_materials/W1-D2_Claude_vs_Other_AI_Models.md", isMockExam: false },
+  { id: "W1-D3", week: 1, day: 3, title: "The Context Window", href: "../study_materials/W1-D3_The_Context_Window.md", isMockExam: false },
+  { id: "W1-D4", week: 1, day: 4, title: "System Prompts vs User Messages", href: "../study_materials/W1-D4_System_Prompts_vs_User_Messages.md", isMockExam: false },
+  { id: "W1-D5", week: 1, day: 5, title: "Your First API Call", href: "../study_materials/W1-D5_Your_First_API_Call.md", isMockExam: false },
+  { id: "W2-D1", week: 2, day: 1, title: "What Makes a Good Prompt", href: "../study_materials/W2-D1_What_Makes_a_Good_Prompt.md", isMockExam: false },
+  { id: "W2-D2", week: 2, day: 2, title: "Role Prompting and Persona", href: "../study_materials/W2-D2_Role_Prompting_and_Persona.md", isMockExam: false },
+  { id: "W2-D3", week: 2, day: 3, title: "Chain of Thought Prompting", href: "../study_materials/W2-D3_Chain_of_Thought_Prompting.md", isMockExam: false },
+  { id: "W2-D4", week: 2, day: 4, title: "Negative Prompting", href: "../study_materials/W2-D4_Negative_Prompting.md", isMockExam: false },
+  { id: "W2-D5", week: 2, day: 5, title: "Prompt Iteration Practice", href: "../study_materials/W2-D5_Prompt_Iteration_Practice.md", isMockExam: false },
+  { id: "W3-D1", week: 3, day: 1, title: "Few Shot Examples", href: "../study_materials/W3-D1_Few_Shot_Examples.md", isMockExam: false },
+  { id: "W3-D2", week: 3, day: 2, title: "Structured Output JSON Basics", href: "../study_materials/W3-D2_Structured_Output_JSON_Basics.md", isMockExam: false },
+  { id: "W3-D3", week: 3, day: 3, title: "JSON Schema Enforcement", href: "../study_materials/W3-D3_JSON_Schema_Enforcement.md", isMockExam: false },
+  { id: "W3-D4", week: 3, day: 4, title: "Validation & Retry Loops", href: "../study_materials/W3-D4_Validation_and_Retry_Loops.md", isMockExam: false },
+  { id: "W3-D5", week: 3, day: 5, title: "When NOT to Use Structured Output", href: "../study_materials/W3-D5_When_NOT_to_Use_Structured_Output.md", isMockExam: false },
+  { id: "W4-D1", week: 4, day: 1, title: "Messages API Anatomy", href: "../study_materials/W4-D1_Messages_API_Anatomy.md", isMockExam: false },
+  { id: "W4-D2", week: 4, day: 2, title: "Multi-Turn Conversations", href: "../study_materials/W4-D2_Multi_Turn_Conversations.md", isMockExam: false },
+  { id: "W4-D3", week: 4, day: 3, title: "Streaming Responses", href: "../study_materials/W4-D3_Streaming_Responses.md", isMockExam: false },
+  { id: "W4-D4", week: 4, day: 4, title: "Token Counting & Cost", href: "../study_materials/W4-D4_Token_Counting_and_Cost.md", isMockExam: false },
+  { id: "W4-D5", week: 4, day: 5, title: "Rate Limits & Error Handling", href: "../study_materials/W4-D5_Rate_Limits_and_Error_Handling.md", isMockExam: false },
+  { id: "W5-D1-C", week: 5, day: 1, title: "What Is Tool Use?", href: "../study_materials/W5-D1_What_Is_Tool_Use.md", isMockExam: false, domain: "mcp" },
+  { id: "W5-D1", week: 5, day: 1, title: "Multi-Agent Systems", href: "../study_materials/W5-D1_Multi_Agent_Systems.md", isMockExam: false, track: "extras" },
+  { id: "W5-D2-C", week: 5, day: 2, title: "Defining Your First Tool", href: "../study_materials/W5-D2_Defining_Your_First_Tool.md", isMockExam: false, domain: "mcp" },
+  { id: "W5-D2", week: 5, day: 2, title: "Agent Reliability and Testing", href: "../study_materials/W5-D2_Agent_Reliability_and_Testing.md", isMockExam: false, track: "extras" },
+  { id: "W5-D3-C", week: 5, day: 3, title: "Tool Description Quality", href: "../study_materials/W5-D3_Tool_Description_Quality.md", isMockExam: false, domain: "mcp" },
+  { id: "W5-D3", week: 5, day: 3, title: "Retrieval Augmented Generation", href: "../study_materials/W5-D3_Retrieval_Augmented_Generation.md", isMockExam: false, track: "extras" },
+  { id: "W5-D4-C", week: 5, day: 4, title: "Handling Tool Results", href: "../study_materials/W5-D4_Handling_Tool_Results.md", isMockExam: false, domain: "mcp" },
+  { id: "W5-D4", week: 5, day: 4, title: "Fine-Tuning Considerations", href: "../study_materials/W5-D4_Fine_Tuning_Considerations.md", isMockExam: false, track: "extras" },
+  { id: "W5-D5-C", week: 5, day: 5, title: "Multi-Tool Conversations", href: "../study_materials/W5-D5_Multi_Tool_Conversations.md", isMockExam: false, domain: "mcp" },
+  { id: "W5-D5", week: 5, day: 5, title: "Cost Optimization at Scale", href: "../study_materials/W5-D5_Cost_Optimization_at_Scale.md", isMockExam: false, track: "extras" },
+  { id: "W6-D1-C", week: 6, day: 1, title: "What Is MCP and Why It Exists", href: "../study_materials/W6-D1_What_Is_MCP_and_Why_It_Exists.md", isMockExam: false, domain: "mcp" },
+  { id: "W6-D1", week: 6, day: 1, title: "Real-World Application Architecture", href: "../study_materials/W6-D1_Real_World_Application_Architecture.md", isMockExam: false, track: "extras" },
+  { id: "W6-D2-C", week: 6, day: 2, title: "MCP Server Architecture", href: "../study_materials/W6-D2_MCP_Server_Architecture.md", isMockExam: false, domain: "mcp" },
+  { id: "W6-D2", week: 6, day: 2, title: "Security and Compliance", href: "../study_materials/W6-D2_Security_and_Compliance.md", isMockExam: false, track: "extras" },
+  { id: "W6-D3-C", week: 6, day: 3, title: "Build Your First MCP Server", href: "../study_materials/W6-D3_Build_Your_First_MCP_Server.md", isMockExam: false, domain: "mcp" },
+  { id: "W6-D3", week: 6, day: 3, title: "Analytics and Observability", href: "../study_materials/W6-D3_Analytics_and_Observability.md", isMockExam: false, track: "extras" },
+  { id: "W6-D4-C", week: 6, day: 4, title: "Tool Boundary Design", href: "../study_materials/W6-D4_Tool_Boundary_Design.md", isMockExam: false, domain: "mcp" },
+  { id: "W6-D4", week: 6, day: 4, title: "A/B Testing and Experimentation", href: "../study_materials/W6-D4_A_B_Testing_and_Experimentation.md", isMockExam: false, track: "extras" },
+  { id: "W6-D5-C", week: 6, day: 5, title: "MCP in Production", href: "../study_materials/W6-D5_MCP_in_Production.md", isMockExam: false, domain: "mcp" },
+  { id: "W6-D5", week: 6, day: 5, title: "Case Studies and Synthesis", href: "../study_materials/W6-D5_Case_Studies_and_Synthesis.md", isMockExam: false, track: "extras" },
+  { id: "W7-D1-C", week: 7, day: 1, title: "What Is an Agentic Loop?", href: "../study_materials/W7-D1_What_Is_an_Agentic_Loop.md", isMockExam: false, domain: "agentic" },
+  { id: "W7-D1", week: 7, day: 1, title: "Evaluation Frameworks", href: "../study_materials/W7-D1_Evaluation_Frameworks.md", isMockExam: false, track: "extras" },
+  { id: "W7-D2-C", week: 7, day: 2, title: "Loop Anatomy: Plan, Act, Observe", href: "../study_materials/W7-D2_Loop_Anatomy_Plan_Act_Observe.md", isMockExam: false, domain: "agentic" },
+  { id: "W7-D2", week: 7, day: 2, title: "Human-in-the-Loop Systems", href: "../study_materials/W7-D2_Human_in_the_Loop_Systems.md", isMockExam: false, track: "extras" },
+  { id: "W7-D3-C", week: 7, day: 3, title: "Stop Conditions", href: "../study_materials/W7-D3_Stop_Conditions.md", isMockExam: false, domain: "agentic" },
+  { id: "W7-D3", week: 7, day: 3, title: "Prompt Lifecycle Management", href: "../study_materials/W7-D3_Prompt_Lifecycle_Management.md", isMockExam: false, track: "extras" },
+  { id: "W7-D4-C", week: 7, day: 4, title: "Error Recovery in Loops", href: "../study_materials/W7-D4_Error_Recovery_in_Loops.md", isMockExam: false, domain: "agentic" },
+  { id: "W7-D4", week: 7, day: 4, title: "Cross-Model Validation", href: "../study_materials/W7-D4_Cross_Model_Validation.md", isMockExam: false, track: "extras" },
+  { id: "W7-D5-C", week: 7, day: 5, title: "Build a Simple Agent", href: "../study_materials/W7-D5_Build_a_Simple_Agent.md", isMockExam: false, domain: "agentic" },
+  { id: "W7-D5", week: 7, day: 5, title: "Deployment and Rollout Strategy", href: "../study_materials/W7-D5_Deployment_and_Rollout_Strategy.md", isMockExam: false, track: "extras" },
+  { id: "W8-D1", week: 8, day: 1, title: "Why Multiple Agents", href: "../study_materials/W8-D1_Why_Multiple_Agents.md", isMockExam: false },
+  { id: "W8-D1-X", week: 8, day: 1, title: "Specialized Industry Workflows", href: "../study_materials/W8-D1_Specialized_Industry_Workflows.md", isMockExam: false, track: "extras" },
+  { id: "W8-D2", week: 8, day: 2, title: "Hub-and-Spoke Architecture", href: "../study_materials/W8-D2_Hub_and_Spoke_Architecture.md", isMockExam: false },
+  { id: "W8-D2-X", week: 8, day: 2, title: "Advanced Personalization", href: "../study_materials/W8-D2_Advanced_Personalization.md", isMockExam: false, track: "extras" },
+  { id: "W8-D3", week: 8, day: 3, title: "Context Isolation Deep Dive", href: "../study_materials/W8-D3_Context_Isolation_Deep_Dive.md", isMockExam: false },
+  { id: "W8-D3-X", week: 8, day: 3, title: "Context Isolation Practice", href: "../study_materials/W8-D3_Context_Isolation_Practice.md", isMockExam: false, track: "extras" },
+  { id: "W8-D4", week: 8, day: 4, title: "Lifecycle Hooks and Guardrails", href: "../study_materials/W8-D4_Lifecycle_Hooks_and_Guardrails.md", isMockExam: false },
+  { id: "W8-D4-X", week: 8, day: 4, title: "Lifecycle Hooks Practice", href: "../study_materials/W8-D4_Lifecycle_Hooks_Practice.md", isMockExam: false, track: "extras" },
+  { id: "W8-D5", week: 8, day: 5, title: "Build Hub-and-Spoke System", href: "../study_materials/W8-D5_Build_Hub_and_Spoke_System.md", isMockExam: false },
+  { id: "W8-D5-X", week: 8, day: 5, title: "Multi-Agent Integration Practice", href: "../study_materials/W8-D5_Multi_Agent_Integration_Practice.md", isMockExam: false, track: "extras" },
+  { id: "W9-D1", week: 9, day: 1, title: "What Is Claude Code", href: "../study_materials/W9-D1_What_Is_Claude_Code.md", isMockExam: false },
+  { id: "W9-D1-X", week: 9, day: 1, title: "Claude Code Fundamentals", href: "../study_materials/W9-D1_Claude_Code_Fundamentals.md", isMockExam: false, track: "extras" },
+  { id: "W9-D2", week: 9, day: 2, title: "CLAUDE.md: The Config File", href: "../study_materials/W9-D2_CLAUDE_md_The_Config_File.md", isMockExam: false },
+  { id: "W9-D2-X", week: 9, day: 2, title: "CLAUDE.md Practice", href: "../study_materials/W9-D2_CLAUDE_md_Practice.md", isMockExam: false, track: "extras" },
+  { id: "W9-D3", week: 9, day: 3, title: "Slash Commands and .claude/commands/", href: "../study_materials/W9-D3_Slash_Commands_and_claude_commands.md", isMockExam: false },
+  { id: "W9-D3-X", week: 9, day: 3, title: "Slash Commands Practice", href: "../study_materials/W9-D3_Slash_Commands_Practice.md", isMockExam: false, track: "extras" },
+  { id: "W9-D4", week: 9, day: 4, title: "Claude Code in CI/CD", href: "../study_materials/W9-D4_Claude_Code_in_CICD.md", isMockExam: false },
+  { id: "W9-D5", week: 9, day: 5, title: "Prompt Caching", href: "../study_materials/W9-D5_Prompt_Caching.md", isMockExam: false },
+  { id: "W10-D1", week: 10, day: 1, title: "Handoff Patterns", href: "../study_materials/W10-D1_Handoff_Patterns.md", isMockExam: false },
+  { id: "W10-D2", week: 10, day: 2, title: "Confidence Calibration", href: "../study_materials/W10-D2_Confidence_Calibration.md", isMockExam: false },
+  { id: "W11-D1", week: 11, day: 1, title: "Exam Scenario 1: Customer Support", href: "../study_materials/W11-D1_Exam_Scenario_1_Customer_Support.md", isMockExam: false },
+  { id: "W11-D2", week: 11, day: 2, title: "Exam Scenario 2: Code Generation", href: "../study_materials/W11-D2_Exam_Scenario_2_Code_Generation.md", isMockExam: false },
+  { id: "W12-D1", week: 12, day: 1, title: "Full Mock Exam: 60 Questions", href: "../study_materials/W12-D1_Full_Mock_Exam_60_Questions.md", isMockExam: true },
 ].map((lesson) => ({
   ...lesson,
-  domain: DOMAIN_BY_WEEK[lesson.week],
+  domain: lesson.domain ?? DOMAIN_BY_WEEK[lesson.week],
+  track: lesson.track ?? "core",
 }));
 
 const VALID_STATES = new Set(Object.values(LESSON_STATES));
@@ -146,6 +170,7 @@ export function deriveStats(lessons, progress, todayIsoDate) {
     const state = progress.lessons[lesson.id] ?? LESSON_STATES.NOT_STARTED;
     const xp = getLessonXp(state);
     totalXp += xp;
+    if (lesson.track === "extras") continue; // bonus XP only: no domain, week or gem credit
     domainPoints[lesson.domain] += xp;
     domainMax[lesson.domain] += XP_BY_STATE[LESSON_STATES.MASTERED];
     weekCompletion[lesson.week] ??= { total: 0, completed: 0, mastered: 0 };
@@ -222,7 +247,7 @@ export function renderLessonCard(lesson, state) {
   return `
     <div class="${cardClass}" data-lesson-id="${lesson.id}">
       <div class="absolute top-4 right-4 ${isMastered ? 'text-tertiary-container' : isStudied ? 'text-primary animate-pulse' : isCompleted ? 'text-secondary' : 'text-slate-600'} material-symbols-outlined" data-icon="${icon}">${icon}</div>
-      <div class="font-terminal-sm text-xs text-slate-500 mb-1">${lesson.id}</div>
+      <div class="font-terminal-sm text-xs text-slate-500 mb-1">${lesson.id}${lesson.track === "extras" ? " · EXTRA" : ""}</div>
       <h4 class="font-headline-md text-lg mb-4 text-white leading-tight">${lesson.title}</h4>
       
       ${!isMastered && !isCompleted ? `
@@ -259,6 +284,24 @@ export function renderWeekSection(weekNumber, lessons, progress) {
     <section class="week-section" data-week="${weekNumber}">
       <div class="flex items-center gap-4 mb-6">
         <h2 class="font-headline-md text-xl text-on-surface uppercase tracking-[0.2em]">Week ${weekNumber}</h2>
+        <div class="h-px flex-1 bg-gradient-to-r from-teal-500/30 to-transparent"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        ${cards}
+      </div>
+    </section>
+  `;
+}
+
+export function renderExtrasSection(lessons, progress) {
+  const cards = lessons
+    .map((lesson) => renderLessonCard(lesson, progress.lessons[lesson.id] ?? LESSON_STATES.NOT_STARTED))
+    .join("");
+
+  return `
+    <section class="week-section" data-section="extras">
+      <div class="flex items-center gap-4 mb-6">
+        <h2 class="font-headline-md text-xl text-on-surface uppercase tracking-[0.2em]">Extras · Bonus XP</h2>
         <div class="h-px flex-1 bg-gradient-to-r from-teal-500/30 to-transparent"></div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -393,11 +436,13 @@ function renderApp(progress) {
 
   dashboard.innerHTML = renderDashboard(stats);
 
-  const lessonsByWeek = Object.groupBy(LESSONS, ({ week }) => week);
+  const coreLessons = LESSONS.filter((lesson) => lesson.track !== "extras");
+  const extraLessons = LESSONS.filter((lesson) => lesson.track === "extras");
+  const lessonsByWeek = Object.groupBy(coreLessons, ({ week }) => week);
   weeksRoot.innerHTML = Object.entries(lessonsByWeek)
     .sort(([a], [b]) => Number(a) - Number(b))
     .map(([week, lessons]) => renderWeekSection(Number(week), lessons, progress))
-    .join("");
+    .join("") + (extraLessons.length ? renderExtrasSection(extraLessons, progress) : "");
 }
 
 function boot() {
