@@ -67,6 +67,12 @@ Core path: official exam-domain notes. Extras: supplementary notes (bonus XP in 
 | W11-D1 | Tue | Exam Scenario 1: Customer Support | Completed | [Note](./study_materials/W11-D1_Exam_Scenario_1_Customer_Support.md) |
 | W11-D2 | Wed | Exam Scenario 2: Code Generation | Completed | [Note](./study_materials/W11-D2_Exam_Scenario_2_Code_Generation.md) |
 | W12-D1 | Thu | Full Mock Exam: 60 Questions | Completed | [Note](./study_materials/W12-D1_Full_Mock_Exam_60_Questions.md) |
+| W13-D1 | Fri | Agent SDK and the Four Ways to Build Agents | Not started | [Note](./study_materials/W13-D1_Agent_SDK_and_Four_Ways_to_Build_Agents.md) |
+| W13-D2 | Sat | Claude Code: Skills, Subagents, Plugins, Hooks | Not started | [Note](./study_materials/W13-D2_Claude_Code_Skills_Subagents_Plugins_Hooks.md) |
+| W13-D3 | Sun | Structured Outputs, Strict Tools, Tool Runner | Not started | [Note](./study_materials/W13-D3_Structured_Outputs_Strict_Tools_Tool_Runner.md) |
+| W13-D4 | Mon | Managed Agents | Not started | [Note](./study_materials/W13-D4_Managed_Agents.md) |
+| W13-D5 | Tue | Context Management: Effort, Editing, Compaction, Caching | Not started | [Note](./study_materials/W13-D5_Context_Management_Effort_Caching.md) |
+| W13-D6 | Wed | Files, Batches, Citations, Server Tools, Security | Not started | [Note](./study_materials/W13-D6_Files_Batch_Citations_Server_Tools.md) |
 
 ## Extras
 

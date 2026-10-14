@@ -128,6 +128,17 @@ This site documents my learning path for Claude Certified Architect certificatio
 |---|---|---|---|---|---|---|
 | W12-D1 | Thu | Full Mock Exam: 60 Questions | Completed | [Open](./study_materials/W12-D1_Full_Mock_Exam_60_Questions.md) | [Open](./study_materials/W12-D1_Full_Mock_Exam_60_Questions.md) | Comprehensive final assessment across all domains. |
 
+## Week 13 Progress (2026 Platform Update)
+
+| Week-Day | Weekday | Topic | Status | Note | Summary |
+|---|---|---|---|---|---|
+| W13-D1 | Fri | Agent SDK and the Four Ways to Build Agents | Not started | [Open](./study_materials/W13-D1_Agent_SDK_and_Four_Ways_to_Build_Agents.md) | Harness vs deployment: manual loop, Tool Runner, Managed Agents, Agent SDK; how to choose. |
+| W13-D2 | Sat | Claude Code: Skills, Subagents, Plugins, Hooks | Not started | [Open](./study_materials/W13-D2_Claude_Code_Skills_Subagents_Plugins_Hooks.md) | SKILL.md, subagent files, hook exit-code semantics, plugins, headless/CI flags. |
+| W13-D3 | Sun | Structured Outputs, Strict Tools, Tool Runner | Not started | [Open](./study_materials/W13-D3_Structured_Outputs_Strict_Tools_Tool_Runner.md) | Schema-enforced replies and tool args, Tool Runner, manual loop invariants. |
+| W13-D4 | Mon | Managed Agents | Not started | [Open](./study_materials/W13-D4_Managed_Agents.md) | Agent-then-session flow, versioning, vaults, outcomes, multiagent, reconnect pitfalls. |
+| W13-D5 | Tue | Context Management: Effort, Editing, Compaction, Caching | Not started | [Open](./study_materials/W13-D5_Context_Management_Effort_Caching.md) | Caching, adaptive thinking and effort, context editing vs compaction, memory, tool search. |
+| W13-D6 | Wed | Files, Batches, Citations, Server Tools, Security | Not started | [Open](./study_materials/W13-D6_Files_Batch_Citations_Server_Tools.md) | Files API, citations, batches, server tools, injection and safety controls. |
+
 ## Extras
 
 Supplementary notes (bonus XP in the tracker). Core path above follows official exam domains.
