@@ -41,6 +41,12 @@ export const DOMAIN_BY_WEEK = {
   13: "agentic",
 };
 
+export const TRACK_LABELS = {
+  extras: { title: "Extras · Bonus XP", badge: "EXTRA" },
+  "ccdv-f": { title: "Developer Track · CCDV-F", badge: "CCDV-F" },
+  fde: { title: "FDE Track · Portfolio", badge: "FDE" },
+};
+
 export const DOMAIN_LABELS = {
   agentic: "Agentic",
   mcp: "MCP",
@@ -134,9 +140,17 @@ export const LESSONS = [
   { id: "W13-D5", week: 13, day: 5, title: "Context Management: Effort, Editing, Compaction, Caching", href: "../study_materials/W13-D5_Context_Management_Effort_Caching.md", isMockExam: false, domain: "context" },
   { id: "W13-D6", week: 13, day: 6, title: "Files, Batches, Citations, Server Tools, Security", href: "../study_materials/W13-D6_Files_Batch_Citations_Server_Tools.md", isMockExam: false, domain: "context" },
   { id: "W13-D7", week: 13, day: 7, title: "Mock Exam 3: 60 Questions (2026)", href: "../study_materials/W13-D7_Mock_Exam_3_60_Questions.md", isMockExam: true, domain: "agentic" },
+  { id: "DEV-D1", week: 0, day: 1, title: "Applications and Integration", href: "../developer/DEV-D1_Applications_and_Integration.md", isMockExam: false, track: "ccdv-f" },
+  { id: "DEV-D2", week: 0, day: 2, title: "Model Selection and Optimization", href: "../developer/DEV-D2_Model_Selection_and_Optimization.md", isMockExam: false, track: "ccdv-f" },
+  { id: "DEV-D3", week: 0, day: 3, title: "Evals, Testing, Debugging", href: "../developer/DEV-D3_Evals_Testing_Debugging.md", isMockExam: false, track: "ccdv-f" },
+  { id: "DEV-MOCK", week: 0, day: 4, title: "CCDV-F Mock Exam (53 Q)", href: "../developer/Mock_Exam_53_Questions.md", isMockExam: true, track: "ccdv-f" },
+  { id: "FDE-P1", week: 0, day: 1, title: "P1 MCP Server for iOS Teams", href: "../fde/projects/P1_MCP_Server_for_iOS_Teams.md", isMockExam: false, track: "fde" },
+  { id: "FDE-P2", week: 0, day: 2, title: "P2 SwiftUI App with Agent Backend", href: "../fde/projects/P2_SwiftUI_App_with_Agent_Backend.md", isMockExam: false, track: "fde" },
+  { id: "FDE-P3", week: 0, day: 3, title: "P3 Extraction Pipeline and Eval Harness", href: "../fde/projects/P3_Extraction_Pipeline_and_Eval_Harness.md", isMockExam: false, track: "fde" },
+  { id: "FDE-P4", week: 0, day: 4, title: "P4 Claude Code Plugin for iOS Teams", href: "../fde/projects/P4_Claude_Code_Plugin_for_iOS_Teams.md", isMockExam: false, track: "fde" },
 ].map((lesson) => ({
   ...lesson,
-  domain: lesson.domain ?? DOMAIN_BY_WEEK[lesson.week],
+  domain: lesson.domain ?? DOMAIN_BY_WEEK[lesson.week] ?? "agentic",
   track: lesson.track ?? "core",
 }));
 
@@ -182,7 +196,7 @@ export function deriveStats(lessons, progress, todayIsoDate) {
     const state = progress.lessons[lesson.id] ?? LESSON_STATES.NOT_STARTED;
     const xp = getLessonXp(state);
     totalXp += xp;
-    if (lesson.track === "extras") continue; // bonus XP only: no domain, week or gem credit
+    if (lesson.track !== "core") continue; // non-core tracks: bonus XP only, no domain, week or gem credit
     domainPoints[lesson.domain] += xp;
     domainMax[lesson.domain] += XP_BY_STATE[LESSON_STATES.MASTERED];
     weekCompletion[lesson.week] ??= { total: 0, completed: 0, mastered: 0 };
@@ -259,7 +273,7 @@ export function renderLessonCard(lesson, state) {
   return `
     <div class="${cardClass}" data-lesson-id="${lesson.id}">
       <div class="absolute top-4 right-4 ${isMastered ? 'text-tertiary-container' : isStudied ? 'text-primary animate-pulse' : isCompleted ? 'text-secondary' : 'text-slate-600'} material-symbols-outlined" data-icon="${icon}">${icon}</div>
-      <div class="font-terminal-sm text-xs text-slate-500 mb-1">${lesson.id}${lesson.track === "extras" ? " · EXTRA" : ""}</div>
+      <div class="font-terminal-sm text-xs text-slate-500 mb-1">${lesson.id}${lesson.track !== "core" ? ` · ${TRACK_LABELS[lesson.track]?.badge ?? ""}` : ""}</div>
       <h4 class="font-headline-md text-lg mb-4 text-white leading-tight">${lesson.title}</h4>
       
       ${!isMastered && !isCompleted ? `
@@ -305,15 +319,15 @@ export function renderWeekSection(weekNumber, lessons, progress) {
   `;
 }
 
-export function renderExtrasSection(lessons, progress) {
+export function renderTrackSection(track, lessons, progress) {
   const cards = lessons
     .map((lesson) => renderLessonCard(lesson, progress.lessons[lesson.id] ?? LESSON_STATES.NOT_STARTED))
     .join("");
 
   return `
-    <section class="week-section" data-section="extras">
+    <section class="week-section" data-section="${track}">
       <div class="flex items-center gap-4 mb-6">
-        <h2 class="font-headline-md text-xl text-on-surface uppercase tracking-[0.2em]">Extras · Bonus XP</h2>
+        <h2 class="font-headline-md text-xl text-on-surface uppercase tracking-[0.2em]">${TRACK_LABELS[track]?.title ?? track}</h2>
         <div class="h-px flex-1 bg-gradient-to-r from-teal-500/30 to-transparent"></div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -448,13 +462,17 @@ function renderApp(progress) {
 
   dashboard.innerHTML = renderDashboard(stats);
 
-  const coreLessons = LESSONS.filter((lesson) => lesson.track !== "extras");
-  const extraLessons = LESSONS.filter((lesson) => lesson.track === "extras");
+  const coreLessons = LESSONS.filter((lesson) => lesson.track === "core");
   const lessonsByWeek = Object.groupBy(coreLessons, ({ week }) => week);
+  const trackSections = Object.keys(TRACK_LABELS)
+    .map((track) => [track, LESSONS.filter((lesson) => lesson.track === track)])
+    .filter(([, lessons]) => lessons.length)
+    .map(([track, lessons]) => renderTrackSection(track, lessons, progress))
+    .join("");
   weeksRoot.innerHTML = Object.entries(lessonsByWeek)
     .sort(([a], [b]) => Number(a) - Number(b))
     .map(([week, lessons]) => renderWeekSection(Number(week), lessons, progress))
-    .join("") + (extraLessons.length ? renderExtrasSection(extraLessons, progress) : "");
+    .join("") + trackSections;
 }
 
 function boot() {

@@ -17,9 +17,21 @@ test("catalog has 61 core lessons, 23 extras, unique ids", () => {
   const extras = LESSONS.filter((lesson) => lesson.track === "extras");
   assert.equal(core.length, 61);
   assert.equal(extras.length, 23);
-  assert.equal(new Set(LESSONS.map((lesson) => lesson.id)).size, 84);
+  assert.equal(new Set(LESSONS.map((lesson) => lesson.id)).size, 92);
   assert.ok(LESSONS.every((lesson) => lesson.href.startsWith("../")));
   assert.equal(core.at(-1).id, "W13-D7");
+});
+
+test("developer and fde tracks are bonus-xp only and have unique ids", () => {
+  const dev = LESSONS.filter((lesson) => lesson.track === "ccdv-f");
+  const fde = LESSONS.filter((lesson) => lesson.track === "fde");
+  assert.equal(dev.length, 4);
+  assert.equal(fde.length, 4);
+  const progress = normalizeProgress({ lessons: { "DEV-D1": "mastered", "FDE-P1": "completed" } });
+  const stats = deriveStats(LESSONS, progress, "2026-10-14");
+  assert.equal(stats.totalXp, 125 + 75);
+  assert.equal(stats.gems.knowledge, 0);
+  assert.ok(Object.values(stats.domainMastery).every((pct) => pct === 0));
 });
 
 test("every lesson href points at an existing note", () => {
