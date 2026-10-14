@@ -121,6 +121,10 @@ This site documents my learning path for Claude Certified Architect certificatio
 |---|---|---|---|---|---|---|
 | W11-D1 | Tue | Exam Scenario 1: Customer Support | Completed | [Open](./study_materials/W11-D1_Exam_Scenario_1_Customer_Support.md) | [Open](./study_materials/W11-D1_Exam_Scenario_1_Customer_Support.md) | End-to-end architecture walkthrough for support systems. |
 | W11-D2 | Wed | Exam Scenario 2: Code Generation | Completed | [Open](./study_materials/W11-D2_Exam_Scenario_2_Code_Generation.md) | [Open](./study_materials/W11-D2_Exam_Scenario_2_Code_Generation.md) | System design tradeoffs for coding assistants. |
+| W11-D3 | Thu | Exam Scenario 3: Multi-Agent Research | Not started | [Open](./study_materials/W11-D3_Exam_Scenario_3_Multi_Agent_Research.md) | [Open](./study_materials/W11-D3_Exam_Scenario_3_Multi_Agent_Research.md) | Coordinator + subagents, provenance, parallelism, injection. |
+| W11-D4 | Fri | Exam Scenario 4: Developer Productivity | Not started | [Open](./study_materials/W11-D4_Exam_Scenario_4_Developer_Productivity.md) | [Open](./study_materials/W11-D4_Exam_Scenario_4_Developer_Productivity.md) | Explore subagents, hooks vs CLAUDE.md, MCP tool selection, unattended runs. |
+| W11-D5 | Sat | Exam Scenario 5: Claude Code in CI | Not started | [Open](./study_materials/W11-D5_Exam_Scenario_5_Claude_Code_in_CI.md) | [Open](./study_materials/W11-D5_Exam_Scenario_5_Claude_Code_in_CI.md) | json-schema output, --bare, untrusted PRs, cost caps, test loops. |
+| W11-D6 | Sun | Exam Scenario 6: Structured Data Extraction | Not started | [Open](./study_materials/W11-D6_Exam_Scenario_6_Structured_Data_Extraction.md) | [Open](./study_materials/W11-D6_Exam_Scenario_6_Structured_Data_Extraction.md) | Schema + semantic validation, batches, citations trade-off, eval-driven model choice. |
 
 ## Week 12 Progress
 
@@ -138,6 +142,7 @@ This site documents my learning path for Claude Certified Architect certificatio
 | W13-D4 | Mon | Managed Agents | Not started | [Open](./study_materials/W13-D4_Managed_Agents.md) | Agent-then-session flow, versioning, vaults, outcomes, multiagent, reconnect pitfalls. |
 | W13-D5 | Tue | Context Management: Effort, Editing, Compaction, Caching | Not started | [Open](./study_materials/W13-D5_Context_Management_Effort_Caching.md) | Caching, adaptive thinking and effort, context editing vs compaction, memory, tool search. |
 | W13-D6 | Wed | Files, Batches, Citations, Server Tools, Security | Not started | [Open](./study_materials/W13-D6_Files_Batch_Citations_Server_Tools.md) | Files API, citations, batches, server tools, injection and safety controls. |
+| W13-D7 | Thu | Mock Exam 3: 60 Questions (2026) | Not started | [Open](./study_materials/W13-D7_Mock_Exam_3_60_Questions.md) | 60 questions weighted to the five CCAR-F domains. |
 
 ## Extras
 

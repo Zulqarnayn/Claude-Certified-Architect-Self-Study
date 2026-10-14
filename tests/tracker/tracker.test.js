@@ -12,14 +12,14 @@ import {
   deriveStats,
 } from "../../tracker/tracker.js";
 
-test("catalog has 56 core lessons, 23 extras, unique ids", () => {
+test("catalog has 61 core lessons, 23 extras, unique ids", () => {
   const core = LESSONS.filter((lesson) => lesson.track === "core");
   const extras = LESSONS.filter((lesson) => lesson.track === "extras");
-  assert.equal(core.length, 56);
+  assert.equal(core.length, 61);
   assert.equal(extras.length, 23);
-  assert.equal(new Set(LESSONS.map((lesson) => lesson.id)).size, 79);
+  assert.equal(new Set(LESSONS.map((lesson) => lesson.id)).size, 84);
   assert.ok(LESSONS.every((lesson) => lesson.href.startsWith("../")));
-  assert.equal(core.at(-1).id, "W13-D6");
+  assert.equal(core.at(-1).id, "W13-D7");
 });
 
 test("every lesson href points at an existing note", () => {

@@ -494,3 +494,23 @@ The gaps are real but small. One focused reading session fills them. You're read
 
 *Integration guide created for Asif's CCA self-study vault*
 *Paul's guide: github.com/paullarionov/claude-certified-architect*
+
+---
+
+## Update (2026-10): What Changed Since This Guide Was Written
+
+The vault now has **Week 13** (2026 platform update), **Scenarios 3 to 6** (W11-D3..D6) and **Mock Exam 3** (W13-D7). Treat the sections below as follows:
+
+| Area | Status |
+|---|---|
+| Agent SDK, Skills, subagents, hooks, plugins, headless/CI | Covered: [W13-D1](./study_materials/W13-D1_Agent_SDK_and_Four_Ways_to_Build_Agents.md), [W13-D2](./study_materials/W13-D2_Claude_Code_Skills_Subagents_Plugins_Hooks.md) |
+| Structured outputs, strict tools, Tool Runner | [W13-D3](./study_materials/W13-D3_Structured_Outputs_Strict_Tools_Tool_Runner.md) |
+| Managed Agents | [W13-D4](./study_materials/W13-D4_Managed_Agents.md) |
+| Caching, effort, context editing, compaction, memory | [W13-D5](./study_materials/W13-D5_Context_Management_Effort_Caching.md) |
+| Files API, Batches, citations, server tools, security | [W13-D6](./study_materials/W13-D6_Files_Batch_Citations_Server_Tools.md) |
+| All six exam scenarios | W11-D1..D6 |
+| API shapes that changed | prefill removed, `budget_tokens` removed, forced `tool_choice` 400s on 5.5-generation models, sampling params restricted: see callouts in W1-D4, W4-D1, W12-D1 |
+
+**Certification landscape (July 2026):** four exams (Associate, Developer, Architect Foundations, Architect Professional). This guide targets Architect Foundations (CCAR-F). Developer (CCDV-F) is mapped in [developer/index.md](./developer/index.md). Registration runs through the Claude Partner Academy and requires a partner-organization account (no personal email).
+
+Re-check Paul's guide and the official exam guide for anything dated before 2026-07.

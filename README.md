@@ -66,6 +66,10 @@ Core path: official exam-domain notes. Extras: supplementary notes (bonus XP in 
 | W10-D2 | Mon | Confidence Calibration | Completed | [Note](./study_materials/W10-D2_Confidence_Calibration.md) |
 | W11-D1 | Tue | Exam Scenario 1: Customer Support | Completed | [Note](./study_materials/W11-D1_Exam_Scenario_1_Customer_Support.md) |
 | W11-D2 | Wed | Exam Scenario 2: Code Generation | Completed | [Note](./study_materials/W11-D2_Exam_Scenario_2_Code_Generation.md) |
+| W11-D3 | Thu | Exam Scenario 3: Multi-Agent Research | Not started | [Note](./study_materials/W11-D3_Exam_Scenario_3_Multi_Agent_Research.md) |
+| W11-D4 | Fri | Exam Scenario 4: Developer Productivity | Not started | [Note](./study_materials/W11-D4_Exam_Scenario_4_Developer_Productivity.md) |
+| W11-D5 | Sat | Exam Scenario 5: Claude Code in CI | Not started | [Note](./study_materials/W11-D5_Exam_Scenario_5_Claude_Code_in_CI.md) |
+| W11-D6 | Sun | Exam Scenario 6: Structured Data Extraction | Not started | [Note](./study_materials/W11-D6_Exam_Scenario_6_Structured_Data_Extraction.md) |
 | W12-D1 | Thu | Full Mock Exam: 60 Questions | Completed | [Note](./study_materials/W12-D1_Full_Mock_Exam_60_Questions.md) |
 | W13-D1 | Fri | Agent SDK and the Four Ways to Build Agents | Not started | [Note](./study_materials/W13-D1_Agent_SDK_and_Four_Ways_to_Build_Agents.md) |
 | W13-D2 | Sat | Claude Code: Skills, Subagents, Plugins, Hooks | Not started | [Note](./study_materials/W13-D2_Claude_Code_Skills_Subagents_Plugins_Hooks.md) |
@@ -73,6 +77,7 @@ Core path: official exam-domain notes. Extras: supplementary notes (bonus XP in 
 | W13-D4 | Mon | Managed Agents | Not started | [Note](./study_materials/W13-D4_Managed_Agents.md) |
 | W13-D5 | Tue | Context Management: Effort, Editing, Compaction, Caching | Not started | [Note](./study_materials/W13-D5_Context_Management_Effort_Caching.md) |
 | W13-D6 | Wed | Files, Batches, Citations, Server Tools, Security | Not started | [Note](./study_materials/W13-D6_Files_Batch_Citations_Server_Tools.md) |
+| W13-D7 | Thu | Mock Exam 3: 60 Questions (2026) | Not started | [Note](./study_materials/W13-D7_Mock_Exam_3_60_Questions.md) |
 
 ## Extras
 

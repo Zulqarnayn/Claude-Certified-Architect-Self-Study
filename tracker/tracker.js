@@ -122,6 +122,10 @@ export const LESSONS = [
   { id: "W10-D2", week: 10, day: 2, title: "Confidence Calibration", href: "../study_materials/W10-D2_Confidence_Calibration.md", isMockExam: false },
   { id: "W11-D1", week: 11, day: 1, title: "Exam Scenario 1: Customer Support", href: "../study_materials/W11-D1_Exam_Scenario_1_Customer_Support.md", isMockExam: false },
   { id: "W11-D2", week: 11, day: 2, title: "Exam Scenario 2: Code Generation", href: "../study_materials/W11-D2_Exam_Scenario_2_Code_Generation.md", isMockExam: false },
+  { id: "W11-D3", week: 11, day: 3, title: "Exam Scenario 3: Multi-Agent Research", href: "../study_materials/W11-D3_Exam_Scenario_3_Multi_Agent_Research.md", isMockExam: false, domain: "agentic" },
+  { id: "W11-D4", week: 11, day: 4, title: "Exam Scenario 4: Developer Productivity", href: "../study_materials/W11-D4_Exam_Scenario_4_Developer_Productivity.md", isMockExam: false, domain: "claude_code" },
+  { id: "W11-D5", week: 11, day: 5, title: "Exam Scenario 5: Claude Code in CI", href: "../study_materials/W11-D5_Exam_Scenario_5_Claude_Code_in_CI.md", isMockExam: false, domain: "claude_code" },
+  { id: "W11-D6", week: 11, day: 6, title: "Exam Scenario 6: Structured Data Extraction", href: "../study_materials/W11-D6_Exam_Scenario_6_Structured_Data_Extraction.md", isMockExam: false, domain: "prompting" },
   { id: "W12-D1", week: 12, day: 1, title: "Full Mock Exam: 60 Questions", href: "../study_materials/W12-D1_Full_Mock_Exam_60_Questions.md", isMockExam: true },
   { id: "W13-D1", week: 13, day: 1, title: "Agent SDK and the Four Ways to Build Agents", href: "../study_materials/W13-D1_Agent_SDK_and_Four_Ways_to_Build_Agents.md", isMockExam: false, domain: "agentic" },
   { id: "W13-D2", week: 13, day: 2, title: "Claude Code: Skills, Subagents, Plugins, Hooks", href: "../study_materials/W13-D2_Claude_Code_Skills_Subagents_Plugins_Hooks.md", isMockExam: false, domain: "claude_code" },
@@ -129,6 +133,7 @@ export const LESSONS = [
   { id: "W13-D4", week: 13, day: 4, title: "Managed Agents", href: "../study_materials/W13-D4_Managed_Agents.md", isMockExam: false, domain: "agentic" },
   { id: "W13-D5", week: 13, day: 5, title: "Context Management: Effort, Editing, Compaction, Caching", href: "../study_materials/W13-D5_Context_Management_Effort_Caching.md", isMockExam: false, domain: "context" },
   { id: "W13-D6", week: 13, day: 6, title: "Files, Batches, Citations, Server Tools, Security", href: "../study_materials/W13-D6_Files_Batch_Citations_Server_Tools.md", isMockExam: false, domain: "context" },
+  { id: "W13-D7", week: 13, day: 7, title: "Mock Exam 3: 60 Questions (2026)", href: "../study_materials/W13-D7_Mock_Exam_3_60_Questions.md", isMockExam: true, domain: "agentic" },
 ].map((lesson) => ({
   ...lesson,
   domain: lesson.domain ?? DOMAIN_BY_WEEK[lesson.week],
