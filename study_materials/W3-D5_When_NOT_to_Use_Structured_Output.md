@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 3, Day 5
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 1 — Claude Fundamentals
 **Exam domain:** Domain 4 · Prompt Engineering & Structured Output
+**Last verified:** 2026-10
 
 ---
 
@@ -140,7 +141,7 @@ For tasks that need both — analysis AND actionable output — use a two-step p
 ```python
 # Step 1: Get the full reasoning in prose
 reasoning_response = client.messages.create(
-    model="claude-sonnet-4-6",
+    model="claude-sonnet-5-5",
     system="You are a product strategy advisor. Analyse the situation thoroughly.",
     messages=[{"role": "user", "content": strategy_question}]
 )
@@ -148,7 +149,7 @@ prose_analysis = reasoning_response.content[0].text
 
 # Step 2: Compress the prose into a structured decision
 structured_response = client.messages.create(
-    model="claude-haiku-4-5-20251001",
+    model="claude-haiku-5-5",
     system="Extract a structured decision from the analysis. Return only JSON.",
     messages=[{
         "role": "user",

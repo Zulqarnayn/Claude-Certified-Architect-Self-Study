@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 6, Day 1
 **Study time:** 40–50 mins
 **Curriculum phase:** Phase 2 — Advanced Patterns
 **Exam domain:** Domain 1 · Architecture Design
+**Last verified:** 2026-10
 
 ---
 

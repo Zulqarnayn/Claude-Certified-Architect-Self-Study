@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 6, Day 2
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 2 — Building with Claude
 **Exam domain:** Domain 2 · Tool Design & MCP Integration
+**Last verified:** 2026-10
 
 ---
 

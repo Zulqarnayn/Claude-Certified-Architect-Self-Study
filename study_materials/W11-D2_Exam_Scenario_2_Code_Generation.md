@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 11, Day 2
 **Study time:** 60 mins
 **Curriculum phase:** Phase 5 — Exam Preparation
 **Exam domain:** Domain 3 · Claude Code + Domain 4 · Prompt Engineering
+**Last verified:** 2026-10
 
 ---
 

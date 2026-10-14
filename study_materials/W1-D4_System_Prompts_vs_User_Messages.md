@@ -10,8 +10,12 @@ title: CCA Self-Study — Week 1, Day 4
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 1 — Claude Fundamentals
 **Exam domain:** Domain 4 · Prompt Engineering & Structured Output
+**Last verified:** 2026-10
 
 ---
+
+
+> **⚠️ 2026 update (verified 2026-10):** **Assistant prefill is removed** on current models (Opus 5.5 / Sonnet 5.5 / Haiku 5.5 / Fable 5.1 and the 4.6+ family): a trailing assistant message returns HTTP 400. To force JSON, use structured outputs (`output_config: {format: ...}`, or `client.messages.parse()` with a schema) or a system-prompt instruction. Prefill is still worth knowing as exam history; expect the exam to favor structured outputs / schema enforcement.
 
 ## Core Concept
 
@@ -58,7 +62,7 @@ In code, an API call looks like this:
 
 ```python
 response = client.messages.create(
-    model="claude-sonnet-4-6",
+    model="claude-sonnet-5-5",
     system="You are a helpful customer support agent for AcmeCorp. \
             Only answer questions about AcmeCorp products. \
             Never discuss competitors. Always be polite.",

@@ -775,3 +775,15 @@ Focus your final review time on your lowest domain score.
 ---
 
 *CCA Self-Study Log · Asif · Phase 5 of 5 · Week 12 of 12*
+
+
+---
+
+## 2026 Platform Notes for This Mock (verified 2026-10)
+
+Some questions test concepts whose API surface changed. Keep the *concept*, know the *current API*:
+
+- **Q47 / temperature:** `temperature: 0` is the classic answer for determinism, but on Opus 5.5 / Sonnet 5.5 / Haiku 5.5 / Fable 5.1 non-default sampling params return 400. Real-world answer today: structured outputs + clear prompts + `effort`.
+- **Assistant prefill (`{`) options:** removed on current models (HTTP 400). Schema enforcement via `output_config.format` / `strict: true` tools is the current way.
+- **Cost questions (Q54 etc.):** $3 / $15 per 1M is older Sonnet-class pricing; Sonnet 5.5 is $2 / $10, Opus 5.5 $4 / $20, Haiku 5.5 $0.10 / $0.50. The arithmetic method is what the exam tests.
+- **Forced tool use** (`tool_choice: any/tool`) returns 400 on Opus 5.5 / Sonnet 5.5 / Fable 5.1: use `auto` + prompt instruction + `strict: true`, or structured outputs.

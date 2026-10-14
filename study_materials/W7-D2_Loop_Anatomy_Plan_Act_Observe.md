@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 7, Day 2
 **Study time:** 45–60 mins
 **Curriculum phase:** Phase 3 — Agentic Architecture
 **Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
+**Last verified:** 2026-10
 
 ---
 
@@ -285,7 +286,7 @@ def run_agent_with_phase_logging(task, tools, executor):
         print(f"Context size: {len(messages)} messages")
         
         response = client.messages.create(
-            model="claude-sonnet-4-6",
+            model="claude-sonnet-5-5",
             max_tokens=4096,
             tools=tools,
             messages=messages
@@ -621,7 +622,7 @@ def run_adaptive_agent(task: str, tools: list, executor: callable) -> str:
     
     # Step 1: Estimate complexity upfront
     complexity_response = client.messages.create(
-        model="claude-haiku-4-5-20251001",  # Cheap model for classification
+        model="claude-haiku-5-5",  # Cheap model for classification
         max_tokens=100,
         system="Classify this task as SIMPLE (1-3 steps) or COMPLEX (4+ steps). "
                "Respond with only: {\"complexity\": \"SIMPLE\", \"estimated_steps\": N} "
@@ -634,10 +635,10 @@ def run_adaptive_agent(task: str, tools: list, executor: callable) -> str:
     # Set adaptive limits
     if complexity_data["complexity"] == "SIMPLE":
         max_iterations = 3
-        model = "claude-haiku-4-5-20251001"
+        model = "claude-haiku-5-5"
     else:
         max_iterations = min(complexity_data["estimated_steps"] + 3, 20)
-        model = "claude-sonnet-4-6"
+        model = "claude-sonnet-5-5"
     
     # Step 2: Run the loop with adaptive limits
     for iteration in range(max_iterations):

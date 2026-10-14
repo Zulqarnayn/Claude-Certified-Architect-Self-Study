@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 8, Day 2
 **Study time:** 45–60 mins
 **Curriculum phase:** Phase 3 — Agentic Architecture
 **Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
+**Last verified:** 2026-10
 
 ---
 
@@ -96,7 +97,7 @@ def decompose_app_research_task(user_query: str) -> dict:
 def decompose_with_claude(user_query: str) -> dict:
     """Let Claude decompose the task."""
     response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-haiku-5-5",
         max_tokens=500,
         system=(
             "Decompose the user's task into subtasks for our specialist agents. "
@@ -151,7 +152,7 @@ async def aggregate_results(results: dict, original_task: str) -> str:
     ])
     
     response = client.messages.create(
-        model="claude-sonnet-4-6",  # Better model for synthesis
+        model="claude-sonnet-5-5",  # Better model for synthesis
         max_tokens=3000,
         system=(
             "You are a synthesis coordinator. Combine findings from multiple specialist "
@@ -192,7 +193,7 @@ def run_subagent_isolated(
     sub_task: str,
     system_prompt: str,
     tools: list = None,
-    model: str = "claude-haiku-4-5-20251001"
+    model: str = "claude-haiku-5-5"
 ) -> str:
     """
     Run a subagent with full context isolation.
@@ -286,7 +287,7 @@ class SubagentOutput:
 
 def run_research_subagent(input: SubagentInput) -> SubagentOutput:
     response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-haiku-5-5",
         max_tokens=2000,
         system=f"Research specialist. Output format: {input.output_format}",
         messages=[{"role": "user", "content": 
@@ -603,7 +604,7 @@ def run_research_subagent_v2(input: SubagentInput) -> SubagentOutput | SubagentC
     The coordinator handles clarification requests by re-calling with more context.
     """
     response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-haiku-5-5",
         max_tokens=500,
         system=(
             "If you need more information to complete the task, output:\n"

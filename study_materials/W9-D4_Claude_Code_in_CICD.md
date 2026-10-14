@@ -10,8 +10,12 @@ title: CCA Self-Study — Week 9, Day 4
 **Study time:** 45 mins
 **Curriculum phase:** Phase 4 — Claude Code & Workflows
 **Exam domain:** Domain 3 · Claude Code Configuration & Workflows (20%)
+**Last verified:** 2026-10
 
 ---
+
+
+> **⚠️ 2026 update (verified 2026-10):** Sampling params are restricted on current models: `temperature` / `top_p` / `top_k` non-default values return **400** on Opus 5.5, Sonnet 5.5, Haiku 5.5 and Fable 5.1. Prefer deterministic CI via structured output (`--output-format json`) and tight prompts.
 
 ## Core Concept
 
@@ -311,8 +315,8 @@ else
 fi
 
 # Use Haiku for simple checks, Sonnet for complex review
-CLAUDE_MODEL=claude-haiku-4-5-20251001 claude --no-interactive "Check lint compliance"
-CLAUDE_MODEL=claude-sonnet-4-6 claude --no-interactive "Full security review"
+CLAUDE_MODEL=claude-haiku-5-5 claude --no-interactive "Check lint compliance"
+CLAUDE_MODEL=claude-sonnet-5-5 claude --no-interactive "Full security review"
 ```
 
 ---
@@ -595,10 +599,10 @@ on: [pull_request]
 CHANGED=$(git diff --name-only origin/main...HEAD | grep '\.swift$')
 
 # Step 4: Haiku for lint/style, Sonnet only for security/architecture
-CLAUDE_MODEL=claude-haiku-4-5-20251001 claude --no-interactive \
+CLAUDE_MODEL=claude-haiku-5-5 claude --no-interactive \
   "Check lint compliance only. Output pass/fail per file." # $0.001/run
 
-CLAUDE_MODEL=claude-sonnet-4-6 claude --no-interactive \
+CLAUDE_MODEL=claude-sonnet-5-5 claude --no-interactive \
   "Security and architecture review" # $0.05/run — only if Haiku found no issues
 
 # Step 5: Cache per file hash — skip unchanged files

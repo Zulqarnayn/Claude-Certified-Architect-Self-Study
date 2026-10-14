@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 10, Day 1
 **Study time:** 45 mins
 **Curriculum phase:** Phase 4 — Claude Code & Workflows
 **Exam domain:** Domain 5 · Context Management & Reliability (15%)
+**Last verified:** 2026-10
 
 ---
 
@@ -111,7 +112,7 @@ def extract_handoff_state(messages: list, agent_output: str) -> AgentHandoffStat
     
     # Use Claude to extract the state
     extraction_response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-haiku-5-5",
         max_tokens=1000,
         system=(
             "Extract a structured state summary from this agent session. "
@@ -140,7 +141,7 @@ def create_session_summary(messages: list, task: str) -> str:
     """Create a compressed summary for handoff."""
     
     summary_response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-haiku-5-5",
         max_tokens=800,
         system=(
             "Create a concise handoff summary. "
@@ -407,7 +408,7 @@ class AgentHandoffState:
 # When building the handoff state, SEARCH for constraints explicitly
 def extract_user_constraints(messages: list) -> dict:
     constraint_response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-haiku-5-5",
         max_tokens=300,
         system="Extract ALL user-stated constraints from this conversation. "
                "Budget limits, preferences, requirements, exclusions. "

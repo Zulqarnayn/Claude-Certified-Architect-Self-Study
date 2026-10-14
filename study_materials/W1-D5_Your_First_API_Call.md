@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 1, Day 5
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 1 — Claude Fundamentals
 **Exam domain:** Domain 4 · API & Structured Output
+**Last verified:** 2026-10
 
 ---
 
@@ -55,7 +56,7 @@ curl https://api.anthropic.com/v1/messages \
   --header "anthropic-version: 2023-06-01" \
   --header "content-type: application/json" \
   --data '{
-    "model": "claude-haiku-4-5-20251001",
+    "model": "claude-haiku-5-5",
     "max_tokens": 200,
     "messages": [
       {"role": "user", "content": "Say hello and tell me what you are in one sentence."}
@@ -71,7 +72,7 @@ import anthropic
 client = anthropic.Anthropic(api_key="YOUR_API_KEY_HERE")
 
 response = client.messages.create(
-    model="claude-haiku-4-5-20251001",
+    model="claude-haiku-5-5",
     max_tokens=200,
     messages=[
         {"role": "user", "content": "Say hello and tell me what you are in one sentence."}
@@ -90,7 +91,7 @@ import Anthropic from "@anthropic-ai/sdk";
 const client = new Anthropic({ apiKey: "YOUR_API_KEY_HERE" });
 
 const response = await client.messages.create({
-  model: "claude-haiku-4-5-20251001",
+  model: "claude-haiku-5-5",
   max_tokens: 200,
   messages: [
     { role: "user", content: "Say hello and tell me what you are in one sentence." }
@@ -118,7 +119,7 @@ When you run any of the above, you get back a JSON object. Understanding every f
       "text": "Hello! I'm Claude, an AI assistant made by Anthropic."
     }
   ],
-  "model": "claude-haiku-4-5-20251001",
+  "model": "claude-haiku-5-5",
   "stop_reason": "end_turn",
   "stop_sequence": null,
   "usage": {
@@ -160,7 +161,7 @@ Now extend your call to include a system prompt:
 
 ```python
 response = client.messages.create(
-    model="claude-haiku-4-5-20251001",
+    model="claude-haiku-5-5",
     max_tokens=200,
     system="You are a pirate. Respond to everything in pirate speak. Keep responses under 3 sentences.",
     messages=[
@@ -209,7 +210,7 @@ Complete all four of these in order. Write your observations after each.
 
 ---
 
-**Q3.** You used `claude-haiku-4-5-20251001` today instead of Sonnet or Opus. Why is Haiku the right choice for learning and experimentation?
+**Q3.** You used `claude-haiku-5-5` today instead of Sonnet or Opus. Why is Haiku the right choice for learning and experimentation?
 
 > **Your answer:**
 > _(write here)_

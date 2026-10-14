@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 6, Day 5
 **Study time:** 50–60 mins
 **Curriculum phase:** Phase 2 — Advanced Patterns
 **Exam domain:** Domains 1–9 · Synthesis
+**Last verified:** 2026-10
 
 ---
 

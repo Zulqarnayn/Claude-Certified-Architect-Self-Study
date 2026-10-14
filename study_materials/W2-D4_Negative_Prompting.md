@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 2, Day 4
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 1 — Claude Fundamentals
 **Exam domain:** Domain 4 · Prompt Engineering & Structured Output
+**Last verified:** 2026-10
 
 ---
 

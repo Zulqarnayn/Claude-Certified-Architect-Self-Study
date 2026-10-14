@@ -10,8 +10,12 @@ title: CCA Self-Study — Week 4, Day 1
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 2 — Building with Claude
 **Exam domain:** Domain 4 & 5 · API + Context Management
+**Last verified:** 2026-10
 
 ---
+
+
+> **⚠️ 2026 update (verified 2026-10):** Sampling params are restricted on current models: `temperature` / `top_p` / `top_k` non-default values return **400** on Opus 5.5, Sonnet 5.5, Haiku 5.5 and Fable 5.1. For consistency use clear prompts, few-shot examples, structured outputs and `output_config.effort`; thinking is adaptive (`thinking: {type: "adaptive"}`), and `budget_tokens` is removed. The temperature guidance below applies to older models and the exam's conceptual questions.
 
 ## Core Concept
 
@@ -35,15 +39,13 @@ The Messages API is the professional camera. Every parameter is a dial. Today yo
 
 ```python
 response = client.messages.create(
-    model="claude-sonnet-4-6",           # Which model
+    model="claude-sonnet-5-5",           # Which model
     max_tokens=1024,                      # Output limit
     system="You are a helpful assistant", # System prompt
     messages=[                            # Conversation
         {"role": "user", "content": "Hello"}
     ],
-    temperature=1.0,                      # Randomness
-    top_p=0.999,                          # Nucleus sampling
-    top_k=...,                            # Top-k sampling
+    # temperature / top_p / top_k: omit on current models (see 2026 note below)
     stop_sequences=["</output>"],         # Custom stop signals
     stream=False,                         # Streaming on/off
     metadata={"user_id": "user_123"}      # Request metadata
@@ -57,9 +59,9 @@ response = client.messages.create(
 ### `model` — Which Engine
 
 ```python
-model="claude-haiku-4-5-20251001"   # Fast, cheap, simple tasks
-model="claude-sonnet-4-6"           # Balanced, most production use
-model="claude-opus-4-6"             # Powerful, complex reasoning
+model="claude-haiku-5-5"   # Fast, cheap, simple tasks
+model="claude-sonnet-5-5"           # Balanced, most production use
+model="claude-opus-5-5"             # Powerful, complex reasoning
 ```
 
 **Architect decision:** Match model to task complexity and volume. Don't set this once and forget — different steps in an agentic pipeline should use different models.
@@ -191,7 +193,7 @@ stream=True   # Receive tokens as they're generated
 ```python
 # Streaming example
 with client.messages.stream(
-    model="claude-sonnet-4-6",
+    model="claude-sonnet-5-5",
     max_tokens=1024,
     messages=[{"role": "user", "content": "Write a haiku"}]
 ) as stream:

@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 4, Day 2
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 2 — Building with Claude
 **Exam domain:** Domain 5 · Context Management & Reliability
+**Last verified:** 2026-10
 
 ---
 
@@ -37,7 +38,7 @@ You are the person writing on the whiteboard. The `messages` array is the whiteb
 
 ```python
 response = client.messages.create(
-    model="claude-haiku-4-5-20251001",
+    model="claude-haiku-5-5",
     max_tokens=500,
     messages=[
         {"role": "user", "content": "What is machine learning?"}
@@ -60,7 +61,7 @@ def chat(user_message: str) -> str:
     
     # Send full history to Claude every time
     response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-haiku-5-5",
         max_tokens=500,
         system="You are a helpful assistant.",
         messages=conversation_history  # ← Full history every call
@@ -115,7 +116,7 @@ def chat_with_window(user_message: str) -> str:
     windowed_history = conversation_history[-MAX_HISTORY_TURNS:]
     
     response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-haiku-5-5",
         max_tokens=500,
         system=SYSTEM_PROMPT,
         messages=windowed_history
@@ -136,7 +137,7 @@ Periodically compress history into a summary:
 ```python
 def summarise_history(history: list) -> str:
     summary_response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-haiku-5-5",
         max_tokens=500,
         messages=[{
             "role": "user",
@@ -168,7 +169,7 @@ def chat_with_summarisation(user_message: str) -> str:
         conversation_history.extend(recent_turns)
     
     response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-haiku-5-5",
         max_tokens=500,
         messages=conversation_history
     )

@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 8, Day 3
 **Study time:** 45–60 mins
 **Curriculum phase:** Phase 3 — Agentic Architecture
 **Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
+**Last verified:** 2026-10
 
 ---
 
@@ -611,7 +612,7 @@ class AgentService:
 class AgentService:
     def __init__(self):
         # Only store configuration, never request state
-        self.model = "claude-haiku-4-5-20251001"
+        self.model = "claude-haiku-5-5"
         self.system_prompt = "You are a research specialist..."
     
     def handle_request(self, task: str) -> str:

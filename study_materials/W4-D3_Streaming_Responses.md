@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 4, Day 3
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 2 — Building with Claude
 **Exam domain:** Domain 4 & 5 · API + Reliability
+**Last verified:** 2026-10
 
 ---
 
@@ -64,7 +65,7 @@ client = anthropic.Anthropic()
 
 # Method 1: Context manager (recommended)
 with client.messages.stream(
-    model="claude-sonnet-4-6",
+    model="claude-sonnet-5-5",
     max_tokens=1024,
     messages=[{"role": "user", "content": "Explain quantum computing simply."}]
 ) as stream:
@@ -82,7 +83,7 @@ with client.messages.stream(
 ```python
 # Method 2: Event-by-event (more control)
 with client.messages.stream(
-    model="claude-sonnet-4-6",
+    model="claude-sonnet-5-5",
     max_tokens=1024,
     messages=[{"role": "user", "content": "Write a short story."}]
 ) as stream:
@@ -131,7 +132,7 @@ async def chat(message: str):
     
     def generate():
         with client.messages.stream(
-            model="claude-sonnet-4-6",
+            model="claude-sonnet-5-5",
             max_tokens=1024,
             messages=[{"role": "user", "content": message}]
         ) as stream:

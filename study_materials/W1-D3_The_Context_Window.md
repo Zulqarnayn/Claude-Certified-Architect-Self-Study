@@ -10,8 +10,11 @@ title: CCA Self-Study — Week 1, Day 3
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 1 — Claude Fundamentals
 **Exam domain:** Domain 5 · Context Management & Reliability
+**Last verified:** 2026-10
 
 ---
+
+> **⚠️ 2026 update (verified 2026-10):** Current models (Haiku 5.5, Sonnet 5.5, Opus 5.5, Fable 5.1) have a **1M-token** context window; Haiku 4.5 is 200K. The 200K figures in the scenarios below illustrate the *method* (budgeting tokens against a limit); check the live limit with the Models API (`max_input_tokens`). Current first-party rates per 1M tokens (in / out): Fable 5.1 $10 / $50, Opus 5.5 $4 / $20, Sonnet 5.5 $2 / $10, Haiku 5.5 $0.10 / $0.50 (prompts up to 100K). Cache reads cost about 0.1x base input. Worked examples below use older Sonnet-class ($3 / $15) and Opus-class ($15 / $75) rates for the arithmetic; the method is unchanged, re-run it with current rates.
 
 ## Core Concept
 
@@ -70,9 +73,8 @@ Everything above the response counts against your limit. Claude's response itsel
 
 | Model | Context window | Practical meaning |
 |---|---|---|
-| Claude Haiku | 200,000 tokens | ~150,000 words |
-| Claude Sonnet 4.6 | 200,000 tokens | ~150,000 words |
-| Claude Opus | 200,000 tokens | ~150,000 words |
+| Claude Haiku 5.5 / Sonnet 5.5 / Opus 5.5 / Fable 5.1 | 1,000,000 tokens | ~750,000 words |
+| Claude Haiku 4.5 (legacy) | 200,000 tokens | ~150,000 words |
 
 200,000 tokens sounds enormous. But consider a real production scenario:
 

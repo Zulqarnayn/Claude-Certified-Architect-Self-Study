@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 7, Day 5
 **Study time:** 60 mins (extended — this is a full build day)
 **Curriculum phase:** Phase 3 — Agentic Architecture
 **Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
+**Last verified:** 2026-10
 
 ---
 
@@ -65,7 +66,7 @@ from enum import Enum
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
 logger = logging.getLogger(__name__)
 
-MODEL = "claude-sonnet-4-6"
+MODEL = "claude-sonnet-5-5"
 MAX_TOKENS = 4096
 MAX_ITERATIONS = 10
 MAX_TOOL_CALLS = 25

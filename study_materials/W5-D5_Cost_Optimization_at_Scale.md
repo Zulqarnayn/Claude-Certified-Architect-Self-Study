@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 5, Day 5
 **Study time:** 40–50 mins
 **Curriculum phase:** Phase 2 — Advanced Patterns
 **Exam domain:** Domain 6 · Operations & Economics
+**Last verified:** 2026-10
 
 ---
 

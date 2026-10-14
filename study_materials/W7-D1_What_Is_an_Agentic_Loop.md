@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 7, Day 1
 **Study time:** 45–60 mins (extended — this is exam core)
 **Curriculum phase:** Phase 3 — Agentic Architecture
 **Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27% of exam)
+**Last verified:** 2026-10
 
 ---
 
@@ -130,7 +131,7 @@ def run_agent(
         # Claude reads everything in messages (task + all prior 
         # tool calls + all prior results) and decides next step.
         response = client.messages.create(
-            model="claude-sonnet-4-6",
+            model="claude-sonnet-5-5",
             max_tokens=4096,
             system=system,
             tools=tools,
@@ -574,7 +575,7 @@ def run_agent_with_human_review(task: str, tools: list, requires_review: callabl
     
     for iteration in range(10):
         response = client.messages.create(
-            model="claude-sonnet-4-6",
+            model="claude-sonnet-5-5",
             max_tokens=4096,
             tools=tools,
             messages=messages

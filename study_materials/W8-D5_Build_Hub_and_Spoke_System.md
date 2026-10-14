@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 8, Day 5
 **Study time:** 60 mins
 **Curriculum phase:** Phase 3 — Agentic Architecture
 **Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
+**Last verified:** 2026-10
 
 ---
 
@@ -35,7 +36,7 @@ This is the reference implementation for CCA Exam Scenario 3 (Multi-Agent Resear
 ```
 User Query
     ↓
-COORDINATOR (claude-sonnet-4-6)
+COORDINATOR (claude-sonnet-5-5)
   - Decomposes task
   - Manages agent lifecycle
   - Aggregates results
@@ -319,7 +320,7 @@ def run_subagent(
     handoff: SubagentHandoff,
     tools: list,
     system_prompt: str,
-    model: str = "claude-haiku-4-5-20251001"
+    model: str = "claude-haiku-5-5"
 ) -> SubagentResult:
     """
     Run a subagent with FULL CONTEXT ISOLATION.
@@ -484,7 +485,7 @@ async def run_coordinator(user_query: str) -> CoordinatorResult:
     
     # ── STEP 1: Decompose ─────────────────────────────────
     decomp_response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-haiku-5-5",
         max_tokens=500,
         system=COORDINATOR_DECOMPOSE_SYSTEM,
         messages=[{"role": "user", "content": user_query}]
@@ -555,7 +556,7 @@ async def run_coordinator(user_query: str) -> CoordinatorResult:
             findings_text += f"Error: {result.error}"
     
     agg_response = client.messages.create(
-        model="claude-sonnet-4-6",
+        model="claude-sonnet-5-5",
         max_tokens=3000,
         system=COORDINATOR_AGGREGATE_SYSTEM,
         messages=[{

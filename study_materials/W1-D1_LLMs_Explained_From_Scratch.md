@@ -11,6 +11,7 @@ title: CCA Self-Study — Week 1, Day 1
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 1 — Claude Fundamentals
 **Exam domain:** Foundation (pre-domain concepts)
+**Last verified:** 2026-10
 
 ---
 

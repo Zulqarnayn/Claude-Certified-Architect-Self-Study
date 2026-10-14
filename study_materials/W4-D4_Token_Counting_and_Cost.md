@@ -10,8 +10,11 @@ title: CCA Self-Study — Week 4, Day 4
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 2 — Building with Claude
 **Exam domain:** Domain 5 · Context Management & Reliability
+**Last verified:** 2026-10
 
 ---
+
+> **⚠️ 2026 update (verified 2026-10):** Current first-party rates per 1M tokens (in / out): Fable 5.1 $10 / $50, Opus 5.5 $4 / $20, Sonnet 5.5 $2 / $10, Haiku 5.5 $0.10 / $0.50 (prompts up to 100K). Cache reads cost about 0.1x base input. Worked examples below use older Sonnet-class ($3 / $15) and Opus-class ($15 / $75) rates for the arithmetic; the method is unchanged, re-run it with current rates.
 
 ## Core Concept
 
@@ -55,7 +58,7 @@ client = anthropic.Anthropic()
 
 # Count tokens BEFORE making the actual API call
 token_count = client.messages.count_tokens(
-    model="claude-sonnet-4-6",
+    model="claude-sonnet-5-5",
     system="You are a helpful assistant.",
     messages=[
         {"role": "user", "content": "Explain the entire history of computing."}
@@ -78,9 +81,11 @@ Use this to:
 
 ```python
 PRICING = {
-    "claude-haiku-4-5-20251001":  {"input": 0.80,  "output": 4.00},
-    "claude-sonnet-4-6":           {"input": 3.00,  "output": 15.00},
-    "claude-opus-4-6":             {"input": 15.00, "output": 75.00},
+    # USD per 1M tokens, Oct 2026 first-party API. Haiku 5.5 rate is for prompts <= 100K tokens.
+    "claude-haiku-5-5":  {"input": 0.10, "output": 0.50},
+    "claude-sonnet-5-5": {"input": 2.00, "output": 10.00},
+    "claude-opus-5-5":   {"input": 4.00, "output": 20.00},
+    "claude-fable-5-1":  {"input": 10.00, "output": 50.00},
 }
 
 def calculate_cost(model: str, input_tokens: int, output_tokens: int) -> float:
@@ -103,8 +108,8 @@ def log_call_cost(response, model: str):
 # Track cumulative cost
 session_cost = 0.0
 
-response = client.messages.create(model="claude-sonnet-4-6", ...)
-session_cost += log_call_cost(response, "claude-sonnet-4-6")
+response = client.messages.create(model="claude-sonnet-5-5", ...)
+session_cost += log_call_cost(response, "claude-sonnet-5-5")
 print(f"Session total: ${session_cost:.4f}")
 ```
 

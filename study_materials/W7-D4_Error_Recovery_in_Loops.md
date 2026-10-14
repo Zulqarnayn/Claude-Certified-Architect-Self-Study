@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 7, Day 4
 **Study time:** 45–60 mins
 **Curriculum phase:** Phase 3 — Agentic Architecture
 **Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
+**Last verified:** 2026-10
 
 ---
 

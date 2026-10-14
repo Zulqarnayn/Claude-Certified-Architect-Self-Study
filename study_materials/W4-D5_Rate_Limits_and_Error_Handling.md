@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 4, Day 5
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 2 — Building with Claude
 **Exam domain:** Domain 5 · Context Management & Reliability
+**Last verified:** 2026-10
 
 ---
 

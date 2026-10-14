@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 7, Day 3
 **Study time:** 45–60 mins
 **Curriculum phase:** Phase 3 — Agentic Architecture
 **Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
+**Last verified:** 2026-10
 
 ---
 
@@ -57,7 +58,7 @@ You define a specific string that, when produced by Claude, signals task complet
 
 ```python
 response = client.messages.create(
-    model="claude-sonnet-4-6",
+    model="claude-sonnet-5-5",
     max_tokens=4096,
     stop_sequences=["<task_complete>", "<needs_human>", "<error_unrecoverable>"],
     tools=tools,
@@ -285,7 +286,7 @@ def production_agent_loop(task, tools, executor):
             })
         
         response = client.messages.create(
-            model="claude-sonnet-4-6",
+            model="claude-sonnet-5-5",
             max_tokens=4096,
             stop_sequences=["<task_complete>", "<needs_human>"],  # ← Type 2
             tools=tools,

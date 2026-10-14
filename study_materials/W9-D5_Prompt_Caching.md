@@ -10,8 +10,11 @@ title: CCA Self-Study — Week 9, Day 5
 **Study time:** 45 mins
 **Curriculum phase:** Phase 4 — Claude Code & Workflows
 **Exam domain:** Domain 5 · Context Management & Reliability (15%)
+**Last verified:** 2026-10
 
 ---
+
+> **⚠️ 2026 update (verified 2026-10):** Current first-party rates per 1M tokens (in / out): Fable 5.1 $10 / $50, Opus 5.5 $4 / $20, Sonnet 5.5 $2 / $10, Haiku 5.5 $0.10 / $0.50 (prompts up to 100K). Cache reads cost about 0.1x base input. Worked examples below use older Sonnet-class ($3 / $15) and Opus-class ($15 / $75) rates for the arithmetic; the method is unchanged, re-run it with current rates.
 
 ## Core Concept
 
@@ -78,7 +81,7 @@ client = anthropic.Anthropic()
 
 # System prompt with cache_control
 response = client.messages.create(
-    model="claude-sonnet-4-6",
+    model="claude-sonnet-5-5",
     max_tokens=1024,
     system=[
         {
@@ -349,7 +352,7 @@ print(result)
 
 ```python
 response = client.messages.create(
-    model="claude-sonnet-4-6",
+    model="claude-sonnet-5-5",
     max_tokens=1024,
     system=[
         {

@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 3, Day 3
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 1 — Claude Fundamentals
 **Exam domain:** Domain 4 · Prompt Engineering & Structured Output
+**Last verified:** 2026-10
 
 ---
 
@@ -204,7 +205,7 @@ def classify_ticket_with_retry(message: str, max_retries: int = 3) -> dict:
     
     for attempt in range(max_retries):
         response = client.messages.create(
-            model="claude-haiku-4-5-20251001",
+            model="claude-haiku-5-5",
             max_tokens=500,
             system=SCHEMA_SYSTEM_PROMPT,
             messages=messages

@@ -10,8 +10,12 @@ title: CCA Self-Study — Week 1, Day 2
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 1 — Claude Fundamentals
 **Exam domain:** Foundation (model selection & architecture decisions)
+**Last verified:** 2026-10
 
 ---
+
+
+> **⚠️ 2026 update (verified 2026-10):** Context windows: Current models (Haiku 5.5, Sonnet 5.5, Opus 5.5, Fable 5.1) have a **1M-token** context window; Haiku 4.5 is 200K. Check live limits with the Models API (`max_input_tokens`).
 
 ## Core Concept
 
@@ -78,7 +82,8 @@ Result: Same quality, fraction of the cost.
 
 | Model | Context window |
 |---|---|
-| Claude Sonnet 4.6 | 200,000 tokens |
+| Claude Sonnet 5.5 / Opus 5.5 / Haiku 5.5 | 1,000,000 tokens |
+| Claude Haiku 4.5 (legacy) | 200,000 tokens |
 | GPT-4o | 128,000 tokens |
 | Gemini 1.5 Pro | 1,000,000 tokens |
 

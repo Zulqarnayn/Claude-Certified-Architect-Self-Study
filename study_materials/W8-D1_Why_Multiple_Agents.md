@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 8, Day 1
 **Study time:** 45–60 mins
 **Curriculum phase:** Phase 3 — Agentic Architecture
 **Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
+**Last verified:** 2026-10
 
 ---
 
@@ -186,7 +187,7 @@ client = anthropic.Anthropic()
 def run_research_subagent(topic: str) -> str:
     """Specialist subagent: only does research."""
     response = client.messages.create(
-        model="claude-haiku-4-5-20251001",  # Cheaper model for research
+        model="claude-haiku-5-5",  # Cheaper model for research
         max_tokens=2000,
         system=(
             "You are a research specialist. Gather key facts about the given topic. "
@@ -200,7 +201,7 @@ def run_research_subagent(topic: str) -> str:
 def run_writer_subagent(research_data: str, tone: str, length: int) -> str:
     """Specialist subagent: only writes copy."""
     response = client.messages.create(
-        model="claude-sonnet-4-6",  # Better model for writing quality
+        model="claude-sonnet-5-5",  # Better model for writing quality
         max_tokens=3000,
         system=(
             "You are an expert copywriter. Write compelling content based on provided research. "
@@ -225,7 +226,7 @@ def run_coordinator(user_task: str) -> str:
     
     # Step 1: Coordinator decomposes the task
     decomp_response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-haiku-5-5",
         max_tokens=500,
         system=(
             "You decompose complex tasks into sub-tasks. "
@@ -399,7 +400,7 @@ def run_subagent_isolated(task: str, system: str) -> str:
     No messages array persists between calls.
     """
     response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-haiku-5-5",
         max_tokens=2000,
         system=system,  # Same system prompt
         messages=[{"role": "user", "content": task}]  # Only this task

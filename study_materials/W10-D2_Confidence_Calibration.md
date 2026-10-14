@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 10, Day 2
 **Study time:** 45 mins
 **Curriculum phase:** Phase 4 — Claude Code & Workflows
 **Exam domain:** Domain 5 · Context Management & Reliability (15%)
+**Last verified:** 2026-10
 
 ---
 
@@ -45,7 +46,7 @@ Where:
 """
 
 response = client.messages.create(
-    model="claude-sonnet-4-6",
+    model="claude-sonnet-5-5",
     max_tokens=1024,
     system=system,
     messages=[{"role": "user", "content": "What is ScreenshotAI's iOS minimum requirement?"}]

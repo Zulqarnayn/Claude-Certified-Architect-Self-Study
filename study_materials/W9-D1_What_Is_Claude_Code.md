@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 9, Day 1
 **Study time:** 45 mins
 **Curriculum phase:** Phase 4 — Claude Code & Workflows
 **Exam domain:** Domain 3 · Claude Code Configuration & Workflows (20%)
+**Last verified:** 2026-10
 
 ---
 

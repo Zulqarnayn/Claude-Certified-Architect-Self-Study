@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 5, Day 3
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 2 — Building with Claude
 **Exam domain:** Domain 2 · Tool Design & MCP Integration
+**Last verified:** 2026-10
 
 ---
 
@@ -221,7 +222,7 @@ test_cases = [
 
 for user_message, expected_tool in test_cases:
     response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-haiku-5-5",
         max_tokens=1024,
         tools=YOUR_TOOLS,
         messages=[{"role": "user", "content": user_message}]

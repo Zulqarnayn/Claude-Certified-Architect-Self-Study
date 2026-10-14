@@ -10,6 +10,7 @@ title: CCA Self-Study — Week 8, Day 1
 **Study time:** 40–50 mins
 **Curriculum phase:** Phase 3 — Evaluation & Optimization
 **Exam domain:** Domain 6 · Vertical Solutions
+**Last verified:** 2026-10
 
 ---
 
