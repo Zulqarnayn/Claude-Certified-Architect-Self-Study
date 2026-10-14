@@ -9,6 +9,7 @@ Documenting my learning path for the Claude Certified Architect certification, i
 ## Study Modes
 
 - [Study Tracker](https://zulqarnayn.github.io/Claude-Certified-Architect-Self-Study/tracker/) for XP, gems, streaks, and mastery tracking
+- [Finish Plan](./FINISH_PLAN.md): 8-week path to exam-ready
 - [Main Curriculum](https://zulqarnayn.github.io/Claude-Certified-Architect-Self-Study/) for week-by-week lesson tables
 - [CCDV-F Developer Track](./developer/index.md) for the Claude Certified Developer exam
 - [FDE Track](./fde/index.md) for the Forward Deployed Engineer roadmap, playbook, and portfolio projects

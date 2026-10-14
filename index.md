@@ -10,6 +10,7 @@ This site documents my learning path for Claude Certified Architect certificatio
 ## Study Modes
 
 - [Study Tracker](./tracker/) for XP, gems, streaks, and mastery tracking
+- [Finish Plan](./FINISH_PLAN.md): 8-week path to exam-ready
 - [Main Curriculum](#week-1-progress) for week-by-week lesson tables
 - [CCDV-F Developer Track](./developer/index.md) for the Claude Certified Developer exam
 - [FDE Track](./fde/index.md) for the Forward Deployed Engineer roadmap, playbook, and portfolio projects
