@@ -1,0 +1,8 @@
+{% assign idx = -1 %}
+{% for p in book %}{% if p.path == page.path %}{% assign idx = forloop.index0 %}{% endif %}{% endfor %}
+{% assign pi = idx | minus: 1 %}
+{% assign ni = idx | plus: 1 %}
+<nav class="prevnext" aria-label="Previous and next">
+{% if idx > 0 %}{% assign prev = book[pi] %}<a class="prev" href="{{ prev.url | relative_url }}" rel="prev"><span class="pn-label">Previous</span><span class="pn-title">{{ prev.title }}</span></a>{% endif %}
+{% if ni < book.size %}{% assign nxt = book[ni] %}<a class="next" href="{{ nxt.url | relative_url }}" rel="next"><span class="pn-label">Next</span><span class="pn-title">{{ nxt.title }}</span></a>{% endif %}
+</nav>

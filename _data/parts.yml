@@ -1,0 +1,54 @@
+- slug: foundations
+  numeral: I
+  title: Foundations
+  weeks: Weeks 1 to 4
+  blurb: How the model works, how to prompt it, and your first API calls.
+- slug: tools
+  numeral: II
+  title: Tools and MCP
+  weeks: Weeks 5 and 6
+  blurb: Tool use, tool design, and building a Model Context Protocol server.
+- slug: agents
+  numeral: III
+  title: Agents
+  weeks: Weeks 7, 8 and 10
+  blurb: Loops, stop conditions, multi-agent systems and hand-offs.
+- slug: code
+  numeral: IV
+  title: Claude Code
+  weeks: Week 9
+  blurb: Configuration, commands, CI, and prompt caching.
+- slug: update
+  numeral: V
+  title: The 2026 Update
+  weeks: Week 13
+  blurb: What changed on the platform since these notes were first written, and what it does to the exam.
+- slug: practice
+  numeral: VI
+  title: Practice
+  weeks: Weeks 11 and 12
+  blurb: Six exam scenarios and three mock exams.
+- slug: extras
+  appendix: true
+  numeral: A
+  title: Extras
+  weeks: Supplementary
+  blurb: Useful notes outside the main path. Read them after the exam material.
+- slug: developer
+  appendix: true
+  numeral: B
+  title: Developer Track
+  weeks: CCDV-F
+  blurb: The Claude Certified Developer exam, mapped onto what you already know.
+- slug: fde
+  appendix: true
+  numeral: C
+  title: Forward Deployed Engineer
+  weeks: Career
+  blurb: A roadmap, a playbook, and four portfolio projects.
+- slug: guides
+  appendix: true
+  numeral: D
+  title: Plans and Guides
+  weeks: Reference
+  blurb: The eight-week finish plan and how to use an external study guide.

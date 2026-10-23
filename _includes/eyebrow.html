@@ -1,0 +1,6 @@
+{% assign part = site.data.parts | where: "slug", page.part | first %}
+{% assign peers = book | where: "part", page.part %}
+{% assign pos = 0 %}
+{% for p in peers %}{% if p.path == page.path %}{% assign pos = forloop.index %}{% endif %}{% endfor %}
+{% assign dom = site.data.domains[page.domain] %}
+<p class="eyebrow">{% if part.appendix %}Appendix {{ part.numeral }}{% else %}Part {{ part.numeral }}{% endif %} · {{ part.title }}<span class="sep">/</span>{% if pos < 10 %}0{% endif %}{{ pos }} of {{ peers.size }}{% if page.minutes %}<span class="sep">/</span>{{ page.minutes }} min{% endif %}{% if dom %}<span class="sep">/</span><span class="dom" data-domain="{{ page.domain }}">{{ dom.label }}</span>{% endif %}</p>

@@ -1,0 +1,10 @@
+<header class="bar">
+<a class="wordmark" href="{{ '/' | relative_url }}">The CCA <span>Study Book</span></a>
+<nav aria-label="Site">
+<a href="{{ '/' | relative_url }}#contents" class="hide-sm">Contents</a>
+<a href="{{ '/progress/' | relative_url }}"{% if page.url == '/progress/' %} aria-current="page"{% endif %}>Progress</a>
+<a href="{{ '/FINISH_PLAN.html' | relative_url }}" class="hide-sm">Plan</a>
+<a href="{{ '/search/' | relative_url }}"{% if page.url == '/search/' %} aria-current="page"{% endif %}>Search</a>
+<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch between light and dark">Theme</button>
+</nav>
+</header>

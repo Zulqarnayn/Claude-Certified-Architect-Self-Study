@@ -1,0 +1,6 @@
+---
+layout: null
+---
+[{% assign book = site.pages | where: "book", true | sort: "order" %}{% for p in book %}{% assign part = site.data.parts | where: "slug", p.part | first %}
+{"id":{{ p.id | jsonify }},"t":{{ p.title | jsonify }},"u":{{ p.url | relative_url | jsonify }},"p":{{ part.title | jsonify }},"d":{{ p.domain | jsonify }},"x":{{ p.content | replace: "<", " <" | strip_html | strip_newlines | replace: "  ", " " | replace: "  ", " " | truncatewords: 140 | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}
+]

@@ -1,0 +1,5 @@
+agentic:     { label: Agentic,      weight: 27 }
+claude_code: { label: Claude Code,  weight: 20 }
+prompting:   { label: Prompting,    weight: 20 }
+mcp:         { label: Tools and MCP, weight: 18 }
+context:     { label: Context,      weight: 15 }

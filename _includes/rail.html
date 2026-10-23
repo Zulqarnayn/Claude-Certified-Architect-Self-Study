@@ -1,0 +1,17 @@
+{% include book.html %}
+<nav class="rail" aria-label="Contents">
+<input type="checkbox" id="rail-toggle" class="sr" aria-label="Show contents">
+<label for="rail-toggle" class="rail-btn">Contents</label>
+<div class="rail-body">
+<h2 class="rail-title label">Contents</h2>
+{% for part in site.data.parts %}
+{% assign items = book | where: "part", part.slug %}
+<details class="rail-part" data-part="{{ part.slug }}"{% if page.part == part.slug %} open{% endif %}>
+<summary><span class="num">{{ part.numeral }}</span><span>{{ part.title }}</span><span class="count" data-count="{{ part.slug }}">{{ items.size }}</span></summary>
+<ol>
+{% for p in items %}<li><a href="{{ p.url | relative_url }}" data-id="{{ p.id }}" data-domain="{{ p.domain }}"{% if p.url == page.url %} aria-current="page"{% endif %}>{{ p.title }}</a></li>
+{% endfor %}</ol>
+</details>
+{% endfor %}
+</div>
+</nav>

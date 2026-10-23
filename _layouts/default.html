@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>{% if page.home %}{{ site.title }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
+<meta name="description" content="{{ page.standfirst | default: site.description }}">
+<link rel="preload" href="{{ '/assets/fonts/source-serif-4-latin-400-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ '/assets/fonts/fraunces-latin-300-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem("cca-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="stylesheet" href="{{ '/assets/css/book.css' | relative_url }}">
+</head>
+<body class="{% if page.home %}home{% endif %}" data-base="{{ site.baseurl }}" data-note="{{ page.id }}">
+<a class="skip" href="#main">Skip to text</a>
+{% include topbar.html %}
+<div class="plan-strip" id="plan-strip" aria-live="polite"></div>
+<div class="shell{% if page.home %} solo{% endif %}">
+{% unless page.home %}{% include rail.html %}{% endunless %}
+<main id="main" class="col">
+{{ content }}
+</main>
+</div>
+<script id="plan-data" type="application/json">{{ site.data.plan | jsonify }}</script>
+<script src="{{ '/assets/js/progress.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/quiz.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+</body>
+</html>

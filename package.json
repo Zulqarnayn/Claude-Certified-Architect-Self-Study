@@ -1,8 +1,12 @@
 {
-  "name": "cca-self-study",
+  "name": "cca-study-book",
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/tracker/"
+    "test": "node --test tests/site/",
+    "check": "python3 scripts/check_contrast.py && python3 scripts/check_site.py"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.1"
   }
 }

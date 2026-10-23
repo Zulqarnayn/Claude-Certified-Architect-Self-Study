@@ -1,13 +1,31 @@
-title: Claude Certified Architect Self-Study
-description: Concepts, summaries, experiments, and lessons learned while preparing for the Claude Certified Architect certification.
-theme: jekyll-theme-modernist
+title: The CCA Study Book
+description: Notes, scenarios and mock exams for the Claude Certified Architect exam, plus a path to forward-deployed engineering.
+url: https://zulqarnayn.github.io
+baseurl: /Claude-Certified-Architect-Self-Study
+
 markdown: kramdown
 kramdown:
   input: GFM
-show_excerpts: false
-header_pages:
-  - index.md
+  syntax_highlighter: rouge
+  hard_wrap: false
+  parse_block_html: true
+  auto_ids: true
+  toc_levels: 2..3
+
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: false
+
 exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
   - package.json
+  - package-lock.json
+  - vendor
+  - node_modules
+  - scripts
   - tests
   - docs

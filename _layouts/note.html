@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% include book.html %}
+<article>
+{% include eyebrow.html %}
+<h1 class="title">{{ page.title }}</h1>
+{% if page.standfirst %}<p class="standfirst">{{ page.standfirst }}</p>{% else %}<hr class="head-rule">{% endif %}
+<div class="prose" id="prose">
+{{ content }}
+</div>
+{% if page.verified %}<p class="verified label">Last verified {{ page.verified }}</p>{% endif %}
+<div class="read-row" id="read-row" hidden>
+<button class="read-btn" id="read-btn" type="button" aria-pressed="false" data-id="{{ page.id }}">Mark as read</button>
+<span class="read-note" id="read-note"></span>
+</div>
+{% include prevnext.html %}
+</article>

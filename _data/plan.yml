@@ -1,0 +1,10 @@
+start: "2026-10-19"
+weeks:
+  - { name: "Agentic I", ids: [W7-D1-C, W7-D2-C, W7-D3-C, W7-D4-C, W7-D5-C] }
+  - { name: "Agentic II", ids: [W8-D1, W8-D2, W8-D3, W8-D4, W13-D1] }
+  - { name: "Claude Code", ids: [W9-D1, W9-D2, W9-D3, W9-D4, W13-D2] }
+  - { name: "Tools", ids: [W5-D1-C, W5-D2-C, W5-D3-C, W5-D4-C, W13-D3] }
+  - { name: "MCP and Managed Agents", ids: [W6-D1-C, W6-D2-C, W6-D3-C, W6-D4-C, W13-D4] }
+  - { name: "Context and prompting", ids: [W13-D5, W13-D6, W9-D5, W3-D3, W3-D4, W10-D1] }
+  - { name: "Scenarios", ids: [W11-D1, W11-D2, W11-D3, W11-D4, W11-D5, W11-D6] }
+  - { name: "Exams", ids: [W13-D7, W12-D1] }
