@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 9, Day 3
----
-
-# CCA Self-Study — Week 9, Day 3
-## Slash Commands & .claude/commands/
-
-**Date completed:** _____________
-**Study time:** 45 mins
-**Curriculum phase:** Phase 4 — Claude Code & Workflows
-**Exam domain:** Domain 3 · Claude Code Configuration & Workflows (20%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Slash Commands and .claude/commands/"
+id: W9-D3
+part: code
+domain: claude_code
+order: 4013
+kind: note
+book: true
+minutes: "45"
+verified: "2026-10"
+exam_domain: "Domain 3 · Claude Code Configuration & Workflows (20%)"
 ---
 
 ## Core Concept
@@ -318,7 +316,7 @@ After creating files:
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1:** Create `.claude/commands/` in your project. Build the `/review` command above.
 

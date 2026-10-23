@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 8, Day 3
----
-
-# CCA Self-Study — Week 8, Day 3
-## Context Isolation Practice
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 3 — Agentic Architecture
-**Exam domain:** Domain 1 · Agentic Architecture & Orchestration
-**Last verified:** 2026-10
-
+layout: note
+title: "Context Isolation Practice"
+id: W8-D3-X
+part: extras
+domain: agentic
+order: 7028
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 1 · Agentic Architecture & Orchestration"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ Context isolation keeps subagents independent by giving each agent only the data
 - Isolation checks in orchestration code
 - Common isolation anti-patterns
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Write pseudocode for a coordinator that runs two subagents with fully isolated contexts.
 

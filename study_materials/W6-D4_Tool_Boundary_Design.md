@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 6, Day 4
----
-
-# CCA Self-Study — Week 6, Day 4
-## Tool Boundary Design
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 2 — Building with Claude
-**Exam domain:** Domain 2 · Tool Design & MCP Integration
-**Last verified:** 2026-10
-
+layout: note
+title: "Tool Boundary Design"
+id: W6-D4-C
+part: tools
+domain: mcp
+order: 2019
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 2 · Tool Design & MCP Integration"
 ---
 
 ## Core Concept
@@ -237,7 +235,7 @@ manage_app(action="get_details")
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Refactoring exercise:** You inherit this fat tool. Redesign it as focused tools.
 

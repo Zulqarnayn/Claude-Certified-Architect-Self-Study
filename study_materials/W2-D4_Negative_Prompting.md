@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 2, Day 4
----
-
-# CCA Self-Study — Week 2, Day 4
-## Negative Prompting
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 1 — Claude Fundamentals
-**Exam domain:** Domain 4 · Prompt Engineering & Structured Output
-**Last verified:** 2026-10
-
+layout: note
+title: "Negative Prompting"
+id: W2-D4
+part: foundations
+domain: prompting
+order: 1019
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 4 · Prompt Engineering & Structured Output"
 ---
 
 ## Core Concept
@@ -160,7 +158,7 @@ The positive framing tells Claude exactly what to do, rather than what to suppre
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task:** Get Claude to output a pure JSON object with zero extra text.
 

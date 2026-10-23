@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 8, Day 4
----
-
-# CCA Self-Study — Week 8, Day 4
-## Lifecycle Hooks & Guardrails
-
-**Date completed:** _____________
-**Study time:** 45–60 mins
-**Curriculum phase:** Phase 3 — Agentic Architecture
-**Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Lifecycle Hooks and Guardrails"
+id: W8-D4
+part: agents
+domain: agentic
+order: 3019
+kind: note
+book: true
+minutes: "45–60"
+verified: "2026-10"
+exam_domain: "Domain 1 · Agentic Architecture & Orchestration (27%)"
 ---
 
 ## Core Concept
@@ -472,7 +470,7 @@ This table is directly exam-tested:
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1:** Implement the `HookRegistry` and `HookContext` classes above.
 

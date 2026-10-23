@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 3, Day 5
----
-
-# CCA Self-Study — Week 3, Day 5
-## When NOT to Use Structured Output
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 1 — Claude Fundamentals
-**Exam domain:** Domain 4 · Prompt Engineering & Structured Output
-**Last verified:** 2026-10
-
+layout: note
+title: "When NOT to Use Structured Output"
+id: W3-D5
+part: foundations
+domain: prompting
+order: 1025
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 4 · Prompt Engineering & Structured Output"
 ---
 
 ## Core Concept
@@ -175,7 +173,7 @@ Step 1 preserves Claude's full reasoning value. Step 2 extracts what your system
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Test the difference yourself.**
 
@@ -348,7 +346,7 @@ Two Claude calls, two different output formats, each optimised for its purpose.
 - [ ] Q4 answered
 - [ ] Q5 answered
 - [ ] Answer guide reviewed
-- [ ] Week 3 complete 🎉
+- [ ] Week 3 complete
 - [ ] Week 4 ready to start
 
 ---

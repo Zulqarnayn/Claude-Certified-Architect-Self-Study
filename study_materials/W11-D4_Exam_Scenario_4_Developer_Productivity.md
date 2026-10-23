@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 11, Day 4
----
-
-# CCA Self-Study — Week 11, Day 4
-## Exam Scenario 4: Developer Productivity Tools
-
-**Date completed:** _____________
-**Study time:** 45 mins
-**Curriculum phase:** Phase 6 — Exam Scenarios (added 2026-10)
-**Exam domain:** All 5 Domains — applied scenario (Claude Code 20%, Tools/MCP 18% heavy)
-**Last verified:** 2026-10
-
+layout: note
+title: "Exam Scenario 4: Developer Productivity"
+id: W11-D4
+part: practice
+domain: claude_code
+order: 6014
+kind: scenario
+book: true
+minutes: "45"
+verified: "2026-10"
+exam_domain: "All 5 Domains — applied scenario (Claude Code 20%, Tools/MCP 18% heavy)"
 ---
 
 ## Scenario Overview

@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 3, Day 3
----
-
-# CCA Self-Study — Week 3, Day 3
-## JSON Schema Enforcement
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 1 — Claude Fundamentals
-**Exam domain:** Domain 4 · Prompt Engineering & Structured Output
-**Last verified:** 2026-10
-
+layout: note
+title: "JSON Schema Enforcement"
+id: W3-D3
+part: foundations
+domain: prompting
+order: 1023
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 4 · Prompt Engineering & Structured Output"
 ---
 
 ## Core Concept
@@ -253,7 +251,7 @@ def classify_ticket_with_retry(message: str, max_retries: int = 3) -> dict:
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Design and implement a schema for an iOS app review analyser.
 

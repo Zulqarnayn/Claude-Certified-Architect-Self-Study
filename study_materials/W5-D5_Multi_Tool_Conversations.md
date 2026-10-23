@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 5, Day 5
----
-
-# CCA Self-Study — Week 5, Day 5
-## Multi-Tool Conversations
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 2 — Building with Claude
-**Exam domain:** Domain 2 · Tool Design & MCP Integration
-**Last verified:** 2026-10
-
+layout: note
+title: "Multi-Tool Conversations"
+id: W5-D5-C
+part: tools
+domain: mcp
+order: 2015
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 2 · Tool Design & MCP Integration"
 ---
 
 ## Core Concept
@@ -242,7 +240,7 @@ Track your tool call rate per query type in production. If `get_reviews` is call
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Build the 5-tool App Store research system above.
 
@@ -459,7 +457,7 @@ Expected result: call rate drops from 60% → ~25%.
 - [ ] Q4 answered
 - [ ] Q5 answered
 - [ ] Answer guide reviewed
-- [ ] Week 5 complete 🎉
+- [ ] Week 5 complete
 
 ---
 

@@ -1,9 +1,12 @@
 ---
-layout: default
-title: P2 SwiftUI App with Agent Backend
+layout: note
+title: "P2 SwiftUI App with Agent Backend"
+id: FDE-P2
+part: fde
+order: 9014
+kind: note
+book: true
 ---
-
-# P2 — SwiftUI App + Python Agent Backend
 
 **Phase:** 1 · **Hits:** Applications & Integration (CCDV-F 33.1%), agents, guardrails, streaming · **Stack:** SwiftUI client, FastAPI backend, Claude · **Status:** [ ] not started
 

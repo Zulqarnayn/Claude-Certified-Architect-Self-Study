@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 5, Day 1
----
-
-# CCA Self-Study — Week 5, Day 1
-## Multi-Agent Systems
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 2 — Advanced Patterns
-**Exam domain:** Domain 2 · Agents & Tools
-**Last verified:** 2026-10
-
+layout: note
+title: "Multi-Agent Systems"
+id: W5-D1
+part: extras
+domain: agentic
+order: 7011
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 2 · Agents & Tools"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ Beyond single-agent systems, multi-agent architectures delegate different tasks 
 - Shared context and state management
 - Agent composition vs hierarchical agents
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Build a 2-agent system: one for research, one for summarization.
 

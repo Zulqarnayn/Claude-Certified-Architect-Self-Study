@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 8, Day 2
----
-
-# CCA Self-Study — Week 8, Day 2
-## Hub-and-Spoke Architecture
-
-**Date completed:** _____________
-**Study time:** 45–60 mins
-**Curriculum phase:** Phase 3 — Agentic Architecture
-**Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Hub-and-Spoke Architecture"
+id: W8-D2
+part: agents
+domain: agentic
+order: 3017
+kind: note
+book: true
+minutes: "45–60"
+verified: "2026-10"
+exam_domain: "Domain 1 · Agentic Architecture & Orchestration (27%)"
 ---
 
 ## Core Concept
@@ -331,7 +329,7 @@ def run_research_subagent(input: SubagentInput) -> SubagentOutput:
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Build a complete hub-and-spoke system for the app research use case.
 

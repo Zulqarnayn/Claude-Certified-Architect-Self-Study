@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 11, Day 3
----
-
-# CCA Self-Study — Week 11, Day 3
-## Exam Scenario 3: Multi-Agent Research System
-
-**Date completed:** _____________
-**Study time:** 45 mins
-**Curriculum phase:** Phase 6 — Exam Scenarios (added 2026-10)
-**Exam domain:** All 5 Domains — applied scenario (Agentic 27% heavy)
-**Last verified:** 2026-10
-
+layout: note
+title: "Exam Scenario 3: Multi-Agent Research"
+id: W11-D3
+part: practice
+domain: agentic
+order: 6013
+kind: scenario
+book: true
+minutes: "45"
+verified: "2026-10"
+exam_domain: "All 5 Domains — applied scenario (Agentic 27% heavy)"
 ---
 
 ## Scenario Overview

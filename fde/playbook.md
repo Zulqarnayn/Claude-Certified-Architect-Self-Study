@@ -1,12 +1,14 @@
 ---
-layout: default
-title: FDE Playbook
+layout: note
+title: "FDE Playbook"
+id: FDE-PLAYBOOK
+part: fde
+order: 9002
+kind: guide
+book: true
+verified: "2026-10 · Reuses: [W7-D1 Evals](../study_materials/W7-D1_Evaluation_Frameworks.md), [W7-D5 Rollout](../study_materials/W7-D5_Deployment_and_Rollout_Strategy.md), [W10-D1 Handoffs](../study_materials/W10-D1_Handoff_Patterns.md), [W13-D1 Build paths](../study_materials/W13-D1_Agent_SDK_and_Four_Ways_to_Build_Agents.md)"
+standfirst: "Discovery → Scope → POC → Production → Handover"
 ---
-
-# FDE Playbook
-## Discovery → Scope → POC → Production → Handover
-
-**Last verified:** 2026-10 · Reuses: [W7-D1 Evals](../study_materials/W7-D1_Evaluation_Frameworks.md), [W7-D5 Rollout](../study_materials/W7-D5_Deployment_and_Rollout_Strategy.md), [W10-D1 Handoffs](../study_materials/W10-D1_Handoff_Patterns.md), [W13-D1 Build paths](../study_materials/W13-D1_Agent_SDK_and_Four_Ways_to_Build_Agents.md)
 
 An FDE's job is turning an ambiguous business problem into a production system the customer keeps running after you leave. Technical skill is table stakes; **scoping, evidence, and communication** are the differentiators.
 

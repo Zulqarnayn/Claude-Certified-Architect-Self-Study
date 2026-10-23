@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 2, Day 1
----
-
-# CCA Self-Study — Week 2, Day 1
-## What Makes a Good Prompt
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 1 — Claude Fundamentals
-**Exam domain:** Domain 4 · Prompt Engineering & Structured Output
-**Last verified:** 2026-10
-
+layout: note
+title: "What Makes a Good Prompt"
+id: W2-D1
+part: foundations
+domain: prompting
+order: 1016
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 4 · Prompt Engineering & Structured Output"
 ---
 
 ## Core Concept
@@ -160,7 +158,7 @@ Change **one thing at a time**. If you change everything at once, you don't know
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Take this weak prompt and improve it through 3 iterations:
 

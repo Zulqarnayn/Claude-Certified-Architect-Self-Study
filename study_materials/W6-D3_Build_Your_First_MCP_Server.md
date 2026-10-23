@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 6, Day 3
----
-
-# CCA Self-Study — Week 6, Day 3
-## Build Your First MCP Server
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 2 — Building with Claude
-**Exam domain:** Domain 2 · Tool Design & MCP Integration
-**Last verified:** 2026-10
-
+layout: note
+title: "Build Your First MCP Server"
+id: W6-D3-C
+part: tools
+domain: mcp
+order: 2018
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 2 · Tool Design & MCP Integration"
 ---
 
 ## Core Concept
@@ -424,7 +422,7 @@ asyncio.run(test_server())
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **You're building it.** The server code above IS the task.
 

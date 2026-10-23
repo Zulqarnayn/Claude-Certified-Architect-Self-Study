@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 13, Day 2
----
-
-# CCA Self-Study — Week 13, Day 2
-## Claude Code 2026: Skills, Subagents, Plugins, Hooks, Headless
-
-**Date completed:** _____________
-**Study time:** 60 mins
-**Curriculum phase:** Phase 6 — 2026 Platform Update
-**Exam domain:** Domain 3 · Claude Code Configuration & Workflows (20%) · CCDV-F: Claude Code (3.1%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Claude Code: Skills, Subagents, Plugins, Hooks"
+id: W13-D2
+part: update
+domain: claude_code
+order: 5012
+kind: note
+book: true
+minutes: "60"
+verified: "2026-10"
+exam_domain: "Domain 3 · Claude Code Configuration & Workflows (20%) · CCDV-F: Claude Code (3.1%)"
 ---
 
 ## Core Concept
@@ -180,7 +178,7 @@ GitHub Actions and GitLab CI integrations wrap the same loop.
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 1. Create `.claude/skills/commit-msg/SKILL.md` (use the example) and invoke it both ways.
 2. Create `.claude/agents/code-reviewer.md`; ask Claude to review a diff and watch which context it receives.

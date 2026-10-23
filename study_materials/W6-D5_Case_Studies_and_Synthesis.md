@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 6, Day 5
----
-
-# CCA Self-Study — Week 6, Day 5
-## Case Studies and Synthesis
-
-**Date completed:** _____________
-**Study time:** 50–60 mins
-**Curriculum phase:** Phase 2 — Advanced Patterns
-**Exam domain:** Domains 1–9 · Synthesis
-**Last verified:** 2026-10
-
+layout: note
+title: "Case Studies and Synthesis"
+id: W6-D5
+part: extras
+domain: mcp
+order: 7020
+kind: extra
+book: true
+minutes: "50–60"
+verified: "2026-10"
+exam_domain: "Domains 1–9 · Synthesis"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ Putting it all together: analyzing real-world Claude applications, their archite
 - Scaling lessons
 - What works and what doesn't
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Document a complete architecture for a real product idea, from user request to response, including all components from Phase 2.
 

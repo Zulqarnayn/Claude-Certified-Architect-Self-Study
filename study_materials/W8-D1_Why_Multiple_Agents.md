@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 8, Day 1
----
-
-# CCA Self-Study — Week 8, Day 1
-## Why Multiple Agents?
-
-**Date completed:** _____________
-**Study time:** 45–60 mins
-**Curriculum phase:** Phase 3 — Agentic Architecture
-**Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Why Multiple Agents"
+id: W8-D1
+part: agents
+domain: agentic
+order: 3016
+kind: note
+book: true
+minutes: "45–60"
+verified: "2026-10"
+exam_domain: "Domain 1 · Agentic Architecture & Orchestration (27%)"
 ---
 
 ## Core Concept
@@ -270,7 +268,7 @@ print(result)
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1:** Implement the hub-and-spoke example above. Run it with the test task.
 

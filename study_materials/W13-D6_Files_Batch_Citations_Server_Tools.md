@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 13, Day 6
----
-
-# CCA Self-Study — Week 13, Day 6
-## Files API, Batches, Citations, Server Tools, Security Basics
-
-**Date completed:** _____________
-**Study time:** 60 mins
-**Curriculum phase:** Phase 6 — 2026 Platform Update
-**Exam domain:** Domain 5 · Context Management & Reliability (15%) + Domain 2 · Tool Design (18%) · CCDV-F: Applications & Integration (33.1%), Security & Safety (8.1%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Files, Batches, Citations, Server Tools, Security"
+id: W13-D6
+part: update
+domain: context
+order: 5016
+kind: note
+book: true
+minutes: "60"
+verified: "2026-10"
+exam_domain: "Domain 5 · Context Management & Reliability (15%) + Domain 2 · Tool Design (18%) · CCDV-F: Applications & Integration (33.1%), Security & Safety (8.1%)"
 ---
 
 ## Core Concept
@@ -115,7 +113,7 @@ for entry in client.messages.batches.results(batch.id):
 | Files API needs a beta header | GA now |
 | Web fetch any URL Claude invents | Only URLs already in the conversation |
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 1. Upload a PDF to the Files API; ask three questions with citations enabled; print `cited_text` and page numbers.
 2. Run 200 classification requests through Batches with Haiku 5.5; compare cost with synchronous calls.

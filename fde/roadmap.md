@@ -1,9 +1,13 @@
 ---
-layout: default
-title: FDE Roadmap
+layout: note
+title: "FDE Roadmap"
+id: FDE-ROADMAP
+part: fde
+order: 9001
+kind: plan
+book: true
 ---
 
-# Forward Deployed Engineer Roadmap
 ## iOS engineer (6 YOE) → Anthropic Applied AI FDE
 
 **Started:** 2026-10 · **Budget:** 5–8 hrs/week · **Horizon:** ~15–18 months · **Last verified:** 2026-10

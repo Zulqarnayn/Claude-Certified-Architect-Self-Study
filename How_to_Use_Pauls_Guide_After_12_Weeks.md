@@ -1,4 +1,13 @@
-# How to Use Paul's Guide After the 12-Week Curriculum
+---
+layout: note
+title: "Using Paul's Guide After Week 12"
+id: GUIDE
+part: guides
+order: 10001
+kind: guide
+book: true
+---
+
 ## Integration & Gap-Fill Plan for CCA Exam Readiness
 
 **Author:** Asif (based on curriculum comparison analysis)

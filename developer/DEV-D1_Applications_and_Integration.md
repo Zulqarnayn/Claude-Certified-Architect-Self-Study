@@ -1,16 +1,15 @@
 ---
-layout: default
-title: CCDV-F Track — Day 1
----
-
-# CCDV-F Track — Day 1
-## Applications and Integration: Shipping Claude Inside a Real Backend
-
-**Date completed:** _____________
-**Study time:** 90 mins (mostly code)
-**Exam domain:** CCDV-F · Applications & Integration (33.1%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Applications and Integration"
+id: DEV-D1
+part: developer
+domain: context
+order: 8011
+kind: note
+book: true
+minutes: "90"
+verified: "2026-10"
+exam_domain: "CCDV-F · Applications & Integration (33.1%)"
 ---
 
 ## Why This Is a Third of the Exam
@@ -155,7 +154,7 @@ The API is **stateless**. Every request resends the history you want the model t
 | `except Exception` around the call | Loses retryable vs not |
 | Non-streaming for a 100K-token output | Timeout risk: stream |
 
-## Hands-On Lab 🛠️
+## Hands-On Lab
 
 Build a FastAPI service with:
 1. `POST /chat` streaming SSE; conversation stored in SQLite.

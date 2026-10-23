@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 3, Day 2
----
-
-# CCA Self-Study — Week 3, Day 2
-## Structured Output — JSON Basics
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 1 — Claude Fundamentals
-**Exam domain:** Domain 4 · Prompt Engineering & Structured Output
-**Last verified:** 2026-10
-
+layout: note
+title: "Structured Output JSON Basics"
+id: W3-D2
+part: foundations
+domain: prompting
+order: 1022
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 4 · Prompt Engineering & Structured Output"
 ---
 
 ## Core Concept
@@ -202,7 +200,7 @@ if result is None:
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Build a JSON extractor for iOS crash reports.
 

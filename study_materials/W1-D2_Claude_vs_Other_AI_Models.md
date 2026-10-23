@@ -1,21 +1,18 @@
 ---
-layout: default
-title: CCA Self-Study — Week 1, Day 2
+layout: note
+title: "Claude vs Other AI Models"
+id: W1-D2
+part: foundations
+domain: context
+order: 1012
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Foundation (model selection & architecture decisions)"
 ---
 
-# CCA Self-Study — Week 1, Day 2
-## Claude vs Other AI Models
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 1 — Claude Fundamentals
-**Exam domain:** Foundation (model selection & architecture decisions)
-**Last verified:** 2026-10
-
----
-
-
-> **⚠️ 2026 update (verified 2026-10):** Context windows: Current models (Haiku 5.5, Sonnet 5.5, Opus 5.5, Fable 5.1) have a **1M-token** context window; Haiku 4.5 is 200K. Check live limits with the Models API (`max_input_tokens`).
+> **2026 update (verified 2026-10):**Context windows: Current models (Haiku 5.5, Sonnet 5.5, Opus 5.5, Fable 5.1) have a **1M-token**context window; Haiku 4.5 is 200K. Check live limits with the Models API (`max_input_tokens`).
 
 ## Core Concept
 

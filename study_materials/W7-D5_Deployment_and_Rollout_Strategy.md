@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 7, Day 5
----
-
-# CCA Self-Study — Week 7, Day 5
-## Deployment and Rollout Strategy
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 3 — Evaluation & Optimization
-**Exam domain:** Domain 5 · Release Management
-**Last verified:** 2026-10
-
+layout: note
+title: "Deployment and Rollout Strategy"
+id: W7-D5
+part: extras
+domain: agentic
+order: 7025
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 5 · Release Management"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ A safe rollout is as important as the model itself. Release new prompts or model
 - Rollback plans
 - Monitoring release impact
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Design a rollout plan for a new Claude prompt update.
 

@@ -1,9 +1,12 @@
 ---
-layout: default
-title: P3 Extraction Pipeline and Eval Harness
+layout: note
+title: "P3 Extraction Pipeline and Eval Harness"
+id: FDE-P3
+part: fde
+order: 9015
+kind: note
+book: true
 ---
-
-# P3 — Extraction Pipeline + Eval Harness
 
 **Phase:** 2 · **Hits:** Model Selection & Optimization (CCDV-F 16.8%), structured outputs, evals, batches · **Language:** Python · **Status:** [ ] not started
 

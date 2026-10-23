@@ -1,7 +1,14 @@
-# CCA Self-Study — Mock Exam 2
-## 60 Questions — Second Practice Exam
+---
+layout: note
+title: "Mock Exam 2: 60 Questions"
+id: MOCK2
+part: practice
+order: 6500
+kind: mock
+book: true
+standfirst: "60 Questions — Second Practice Exam"
+---
 
-**Date completed:** _____________
 **Time allowed:** 90 minutes (1.5 min per question)
 **Instructions:** Answer ALL questions before checking the answer guide. Mark uncertain questions with ★. This exam uses entirely different questions from Mock Exam 1 — focus on applying principles, not pattern-matching to previous answers.
 

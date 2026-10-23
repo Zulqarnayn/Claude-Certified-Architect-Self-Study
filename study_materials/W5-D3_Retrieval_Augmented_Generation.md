@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 5, Day 3
----
-
-# CCA Self-Study — Week 5, Day 3
-## Retrieval Augmented Generation (RAG)
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 2 — Advanced Patterns
-**Exam domain:** Domain 4 · Real-World Systems
-**Last verified:** 2026-10
-
+layout: note
+title: "Retrieval Augmented Generation"
+id: W5-D3
+part: extras
+domain: agentic
+order: 7013
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 4 · Real-World Systems"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ RAG systems combine retrieval (search external knowledge) with generation (Claud
 - Combining retrieval with prompting
 - Handling retrieved context quality
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Build a simple RAG system with 5 documents and test retrieval accuracy.
 

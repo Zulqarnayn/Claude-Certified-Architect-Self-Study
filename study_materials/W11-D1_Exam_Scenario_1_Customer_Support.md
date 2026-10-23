@@ -1,21 +1,18 @@
 ---
-layout: default
-title: CCA Self-Study — Week 11, Day 1
+layout: note
+title: "Exam Scenario 1: Customer Support"
+id: W11-D1
+part: practice
+domain: agentic
+order: 6011
+kind: scenario
+book: true
+minutes: "60"
+verified: "2026-10"
+exam_domain: "All 5 Domains — applied scenario"
 ---
 
-# CCA Self-Study — Week 11, Day 1
-## Exam Scenario 1: Customer Support Resolution Agent
-
-**Date completed:** _____________
-**Study time:** 60 mins
-**Curriculum phase:** Phase 5 — Exam Preparation
-**Exam domain:** All 5 Domains — applied scenario
-**Last verified:** 2026-10
-
----
-
-
-> **⚠️ 2026 update (verified 2026-10):** Current first-party rates per 1M tokens (in / out): Fable 5.1 $10 / $50, Opus 5.5 $4 / $20, Sonnet 5.5 $2 / $10, Haiku 5.5 $0.10 / $0.50 (prompts up to 100K). Cache reads cost about 0.1x base input. Worked examples below use older Sonnet-class ($3 / $15) and Opus-class ($15 / $75) rates for the arithmetic; the method is unchanged, re-run it with current rates.
+> **2026 update (verified 2026-10):**Current first-party rates per 1M tokens (in / out): Fable 5.1 $10 / $50, Opus 5.5 $4 / $20, Sonnet 5.5 $2 / $10, Haiku 5.5 $0.10 / $0.50 (prompts up to 100K). Cache reads cost about 0.1x base input. Worked examples below use older Sonnet-class ($3 / $15) and Opus-class ($15 / $75) rates for the arithmetic; the method is unchanged, re-run it with current rates.
 
 ## About Week 11
 

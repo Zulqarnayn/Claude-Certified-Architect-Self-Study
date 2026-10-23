@@ -1,9 +1,12 @@
 ---
-layout: default
-title: FDE Track
+layout: note
+title: "The Forward Deployed Engineer Track"
+id: FDE
+part: fde
+order: 9000
+kind: intro
+book: true
 ---
-
-# Forward Deployed Engineer Track
 
 Goal: iOS engineer (6 YOE) → Anthropic Applied AI Forward Deployed Engineer. Built around proof of work: public projects with evals and cost data, plus customer-facing experience.
 

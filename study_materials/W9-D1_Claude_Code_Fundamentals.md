@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 9, Day 1
----
-
-# CCA Self-Study — Week 9, Day 1
-## Claude Code Fundamentals
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 4 — Claude Code & Workflows
-**Exam domain:** Domain 3 · Claude Code Configuration & Workflows
-**Last verified:** 2026-10
-
+layout: note
+title: "Claude Code Fundamentals"
+id: W9-D1-X
+part: extras
+domain: claude_code
+order: 7031
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 3 · Claude Code Configuration & Workflows"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ Claude Code moves AI assistance into your repository so Claude can read files, e
 - Safety boundaries and permissions
 - Practical use cases in daily coding
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Define a starter workflow for using Claude Code to implement and verify one bug fix in your project.
 

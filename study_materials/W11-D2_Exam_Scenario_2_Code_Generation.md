@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 11, Day 2
----
-
-# CCA Self-Study — Week 11, Day 2
-## Exam Scenario 2: Code Generation with Claude Code
-
-**Date completed:** _____________
-**Study time:** 60 mins
-**Curriculum phase:** Phase 5 — Exam Preparation
-**Exam domain:** Domain 3 · Claude Code + Domain 4 · Prompt Engineering
-**Last verified:** 2026-10
-
+layout: note
+title: "Exam Scenario 2: Code Generation"
+id: W11-D2
+part: practice
+domain: agentic
+order: 6012
+kind: scenario
+book: true
+minutes: "60"
+verified: "2026-10"
+exam_domain: "Domain 3 · Claude Code + Domain 4 · Prompt Engineering"
 ---
 
 ## Scenario Overview

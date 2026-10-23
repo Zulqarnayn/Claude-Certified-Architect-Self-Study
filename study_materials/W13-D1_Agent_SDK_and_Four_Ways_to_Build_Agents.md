@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 13, Day 1
----
-
-# CCA Self-Study — Week 13, Day 1
-## Agent SDK and the Four Ways to Build an Agent
-
-**Date completed:** _____________
-**Study time:** 45–60 mins
-**Curriculum phase:** Phase 6 — 2026 Platform Update
-**Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%) · CCDV-F: Agents & Workflows (14.7%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Agent SDK and the Four Ways to Build Agents"
+id: W13-D1
+part: update
+domain: agentic
+order: 5011
+kind: note
+book: true
+minutes: "45–60"
+verified: "2026-10"
+exam_domain: "Domain 1 · Agentic Architecture & Orchestration (27%) · CCDV-F: Agents & Workflows (14.7%)"
 ---
 
 ## Core Concept
@@ -105,7 +103,7 @@ What `query()` gives you: the **same agent loop as Claude Code** (plan → tool 
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 1. `uv add claude-agent-sdk`, create a `utils.py` with two bugs, run the script above.
 2. Change `allowed_tools` to read-only (`Read`, `Grep`, `Glob`) and `permission_mode="plan"`. What changes?

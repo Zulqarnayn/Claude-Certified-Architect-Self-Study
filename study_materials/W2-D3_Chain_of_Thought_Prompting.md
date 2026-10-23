@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 2, Day 3
----
-
-# CCA Self-Study — Week 2, Day 3
-## Chain of Thought Prompting
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 1 — Claude Fundamentals
-**Exam domain:** Domain 4 · Prompt Engineering & Structured Output
-**Last verified:** 2026-10
-
+layout: note
+title: "Chain of Thought Prompting"
+id: W2-D3
+part: foundations
+domain: prompting
+order: 1018
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 4 · Prompt Engineering & Structured Output"
 ---
 
 ## Core Concept
@@ -159,7 +157,7 @@ This surfaces low-confidence answers for human review rather than silently passi
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Test 1:** Send Claude this WITHOUT CoT:
 > *"I have a SaaS app with 150 monthly subscribers at $29/month, 8% monthly churn, and $45 average customer acquisition cost. Am I growing or shrinking, and what's my net revenue change this month?"*

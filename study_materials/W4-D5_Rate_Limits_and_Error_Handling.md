@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 4, Day 5
----
-
-# CCA Self-Study — Week 4, Day 5
-## Rate Limits & Error Handling
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 2 — Building with Claude
-**Exam domain:** Domain 5 · Context Management & Reliability
-**Last verified:** 2026-10
-
+layout: note
+title: "Rate Limits & Error Handling"
+id: W4-D5
+part: foundations
+domain: context
+order: 1030
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 5 · Context Management & Reliability"
 ---
 
 ## Core Concept
@@ -264,7 +262,7 @@ class CircuitBreaker:
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1:** Deliberately trigger a 400 error. Try sending a message array that doesn't alternate user/assistant roles. Read the error object — what fields does it have?
 
@@ -507,7 +505,7 @@ Retry logic doesn't help here — you'd just be retrying requests that immediate
 - [ ] Q4 answered
 - [ ] Q5 answered
 - [ ] Answer guide reviewed
-- [ ] Week 4 complete 🎉
+- [ ] Week 4 complete
 - [ ] Week 5 ready to start
 
 ---

@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 13, Day 5
----
-
-# CCA Self-Study — Week 13, Day 5
-## Context Management: Effort, Adaptive Thinking, Editing, Compaction, Memory, Caching
-
-**Date completed:** _____________
-**Study time:** 60 mins
-**Curriculum phase:** Phase 6 — 2026 Platform Update
-**Exam domain:** Domain 5 · Context Management & Reliability (15%) · CCDV-F: Model Selection & Optimization (16.8%), Prompt & Context Engineering (11.0%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Context Management: Effort, Editing, Compaction, Caching"
+id: W13-D5
+part: update
+domain: context
+order: 5015
+kind: note
+book: true
+minutes: "60"
+verified: "2026-10"
+exam_domain: "Domain 5 · Context Management & Reliability (15%) · CCDV-F: Model Selection & Optimization (16.8%), Prompt & Context Engineering (11.0%)"
 ---
 
 ## Core Concept
@@ -138,7 +136,7 @@ Client-side tool `{"type": "memory_20250818", "name": "memory"}`. Claude reads/w
 | Cache across models | Caches are model-scoped |
 | Count tokens with `tiktoken` | Use `messages.count_tokens` |
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 1. Take a 5K-token system prompt; call 3×; log `cache_creation_input_tokens` vs `cache_read_input_tokens`. Then add `datetime.now()` at the top and observe the miss.
 2. Run one task at `effort` low / medium / high; tabulate tokens, turns, cost, quality.

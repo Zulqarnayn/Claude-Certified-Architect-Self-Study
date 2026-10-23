@@ -1,9 +1,12 @@
 ---
-layout: default
-title: Finish Plan
+layout: note
+title: "Finish Plan: Eight Weeks to Exam-Ready"
+id: PLAN
+part: guides
+order: 10000
+kind: plan
+book: true
 ---
-
-# Finish Plan: Getting CCAR-F Exam-Ready in 8 Weeks
 
 **Written:** 2026-10-14 · **Budget:** ~6.5 hrs/week (4.5 study + 2 build) · **Start:** Monday 2026-10-19 · **Target:** exam-ready by 2026-12-14
 

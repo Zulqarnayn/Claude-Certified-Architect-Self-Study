@@ -1,21 +1,18 @@
 ---
-layout: default
-title: CCA Self-Study — Week 9, Day 4
+layout: note
+title: "Claude Code in CI/CD"
+id: W9-D4
+part: code
+domain: claude_code
+order: 4014
+kind: note
+book: true
+minutes: "45"
+verified: "2026-10"
+exam_domain: "Domain 3 · Claude Code Configuration & Workflows (20%)"
 ---
 
-# CCA Self-Study — Week 9, Day 4
-## Claude Code in CI/CD
-
-**Date completed:** _____________
-**Study time:** 45 mins
-**Curriculum phase:** Phase 4 — Claude Code & Workflows
-**Exam domain:** Domain 3 · Claude Code Configuration & Workflows (20%)
-**Last verified:** 2026-10
-
----
-
-
-> **⚠️ 2026 update (verified 2026-10):** Sampling params are restricted on current models: `temperature` / `top_p` / `top_k` non-default values return **400** on Opus 5.5, Sonnet 5.5, Haiku 5.5 and Fable 5.1. Prefer deterministic CI via structured output (`--output-format json`) and tight prompts.
+> **2026 update (verified 2026-10):**Sampling params are restricted on current models: `temperature` / `top_p` / `top_k` non-default values return **400**on Opus 5.5, Sonnet 5.5, Haiku 5.5 and Fable 5.1. Prefer deterministic CI via structured output (`--output-format json`) and tight prompts.
 
 ## Core Concept
 
@@ -335,7 +332,7 @@ CLAUDE_MODEL=claude-sonnet-5-5 claude --no-interactive "Full security review"
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1:** Write a local script that uses `--no-interactive` to review a Swift file and output JSON. Parse the JSON with Python and print a summary.
 

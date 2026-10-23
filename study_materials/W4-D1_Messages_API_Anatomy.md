@@ -1,21 +1,18 @@
 ---
-layout: default
-title: CCA Self-Study — Week 4, Day 1
+layout: note
+title: "Messages API Anatomy"
+id: W4-D1
+part: foundations
+domain: context
+order: 1026
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 4 & 5 · API + Context Management"
 ---
 
-# CCA Self-Study — Week 4, Day 1
-## Messages API Anatomy
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 2 — Building with Claude
-**Exam domain:** Domain 4 & 5 · API + Context Management
-**Last verified:** 2026-10
-
----
-
-
-> **⚠️ 2026 update (verified 2026-10):** Sampling params are restricted on current models: `temperature` / `top_p` / `top_k` non-default values return **400** on Opus 5.5, Sonnet 5.5, Haiku 5.5 and Fable 5.1. For consistency use clear prompts, few-shot examples, structured outputs and `output_config.effort`; thinking is adaptive (`thinking: {type: "adaptive"}`), and `budget_tokens` is removed. The temperature guidance below applies to older models and the exam's conceptual questions.
+> **2026 update (verified 2026-10):**Sampling params are restricted on current models: `temperature` / `top_p` / `top_k` non-default values return **400**on Opus 5.5, Sonnet 5.5, Haiku 5.5 and Fable 5.1. For consistency use clear prompts, few-shot examples, structured outputs and `output_config.effort`; thinking is adaptive (`thinking: {type: "adaptive"}`), and `budget_tokens` is removed. The temperature guidance below applies to older models and the exam's conceptual questions.
 
 ## Core Concept
 
@@ -246,7 +243,7 @@ response.usage.output_tokens   # Tokens consumed by Claude's response
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Experiment with parameters systematically.
 

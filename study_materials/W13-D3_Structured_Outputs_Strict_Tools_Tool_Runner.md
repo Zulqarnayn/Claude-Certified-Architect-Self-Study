@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 13, Day 3
----
-
-# CCA Self-Study — Week 13, Day 3
-## Structured Outputs, Strict Tools, and the Tool Runner
-
-**Date completed:** _____________
-**Study time:** 60 mins
-**Curriculum phase:** Phase 6 — 2026 Platform Update
-**Exam domain:** Domain 4 · Prompt Engineering & Structured Output (20%) + Domain 2 · Tool Design & MCP (18%) · CCDV-F: Applications & Integration (33.1%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Structured Outputs, Strict Tools, Tool Runner"
+id: W13-D3
+part: update
+domain: prompting
+order: 5013
+kind: note
+book: true
+minutes: "60"
+verified: "2026-10"
+exam_domain: "Domain 4 · Prompt Engineering & Structured Output (20%) + Domain 2 · Tool Design & MCP (18%) · CCDV-F: Applications & Integration (33.1%)"
 ---
 
 ## Core Concept
@@ -174,7 +172,7 @@ while True:
 | Tool Runner = Agent SDK | No (W13-D1) |
 | Return tool results one per message | One user message, all results |
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 1. Build an invoice extractor with Pydantic + `messages.parse`; feed 5 messy invoices.
 2. Add a semantic validator (totals must sum) with one retry that passes the error back.

@@ -1,20 +1,18 @@
 ---
-layout: default
-title: CCA Self-Study — Week 7, Day 1
+layout: note
+title: "What Is an Agentic Loop?"
+id: W7-D1-C
+part: agents
+domain: agentic
+order: 3011
+kind: note
+book: true
+minutes: "45–60"
+verified: "2026-10"
+exam_domain: "Domain 1 · Agentic Architecture & Orchestration (27% of exam)"
 ---
 
-# CCA Self-Study — Week 7, Day 1
-## What Is an Agentic Loop?
-
-**Date completed:** _____________
-**Study time:** 45–60 mins (extended — this is exam core)
-**Curriculum phase:** Phase 3 — Agentic Architecture
-**Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27% of exam)
-**Last verified:** 2026-10
-
----
-
-## ⚠️ Why This Week Matters
+## Why This Week Matters
 
 Domain 1 is 27% of the CCA exam — the single largest domain. Every question in this domain puts you inside a production failure scenario and asks what went wrong architecturally. The failures are almost always:
 1. A loop that never ends
@@ -392,7 +390,7 @@ elif response.stop_reason == "max_tokens":
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Build the complete agentic loop and test every stop_reason path.
 

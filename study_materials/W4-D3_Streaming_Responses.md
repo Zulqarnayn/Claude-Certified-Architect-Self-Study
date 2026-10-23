@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 4, Day 3
----
-
-# CCA Self-Study — Week 4, Day 3
-## Streaming Responses
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 2 — Building with Claude
-**Exam domain:** Domain 4 & 5 · API + Reliability
-**Last verified:** 2026-10
-
+layout: note
+title: "Streaming Responses"
+id: W4-D3
+part: foundations
+domain: context
+order: 1028
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 4 & 5 · API + Reliability"
 ---
 
 ## Core Concept
@@ -241,7 +239,7 @@ with client.messages.stream(..., tools=[search_tool]) as stream:
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1:** Implement basic streaming. Ask Claude to write a 200-word product description. Watch tokens appear in real time. Measure time to first token vs time to last token.
 
@@ -383,7 +381,7 @@ When the user submits their refactoring request, immediately show:
 
 **Phase 3 — Completion:**
 - Stop the streaming indicator
-- Show: "Done ✓ — 312 tokens generated in 28 seconds"
+- Show: "Done — 312 tokens generated in 28 seconds"
 - Enable action buttons: "Apply changes" | "Reject" | "Ask for modifications"
 - Run syntax validation on the output — highlight any syntax errors immediately
 

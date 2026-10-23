@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 7, Day 4
----
-
-# CCA Self-Study — Week 7, Day 4
-## Error Recovery in Loops
-
-**Date completed:** _____________
-**Study time:** 45–60 mins
-**Curriculum phase:** Phase 3 — Agentic Architecture
-**Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Error Recovery in Loops"
+id: W7-D4-C
+part: agents
+domain: agentic
+order: 3014
+kind: note
+book: true
+minutes: "45–60"
+verified: "2026-10"
+exam_domain: "Domain 1 · Agentic Architecture & Orchestration (27%)"
 ---
 
 ## Core Concept
@@ -325,7 +323,7 @@ Everything else becomes information for Claude.
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Build a fault-tolerant agent.
 

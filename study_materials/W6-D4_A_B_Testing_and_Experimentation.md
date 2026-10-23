@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 6, Day 4
----
-
-# CCA Self-Study — Week 6, Day 4
-## A/B Testing and Experimentation
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 2 — Advanced Patterns
-**Exam domain:** Domain 9 · Optimization & Testing
-**Last verified:** 2026-10
-
+layout: note
+title: "A/B Testing and Experimentation"
+id: W6-D4
+part: extras
+domain: mcp
+order: 7019
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 9 · Optimization & Testing"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ How do you know if a prompt change actually improves results? A/B testing and ri
 - Experiment design
 - Avoiding biased conclusions
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Design an A/B test comparing two prompt strategies for task accuracy.
 

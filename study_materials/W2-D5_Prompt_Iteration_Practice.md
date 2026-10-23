@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 2, Day 5
----
-
-# CCA Self-Study — Week 2, Day 5
-## Prompt Iteration Practice
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 1 — Claude Fundamentals
-**Exam domain:** Domain 4 · Prompt Engineering & Structured Output
-**Last verified:** 2026-10
-
+layout: note
+title: "Prompt Iteration Practice"
+id: W2-D5
+part: foundations
+domain: prompting
+order: 1020
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 4 · Prompt Engineering & Structured Output"
 ---
 
 ## Core Concept
@@ -322,7 +320,7 @@ Neither alone is sufficient. Both are required.
 - [ ] Q4 answered
 - [ ] Q5 answered
 - [ ] Answer guide reviewed
-- [ ] Week 3 ready to start 🎉
+- [ ] Week 3 ready to start
 
 ---
 

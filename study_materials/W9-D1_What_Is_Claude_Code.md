@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 9, Day 1
----
-
-# CCA Self-Study — Week 9, Day 1
-## What Is Claude Code?
-
-**Date completed:** _____________
-**Study time:** 45 mins
-**Curriculum phase:** Phase 4 — Claude Code & Workflows
-**Exam domain:** Domain 3 · Claude Code Configuration & Workflows (20%)
-**Last verified:** 2026-10
-
+layout: note
+title: "What Is Claude Code"
+id: W9-D1
+part: code
+domain: claude_code
+order: 4011
+kind: note
+book: true
+minutes: "45"
+verified: "2026-10"
+exam_domain: "Domain 3 · Claude Code Configuration & Workflows (20%)"
 ---
 
 ## Core Concept
@@ -225,7 +223,7 @@ Claude Code reads your actual Swift files, understands your existing architectur
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1:** Install Claude Code: `npm install -g @anthropic-ai/claude-code`
 

@@ -1,11 +1,15 @@
 ---
-layout: default
-title: CCDV-F Track — Mock Exam
+layout: note
+title: "CCDV-F Mock Exam (53 Q)"
+id: DEV-MOCK
+part: developer
+domain: context
+order: 8014
+kind: mock
+book: true
+minutes: "120"
 ---
 
-# CCDV-F Track — Mock Exam (53 Questions)
-
-**Study time:** 120 mins (match the real exam)
 **Exam:** Claude Certified Developer – Foundations (CCDV-F): 53 questions, 120 minutes, pass = 720/1000 scaled
 **Last verified:** 2026-10
 

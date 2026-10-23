@@ -1,16 +1,15 @@
 ---
-layout: default
-title: CCDV-F Track — Day 2
----
-
-# CCDV-F Track — Day 2
-## Model Selection and Optimization
-
-**Date completed:** _____________
-**Study time:** 60 mins
-**Exam domain:** CCDV-F · Model Selection & Optimization (16.8%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Model Selection and Optimization"
+id: DEV-D2
+part: developer
+domain: context
+order: 8012
+kind: note
+book: true
+minutes: "60"
+verified: "2026-10"
+exam_domain: "CCDV-F · Model Selection & Optimization (16.8%)"
 ---
 
 ## Core Concept
@@ -97,7 +96,7 @@ Repeating a large prefix? ──────────────────
 | "Cheapest per request = cheapest" | Per completed task |
 | "200K context" | Current models are 1M (Haiku 4.5 legacy: 200K) |
 
-## Hands-On Lab 🛠️
+## Hands-On Lab
 
 Build `bench.py`: 100 labeled items → run Haiku 5.5 / Sonnet 5.5 / Opus 5.5 at 2 effort levels → table of accuracy, p50 latency, tokens, cost per correct answer. Recommend a routing policy with numbers. (This is also FDE portfolio P3.)
 

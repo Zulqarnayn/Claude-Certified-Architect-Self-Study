@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 11, Day 6
----
-
-# CCA Self-Study — Week 11, Day 6
-## Exam Scenario 6: Structured Data Extraction
-
-**Date completed:** _____________
-**Study time:** 45 mins
-**Curriculum phase:** Phase 6 — Exam Scenarios (added 2026-10)
-**Exam domain:** All 5 Domains — applied scenario (Prompt/Structured Output 20%, Context/Reliability 15% heavy)
-**Last verified:** 2026-10
-
+layout: note
+title: "Exam Scenario 6: Structured Data Extraction"
+id: W11-D6
+part: practice
+domain: prompting
+order: 6016
+kind: scenario
+book: true
+minutes: "45"
+verified: "2026-10"
+exam_domain: "All 5 Domains — applied scenario (Prompt/Structured Output 20%, Context/Reliability 15% heavy)"
 ---
 
 ## Scenario Overview

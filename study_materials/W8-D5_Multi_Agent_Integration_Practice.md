@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 8, Day 5
----
-
-# CCA Self-Study — Week 8, Day 5
-## Multi-Agent Integration Practice
-
-**Date completed:** _____________
-**Study time:** 45–60 mins
-**Curriculum phase:** Phase 3 — Agentic Architecture
-**Exam domain:** Domain 1 · Agentic Architecture & Orchestration
-**Last verified:** 2026-10
-
+layout: note
+title: "Multi-Agent Integration Practice"
+id: W8-D5-X
+part: extras
+domain: agentic
+order: 7030
+kind: extra
+book: true
+minutes: "45–60"
+verified: "2026-10"
+exam_domain: "Domain 1 · Agentic Architecture & Orchestration"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ A production-ready hub-and-spoke system combines decomposition, isolation, paral
 - Error recovery and fallback paths
 - Aggregation quality checks
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Sketch an execution plan for a 3-agent workflow, including one dependency and one fallback route.
 

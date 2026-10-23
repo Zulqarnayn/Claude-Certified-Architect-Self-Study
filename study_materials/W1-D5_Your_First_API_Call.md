@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 1, Day 5
----
-
-# CCA Self-Study — Week 1, Day 5
-## Your First API Call
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 1 — Claude Fundamentals
-**Exam domain:** Domain 4 · API & Structured Output
-**Last verified:** 2026-10
-
+layout: note
+title: "Your First API Call"
+id: W1-D5
+part: foundations
+domain: context
+order: 1015
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 4 · API & Structured Output"
 ---
 
 ## Core Concept
@@ -40,7 +38,7 @@ As an architect, you live in the kitchen.
 4. Copy it somewhere safe — you won't see it again
 5. Add $5 of credits (Settings → Billing) — this is all you need for all of Week 1–3 learning
 
-> ⚠️ Never paste your API key into claude.ai chat, GitHub, or any public place. Treat it like a password.
+> Never paste your API key into claude.ai chat, GitHub, or any public place. Treat it like a password.
 
 ---
 
@@ -175,7 +173,7 @@ Observe how the system prompt completely changes the output while the user messa
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Complete all four of these in order. Write your observations after each.
 
@@ -308,7 +306,7 @@ Several options depending on the context:
 - [ ] Q4 answered
 - [ ] Q5 answered
 - [ ] Answer guide reviewed
-- [ ] Week 1 complete 🎉
+- [ ] Week 1 complete
 
 ---
 

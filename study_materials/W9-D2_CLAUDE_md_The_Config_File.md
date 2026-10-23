@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 9, Day 2
----
-
-# CCA Self-Study — Week 9, Day 2
-## CLAUDE.md — The Configuration File
-
-**Date completed:** _____________
-**Study time:** 45 mins
-**Curriculum phase:** Phase 4 — Claude Code & Workflows
-**Exam domain:** Domain 3 · Claude Code Configuration & Workflows (20%)
-**Last verified:** 2026-10
-
+layout: note
+title: "CLAUDE.md: The Config File"
+id: W9-D2
+part: code
+domain: claude_code
+order: 4012
+kind: note
+book: true
+minutes: "45"
+verified: "2026-10"
+exam_domain: "Domain 3 · Claude Code Configuration & Workflows (20%)"
 ---
 
 ## Core Concept
@@ -285,7 +283,7 @@ Do not mark a task complete until all three pass.
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1:** Create a global CLAUDE.md at `~/.claude/CLAUDE.md` with your personal preferences.
 

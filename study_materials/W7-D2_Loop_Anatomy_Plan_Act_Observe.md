@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 7, Day 2
----
-
-# CCA Self-Study — Week 7, Day 2
-## Loop Anatomy — Plan → Act → Observe
-
-**Date completed:** _____________
-**Study time:** 45–60 mins
-**Curriculum phase:** Phase 3 — Agentic Architecture
-**Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Loop Anatomy: Plan, Act, Observe"
+id: W7-D2-C
+part: agents
+domain: agentic
+order: 3012
+kind: note
+book: true
+minutes: "45–60"
+verified: "2026-10"
+exam_domain: "Domain 1 · Agentic Architecture & Orchestration (27%)"
 ---
 
 ## Core Concept
@@ -346,7 +344,7 @@ def run_agent_with_phase_logging(task, tools, executor):
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1:** Add phase logging to your agent from D1. Run the same research task and observe which phase triggers at each iteration.
 

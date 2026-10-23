@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 8, Day 1
----
-
-# CCA Self-Study — Week 8, Day 1
-## Specialized Industry Workflows
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 3 — Evaluation & Optimization
-**Exam domain:** Domain 6 · Vertical Solutions
-**Last verified:** 2026-10
-
+layout: note
+title: "Specialized Industry Workflows"
+id: W8-D1-X
+part: extras
+domain: agentic
+order: 7026
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 6 · Vertical Solutions"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ Claude can be applied differently depending on the industry. This day covers cus
 - Domain knowledge integration
 - Fine-grained validation
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Choose an industry and design a Claude workflow for one common task.
 

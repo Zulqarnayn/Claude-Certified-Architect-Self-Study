@@ -1,12 +1,14 @@
 ---
-layout: default
-title: CCA Self-Study — Week 1, Day 1
+layout: note
+title: "LLMs Explained From Scratch"
+id: W1-D1
+part: foundations
+domain: context
+order: 1011
+kind: note
+book: true
 ---
 
-# CCA Self-Study — Week 1, Day 1
-## LLMs Explained From Scratch
-
-**Date completed:** April 21, 2026
 **Weekday:** Tue
 **Study time:** 30–45 mins
 **Curriculum phase:** Phase 1 — Claude Fundamentals
@@ -62,11 +64,11 @@ The maximum tokens Claude can hold in one conversation = **context window** = Cl
 
 | Common belief | Reality |
 |---|---|
-| Claude searches the internet | ❌ Generates from training data |
-| Claude knows today's news | ❌ Has a knowledge cutoff date |
-| Claude "understands" like humans | ❌ Predicts patterns, not meaning |
-| Claude remembers past conversations | ❌ Each conversation starts blank |
-| Claude is always right | ❌ Can confidently hallucinate |
+| Claude searches the internet | Generates from training data |
+| Claude knows today's news | Has a knowledge cutoff date |
+| Claude "understands" like humans | Predicts patterns, not meaning |
+| Claude remembers past conversations | Each conversation starts blank |
+| Claude is always right | Can confidently hallucinate |
 
 ### Hallucination
 When Claude makes something up confidently — that is not a traditional bug. It is the model predicting a plausible-sounding continuation that happens to be false. Architects design systems to **catch and handle** hallucinations, not trust output blindly.
@@ -79,10 +81,10 @@ A critical distinction discovered during the hands-on task:
 
 | | Claude.ai (the product) | Claude API (the raw model) |
 |---|---|---|
-| Web search | ✅ Built in | ❌ You build it |
-| Memory across chats | ✅ Optional feature | ❌ You build it |
-| File reading | ✅ Built in | ❌ You build it |
-| Tools | ✅ Pre-built | ❌ You define them |
+| Web search | Yes · Built in | No · You build it |
+| Memory across chats | Yes · Optional feature | No · You build it |
+| File reading | Yes · Built in | No · You build it |
+| Tools | Yes · Pre-built | No · You define them |
 | Who controls it | Anthropic | You |
 
 **Rule of thumb:**
@@ -126,7 +128,7 @@ Tested Claude.ai with three questions:
 
 > A: No, it's not understanding. It predicts patterns without truly reasoning about my feature ideas — it has seen similar patterns before in training data.
 
-✅ Correct. Claude doesn't "understand" the way a human colleague would. It recognizes patterns from millions of similar technical conversations and predicts a useful continuation.
+ Correct. Claude doesn't "understand" the way a human colleague would. It recognizes patterns from millions of similar technical conversations and predicts a useful continuation.
 
 ---
 
@@ -134,7 +136,7 @@ Tested Claude.ai with three questions:
 
 > A: It shouldn't know the price due to knowledge cutoff.
 
-✅ Correct — plus one extra risk: Claude may state outdated pricing **with full confidence**, not with uncertainty. Confident wrongness is more dangerous than silence. This is why architects add guardrails.
+ Correct — plus one extra risk: Claude may state outdated pricing **with full confidence**, not with uncertainty. Confident wrongness is more dangerous than silence. This is why architects add guardrails.
 
 ---
 
@@ -142,7 +144,7 @@ Tested Claude.ai with three questions:
 
 > A: Memory should live outside the model. I am responsible for building it. Each conversation is blank and Claude has no context.
 
-✅ Exactly right. Memory lives in a database, file, or session store — and you pass relevant pieces back into the context window each time. Claude never reaches out to grab it. You feed it.
+ Exactly right. Memory lives in a database, file, or session store — and you pass relevant pieces back into the context window each time. Claude never reaches out to grab it. You feed it.
 
 **Technical name for this pattern:** Retrieval Augmented Generation (RAG) — covered in Week 4.
 

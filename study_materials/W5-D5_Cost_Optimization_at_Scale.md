@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 5, Day 5
----
-
-# CCA Self-Study — Week 5, Day 5
-## Cost Optimization at Scale
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 2 — Advanced Patterns
-**Exam domain:** Domain 6 · Operations & Economics
-**Last verified:** 2026-10
-
+layout: note
+title: "Cost Optimization at Scale"
+id: W5-D5
+part: extras
+domain: agentic
+order: 7015
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 6 · Operations & Economics"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ At scale, every prompt iteration, every retry, every redundant call costs real m
 - Batch processing economics
 - Cost vs quality trade-offs
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Implement cost tracking and optimization for your W5-D1 multi-agent system.
 

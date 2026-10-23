@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 7, Day 5
----
-
-# CCA Self-Study — Week 7, Day 5
-## Build a Simple Agent — Full Integration
-
-**Date completed:** _____________
-**Study time:** 60 mins (extended — this is a full build day)
-**Curriculum phase:** Phase 3 — Agentic Architecture
-**Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Build a Simple Agent"
+id: W7-D5-C
+part: agents
+domain: agentic
+order: 3015
+kind: note
+book: true
+minutes: "60"
+verified: "2026-10"
+exam_domain: "Domain 1 · Agentic Architecture & Orchestration (27%)"
 ---
 
 ## Core Concept
@@ -608,7 +606,7 @@ if __name__ == "__main__":
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1:** Run the agent on all 4 test questions. Record which stop condition fired for each.
 
@@ -800,7 +798,7 @@ If changed to handle only end_turn/tool_use: max_tokens responses are silently c
 - [ ] Written explanation of error recovery flow completed
 - [ ] All 6 questions answered
 - [ ] Answer guide reviewed
-- [ ] Week 7 complete 🎉
+- [ ] Week 7 complete
 
 ---
 

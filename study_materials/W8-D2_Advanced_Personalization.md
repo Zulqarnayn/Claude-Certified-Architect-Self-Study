@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 8, Day 2
----
-
-# CCA Self-Study — Week 8, Day 2
-## Advanced Personalization
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 3 — Evaluation & Optimization
-**Exam domain:** Domain 7 · User Experience
-**Last verified:** 2026-10
-
+layout: note
+title: "Advanced Personalization"
+id: W8-D2-X
+part: extras
+domain: agentic
+order: 7027
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 7 · User Experience"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ Personalization makes Claude feel tailored to the user. Learn how to build user-
 - Session state vs long-term memory
 - Controlled personalization patterns
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Design personalization rules for a customer service assistant.
 

@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 8, Day 5
----
-
-# CCA Self-Study — Week 8, Day 5
-## Build a Hub-and-Spoke System — Full Integration
-
-**Date completed:** _____________
-**Study time:** 60 mins
-**Curriculum phase:** Phase 3 — Agentic Architecture
-**Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Build Hub-and-Spoke System"
+id: W8-D5
+part: agents
+domain: agentic
+order: 3020
+kind: note
+book: true
+minutes: "60"
+verified: "2026-10"
+exam_domain: "Domain 1 · Agentic Architecture & Orchestration (27%)"
 ---
 
 ## Core Concept
@@ -608,7 +606,7 @@ if __name__ == "__main__":
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1:** Run the system on all 4 test queries. Note which subagents were invoked for each.
 
@@ -854,7 +852,7 @@ Detection: After aggregation, automatically check that all `caveats` fields from
 - [ ] Architecture paragraph written from memory
 - [ ] All 6 questions answered
 - [ ] Answer guide reviewed
-- [ ] Week 8 complete 🎉
+- [ ] Week 8 complete
 
 ---
 

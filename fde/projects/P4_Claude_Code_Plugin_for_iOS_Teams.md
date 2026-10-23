@@ -1,9 +1,12 @@
 ---
-layout: default
-title: P4 Claude Code Plugin for iOS Teams
+layout: note
+title: "P4 Claude Code Plugin for iOS Teams"
+id: FDE-P4
+part: fde
+order: 9016
+kind: note
+book: true
 ---
-
-# P4 — Claude Code Plugin for iOS Teams
 
 **Phase:** 4 (start earlier if time) · **Hits:** Claude Code (CCAR-F 20%), skills, hooks, subagents, CI · **Status:** [ ] not started
 

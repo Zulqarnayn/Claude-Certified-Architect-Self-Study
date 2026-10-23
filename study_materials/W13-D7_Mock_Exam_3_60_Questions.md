@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 13, Day 7
----
-
-# CCA Self-Study — Week 13, Day 7
-## Mock Exam 3: 60 Questions (2026 Platform)
-
-**Date completed:** _____________
-**Study time:** 120 mins (match the real exam)
-**Curriculum phase:** Phase 6 — 2026 Platform Update
-**Exam domain:** All 5 Domains, weighted like CCAR-F
-**Last verified:** 2026-10
-
+layout: note
+title: "Mock Exam 3: 60 Questions (2026)"
+id: W13-D7
+part: practice
+domain: agentic
+order: 6018
+kind: mock
+book: true
+minutes: "120"
+verified: "2026-10"
+exam_domain: "All 5 Domains, weighted like CCAR-F"
 ---
 
 ## How to Use

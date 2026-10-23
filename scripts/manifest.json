@@ -1,0 +1,922 @@
+[
+ {
+  "id": "W1-D1",
+  "week": 1,
+  "day": 1,
+  "title": "LLMs Explained From Scratch",
+  "path": "study_materials/W1-D1_LLMs_Explained_From_Scratch.md",
+  "mock": false,
+  "track": "core",
+  "domain": "context"
+ },
+ {
+  "id": "W1-D2",
+  "week": 1,
+  "day": 2,
+  "title": "Claude vs Other AI Models",
+  "path": "study_materials/W1-D2_Claude_vs_Other_AI_Models.md",
+  "mock": false,
+  "track": "core",
+  "domain": "context"
+ },
+ {
+  "id": "W1-D3",
+  "week": 1,
+  "day": 3,
+  "title": "The Context Window",
+  "path": "study_materials/W1-D3_The_Context_Window.md",
+  "mock": false,
+  "track": "core",
+  "domain": "context"
+ },
+ {
+  "id": "W1-D4",
+  "week": 1,
+  "day": 4,
+  "title": "System Prompts vs User Messages",
+  "path": "study_materials/W1-D4_System_Prompts_vs_User_Messages.md",
+  "mock": false,
+  "track": "core",
+  "domain": "context"
+ },
+ {
+  "id": "W1-D5",
+  "week": 1,
+  "day": 5,
+  "title": "Your First API Call",
+  "path": "study_materials/W1-D5_Your_First_API_Call.md",
+  "mock": false,
+  "track": "core",
+  "domain": "context"
+ },
+ {
+  "id": "W2-D1",
+  "week": 2,
+  "day": 1,
+  "title": "What Makes a Good Prompt",
+  "path": "study_materials/W2-D1_What_Makes_a_Good_Prompt.md",
+  "mock": false,
+  "track": "core",
+  "domain": "prompting"
+ },
+ {
+  "id": "W2-D2",
+  "week": 2,
+  "day": 2,
+  "title": "Role Prompting and Persona",
+  "path": "study_materials/W2-D2_Role_Prompting_and_Persona.md",
+  "mock": false,
+  "track": "core",
+  "domain": "prompting"
+ },
+ {
+  "id": "W2-D3",
+  "week": 2,
+  "day": 3,
+  "title": "Chain of Thought Prompting",
+  "path": "study_materials/W2-D3_Chain_of_Thought_Prompting.md",
+  "mock": false,
+  "track": "core",
+  "domain": "prompting"
+ },
+ {
+  "id": "W2-D4",
+  "week": 2,
+  "day": 4,
+  "title": "Negative Prompting",
+  "path": "study_materials/W2-D4_Negative_Prompting.md",
+  "mock": false,
+  "track": "core",
+  "domain": "prompting"
+ },
+ {
+  "id": "W2-D5",
+  "week": 2,
+  "day": 5,
+  "title": "Prompt Iteration Practice",
+  "path": "study_materials/W2-D5_Prompt_Iteration_Practice.md",
+  "mock": false,
+  "track": "core",
+  "domain": "prompting"
+ },
+ {
+  "id": "W3-D1",
+  "week": 3,
+  "day": 1,
+  "title": "Few Shot Examples",
+  "path": "study_materials/W3-D1_Few_Shot_Examples.md",
+  "mock": false,
+  "track": "core",
+  "domain": "prompting"
+ },
+ {
+  "id": "W3-D2",
+  "week": 3,
+  "day": 2,
+  "title": "Structured Output JSON Basics",
+  "path": "study_materials/W3-D2_Structured_Output_JSON_Basics.md",
+  "mock": false,
+  "track": "core",
+  "domain": "prompting"
+ },
+ {
+  "id": "W3-D3",
+  "week": 3,
+  "day": 3,
+  "title": "JSON Schema Enforcement",
+  "path": "study_materials/W3-D3_JSON_Schema_Enforcement.md",
+  "mock": false,
+  "track": "core",
+  "domain": "prompting"
+ },
+ {
+  "id": "W3-D4",
+  "week": 3,
+  "day": 4,
+  "title": "Validation & Retry Loops",
+  "path": "study_materials/W3-D4_Validation_and_Retry_Loops.md",
+  "mock": false,
+  "track": "core",
+  "domain": "prompting"
+ },
+ {
+  "id": "W3-D5",
+  "week": 3,
+  "day": 5,
+  "title": "When NOT to Use Structured Output",
+  "path": "study_materials/W3-D5_When_NOT_to_Use_Structured_Output.md",
+  "mock": false,
+  "track": "core",
+  "domain": "prompting"
+ },
+ {
+  "id": "W4-D1",
+  "week": 4,
+  "day": 1,
+  "title": "Messages API Anatomy",
+  "path": "study_materials/W4-D1_Messages_API_Anatomy.md",
+  "mock": false,
+  "track": "core",
+  "domain": "context"
+ },
+ {
+  "id": "W4-D2",
+  "week": 4,
+  "day": 2,
+  "title": "Multi-Turn Conversations",
+  "path": "study_materials/W4-D2_Multi_Turn_Conversations.md",
+  "mock": false,
+  "track": "core",
+  "domain": "context"
+ },
+ {
+  "id": "W4-D3",
+  "week": 4,
+  "day": 3,
+  "title": "Streaming Responses",
+  "path": "study_materials/W4-D3_Streaming_Responses.md",
+  "mock": false,
+  "track": "core",
+  "domain": "context"
+ },
+ {
+  "id": "W4-D4",
+  "week": 4,
+  "day": 4,
+  "title": "Token Counting & Cost",
+  "path": "study_materials/W4-D4_Token_Counting_and_Cost.md",
+  "mock": false,
+  "track": "core",
+  "domain": "context"
+ },
+ {
+  "id": "W4-D5",
+  "week": 4,
+  "day": 5,
+  "title": "Rate Limits & Error Handling",
+  "path": "study_materials/W4-D5_Rate_Limits_and_Error_Handling.md",
+  "mock": false,
+  "track": "core",
+  "domain": "context"
+ },
+ {
+  "id": "W5-D1-C",
+  "week": 5,
+  "day": 1,
+  "title": "What Is Tool Use?",
+  "path": "study_materials/W5-D1_What_Is_Tool_Use.md",
+  "mock": false,
+  "track": "core",
+  "domain": "mcp"
+ },
+ {
+  "id": "W5-D1",
+  "week": 5,
+  "day": 1,
+  "title": "Multi-Agent Systems",
+  "path": "study_materials/W5-D1_Multi_Agent_Systems.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "agentic"
+ },
+ {
+  "id": "W5-D2-C",
+  "week": 5,
+  "day": 2,
+  "title": "Defining Your First Tool",
+  "path": "study_materials/W5-D2_Defining_Your_First_Tool.md",
+  "mock": false,
+  "track": "core",
+  "domain": "mcp"
+ },
+ {
+  "id": "W5-D2",
+  "week": 5,
+  "day": 2,
+  "title": "Agent Reliability and Testing",
+  "path": "study_materials/W5-D2_Agent_Reliability_and_Testing.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "agentic"
+ },
+ {
+  "id": "W5-D3-C",
+  "week": 5,
+  "day": 3,
+  "title": "Tool Description Quality",
+  "path": "study_materials/W5-D3_Tool_Description_Quality.md",
+  "mock": false,
+  "track": "core",
+  "domain": "mcp"
+ },
+ {
+  "id": "W5-D3",
+  "week": 5,
+  "day": 3,
+  "title": "Retrieval Augmented Generation",
+  "path": "study_materials/W5-D3_Retrieval_Augmented_Generation.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "agentic"
+ },
+ {
+  "id": "W5-D4-C",
+  "week": 5,
+  "day": 4,
+  "title": "Handling Tool Results",
+  "path": "study_materials/W5-D4_Handling_Tool_Results.md",
+  "mock": false,
+  "track": "core",
+  "domain": "mcp"
+ },
+ {
+  "id": "W5-D4",
+  "week": 5,
+  "day": 4,
+  "title": "Fine-Tuning Considerations",
+  "path": "study_materials/W5-D4_Fine_Tuning_Considerations.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "agentic"
+ },
+ {
+  "id": "W5-D5-C",
+  "week": 5,
+  "day": 5,
+  "title": "Multi-Tool Conversations",
+  "path": "study_materials/W5-D5_Multi_Tool_Conversations.md",
+  "mock": false,
+  "track": "core",
+  "domain": "mcp"
+ },
+ {
+  "id": "W5-D5",
+  "week": 5,
+  "day": 5,
+  "title": "Cost Optimization at Scale",
+  "path": "study_materials/W5-D5_Cost_Optimization_at_Scale.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "agentic"
+ },
+ {
+  "id": "W6-D1-C",
+  "week": 6,
+  "day": 1,
+  "title": "What Is MCP and Why It Exists",
+  "path": "study_materials/W6-D1_What_Is_MCP_and_Why_It_Exists.md",
+  "mock": false,
+  "track": "core",
+  "domain": "mcp"
+ },
+ {
+  "id": "W6-D1",
+  "week": 6,
+  "day": 1,
+  "title": "Real-World Application Architecture",
+  "path": "study_materials/W6-D1_Real_World_Application_Architecture.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "mcp"
+ },
+ {
+  "id": "W6-D2-C",
+  "week": 6,
+  "day": 2,
+  "title": "MCP Server Architecture",
+  "path": "study_materials/W6-D2_MCP_Server_Architecture.md",
+  "mock": false,
+  "track": "core",
+  "domain": "mcp"
+ },
+ {
+  "id": "W6-D2",
+  "week": 6,
+  "day": 2,
+  "title": "Security and Compliance",
+  "path": "study_materials/W6-D2_Security_and_Compliance.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "mcp"
+ },
+ {
+  "id": "W6-D3-C",
+  "week": 6,
+  "day": 3,
+  "title": "Build Your First MCP Server",
+  "path": "study_materials/W6-D3_Build_Your_First_MCP_Server.md",
+  "mock": false,
+  "track": "core",
+  "domain": "mcp"
+ },
+ {
+  "id": "W6-D3",
+  "week": 6,
+  "day": 3,
+  "title": "Analytics and Observability",
+  "path": "study_materials/W6-D3_Analytics_and_Observability.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "mcp"
+ },
+ {
+  "id": "W6-D4-C",
+  "week": 6,
+  "day": 4,
+  "title": "Tool Boundary Design",
+  "path": "study_materials/W6-D4_Tool_Boundary_Design.md",
+  "mock": false,
+  "track": "core",
+  "domain": "mcp"
+ },
+ {
+  "id": "W6-D4",
+  "week": 6,
+  "day": 4,
+  "title": "A/B Testing and Experimentation",
+  "path": "study_materials/W6-D4_A_B_Testing_and_Experimentation.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "mcp"
+ },
+ {
+  "id": "W6-D5-C",
+  "week": 6,
+  "day": 5,
+  "title": "MCP in Production",
+  "path": "study_materials/W6-D5_MCP_in_Production.md",
+  "mock": false,
+  "track": "core",
+  "domain": "mcp"
+ },
+ {
+  "id": "W6-D5",
+  "week": 6,
+  "day": 5,
+  "title": "Case Studies and Synthesis",
+  "path": "study_materials/W6-D5_Case_Studies_and_Synthesis.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "mcp"
+ },
+ {
+  "id": "W7-D1-C",
+  "week": 7,
+  "day": 1,
+  "title": "What Is an Agentic Loop?",
+  "path": "study_materials/W7-D1_What_Is_an_Agentic_Loop.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W7-D1",
+  "week": 7,
+  "day": 1,
+  "title": "Evaluation Frameworks",
+  "path": "study_materials/W7-D1_Evaluation_Frameworks.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "agentic"
+ },
+ {
+  "id": "W7-D2-C",
+  "week": 7,
+  "day": 2,
+  "title": "Loop Anatomy: Plan, Act, Observe",
+  "path": "study_materials/W7-D2_Loop_Anatomy_Plan_Act_Observe.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W7-D2",
+  "week": 7,
+  "day": 2,
+  "title": "Human-in-the-Loop Systems",
+  "path": "study_materials/W7-D2_Human_in_the_Loop_Systems.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "agentic"
+ },
+ {
+  "id": "W7-D3-C",
+  "week": 7,
+  "day": 3,
+  "title": "Stop Conditions",
+  "path": "study_materials/W7-D3_Stop_Conditions.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W7-D3",
+  "week": 7,
+  "day": 3,
+  "title": "Prompt Lifecycle Management",
+  "path": "study_materials/W7-D3_Prompt_Lifecycle_Management.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "agentic"
+ },
+ {
+  "id": "W7-D4-C",
+  "week": 7,
+  "day": 4,
+  "title": "Error Recovery in Loops",
+  "path": "study_materials/W7-D4_Error_Recovery_in_Loops.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W7-D4",
+  "week": 7,
+  "day": 4,
+  "title": "Cross-Model Validation",
+  "path": "study_materials/W7-D4_Cross_Model_Validation.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "agentic"
+ },
+ {
+  "id": "W7-D5-C",
+  "week": 7,
+  "day": 5,
+  "title": "Build a Simple Agent",
+  "path": "study_materials/W7-D5_Build_a_Simple_Agent.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W7-D5",
+  "week": 7,
+  "day": 5,
+  "title": "Deployment and Rollout Strategy",
+  "path": "study_materials/W7-D5_Deployment_and_Rollout_Strategy.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "agentic"
+ },
+ {
+  "id": "W8-D1",
+  "week": 8,
+  "day": 1,
+  "title": "Why Multiple Agents",
+  "path": "study_materials/W8-D1_Why_Multiple_Agents.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W8-D1-X",
+  "week": 8,
+  "day": 1,
+  "title": "Specialized Industry Workflows",
+  "path": "study_materials/W8-D1_Specialized_Industry_Workflows.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "agentic"
+ },
+ {
+  "id": "W8-D2",
+  "week": 8,
+  "day": 2,
+  "title": "Hub-and-Spoke Architecture",
+  "path": "study_materials/W8-D2_Hub_and_Spoke_Architecture.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W8-D2-X",
+  "week": 8,
+  "day": 2,
+  "title": "Advanced Personalization",
+  "path": "study_materials/W8-D2_Advanced_Personalization.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "agentic"
+ },
+ {
+  "id": "W8-D3",
+  "week": 8,
+  "day": 3,
+  "title": "Context Isolation Deep Dive",
+  "path": "study_materials/W8-D3_Context_Isolation_Deep_Dive.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W8-D3-X",
+  "week": 8,
+  "day": 3,
+  "title": "Context Isolation Practice",
+  "path": "study_materials/W8-D3_Context_Isolation_Practice.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "agentic"
+ },
+ {
+  "id": "W8-D4",
+  "week": 8,
+  "day": 4,
+  "title": "Lifecycle Hooks and Guardrails",
+  "path": "study_materials/W8-D4_Lifecycle_Hooks_and_Guardrails.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W8-D4-X",
+  "week": 8,
+  "day": 4,
+  "title": "Lifecycle Hooks Practice",
+  "path": "study_materials/W8-D4_Lifecycle_Hooks_Practice.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "agentic"
+ },
+ {
+  "id": "W8-D5",
+  "week": 8,
+  "day": 5,
+  "title": "Build Hub-and-Spoke System",
+  "path": "study_materials/W8-D5_Build_Hub_and_Spoke_System.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W8-D5-X",
+  "week": 8,
+  "day": 5,
+  "title": "Multi-Agent Integration Practice",
+  "path": "study_materials/W8-D5_Multi_Agent_Integration_Practice.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "agentic"
+ },
+ {
+  "id": "W9-D1",
+  "week": 9,
+  "day": 1,
+  "title": "What Is Claude Code",
+  "path": "study_materials/W9-D1_What_Is_Claude_Code.md",
+  "mock": false,
+  "track": "core",
+  "domain": "claude_code"
+ },
+ {
+  "id": "W9-D1-X",
+  "week": 9,
+  "day": 1,
+  "title": "Claude Code Fundamentals",
+  "path": "study_materials/W9-D1_Claude_Code_Fundamentals.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "claude_code"
+ },
+ {
+  "id": "W9-D2",
+  "week": 9,
+  "day": 2,
+  "title": "CLAUDE.md: The Config File",
+  "path": "study_materials/W9-D2_CLAUDE_md_The_Config_File.md",
+  "mock": false,
+  "track": "core",
+  "domain": "claude_code"
+ },
+ {
+  "id": "W9-D2-X",
+  "week": 9,
+  "day": 2,
+  "title": "CLAUDE.md Practice",
+  "path": "study_materials/W9-D2_CLAUDE_md_Practice.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "claude_code"
+ },
+ {
+  "id": "W9-D3",
+  "week": 9,
+  "day": 3,
+  "title": "Slash Commands and .claude/commands/",
+  "path": "study_materials/W9-D3_Slash_Commands_and_claude_commands.md",
+  "mock": false,
+  "track": "core",
+  "domain": "claude_code"
+ },
+ {
+  "id": "W9-D3-X",
+  "week": 9,
+  "day": 3,
+  "title": "Slash Commands Practice",
+  "path": "study_materials/W9-D3_Slash_Commands_Practice.md",
+  "mock": false,
+  "track": "extras",
+  "domain": "claude_code"
+ },
+ {
+  "id": "W9-D4",
+  "week": 9,
+  "day": 4,
+  "title": "Claude Code in CI/CD",
+  "path": "study_materials/W9-D4_Claude_Code_in_CICD.md",
+  "mock": false,
+  "track": "core",
+  "domain": "claude_code"
+ },
+ {
+  "id": "W9-D5",
+  "week": 9,
+  "day": 5,
+  "title": "Prompt Caching",
+  "path": "study_materials/W9-D5_Prompt_Caching.md",
+  "mock": false,
+  "track": "core",
+  "domain": "claude_code"
+ },
+ {
+  "id": "W10-D1",
+  "week": 10,
+  "day": 1,
+  "title": "Handoff Patterns",
+  "path": "study_materials/W10-D1_Handoff_Patterns.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W10-D2",
+  "week": 10,
+  "day": 2,
+  "title": "Confidence Calibration",
+  "path": "study_materials/W10-D2_Confidence_Calibration.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W11-D1",
+  "week": 11,
+  "day": 1,
+  "title": "Exam Scenario 1: Customer Support",
+  "path": "study_materials/W11-D1_Exam_Scenario_1_Customer_Support.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W11-D2",
+  "week": 11,
+  "day": 2,
+  "title": "Exam Scenario 2: Code Generation",
+  "path": "study_materials/W11-D2_Exam_Scenario_2_Code_Generation.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W11-D3",
+  "week": 11,
+  "day": 3,
+  "title": "Exam Scenario 3: Multi-Agent Research",
+  "path": "study_materials/W11-D3_Exam_Scenario_3_Multi_Agent_Research.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W11-D4",
+  "week": 11,
+  "day": 4,
+  "title": "Exam Scenario 4: Developer Productivity",
+  "path": "study_materials/W11-D4_Exam_Scenario_4_Developer_Productivity.md",
+  "mock": false,
+  "track": "core",
+  "domain": "claude_code"
+ },
+ {
+  "id": "W11-D5",
+  "week": 11,
+  "day": 5,
+  "title": "Exam Scenario 5: Claude Code in CI",
+  "path": "study_materials/W11-D5_Exam_Scenario_5_Claude_Code_in_CI.md",
+  "mock": false,
+  "track": "core",
+  "domain": "claude_code"
+ },
+ {
+  "id": "W11-D6",
+  "week": 11,
+  "day": 6,
+  "title": "Exam Scenario 6: Structured Data Extraction",
+  "path": "study_materials/W11-D6_Exam_Scenario_6_Structured_Data_Extraction.md",
+  "mock": false,
+  "track": "core",
+  "domain": "prompting"
+ },
+ {
+  "id": "W12-D1",
+  "week": 12,
+  "day": 1,
+  "title": "Full Mock Exam: 60 Questions",
+  "path": "study_materials/W12-D1_Full_Mock_Exam_60_Questions.md",
+  "mock": true,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W13-D1",
+  "week": 13,
+  "day": 1,
+  "title": "Agent SDK and the Four Ways to Build Agents",
+  "path": "study_materials/W13-D1_Agent_SDK_and_Four_Ways_to_Build_Agents.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W13-D2",
+  "week": 13,
+  "day": 2,
+  "title": "Claude Code: Skills, Subagents, Plugins, Hooks",
+  "path": "study_materials/W13-D2_Claude_Code_Skills_Subagents_Plugins_Hooks.md",
+  "mock": false,
+  "track": "core",
+  "domain": "claude_code"
+ },
+ {
+  "id": "W13-D3",
+  "week": 13,
+  "day": 3,
+  "title": "Structured Outputs, Strict Tools, Tool Runner",
+  "path": "study_materials/W13-D3_Structured_Outputs_Strict_Tools_Tool_Runner.md",
+  "mock": false,
+  "track": "core",
+  "domain": "prompting"
+ },
+ {
+  "id": "W13-D4",
+  "week": 13,
+  "day": 4,
+  "title": "Managed Agents",
+  "path": "study_materials/W13-D4_Managed_Agents.md",
+  "mock": false,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "W13-D5",
+  "week": 13,
+  "day": 5,
+  "title": "Context Management: Effort, Editing, Compaction, Caching",
+  "path": "study_materials/W13-D5_Context_Management_Effort_Caching.md",
+  "mock": false,
+  "track": "core",
+  "domain": "context"
+ },
+ {
+  "id": "W13-D6",
+  "week": 13,
+  "day": 6,
+  "title": "Files, Batches, Citations, Server Tools, Security",
+  "path": "study_materials/W13-D6_Files_Batch_Citations_Server_Tools.md",
+  "mock": false,
+  "track": "core",
+  "domain": "context"
+ },
+ {
+  "id": "W13-D7",
+  "week": 13,
+  "day": 7,
+  "title": "Mock Exam 3: 60 Questions (2026)",
+  "path": "study_materials/W13-D7_Mock_Exam_3_60_Questions.md",
+  "mock": true,
+  "track": "core",
+  "domain": "agentic"
+ },
+ {
+  "id": "DEV-D1",
+  "week": 0,
+  "day": 1,
+  "title": "Applications and Integration",
+  "path": "developer/DEV-D1_Applications_and_Integration.md",
+  "mock": false,
+  "track": "ccdv-f",
+  "domain": null
+ },
+ {
+  "id": "DEV-D2",
+  "week": 0,
+  "day": 2,
+  "title": "Model Selection and Optimization",
+  "path": "developer/DEV-D2_Model_Selection_and_Optimization.md",
+  "mock": false,
+  "track": "ccdv-f",
+  "domain": null
+ },
+ {
+  "id": "DEV-D3",
+  "week": 0,
+  "day": 3,
+  "title": "Evals, Testing, Debugging",
+  "path": "developer/DEV-D3_Evals_Testing_Debugging.md",
+  "mock": false,
+  "track": "ccdv-f",
+  "domain": null
+ },
+ {
+  "id": "DEV-MOCK",
+  "week": 0,
+  "day": 4,
+  "title": "CCDV-F Mock Exam (53 Q)",
+  "path": "developer/Mock_Exam_53_Questions.md",
+  "mock": true,
+  "track": "ccdv-f",
+  "domain": null
+ },
+ {
+  "id": "FDE-P1",
+  "week": 0,
+  "day": 1,
+  "title": "P1 MCP Server for iOS Teams",
+  "path": "fde/projects/P1_MCP_Server_for_iOS_Teams.md",
+  "mock": false,
+  "track": "fde",
+  "domain": null
+ },
+ {
+  "id": "FDE-P2",
+  "week": 0,
+  "day": 2,
+  "title": "P2 SwiftUI App with Agent Backend",
+  "path": "fde/projects/P2_SwiftUI_App_with_Agent_Backend.md",
+  "mock": false,
+  "track": "fde",
+  "domain": null
+ },
+ {
+  "id": "FDE-P3",
+  "week": 0,
+  "day": 3,
+  "title": "P3 Extraction Pipeline and Eval Harness",
+  "path": "fde/projects/P3_Extraction_Pipeline_and_Eval_Harness.md",
+  "mock": false,
+  "track": "fde",
+  "domain": null
+ },
+ {
+  "id": "FDE-P4",
+  "week": 0,
+  "day": 4,
+  "title": "P4 Claude Code Plugin for iOS Teams",
+  "path": "fde/projects/P4_Claude_Code_Plugin_for_iOS_Teams.md",
+  "mock": false,
+  "track": "fde",
+  "domain": null
+ }
+]

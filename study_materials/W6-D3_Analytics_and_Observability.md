@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 6, Day 3
----
-
-# CCA Self-Study — Week 6, Day 3
-## Analytics and Observability
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 2 — Advanced Patterns
-**Exam domain:** Domain 8 · Monitoring & Insights
-**Last verified:** 2026-10
-
+layout: note
+title: "Analytics and Observability"
+id: W6-D3
+part: extras
+domain: mcp
+order: 7018
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 8 · Monitoring & Insights"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ What gets measured gets managed. Without visibility into your Claude system's be
 - Cost tracking
 - Quality metrics (latency, accuracy, hallucination rate)
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Implement comprehensive logging for your W6-D1 architecture.
 

@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 7, Day 4
----
-
-# CCA Self-Study — Week 7, Day 4
-## Cross-Model Validation
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 3 — Evaluation & Optimization
-**Exam domain:** Domain 4 · Model Reliability
-**Last verified:** 2026-10
-
+layout: note
+title: "Cross-Model Validation"
+id: W7-D4
+part: extras
+domain: agentic
+order: 7024
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 4 · Model Reliability"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ Validate Claude outputs against another model or baseline to catch errors and ma
 - Baseline validation
 - Ensemble reasoning patterns
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Compare Claude output to a simpler baseline model on 20 examples.
 

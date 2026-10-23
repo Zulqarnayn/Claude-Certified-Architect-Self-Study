@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 11, Day 5
----
-
-# CCA Self-Study — Week 11, Day 5
-## Exam Scenario 5: Claude Code for Continuous Integration
-
-**Date completed:** _____________
-**Study time:** 45 mins
-**Curriculum phase:** Phase 6 — Exam Scenarios (added 2026-10)
-**Exam domain:** All 5 Domains — applied scenario (Claude Code 20%, Prompt/Structured Output 20% heavy)
-**Last verified:** 2026-10
-
+layout: note
+title: "Exam Scenario 5: Claude Code in CI"
+id: W11-D5
+part: practice
+domain: claude_code
+order: 6015
+kind: scenario
+book: true
+minutes: "45"
+verified: "2026-10"
+exam_domain: "All 5 Domains — applied scenario (Claude Code 20%, Prompt/Structured Output 20% heavy)"
 ---
 
 ## Scenario Overview

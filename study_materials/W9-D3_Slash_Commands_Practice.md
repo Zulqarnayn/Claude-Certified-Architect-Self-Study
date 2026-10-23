@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 9, Day 3
----
-
-# CCA Self-Study — Week 9, Day 3
-## Slash Commands Practice
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 4 — Claude Code & Workflows
-**Exam domain:** Domain 3 · Claude Code Configuration & Workflows
-**Last verified:** 2026-10
-
+layout: note
+title: "Slash Commands Practice"
+id: W9-D3-X
+part: extras
+domain: claude_code
+order: 7033
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 3 · Claude Code Configuration & Workflows"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ Slash commands package repeated workflows into reusable command files so teams c
 - Team-sharing vs personal command scope
 - Governance for command quality
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Design three slash commands for your repo: one for review, one for tests, and one for release notes.
 

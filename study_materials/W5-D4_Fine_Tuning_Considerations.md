@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 5, Day 4
----
-
-# CCA Self-Study — Week 5, Day 4
-## Fine-Tuning Considerations
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 2 — Advanced Patterns
-**Exam domain:** Domain 5 · Optimization & Specialization
-**Last verified:** 2026-10
-
+layout: note
+title: "Fine-Tuning Considerations"
+id: W5-D4
+part: extras
+domain: agentic
+order: 7014
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 5 · Optimization & Specialization"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ When is fine-tuning worth it? When is prompting enough? Understanding the trade-
 - Cost-benefit analysis
 - Domain-specific model adaptation
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Compare prompt engineering vs fine-tuning approaches on a classification task.
 

@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 6, Day 2
----
-
-# CCA Self-Study — Week 6, Day 2
-## Security and Compliance
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 2 — Advanced Patterns
-**Exam domain:** Domain 7 · Security & Governance
-**Last verified:** 2026-10
-
+layout: note
+title: "Security and Compliance"
+id: W6-D2
+part: extras
+domain: mcp
+order: 7017
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 7 · Security & Governance"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ Claude systems handle sensitive data — user messages, business logic, credenti
 - Audit logging
 - Compliance frameworks (GDPR, HIPAA, SOC2)
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Design a security checklist for a healthcare chatbot using Claude.
 

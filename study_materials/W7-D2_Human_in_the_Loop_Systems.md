@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 7, Day 2
----
-
-# CCA Self-Study — Week 7, Day 2
-## Human-in-the-Loop Systems
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 3 — Evaluation & Optimization
-**Exam domain:** Domain 2 · Quality Assurance
-**Last verified:** 2026-10
-
+layout: note
+title: "Human-in-the-Loop Systems"
+id: W7-D2
+part: extras
+domain: agentic
+order: 7022
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 2 · Quality Assurance"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ For high-stakes decisions, Claude provides a first pass, but humans review and a
 - Cost-quality trade-offs in review
 - Feedback loops to improve automation
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Design a human-in-the-loop system for a medical triage use case.
 

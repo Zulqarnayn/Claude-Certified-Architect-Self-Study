@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 2, Day 2
----
-
-# CCA Self-Study — Week 2, Day 2
-## Role Prompting & Persona
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 1 — Claude Fundamentals
-**Exam domain:** Domain 4 · Prompt Engineering & Structured Output
-**Last verified:** 2026-10
-
+layout: note
+title: "Role Prompting and Persona"
+id: W2-D2
+part: foundations
+domain: prompting
+order: 1017
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 4 · Prompt Engineering & Structured Output"
 ---
 
 ## Core Concept
@@ -133,7 +131,7 @@ Example: You set Claude as a strict "legal document analyser that only summarise
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Build three different versions of the same prompt with different roles. Use this base task:
 

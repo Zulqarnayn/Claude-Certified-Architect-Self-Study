@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 10, Day 2
----
-
-# CCA Self-Study — Week 10, Day 2
-## Confidence Calibration
-
-**Date completed:** _____________
-**Study time:** 45 mins
-**Curriculum phase:** Phase 4 — Claude Code & Workflows
-**Exam domain:** Domain 5 · Context Management & Reliability (15%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Confidence Calibration"
+id: W10-D2
+part: agents
+domain: agentic
+order: 3022
+kind: note
+book: true
+minutes: "45"
+verified: "2026-10"
+exam_domain: "Domain 5 · Context Management & Reliability (15%)"
 ---
 
 ## Core Concept
@@ -254,7 +252,7 @@ Well-calibrated confidence: "high" bucket should have ~80% accuracy, "low" bucke
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1:** Add confidence scoring to your research agent from Week 7. Run it on 10 questions. Log confidence scores.
 

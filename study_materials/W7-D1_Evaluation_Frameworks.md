@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 7, Day 1
----
-
-# CCA Self-Study — Week 7, Day 1
-## Evaluation Frameworks
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 3 — Evaluation & Optimization
-**Exam domain:** Domain 1 · Quality Metrics
-**Last verified:** 2026-10
-
+layout: note
+title: "Evaluation Frameworks"
+id: W7-D1
+part: extras
+domain: agentic
+order: 7021
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 1 · Quality Metrics"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ How do you measure if your Claude system is actually working? Beyond user satisf
 - Regression detection
 - Quantitative vs qualitative metrics
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Build an evaluation suite for a classification task with 5+ metrics.
 

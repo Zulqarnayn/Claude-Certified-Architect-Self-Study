@@ -1,9 +1,12 @@
 ---
-layout: default
-title: P1 MCP Server for iOS Teams
+layout: note
+title: "P1 MCP Server for iOS Teams"
+id: FDE-P1
+part: fde
+order: 9013
+kind: note
+book: true
 ---
-
-# P1 — MCP Server for iOS Teams
 
 **Phase:** 0–1 · **Hits:** Tools & MCP (CCAR-F 18%, CCDV-F 10.6%) · **Language:** Python · **Status:** [ ] not started
 

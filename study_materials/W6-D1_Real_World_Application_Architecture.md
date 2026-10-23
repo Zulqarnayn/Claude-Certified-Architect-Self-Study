@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 6, Day 1
----
-
-# CCA Self-Study — Week 6, Day 1
-## Real-World Application Architecture
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 2 — Advanced Patterns
-**Exam domain:** Domain 1 · Architecture Design
-**Last verified:** 2026-10
-
+layout: note
+title: "Real-World Application Architecture"
+id: W6-D1
+part: extras
+domain: mcp
+order: 7016
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 1 · Architecture Design"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ From lab to production: how to architect a complete Claude-powered application w
 - Monitoring and observability
 - Disaster recovery and failover
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Design the architecture for a customer support chatbot handling 10,000 requests/day.
 

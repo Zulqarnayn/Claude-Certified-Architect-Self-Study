@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 7, Day 3
----
-
-# CCA Self-Study — Week 7, Day 3
-## Prompt Lifecycle Management
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 3 — Evaluation & Optimization
-**Exam domain:** Domain 3 · Prompt Operations
-**Last verified:** 2026-10
-
+layout: note
+title: "Prompt Lifecycle Management"
+id: W7-D3
+part: extras
+domain: agentic
+order: 7023
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 3 · Prompt Operations"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ Prompts are code. They must be versioned, reviewed, and rolled back safely when 
 - Change management for prompt updates
 - Prompt documentation and audits
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Create a prompt versioning process for your study system.
 

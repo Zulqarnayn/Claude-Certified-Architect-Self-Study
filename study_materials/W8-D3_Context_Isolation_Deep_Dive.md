@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 8, Day 3
----
-
-# CCA Self-Study — Week 8, Day 3
-## Context Isolation — Deep Dive
-
-**Date completed:** _____________
-**Study time:** 45–60 mins
-**Curriculum phase:** Phase 3 — Agentic Architecture
-**Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Context Isolation Deep Dive"
+id: W8-D3
+part: agents
+domain: agentic
+order: 3018
+kind: note
+book: true
+minutes: "45–60"
+verified: "2026-10"
+exam_domain: "Domain 1 · Agentic Architecture & Orchestration (27%)"
 ---
 
 ## Core Concept
@@ -375,7 +373,7 @@ class ScopedAgentContext:
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1 — Reproduce a violation:**
 Build a shared messages array between two agents. Ask Agent A to research "ScreenshotAI pricing" and Agent B to research "weather in Dhaka." Confirm that Agent B's response references ScreenshotAI data (violation confirmed).

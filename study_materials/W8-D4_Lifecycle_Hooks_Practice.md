@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 8, Day 4
----
-
-# CCA Self-Study — Week 8, Day 4
-## Lifecycle Hooks Practice
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 3 — Agentic Architecture
-**Exam domain:** Domain 1 · Agentic Architecture & Orchestration
-**Last verified:** 2026-10
-
+layout: note
+title: "Lifecycle Hooks Practice"
+id: W8-D4-X
+part: extras
+domain: agentic
+order: 7029
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 1 · Agentic Architecture & Orchestration"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ Lifecycle hooks enforce hard guardrails in code so critical rules are checked de
 - Policy escalation paths
 - Logging and auditability
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Define one pre-tool hook that blocks unsafe commands and one post-tool hook that records audit logs.
 

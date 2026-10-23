@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 10, Day 1
----
-
-# CCA Self-Study — Week 10, Day 1
-## Handoff Patterns
-
-**Date completed:** _____________
-**Study time:** 45 mins
-**Curriculum phase:** Phase 4 — Claude Code & Workflows
-**Exam domain:** Domain 5 · Context Management & Reliability (15%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Handoff Patterns"
+id: W10-D1
+part: agents
+domain: agentic
+order: 3021
+kind: note
+book: true
+minutes: "45"
+verified: "2026-10"
+exam_domain: "Domain 5 · Context Management & Reliability (15%)"
 ---
 
 ## Core Concept
@@ -328,7 +326,7 @@ agent_b_context = "\n".join(relevant_context)
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1:** Implement `AgentHandoffState`. Build an extractor that takes the last 10 messages of an agent session and produces a populated state object.
 

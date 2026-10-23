@@ -1,12 +1,14 @@
 ---
-layout: default
-title: CCA Self-Study — Week 12, Day 1
+layout: note
+title: "Full Mock Exam: 60 Questions"
+id: W12-D1
+part: practice
+domain: agentic
+order: 6017
+kind: mock
+book: true
 ---
 
-# CCA Self-Study — Week 12, Day 1
-## Full 60-Question Mock Exam
-
-**Date completed:** _____________
 **Time allowed:** 90 minutes (1.5 min per question)
 **Instructions:** Answer ALL questions before checking the answer guide. Mark questions you're unsure about with ★. Review marked questions first after completing.
 
@@ -770,7 +772,7 @@ Focus your final review time on your lowest domain score.
 
 **Apply for the exam:** claudecertifications.com → Claude Partner Network (free) → Schedule proctored exam.
 
-**You are ready.** 🎓
+**You are ready.**
 
 ---
 

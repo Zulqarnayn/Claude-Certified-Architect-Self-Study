@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 13, Day 4
----
-
-# CCA Self-Study — Week 13, Day 4
-## Managed Agents (Beta)
-
-**Date completed:** _____________
-**Study time:** 45–60 mins
-**Curriculum phase:** Phase 6 — 2026 Platform Update
-**Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%) · CCDV-F: Agents & Workflows (14.7%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Managed Agents"
+id: W13-D4
+part: update
+domain: agentic
+order: 5014
+kind: note
+book: true
+minutes: "45–60"
+verified: "2026-10"
+exam_domain: "Domain 1 · Agentic Architecture & Orchestration (27%) · CCDV-F: Agents & Workflows (14.7%)"
 ---
 
 ## Core Concept
@@ -118,7 +116,7 @@ Rule of thumb for FDE scoping: if the customer would otherwise need you to build
 | Outcomes for a Q&A bot | Outcomes are for one deliverable; chat uses `user.message` |
 | Session budget = task budget | Session budget: hard, dollar-denominated, enforced. Task budget: advisory token pacing for the model |
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 1. Create an environment + agent as above; start a session; stream events and print each `agent.*` event type.
 2. Update the agent's system prompt; confirm the old session keeps its version while a new one gets the new version.

@@ -1,21 +1,18 @@
 ---
-layout: default
-title: CCA Self-Study — Week 1, Day 4
+layout: note
+title: "System Prompts vs User Messages"
+id: W1-D4
+part: foundations
+domain: context
+order: 1014
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 4 · Prompt Engineering & Structured Output"
 ---
 
-# CCA Self-Study — Week 1, Day 4
-## System Prompts vs User Messages
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 1 — Claude Fundamentals
-**Exam domain:** Domain 4 · Prompt Engineering & Structured Output
-**Last verified:** 2026-10
-
----
-
-
-> **⚠️ 2026 update (verified 2026-10):** **Assistant prefill is removed** on current models (Opus 5.5 / Sonnet 5.5 / Haiku 5.5 / Fable 5.1 and the 4.6+ family): a trailing assistant message returns HTTP 400. To force JSON, use structured outputs (`output_config: {format: ...}`, or `client.messages.parse()` with a schema) or a system-prompt instruction. Prefill is still worth knowing as exam history; expect the exam to favor structured outputs / schema enforcement.
+> **2026 update (verified 2026-10):****Assistant prefill is removed**on current models (Opus 5.5 / Sonnet 5.5 / Haiku 5.5 / Fable 5.1 and the 4.6+ family): a trailing assistant message returns HTTP 400. To force JSON, use structured outputs (`output_config: {format: ...}`, or `client.messages.parse()` with a schema) or a system-prompt instruction. Prefill is still worth knowing as exam history; expect the exam to favor structured outputs / schema enforcement.
 
 ## Core Concept
 
@@ -157,7 +154,7 @@ When designing multi-agent systems (Week 8), this trust hierarchy becomes critic
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Open claude.ai or your API console.
 

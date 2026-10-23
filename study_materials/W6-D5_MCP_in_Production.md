@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 6, Day 5
----
-
-# CCA Self-Study — Week 6, Day 5
-## MCP in Production
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 2 — Building with Claude
-**Exam domain:** Domain 2 · Tool Design & MCP Integration
-**Last verified:** 2026-10
-
+layout: note
+title: "MCP in Production"
+id: W6-D5-C
+part: tools
+domain: mcp
+order: 2020
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 2 · Tool Design & MCP Integration"
 ---
 
 ## Core Concept
@@ -332,7 +330,7 @@ Before deploying an MCP server to production:
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Harden your App Store MCP server from Day 3.
 
@@ -604,7 +602,7 @@ This prevents tokens from appearing in any log output regardless of which develo
 - [ ] Q4 answered
 - [ ] Q5 answered
 - [ ] Answer guide reviewed
-- [ ] Week 6 complete 🎉
+- [ ] Week 6 complete
 
 ---
 

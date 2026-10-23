@@ -1,20 +1,18 @@
 ---
-layout: default
-title: CCA Self-Study — Week 9, Day 5
+layout: note
+title: "Prompt Caching"
+id: W9-D5
+part: code
+domain: claude_code
+order: 4015
+kind: note
+book: true
+minutes: "45"
+verified: "2026-10"
+exam_domain: "Domain 5 · Context Management & Reliability (15%)"
 ---
 
-# CCA Self-Study — Week 9, Day 5
-## Prompt Caching
-
-**Date completed:** _____________
-**Study time:** 45 mins
-**Curriculum phase:** Phase 4 — Claude Code & Workflows
-**Exam domain:** Domain 5 · Context Management & Reliability (15%)
-**Last verified:** 2026-10
-
----
-
-> **⚠️ 2026 update (verified 2026-10):** Current first-party rates per 1M tokens (in / out): Fable 5.1 $10 / $50, Opus 5.5 $4 / $20, Sonnet 5.5 $2 / $10, Haiku 5.5 $0.10 / $0.50 (prompts up to 100K). Cache reads cost about 0.1x base input. Worked examples below use older Sonnet-class ($3 / $15) and Opus-class ($15 / $75) rates for the arithmetic; the method is unchanged, re-run it with current rates.
+> **2026 update (verified 2026-10):**Current first-party rates per 1M tokens (in / out): Fable 5.1 $10 / $50, Opus 5.5 $4 / $20, Sonnet 5.5 $2 / $10, Haiku 5.5 $0.10 / $0.50 (prompts up to 100K). Cache reads cost about 0.1x base input. Worked examples below use older Sonnet-class ($3 / $15) and Opus-class ($15 / $75) rates for the arithmetic; the method is unchanged, re-run it with current rates.
 
 ## Core Concept
 
@@ -283,7 +281,7 @@ print(result)
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1:** Build a simple caching test. Create a 5,000-token system prompt. Make the same call twice. Compare `cache_read_input_tokens` between call 1 and call 2.
 
@@ -504,7 +502,7 @@ Note: The knowledge base updates daily, causing one cache miss per day — negli
 - [ ] Large codebase caching strategy designed
 - [ ] All 6 questions answered
 - [ ] Answer guide reviewed
-- [ ] Week 9 complete 🎉
+- [ ] Week 9 complete
 
 ---
 

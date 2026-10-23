@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 7, Day 3
----
-
-# CCA Self-Study — Week 7, Day 3
-## Stop Conditions
-
-**Date completed:** _____________
-**Study time:** 45–60 mins
-**Curriculum phase:** Phase 3 — Agentic Architecture
-**Exam domain:** Domain 1 · Agentic Architecture & Orchestration (27%)
-**Last verified:** 2026-10
-
+layout: note
+title: "Stop Conditions"
+id: W7-D3-C
+part: agents
+domain: agentic
+order: 3013
+kind: note
+book: true
+minutes: "45–60"
+verified: "2026-10"
+exam_domain: "Domain 1 · Agentic Architecture & Orchestration (27%)"
 ---
 
 ## Core Concept
@@ -342,7 +340,7 @@ def production_agent_loop(task, tools, executor):
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Implement all 5 stop condition types.
 

@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 9, Day 2
----
-
-# CCA Self-Study — Week 9, Day 2
-## CLAUDE.md Practice
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 4 — Claude Code & Workflows
-**Exam domain:** Domain 3 · Claude Code Configuration & Workflows
-**Last verified:** 2026-10
-
+layout: note
+title: "CLAUDE.md Practice"
+id: W9-D2-X
+part: extras
+domain: claude_code
+order: 7032
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 3 · Claude Code Configuration & Workflows"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ title: CCA Self-Study — Week 9, Day 2
 - Prompt consistency across sessions
 - Operational rules for edits and tests
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Draft a `CLAUDE.md` outline for one repository with coding conventions, test rules, and safety constraints.
 

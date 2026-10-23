@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 5, Day 2
----
-
-# CCA Self-Study — Week 5, Day 2
-## Agent Reliability and Testing
-
-**Date completed:** _____________
-**Study time:** 40–50 mins
-**Curriculum phase:** Phase 2 — Advanced Patterns
-**Exam domain:** Domain 3 · Quality & Testing
-**Last verified:** 2026-10
-
+layout: note
+title: "Agent Reliability and Testing"
+id: W5-D2
+part: extras
+domain: agentic
+order: 7012
+kind: extra
+book: true
+minutes: "40–50"
+verified: "2026-10"
+exam_domain: "Domain 3 · Quality & Testing"
 ---
 
 ## Core Concept
@@ -28,7 +26,7 @@ Multi-agent systems are complex — they fail in non-obvious ways. Testing agent
 - Test automation for agentic systems
 - Observability and debugging
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Write integration tests for your 2-agent system from W5-D1.
 

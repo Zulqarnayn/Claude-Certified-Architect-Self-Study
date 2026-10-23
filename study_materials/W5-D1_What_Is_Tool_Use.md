@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 5, Day 1
----
-
-# CCA Self-Study — Week 5, Day 1
-## What Is Tool Use?
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 2 — Building with Claude
-**Exam domain:** Domain 2 · Tool Design & MCP Integration
-**Last verified:** 2026-10
-
+layout: note
+title: "What Is Tool Use?"
+id: W5-D1-C
+part: tools
+domain: mcp
+order: 2011
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 2 · Tool Design & MCP Integration"
 ---
 
 ## Core Concept
@@ -229,7 +227,7 @@ We go deep on tool description design in Week 5 D3.
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Build your first tool-using system.
 

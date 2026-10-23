@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 4, Day 2
----
-
-# CCA Self-Study — Week 4, Day 2
-## Multi-Turn Conversations
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 2 — Building with Claude
-**Exam domain:** Domain 5 · Context Management & Reliability
-**Last verified:** 2026-10
-
+layout: note
+title: "Multi-Turn Conversations"
+id: W4-D2
+part: foundations
+domain: context
+order: 1027
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 5 · Context Management & Reliability"
 ---
 
 ## Core Concept
@@ -253,7 +251,7 @@ This is the pattern that Claude.ai uses for its memory feature — but you're im
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Build a multi-turn chatbot with conversation memory.
 

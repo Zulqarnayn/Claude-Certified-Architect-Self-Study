@@ -1,16 +1,15 @@
 ---
-layout: default
-title: CCDV-F Track — Day 3
----
-
-# CCDV-F Track — Day 3
-## Evals, Testing, and Debugging LLM Applications
-
-**Date completed:** _____________
-**Study time:** 60 mins
-**Exam domain:** CCDV-F · Eval, Testing & Debugging (2.6%) — small on the exam, **central to FDE work**
-**Last verified:** 2026-10
-
+layout: note
+title: "Evals, Testing, Debugging"
+id: DEV-D3
+part: developer
+domain: context
+order: 8013
+kind: note
+book: true
+minutes: "60"
+verified: "2026-10"
+exam_domain: "CCDV-F · Eval, Testing & Debugging (2.6%) — small on the exam, **central to FDE work"
 ---
 
 ## Core Concept
@@ -76,7 +75,7 @@ One change at a time; record every run; stop when the test set stops improving o
 | LLM judge = ground truth | Needs calibration against humans |
 | Debug only the prompt | Check request assembly, params, stop_reason, tools |
 
-## Hands-On Lab 🛠️
+## Hands-On Lab
 
 1. Take the invoice extractor from W13-D3; write 40 labeled cases; code-grade per field.
 2. Add a regression test that fails if field accuracy drops >2 points.

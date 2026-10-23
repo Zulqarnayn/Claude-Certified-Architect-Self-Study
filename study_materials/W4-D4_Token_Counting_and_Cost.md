@@ -1,20 +1,18 @@
 ---
-layout: default
-title: CCA Self-Study — Week 4, Day 4
+layout: note
+title: "Token Counting & Cost"
+id: W4-D4
+part: foundations
+domain: context
+order: 1029
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 5 · Context Management & Reliability"
 ---
 
-# CCA Self-Study — Week 4, Day 4
-## Token Counting & Cost
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 2 — Building with Claude
-**Exam domain:** Domain 5 · Context Management & Reliability
-**Last verified:** 2026-10
-
----
-
-> **⚠️ 2026 update (verified 2026-10):** Current first-party rates per 1M tokens (in / out): Fable 5.1 $10 / $50, Opus 5.5 $4 / $20, Sonnet 5.5 $2 / $10, Haiku 5.5 $0.10 / $0.50 (prompts up to 100K). Cache reads cost about 0.1x base input. Worked examples below use older Sonnet-class ($3 / $15) and Opus-class ($15 / $75) rates for the arithmetic; the method is unchanged, re-run it with current rates.
+> **2026 update (verified 2026-10):**Current first-party rates per 1M tokens (in / out): Fable 5.1 $10 / $50, Opus 5.5 $4 / $20, Sonnet 5.5 $2 / $10, Haiku 5.5 $0.10 / $0.50 (prompts up to 100K). Cache reads cost about 0.1x base input. Worked examples below use older Sonnet-class ($3 / $15) and Opus-class ($15 / $75) rates for the arithmetic; the method is unchanged, re-run it with current rates.
 
 ## Core Concept
 
@@ -237,7 +235,7 @@ class CostAwareClaudeClient:
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 **Task 1:** Count tokens on three prompts:
 - A 1-sentence user message

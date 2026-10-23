@@ -1,17 +1,15 @@
 ---
-layout: default
-title: CCA Self-Study — Week 3, Day 1
----
-
-# CCA Self-Study — Week 3, Day 1
-## Few-Shot Examples
-
-**Date completed:** _____________
-**Study time:** 30–45 mins
-**Curriculum phase:** Phase 1 — Claude Fundamentals
-**Exam domain:** Domain 4 · Prompt Engineering & Structured Output
-**Last verified:** 2026-10
-
+layout: note
+title: "Few Shot Examples"
+id: W3-D1
+part: foundations
+domain: prompting
+order: 1021
+kind: note
+book: true
+minutes: "30–45"
+verified: "2026-10"
+exam_domain: "Domain 4 · Prompt Engineering & Structured Output"
 ---
 
 ## Core Concept
@@ -178,7 +176,7 @@ Response: "We want your first experience to be great — let us make this right.
 
 ---
 
-## Hands-On Task 🛠️
+## Hands-On Task
 
 Build a few-shot prompt for this task:
 

@@ -1,14 +1,18 @@
 ---
-layout: default
-title: CCDV-F Developer Track
+layout: note
+title: "CCDV-F Developer Track"
+id: DEV
+part: developer
+order: 8000
+kind: intro
+book: true
 ---
 
-# CCDV-F Developer Track
 ## Claude Certified Developer – Foundations
 
 **Exam facts (July 2026, third-party mirrors of guide v1.0; confirm in the official guide):** 53 questions · 120 minutes · pass 720/1000 · $125 · Pearson VUE · valid 12 months · registration via Claude Partner Academy (partner-org account required).
 
-**Strategy:** do CCAR-F first (see [README](../README.md)); this track reuses ~50% of that material and adds three net-new notes plus a mock. Target the CCDV-F within ~60 days of CCAR-F.
+**Strategy:** do CCAR-F first (see [README](../index.md)); this track reuses ~50% of that material and adds three net-new notes plus a mock. Target the CCDV-F within ~60 days of CCAR-F.
 
 > Domain titles and weights below come from third-party summaries of the official guide. Subtopics are **my mapping from titles**, not the official blueprint. Read the official PDF first and adjust.
 
