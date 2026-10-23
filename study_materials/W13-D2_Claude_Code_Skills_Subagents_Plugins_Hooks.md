@@ -121,7 +121,7 @@ User-defined handlers on lifecycle events. Configure in `settings.json` (user `~
   "permissionDecisionReason": "Database writes are not allowed" } }
 ```
 
-`permissionDecision`: `allow` | `deny` | `ask` | `defer`; `updatedInput` can rewrite arguments.
+`permissionDecision`: `allow`, `deny`, `ask` or `defer`; `updatedInput` can rewrite arguments.
 
 **Handler types:** `command`, `http`, `mcp_tool`, `prompt` (single-turn model decision), `agent` (experimental, can use tools).
 
@@ -192,7 +192,9 @@ GitHub Actions and GitLab CI integrations wrap the same loop.
 **Q3.** Why use `--bare` in CI?
 **Q4.** Skill vs subagent: when does `context: fork` blur them?
 
-<details><summary>Answers</summary>
+<details markdown="1">
+<summary markdown="span">Answers</summary>
+
 
 1. Deny permission rule and/or `PreToolUse` hook on `Read` matching `.env` (exit 2). CLAUDE.md alone is not a guarantee.
 2. Only its final summary.

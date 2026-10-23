@@ -53,8 +53,9 @@ Document a complete architecture for a real product idea, from user request to r
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Most common failure modes</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Most common failure modes</b></summary>
+
 
 Top reasons systems fail:
 1. Rate limits (not queuing properly)
@@ -67,8 +68,9 @@ Most preventable with basic architecture patterns.
 
 </details>
 
-<details>
-<summary><b>Q2 — Prompt engineering vs engineering effort</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Prompt engineering vs engineering effort</b></summary>
+
 
 Prompt engineering ROI is highest early:
 - First 80% of accuracy: good prompts + few-shot

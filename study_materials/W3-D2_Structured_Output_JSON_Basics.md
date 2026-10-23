@@ -62,6 +62,7 @@ user = "This app is amazing!"
 ```
 
 **Output (usually):**
+
 ```json
 {"sentiment": "positive", "confidence": 0.97}
 ```
@@ -93,6 +94,7 @@ Rules:
 ```
 
 **Output (much more consistent):**
+
 ```json
 {
   "sentiment": "positive",
@@ -117,6 +119,7 @@ messages = [
 Claude cannot output an introduction paragraph because it's already started the JSON object. It must complete a valid JSON structure.
 
 **Gotcha:** When using prefill, you need to prepend `{` back to Claude's response since it continues from the prefill:
+
 ```python
 raw_response = response.content[0].text
 full_json = "{" + raw_response  # Add back the prefill character
@@ -136,11 +139,12 @@ Claude adds keys you didn't ask for: `"analysis": "The user seems satisfied..."`
 You asked for `"confidence": 0.97` and got `"confidence": "high"` — different data type.
 
 ### 3. Markdown wrapping
-```
+
+````
 ```json
 {"sentiment": "positive"}
 ```
-```
+````
 The backticks are valid markdown, invalid JSON.parse() input.
 
 ### 4. Trailing text
@@ -205,6 +209,7 @@ if result is None:
 Build a JSON extractor for iOS crash reports.
 
 **Target schema:**
+
 ```json
 {
   "category": "UI_BUG | PERFORMANCE | DATA_LOSS | AUTH_ISSUE | OTHER",
@@ -277,6 +282,7 @@ Build a JSON extractor for iOS crash reports.
 **Q1 — Three JSON failure modes**
 
 **1. Markdown wrapping:**
+
 ```
 ```json
 {"sentiment": "positive"}
@@ -289,6 +295,7 @@ Build a JSON extractor for iOS crash reports.
 {"sentiment": "positive"}
 
 The analysis shows the user is satisfied with the product.
+
 ```
 `json.loads()` fails because content after `}` makes the string invalid JSON.
 
@@ -305,12 +312,14 @@ The analysis shows the user is satisfied with the product.
 Claude sometimes outputs `null` or `"none"` for empty arrays because in human writing, "no tags" is often expressed as "none" or nothing. Claude pattern-matches to that.
 
 **Prompt fix:**
+
 ```
 "tags" must always be a JSON array. If there are no tags, return an empty array: []
 Never return null, "none", or omit the field entirely.
 ```
 
 **Code fix (defensive):**
+
 ```python
 tags = result.get("tags", [])
 if not isinstance(tags, list):
@@ -339,6 +348,7 @@ Defense in depth: fix it in the prompt AND handle it in code.
 **Why it happens:** Claude was trained on text where numbers often appear as strings in context. When the prompt says "confidence (0.0 to 1.0)," Claude might generate `"0.97"` because in many training examples numbers appear quoted.
 
 **Prompt fix:**
+
 ```
 confidence: a floating point number between 0.0 and 1.0
 Example correct: "confidence": 0.97
@@ -347,6 +357,7 @@ Do not quote numeric values.
 ```
 
 **Code fix:**
+
 ```python
 confidence = result.get("confidence", 0.0)
 if isinstance(confidence, str):
@@ -367,6 +378,7 @@ A complete failure handling system has four layers:
 - Target: reduce failure rate from 2% to <0.5%
 
 **Layer 2 — Recovery (fix parseable failures)**
+
 ```python
 def recover_json(text):
     # Strip markdown fences
@@ -382,6 +394,7 @@ def recover_json(text):
 ```
 
 **Layer 3 — Retry (re-ask Claude)**
+
 ```python
 if result is None:
     # Send error back to Claude with the malformed output

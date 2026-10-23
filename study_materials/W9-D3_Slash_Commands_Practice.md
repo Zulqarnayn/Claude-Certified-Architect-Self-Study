@@ -53,15 +53,17 @@ Design three slash commands for your repo: one for review, one for tests, and on
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Why slash commands help</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Why slash commands help</b></summary>
+
 
 They improve repeatability, reduce prompt drift, and make workflows faster across the team.
 
 </details>
 
-<details>
-<summary><b>Q2 — Poor command risk</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Poor command risk</b></summary>
+
 
 Vague or unsafe commands can normalize bad outputs and propagate mistakes at scale.
 

@@ -53,8 +53,9 @@ Compare Claude output to a simpler baseline model on 20 examples.
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Why cross-model validation</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Why cross-model validation</b></summary>
+
 
 - Catch hallucinations and odd model behavior
 - Provide a sanity check against a simpler baseline
@@ -63,8 +64,9 @@ Compare Claude output to a simpler baseline model on 20 examples.
 
 </details>
 
-<details>
-<summary><b>Q2 — Handling disagreement</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Handling disagreement</b></summary>
+
 
 - Flag for human review
 - Use majority/weighted voting for ensemble

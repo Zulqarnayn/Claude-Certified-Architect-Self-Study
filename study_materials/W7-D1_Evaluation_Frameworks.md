@@ -53,8 +53,9 @@ Build an evaluation suite for a classification task with 5+ metrics.
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Why accuracy is insufficient</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Why accuracy is insufficient</b></summary>
+
 
 Accuracy doesn't capture:
 - False positives vs false negatives (different costs)
@@ -67,8 +68,9 @@ Use: Precision, recall, F1, confusion matrix, cost-weighted metrics.
 
 </details>
 
-<details>
-<summary><b>Q2 — Detecting prompt drift</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Detecting prompt drift</b></summary>
+
 
 - Run fixed test suite weekly
 - Track metrics over time

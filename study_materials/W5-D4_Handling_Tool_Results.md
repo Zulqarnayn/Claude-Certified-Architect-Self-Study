@@ -397,6 +397,7 @@ Three approaches:
 
 **1. Streaming with status updates:**
 While the tool executes, stream status text to the user:
+
 ```
 "Searching the App Store for matching products..."  ← Appears immediately
 [8 seconds pass]
@@ -434,6 +435,7 @@ def research_product_full(product_name: str) -> dict:
 
 **Option 2 — Smarter tool design:**
 Make `get_product_details` optionally return related products and sale status:
+
 ```python
 def get_product_details(name: str, include_related: bool = False, check_sales: bool = False)
 ```

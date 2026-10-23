@@ -53,8 +53,9 @@ Design a human-in-the-loop system for a medical triage use case.
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Routing decisions for human review</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Routing decisions for human review</b></summary>
+
 
 Route to human when:
 - Confidence < threshold (0.7 is common)
@@ -69,8 +70,9 @@ Auto-accept when:
 
 </details>
 
-<details>
-<summary><b>Q2 — Avoiding human bottleneck</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Avoiding human bottleneck</b></summary>
+
 
 - Batch reviews (don't interrupt per item)
 - Prioritize high-confidence items for auto-accept

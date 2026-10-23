@@ -53,8 +53,9 @@ Implement cost tracking and optimization for your W5-D1 multi-agent system.
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — ROI of optimization</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — ROI of optimization</b></summary>
+
 
 Depends on:
 - Time to implement ($1000s in eng time?)
@@ -70,8 +71,9 @@ Often, focus on revenue over cost-cutting.
 
 </details>
 
-<details>
-<summary><b>Q2 — Cache vs recompute</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Cache vs recompute</b></summary>
+
 
 Cache when:
 - Hit rate > 50% (frequent repeated queries)

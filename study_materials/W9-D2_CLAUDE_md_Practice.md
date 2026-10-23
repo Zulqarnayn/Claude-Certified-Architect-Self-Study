@@ -53,15 +53,17 @@ Draft a `CLAUDE.md` outline for one repository with coding conventions, test rul
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — What belongs in CLAUDE.md</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — What belongs in CLAUDE.md</b></summary>
+
 
 Stable project rules: architecture constraints, coding standards, testing expectations, and safety policies.
 
 </details>
 
-<details>
-<summary><b>Q2 — Why bad config hurts quality</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Why bad config hurts quality</b></summary>
+
 
 Ambiguous or conflicting instructions cause inconsistent behavior, wrong assumptions, and avoidable rework.
 

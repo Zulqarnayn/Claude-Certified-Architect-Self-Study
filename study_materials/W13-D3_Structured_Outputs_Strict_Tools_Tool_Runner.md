@@ -185,7 +185,9 @@ while True:
 **Q3.** Two tools are called in parallel. How do you return results?
 **Q4.** Where does a Tool Runner tool's description come from?
 
-<details><summary>Answers</summary>
+<details markdown="1">
+<summary markdown="span">Answers</summary>
+
 
 1. No: prefill 400s. Use `output_config.format` / `messages.parse()`.
 2. That the model picks the right tool or supplies correct values.

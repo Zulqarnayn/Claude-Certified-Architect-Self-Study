@@ -53,8 +53,9 @@ Build a simple RAG system with 5 documents and test retrieval accuracy.
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Chunking strategy</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Chunking strategy</b></summary>
+
 
 Bad chunks:
 - Split mid-sentence or mid-concept
@@ -65,8 +66,9 @@ Good chunks preserve semantic boundaries and give Claude enough context to reaso
 
 </details>
 
-<details>
-<summary><b>Q2 — Contradictory retrieved context</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Contradictory retrieved context</b></summary>
+
 
 - Claude will produce uncertain answers (good — it's honest)
 - Explicitly tell Claude to flag contradictions

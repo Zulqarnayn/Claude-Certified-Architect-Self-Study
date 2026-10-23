@@ -53,8 +53,9 @@ Design an A/B test comparing two prompt strategies for task accuracy.
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Sample size for significance</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Sample size for significance</b></summary>
+
 
 Depends on:
 - Effect size (big difference = fewer samples needed)
@@ -67,8 +68,9 @@ Use power calculators or run sequential analysis.
 
 </details>
 
-<details>
-<summary><b>Q2 — Why randomization matters</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Why randomization matters</b></summary>
+
 
 Randomization prevents bias:
 - Time-of-day effects (weekend ≠ weekday traffic)

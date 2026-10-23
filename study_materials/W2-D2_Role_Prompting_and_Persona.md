@@ -204,6 +204,7 @@ Role drift happens because Claude's system prompt (where the role is defined) is
 **Why it's dangerous:** "Be helpful" and "you are a doctor" gives Claude no constraints on what kind of doctor, what context, what communication style, or what NOT to do. In a medical context, an overly helpful Claude might give specific diagnostic opinions it isn't qualified to give, causing real harm.
 
 **Stronger version:**
+
 ```
 You are a triage nurse assistant operating within a hospital's pre-screening system. 
 Your role is ONLY to collect symptoms systematically using the OPQRST framework 

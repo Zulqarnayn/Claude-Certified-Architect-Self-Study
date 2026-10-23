@@ -67,6 +67,7 @@ claude --no-interactive "$(cat .claude/commands/review.md)" "$CHANGED_FILES"
 In CI/CD, there's no human to approve file changes. You must pre-configure permissions.
 
 **Option 1 — Environment variables:**
+
 ```bash
 # Allow Claude Code to make changes without asking
 CLAUDE_ALLOW_WRITE=true
@@ -75,6 +76,7 @@ claude --no-interactive "Fix all lint errors"
 ```
 
 **Option 2 — settings.json:**
+
 ```json
 // .claude/settings.json (committed to git)
 {
@@ -88,6 +90,7 @@ claude --no-interactive "Fix all lint errors"
 ```
 
 **Option 3 — Scoped task instruction:**
+
 ```bash
 claude --no-interactive \
   "Review only — do NOT modify any files. Output findings as JSON only."
@@ -436,6 +439,7 @@ This gives developers autonomy while maintaining non-negotiable quality gates.
 1. **Run auto-fix on a clean branch:** The CI runs on a fresh checkout — it never touches the developer's local workspace. The CI auto-fix commits to the remote branch, and the developer pulls when they next sync. No local conflict.
 
 2. **Check for clean state before fixing:**
+
 ```bash
 if ! git diff --quiet; then
   echo "Working directory has uncommitted changes — skipping auto-fix"
@@ -473,6 +477,7 @@ fi
 ```
 
 **Extended filtering:**
+
 ```bash
 # Also skip for certain change types
 ONLY_DOCS=$(git diff --name-only | grep -v '\.swift$' | grep -v '\.json$' | wc -l)
@@ -542,12 +547,14 @@ Claude is probabilistic. The same files reviewed twice may produce different res
 **Making reviews more deterministic:**
 
 1. **Set temperature to 0 for review tasks:**
+
 ```bash
 CLAUDE_TEMPERATURE=0 claude --no-interactive "Review..."
 ```
 Lower temperature = less variation = more consistent results.
 
 2. **Use a fixed, exhaustive checklist:**
+
 ```bash
 "Check EXACTLY these items, in this order: [exhaustive list]
  For each item: PASS or FAIL with file/line.

@@ -92,6 +92,7 @@ Before finalising any tool description, verify:
 ## Side-by-Side Comparison — Three Quality Levels
 
 ### Level 1 — Poor
+
 ```python
 {
     "name": "search",
@@ -110,6 +111,7 @@ Problems: What does it search? What does it return? When to use? Argument name `
 ---
 
 ### Level 2 — Adequate
+
 ```python
 {
     "name": "search_products",
@@ -131,6 +133,7 @@ Better: name is clear, returns products. Missing: when to use, what "matching" m
 ---
 
 ### Level 3 — Production-Quality
+
 ```python
 {
     "name": "search_products",
@@ -436,6 +439,7 @@ Every tool description MUST include:
 - **DO NOT use for** (disambiguation from similar tools)
 
 Template:
+
 ```
 "[ACTION] [DATA] from [SOURCE]. 
 Use when [TRIGGER CONDITIONS]. 

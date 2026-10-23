@@ -130,7 +130,9 @@ Rule of thumb for FDE scoping: if the customer would otherwise need you to build
 **Q3.** How do secrets reach an MCP server?
 **Q4.** Customer wants a nightly compliance report meeting a rubric. Features?
 
-<details><summary>Answers</summary>
+<details markdown="1">
+<summary markdown="span">Answers</summary>
+
 
 1. On the agent (versioned), not the session.
 2. Deadlock (session idles awaiting you). Reconnect, list events, dedupe, resolve the pending confirmation.

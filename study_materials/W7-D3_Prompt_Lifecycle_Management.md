@@ -53,8 +53,9 @@ Create a prompt versioning process for your study system.
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Prompt rollback triggers</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Prompt rollback triggers</b></summary>
+
 
 Roll back when:
 - New prompt increases error/hallucination rate
@@ -65,8 +66,9 @@ Roll back when:
 
 </details>
 
-<details>
-<summary><b>Q2 — Documenting prompt changes</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Documenting prompt changes</b></summary>
+
 
 Use:
 - Git commits with clear message

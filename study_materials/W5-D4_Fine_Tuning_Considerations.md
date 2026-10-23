@@ -53,8 +53,9 @@ Compare prompt engineering vs fine-tuning approaches on a classification task.
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Minimum fine-tuning dataset</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Minimum fine-tuning dataset</b></summary>
+
 
 Generally 100+ examples, but it depends on:
 - Task complexity (simple classification: 50+, complex reasoning: 1000+)
@@ -65,8 +66,9 @@ Start with prompt engineering, fine-tune only if needed.
 
 </details>
 
-<details>
-<summary><b>Q2 — Validating fine-tuning improvements</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Validating fine-tuning improvements</b></summary>
+
 
 - Test on held-out evaluation set (not training data)
 - Compare to baseline model with same prompt

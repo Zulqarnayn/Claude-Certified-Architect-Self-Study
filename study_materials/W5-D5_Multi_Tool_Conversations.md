@@ -311,6 +311,7 @@ The user wants a purchase recommendation with device context. Claude needs:
 4. Price history (is now a good time to buy?)
 
 **Execution plan:**
+
 ```
 Step 1: get_app_details("ScreenshotAI")     ← Must be first (get baseline info)
 Step 2 (parallel):
@@ -357,12 +358,14 @@ def get_relevant_tools(query_type: str) -> list:
 **Cause:** The `search_apps` description returns 10 results, and `get_app_details` description doesn't say "use for one app, not all results." Claude reasonably interprets "get details for each result" as the right next step.
 
 **Fix 1 — Search tool description:**
+
 ```
 "Returns top matching apps. For recommendations, typically the top 1-3 results 
 are sufficient — you don't need to get details for all results."
 ```
 
 **Fix 2 — Limit search results:**
+
 ```python
 "limit": {
     "description": "Max results (1-10, default 3). For recommendations, 3 is usually enough."
@@ -370,6 +373,7 @@ are sufficient — you don't need to get details for all results."
 ```
 
 **Fix 3 — System prompt instruction:**
+
 ```
 "When making recommendations, evaluate the top 2-3 search results — 
 do not retrieve details for every search result."

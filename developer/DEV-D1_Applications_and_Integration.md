@@ -169,7 +169,9 @@ Build a FastAPI service with:
 **Q3.** The response has `stop_reason: "max_tokens"` and invalid JSON. What happened and what do you do?
 **Q4.** Why not call Claude directly from the iOS app?
 
-<details><summary>Answers</summary>
+<details markdown="1">
+<summary markdown="span">Answers</summary>
+
 
 1. No: config bug (bad model ID). Fail fast, alert.
 2. In your datastore; you resend it each call.

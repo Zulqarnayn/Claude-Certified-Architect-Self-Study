@@ -67,12 +67,14 @@ The step-by-step process is visible, checkable, and each step constrains the nex
 ## Three Ways to Trigger CoT
 
 ### Method 1 — Simple instruction
+
 ```
 "Think through this step by step before answering."
 ```
 Best for: Ad hoc use, simple reasoning chains.
 
 ### Method 2 — Explicit structure
+
 ```
 "Before giving your answer:
 1. Restate the problem in your own words
@@ -84,12 +86,14 @@ Best for: Ad hoc use, simple reasoning chains.
 Best for: Complex multi-step problems where you want to control the reasoning structure.
 
 ### Method 3 — Scratchpad pattern (most powerful)
+
 ```
 "Think through this problem in a <scratchpad> tag. 
 After your scratchpad, give your final answer in an <answer> tag."
 ```
 
 Example output:
+
 ```xml
 <scratchpad>
 The user wants to know if their business is profitable...
@@ -137,6 +141,7 @@ If your system is producing wrong outputs, add CoT temporarily. Read the reasoni
 
 ### Pattern 3: CoT for confidence calibration
 Ask Claude to reason through its own confidence level:
+
 ```
 "Before answering, reason through how confident you are and why. 
 If your confidence is below 80%, flag the answer as 'uncertain'."
@@ -232,6 +237,7 @@ When Claude is forced to reason step-by-step, each step becomes part of the cont
 Yes — absolutely use CoT. Invoice processing is exactly the multi-step calculation scenario where CoT is most valuable, and where errors have real financial consequences.
 
 Implementation:
+
 ```python
 system = """
 You are an invoice processing system.

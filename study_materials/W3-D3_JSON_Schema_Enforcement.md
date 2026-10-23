@@ -43,6 +43,7 @@ Your JSON schema definition in a Claude prompt is the same thing — you're tell
 ## The Full Schema Definition Toolkit
 
 ### 1. Required Fields
+
 ```
 Required fields (all must be present):
 - category (string)
@@ -51,6 +52,7 @@ Required fields (all must be present):
 ```
 
 ### 2. Type Constraints
+
 ```
 Types:
 - category: string
@@ -62,24 +64,28 @@ Types:
 ```
 
 ### 3. Enum Values
+
 ```
 category must be exactly one of: "bug" | "feature" | "question" | "other"
 No other values are allowed.
 ```
 
 ### 4. Range Constraints
+
 ```
 confidence: float between 0.0 and 1.0 inclusive
 priority: integer between 1 and 5 inclusive
 ```
 
 ### 5. Array Constraints
+
 ```
 tags: array of strings, minimum 0 items, maximum 5 items
 Each tag must be lowercase, no spaces
 ```
 
 ### 6. Nested Objects
+
 ```
 location: object with required keys:
   - city: string
@@ -88,6 +94,7 @@ location: object with required keys:
 ```
 
 ### 7. Nullable Fields
+
 ```
 resolved_at: string (ISO 8601 datetime) or null if not yet resolved
 ```
@@ -318,8 +325,9 @@ Design and implement a schema for an iOS app review analyser.
 
 ---
 
-<details>
-<summary><b>Q1 — Parse failure vs schema validation failure</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Parse failure vs schema validation failure</b></summary>
+
 
 **JSON parse failure:** Claude's output is not valid JSON at all — missing brackets, extra text, markdown fences, broken string escaping. `json.loads()` throws a `JSONDecodeError`. You can't access any fields.
 
@@ -335,8 +343,9 @@ Sending a schema error message for a parse failure confuses Claude (it thinks th
 
 ---
 
-<details>
-<summary><b>Q2 — Retry message for invalid enum</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Retry message for invalid enum</b></summary>
+
 
 ```python
 retry_message = f"""Your previous response had this schema error:
@@ -358,8 +367,9 @@ Key principles: state the exact error, show exactly what's allowed, give decisio
 
 ---
 
-<details>
-<summary><b>Q3 — Confidence: 1 vs true</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q3 — Confidence: 1 vs true</b></summary>
+
 
 **`"confidence": 1`** → Valid. In Python, `isinstance(1, (int, float))` returns `True` — integers are valid numbers. `1` is within the 0.0–1.0 range. Your validator should accept it. Coerce to float if needed: `float(data["confidence"])`.
 
@@ -378,8 +388,9 @@ Always check for bool before checking for int/float in Python.
 
 ---
 
-<details>
-<summary><b>Q4 — After max retries</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q4 — After max retries</b></summary>
+
 
 **High-stakes system (medical records):**
 Never silently fail or use a default value. After 3 failures:
@@ -403,8 +414,9 @@ After 3 failures:
 
 ---
 
-<details>
-<summary><b>Q5 — Schema/code drift</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q5 — Schema/code drift</b></summary>
+
 
 **What happens:** Claude now returns `language_code: "en"` in its output. Your validator doesn't check for it, so it passes validation even if absent. Downstream code that expects `data["language_code"]` throws a `KeyError`. Your pipeline breaks — but only for records where Claude doesn't include the field, which might not be all of them (intermittent failures are the hardest to debug).
 

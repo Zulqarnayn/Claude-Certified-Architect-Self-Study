@@ -53,15 +53,17 @@ Sketch an execution plan for a 3-agent workflow, including one dependency and on
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Subagent failure handling</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Subagent failure handling</b></summary>
+
 
 Retry when appropriate, degrade gracefully with partial results, and report uncertainty clearly in the final output.
 
 </details>
 
-<details>
-<summary><b>Q2 — Structured handoffs</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Structured handoffs</b></summary>
+
 
 Structured payloads reduce ambiguity, simplify validation, and make orchestration safer and easier to debug.
 

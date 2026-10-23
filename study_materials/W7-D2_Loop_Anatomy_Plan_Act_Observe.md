@@ -207,6 +207,7 @@ The structured result gives Claude what it needs to observe and decide, without 
 **Ignoring negative results:** Claude receives `{"result": null}` or `{"error": "not_found"}` and doesn't fully incorporate this into its plan. It might call the same tool again or proceed as if it had data.
 
 **Fix:** Include guidance in the tool result:
+
 ```python
 return {
     "error": "app_not_found",
@@ -490,6 +491,7 @@ The messages array now contains a 500-record JSON blob in the tool result. This:
 1. **Server-side filtering:** Your tool implementation filters to only return relevant records. `search_apps` returns top 5, not all 500.
 
 2. **Pre-extraction:** Before adding to messages, your code extracts just what Claude needs:
+
 ```python
 # Filter tool result before adding to messages
 raw_result = call_tool(...)
@@ -587,6 +589,7 @@ for block in response.content:
 **Likely cause:** The fraud check tool result didn't clearly signal that the check was complete and passed. Claude's observe phase read something ambiguous and concluded it needed another check for confidence.
 
 Possible tool result that causes this:
+
 ```json
 {"status": "processing", "result": "no_flags_detected"}
 ```

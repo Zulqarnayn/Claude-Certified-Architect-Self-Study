@@ -53,8 +53,9 @@ Design personalization rules for a customer service assistant.
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Never personalize with sensitive data</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Never personalize with sensitive data</b></summary>
+
 
 Never personalize with:
 - Passwords or authentication tokens
@@ -64,8 +65,9 @@ Never personalize with:
 
 </details>
 
-<details>
-<summary><b>Q2 — Consistent personalization</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Consistent personalization</b></summary>
+
 
 - Use a small set of stable user preferences
 - Keep core instruction consistent

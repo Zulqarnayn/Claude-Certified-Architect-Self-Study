@@ -53,15 +53,17 @@ Define one pre-tool hook that blocks unsafe commands and one post-tool hook that
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Hook vs prompt</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Hook vs prompt</b></summary>
+
 
 Use hooks when a rule must always be enforced, especially for security, compliance, or cost ceilings.
 
 </details>
 
-<details>
-<summary><b>Q2 — Prompt-only risk</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Prompt-only risk</b></summary>
+
 
 Prompt rules are probabilistic and can fail; deterministic hooks are needed for guaranteed enforcement.
 

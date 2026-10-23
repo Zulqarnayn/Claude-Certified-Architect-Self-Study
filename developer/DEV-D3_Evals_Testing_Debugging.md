@@ -87,7 +87,9 @@ One change at a time; record every run; stop when the test set stops improving o
 **Q2.** Name two biases of LLM judges and a mitigation each.
 **Q3.** Agent passes outcome checks but costs 5× more than last week. Which signal did you need?
 
-<details><summary>Answers</summary>
+<details markdown="1">
+<summary markdown="span">Answers</summary>
+
 
 1. To measure generalization; tuning against the same set inflates scores.
 2. Position bias (randomize order); verbosity bias (rubric that rewards correctness, length-controlled comparison). Also self-preference (use a different judge model).

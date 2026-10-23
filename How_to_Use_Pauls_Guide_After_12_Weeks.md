@@ -50,6 +50,7 @@ These are sections where Paul covers things your curriculum either missed entire
 **5.3 — `.claude/rules/` Directory with YAML Frontmatter**
 Your curriculum covered CLAUDE.md hierarchy but NOT this specific mechanism.
 Key concept to learn:
+
 ```yaml
 ---
 paths: ["src/api/**/*"]
@@ -66,6 +67,7 @@ This is how you apply conventions to files scattered across the codebase (e.g., 
 
 **5.2 — `@path` Syntax in CLAUDE.md**
 Your curriculum didn't cover this at all.
+
 ```markdown
 # Project CLAUDE.md
 Coding standards: @./standards/coding-style.md
@@ -79,6 +81,7 @@ This makes CLAUDE.md modular — each package imports only relevant standards. T
 Your curriculum covered slash commands but missed the SKILL.md frontmatter parameters.
 
 Key parameters to know:
+
 ```yaml
 ---
 context: fork        # Runs skill in isolated subagent — verbose output doesn't pollute main session
@@ -172,6 +175,7 @@ coordinator = AgentDefinition(
 ```
 
 **Critical:** Subagents do NOT automatically inherit coordinator context. ALL context must be explicitly passed:
+
 ```
 # Bad
 Task: "Analyze the document"
@@ -184,6 +188,7 @@ Output format: [schema]"
 ```
 
 **3.6 — `fork_session` and `--resume`**
+
 ```bash
 # Resume a named session
 claude --resume investigation-auth-bug
@@ -204,6 +209,7 @@ When to resume vs start new session:
 **Read carefully:**
 
 **7.3 — `custom_id` for correlation**
+
 ```json
 {
   "custom_id": "doc-invoice-2024-001",
@@ -229,6 +235,7 @@ If you need a result in 30 hours and Batch API takes up to 24 hours:
 
 **11.1 — Extract Facts into a Separate Block**
 Instead of relying on conversation history that degrades during summarisation, extract key facts into a persistent structured block:
+
 ```
 === CASE FACTS (always include in every prompt) ===
 Customer ID: CUST-12345
@@ -242,6 +249,7 @@ This block goes in EVERY subsequent prompt, not just the first one.
 
 **11.2 — PostToolUse Hook for Trimming Tool Results**
 When a tool returns 40+ fields but you only need 5:
+
 ```python
 @hook("PostToolUse", tool="lookup_order")
 def trim_order_fields(result):
@@ -257,6 +265,7 @@ This conserves context and reduces noise before Claude ever sees the result.
 
 **11.3 — Position-aware Input (Lost-in-the-Middle)**
 Place critical information deliberately:
+
 ```
 [KEY FINDINGS — at the top]      ← Claude reads this reliably
 [DETAILED RESULTS — middle]      ← May be missed in very long contexts
@@ -265,6 +274,7 @@ Place critical information deliberately:
 
 **11.4 — Scratchpad Files**
 During long investigations, agent writes key findings to a file:
+
 ```markdown
 # investigation-scratchpad.md
 - PaymentProcessor inherits from BaseProcessor
@@ -275,6 +285,7 @@ When context degrades or in a new session, the agent consults the scratchpad ins
 
 **12.1-12.4 — Provenance Preservation**
 When synthesising from multiple sources, preserve source attribution:
+
 ```json
 {
   "claim": "AI music market estimated at $3.2B",
@@ -286,6 +297,7 @@ When synthesising from multiple sources, preserve source attribution:
 ```
 
 When two sources conflict — preserve BOTH with attribution, never pick one arbitrarily:
+
 ```json
 {
   "conflict_detected": true,

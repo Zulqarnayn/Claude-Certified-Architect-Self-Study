@@ -53,8 +53,9 @@ Design the architecture for a customer support chatbot handling 10,000 requests/
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Sync vs async Claude calls</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Sync vs async Claude calls</b></summary>
+
 
 Synchronous (good for):
 - Real-time user interactions (chat UI waits for response)
@@ -71,8 +72,9 @@ Best: async for backend, with sync fallback for user-facing when latency accepta
 
 </details>
 
-<details>
-<summary><b>Q2 — Handling rate limits at scale</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Handling rate limits at scale</b></summary>
+
 
 - Request queue with rate limiter (1 req/sec = 60 RPM)
 - Monitor queue depth and alert

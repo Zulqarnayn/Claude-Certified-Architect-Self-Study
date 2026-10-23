@@ -462,6 +462,7 @@ In practice, every user asks different questions. The cache hit rate would be ne
 **With caching — optimal strategy:**
 
 Cache structure:
+
 ```python
 system=[
     {"type": "text", "text": SYSTEM_PROMPT_5000,    # Static — cache

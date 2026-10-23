@@ -160,6 +160,7 @@ swift test         # Run all tests
 swiftlint          # Run linter
 git status         # Check working directory
 git diff           # See changes made
+
 ```
 
 ## When to Ask vs Proceed
@@ -372,6 +373,7 @@ Claude Code should **not add Alamofire** and should **explain why** to the devel
 The CLAUDE.md is Claude's instruction set. It explicitly prohibits adding third-party dependencies. Claude Code follows this even if the user requests it.
 
 Claude Code's response:
+
 ```
 I can't add Alamofire — the project's CLAUDE.md specifies:
 "Do NOT add third-party dependencies without confirming with the user first."
@@ -407,6 +409,7 @@ It's in `~/.claude/` (your home directory), not in any project. It contains pers
 - If it contains personal notes or WIP instructions → add to `.gitignore`
 
 **Practical tip:** Add this to your project `.gitignore`:
+
 ```
 # Ignore personal Claude Code notes
 **/CLAUDE_PERSONAL.md

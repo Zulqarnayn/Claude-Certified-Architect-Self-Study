@@ -430,6 +430,7 @@ Implement all 5 stop condition types.
 The stop_sequence fires only if Claude produces the exact string before `end_turn`. If Claude finishes naturally without producing the signal, `end_turn` takes precedence and the response is still valid.
 
 Your code should handle both:
+
 ```python
 if response.stop_reason in ("end_turn", "stop_sequence"):
     output = extract_text(response)

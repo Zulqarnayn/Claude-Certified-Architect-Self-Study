@@ -127,6 +127,7 @@ When designing tool boundaries, apply these five tests:
 
 ### Test 1 — Single Responsibility
 Can you describe the tool in one sentence starting with a verb?
+
 ```
 ✅ "Searches the app catalog by keyword"
 ❌ "Searches apps and can also get details and post reviews"
@@ -134,6 +135,7 @@ Can you describe the tool in one sentence starting with a verb?
 
 ### Test 2 — Minimal Required Parameters
 Does every required parameter contribute to the single function?
+
 ```
 ✅ search_apps requires: query — that's it
 ❌ search_apps requires: query, app_name, action, mode — some only apply in certain modes
@@ -141,6 +143,7 @@ Does every required parameter contribute to the single function?
 
 ### Test 3 — Consistent Return Shape
 Does the tool always return the same structure regardless of inputs?
+
 ```
 ✅ search_apps always returns: list of {name, rating, price}
 ❌ manage_app returns different shapes depending on action parameter
@@ -148,6 +151,7 @@ Does the tool always return the same structure regardless of inputs?
 
 ### Test 4 — Independent Testability
 Can you write a unit test for this tool without mocking any other tools?
+
 ```
 ✅ search_apps: mock the catalog, test keyword matching, done
 ❌ manage_app: must set up 6 different test contexts for 6 modes
@@ -155,6 +159,7 @@ Can you write a unit test for this tool without mocking any other tools?
 
 ### Test 5 — Clear Failure Mode
 If the tool fails, is the error message specific and actionable?
+
 ```
 ✅ "App 'ScreenshotAI' not found in catalog" — clear, fixable
 ❌ "Action 'get_details' failed in manage_app" — where exactly?
@@ -240,6 +245,7 @@ manage_app(action="get_details")
 **Refactoring exercise:** You inherit this fat tool. Redesign it as focused tools.
 
 **Fat tool to refactor:**
+
 ```python
 {
     "name": "user_manager",
@@ -347,6 +353,7 @@ The question is: what does Claude need from search results to decide its next st
 - For recommendation queries, rating and price are needed to rank — not just names
 
 **The answer: include just enough for the likely next decision:**
+
 ```python
 # Search results — include fields needed for ranking/selection
 {

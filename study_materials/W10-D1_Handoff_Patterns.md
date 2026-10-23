@@ -487,6 +487,7 @@ This is the fundamental limitation of compressed summaries — they're lossy by 
 **Option 2 — State uncertainty:** Agent B acknowledges the gap: "I don't have this information from the handoff. Based on what I do know: [answer with caveat]."
 
 **Option 3 — Structured summary with appendix:** Design summaries with a "full details archive" attached:
+
 ```python
 {
     "summary": "... 400-word summary ...",

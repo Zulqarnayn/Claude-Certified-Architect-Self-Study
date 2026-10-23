@@ -173,6 +173,7 @@ Here's one way the iterations might progress. Yours may differ — there's no si
 **Starting output:** Generic, long, promises a fix, uses "We're sorry for the inconvenience"
 
 **Iteration 1 — Add role + task:**
+
 ```
 You are a customer support specialist for a mobile app company.
 Write a response to this App Store review that addresses the user's specific issue.
@@ -182,6 +183,7 @@ Review: [review text]
 *Output improved — more focused, but still too long and generic.*
 
 **Iteration 2 — Add format constraint:**
+
 ```
 [previous prompt]
 Keep your response under 500 characters.
@@ -189,6 +191,7 @@ Keep your response under 500 characters.
 *Output now fits the character limit but uses "We're sorry for the inconvenience."*
 
 **Iteration 3 — Add negative prompting:**
+
 ```
 [previous prompt]
 Do not use the phrase "We're sorry for the inconvenience" or similar generic apologies.
@@ -197,6 +200,7 @@ Do not promise fixes or feature releases.
 *Output improved — more specific, but doesn't include support CTA.*
 
 **Iteration 4 — Add missing element (CTA):**
+
 ```
 [previous prompt]
 Always end with a call to action directing the user to contact support at support@yourapp.com
@@ -205,6 +209,7 @@ for urgent technical issues like crashes.
 *Output now includes CTA. Still sounds slightly robotic.*
 
 **Iteration 5 — Add tone guidance + few-shot:**
+
 ```
 You are a customer support specialist for a mobile app company.
 Respond to App Store reviews with empathy and specificity.

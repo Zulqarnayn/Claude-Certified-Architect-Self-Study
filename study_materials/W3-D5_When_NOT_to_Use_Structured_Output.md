@@ -93,6 +93,7 @@ Claude doesn't actually have 73% confidence — it has vague uncertainty. Forcin
 ## The Right Tool for Each Task
 
 ### Task Type 1: Classification → Structured
+
 ```
 Input: Review text
 Output: {"sentiment": "positive", "category": "feature_request"}
@@ -100,6 +101,7 @@ Reason: Discrete categories, feeds downstream routing logic
 ```
 
 ### Task Type 2: Extraction → Structured
+
 ```
 Input: Invoice PDF text
 Output: {"vendor": "Acme Corp", "total": 1250.00, "due_date": "2026-05-15"}
@@ -107,6 +109,7 @@ Reason: Specific facts extracted from source material, feeds database
 ```
 
 ### Task Type 3: Generation → Prose
+
 ```
 Input: "Write a product description for ScreenshotAI"
 Output: [Free-form marketing copy]
@@ -114,6 +117,7 @@ Reason: Quality depends on creativity, rhythm, tone — not schema compliance
 ```
 
 ### Task Type 4: Reasoning / Analysis → Prose (with optional structured summary)
+
 ```
 Input: "Should I pivot my app from B2C to B2B?"
 Output: [Long-form analysis exploring tradeoffs, risks, opportunities]
@@ -124,6 +128,7 @@ Optional: Append a structured summary AFTER the prose:
 ```
 
 ### Task Type 5: Debugging / Exploration → Prose
+
 ```
 Input: "Why is my agent producing inconsistent results?"
 Output: [Exploratory analysis of possible causes]
@@ -309,6 +314,7 @@ Routing is classification — a discrete decision with a fixed set of outputs (e
 A response draft is creative generation — it needs to match the tone of the original feedback, address the specific concern empathetically, and read naturally when a human edits and sends it. Forcing this into a JSON field like `"draft_response": "..."` technically works but removes any benefit of structured output. The support agent will read it as text anyway. Let Claude write natural prose.
 
 **The combined system:**
+
 ```python
 # Step 1: Classify the feedback (structured)
 routing = classify_feedback(feedback_text)  # → {"team": "engineering", "priority": "high"}

@@ -36,12 +36,14 @@ Claude with streaming = live subtitles.
 ## How Streaming Works Under the Hood
 
 Without streaming:
+
 ```
 You → API request → [Claude generates all tokens] → API response → You
                     ←————————— 5-10 seconds ——————————→
 ```
 
 With streaming:
+
 ```
 You → API request → token → token → token → token → token → ... → [done]
                      ↑ each token arrives as Claude generates it
@@ -382,7 +384,7 @@ When the user submits their refactoring request, immediately show:
 **Phase 3 — Completion:**
 - Stop the streaming indicator
 - Show: "Done — 312 tokens generated in 28 seconds"
-- Enable action buttons: "Apply changes" | "Reject" | "Ask for modifications"
+- Enable action buttons: "Apply changes", "Reject", "Ask for modifications"
 - Run syntax validation on the output — highlight any syntax errors immediately
 
 **Error handling mid-stream:**

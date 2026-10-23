@@ -304,6 +304,7 @@ Build your first tool-using system.
 `stop_reason == "end_turn"` — Claude answered directly from its knowledge.
 
 The response content is a single text block with Claude's answer:
+
 ```json
 {
   "stop_reason": "end_turn",

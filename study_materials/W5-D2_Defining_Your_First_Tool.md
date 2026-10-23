@@ -23,6 +23,7 @@ Today you learn to write tool definitions with precision.
 ## The Analogy — A Function Signature with a User Manual
 
 In Swift, a function signature tells the compiler what types to expect:
+
 ```swift
 func fetchUser(id: String, includeHistory: Bool = false) -> User
 ```
@@ -78,6 +79,7 @@ A great tool description answers four questions:
 ```
 
 **Template:**
+
 ```
 "[WHAT it does]. Use this when [WHEN to use]. 
 Returns [WHAT it returns]. 
@@ -85,6 +87,7 @@ Do not use for [EXCLUSIONS - optional but powerful]."
 ```
 
 **Example:**
+
 ```python
 "description": (
     "Search the iOS App Store catalog by keyword, category, or developer name. "
@@ -380,6 +383,7 @@ def get_product(name: str, include_reviews: bool = False) -> dict:
 It defaults to `False`. This is correct — optional parameters should always have sensible defaults in your implementation.
 
 **Never use `None` as a default for booleans without handling it:**
+
 ```python
 # Bad — None is not False
 def get_product(name: str, include_reviews: bool = None) -> dict:

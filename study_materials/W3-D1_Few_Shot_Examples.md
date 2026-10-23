@@ -241,14 +241,16 @@ Note the output format — is it consistent?
 
 ---
 
-<details>
-<summary><b>Q1 — Include reasoning in examples?</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Include reasoning in examples?</b></summary>
+
 
 Yes — include reasoning steps even though the final label is simple.
 
 When the classification task is complex (nuanced sentiment, domain-specific logic), the reasoning steps in your examples teach Claude *how to think* about the problem — not just what answer to produce. Without reasoning examples, Claude might correctly classify easy cases but fail on ambiguous ones because it's pattern-matching to the label without understanding the logic.
 
 Include reasoning in a scratchpad tag, extract only the final label for your pipeline output:
+
 ```
 Example reasoning: <think>The phrase "disappointed but not surprised" signals repeated negative experience — that's a strong negative signal despite the hedging language</think>
 Label: negative
@@ -258,8 +260,9 @@ Label: negative
 
 ---
 
-<details>
-<summary><b>Q2 — 50 examples trade-offs</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — 50 examples trade-offs</b></summary>
+
 
 **Don't include all 50.** The trade-offs:
 
@@ -276,8 +279,9 @@ Label: negative
 
 ---
 
-<details>
-<summary><b>Q3 — Few-shot for non-English inputs</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q3 — Few-shot for non-English inputs</b></summary>
+
 
 Few-shot still helps significantly, even with English-only examples. Claude's multilingual training means it understands the output pattern from English examples and applies it to inputs in other languages.
 
@@ -292,8 +296,9 @@ However, language-specific examples improve accuracy further — especially for:
 
 ---
 
-<details>
-<summary><b>Q4 — Example 4 makes things worse</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q4 — Example 4 makes things worse</b></summary>
+
 
 What's happening: Example 4 introduced a pattern that Claude weighted heavily — perhaps it had a unique format, unusual phrasing, or an edge case structure that Claude is now applying too broadly.
 
@@ -309,8 +314,9 @@ Claude treats all examples as roughly equal demonstrations of the correct behavi
 
 ---
 
-<details>
-<summary><b>Q5 — Client-safe example updates</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q5 — Client-safe example updates</b></summary>
+
 
 **Risks of client editing examples:**
 1. Client introduces inconsistent formatting — Claude starts producing malformed output

@@ -35,6 +35,7 @@ MCP is USB-C for AI. One standard protocol, and any MCP-compatible tool connects
 ## The Problem MCP Solves
 
 ### Without MCP — Custom Everything
+
 ```
 App 1 (Customer Support)    → Custom code → Database
 App 1 (Customer Support)    → Custom code → Zendesk API
@@ -48,6 +49,7 @@ Total: 6 custom integrations, 5 data sources, maintained separately
 ```
 
 ### With MCP — Write Once, Use Everywhere
+
 ```
 MCP Server: Database    ← Written once, reusable
 MCP Server: Zendesk     ← Written once, reusable
@@ -146,6 +148,7 @@ MCP uses two transport mechanisms:
 
 ### stdio (Standard I/O)
 For local tools — the MCP server is a process running on the same machine.
+
 ```
 Claude Code → launches MCP server as subprocess → communicates via stdin/stdout
 ```
@@ -153,6 +156,7 @@ Best for: developer tools, local file access, command-line integrations.
 
 ### HTTP with SSE (Server-Sent Events)
 For remote tools — the MCP server is a networked service.
+
 ```
 Claude application → HTTP POST to MCP server → SSE stream of responses
 ```
@@ -185,6 +189,7 @@ Go to github.com/modelcontextprotocol/servers. Find 3 servers that would be usef
 
 **Task 3 — Connect Claude Desktop to an existing MCP server:**
 If you have Claude Desktop installed, add the filesystem MCP server to your config:
+
 ```json
 {
   "mcpServers": {

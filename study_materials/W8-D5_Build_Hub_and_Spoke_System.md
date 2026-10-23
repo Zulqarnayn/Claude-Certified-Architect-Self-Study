@@ -31,6 +31,7 @@ This is the reference implementation for CCA Exam Scenario 3 (Multi-Agent Resear
 **App Research Hub** — A multi-agent system that answers complex iOS app research questions.
 
 **Architecture:**
+
 ```
 User Query
     ↓
@@ -797,6 +798,7 @@ WHEN TO USE price_agent (only when explicitly needed):
 ```
 
 Additionally, add a test suite for the decomposition step:
+
 ```python
 DECOMPOSITION_TESTS = [
     ("What's the price of ScreenshotAI?", {"needs_reviews": False}),

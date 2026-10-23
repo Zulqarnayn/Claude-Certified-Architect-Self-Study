@@ -109,6 +109,7 @@ messages=[
 - Content can be a string OR a list of content blocks (for images, documents)
 
 **Multi-modal content:**
+
 ```python
 {"role": "user", "content": [
     {"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": "..."}},
@@ -152,6 +153,7 @@ stop_sequences=["</answer>", "###END###", "\n\n"]
 **Use cases:**
 
 **1. Structured output parsing:**
+
 ```python
 system="Wrap your answer in <answer> tags."
 stop_sequences=["</answer>"]
@@ -160,6 +162,7 @@ stop_sequences=["</answer>"]
 ```
 
 **2. Controlling agentic loops:**
+
 ```python
 stop_sequences=["TASK_COMPLETE", "NEED_HUMAN_INPUT"]
 # Claude signals completion or escalation through text
@@ -167,6 +170,7 @@ stop_sequences=["TASK_COMPLETE", "NEED_HUMAN_INPUT"]
 ```
 
 **3. Preventing runaway generation:**
+
 ```python
 stop_sequences=["\n\n\n"]  # Stop on triple newline
 # Prevents Claude from generating multiple sections when you only want one
@@ -411,6 +415,7 @@ if not check_rate_limit(employee_id):
 ```
 
 **Input size limit:**
+
 ```python
 # Count tokens before sending
 estimated_tokens = len(user_message.split()) * 1.3  # Rough estimate

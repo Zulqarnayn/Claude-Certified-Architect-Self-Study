@@ -69,6 +69,7 @@ $ARGUMENTS
 The special token `$ARGUMENTS` is replaced with whatever the user types after the slash command.
 
 **Example:**
+
 ```bash
 /review src/auth/LoginView.swift
 ```
@@ -488,6 +489,7 @@ The slash command is the most discoverable answer. Running `/review` is simpler 
 **Optimisations:**
 
 **Option 1 — Run only tests for the changed file:**
+
 ```markdown
 After generating tests for $ARGUMENTS:
 - Run: `swift test --filter [FeatureName]Tests`
@@ -496,6 +498,7 @@ After generating tests for $ARGUMENTS:
 ```
 
 **Option 2 — Compile-only check:**
+
 ```markdown
 After generating tests:
 - Run: `swift build --target [TestTarget]` to verify compilation
@@ -519,6 +522,7 @@ The `--filter` option is the most practical: it tests exactly what was just crea
 **Design: Enforce in CI, standardise via command, educate via CLAUDE.md.**
 
 **Layer 1 — Required CI check:**
+
 ```yaml
 # .github/workflows/claude-review.yml
 name: Claude Code Review
@@ -550,6 +554,7 @@ jobs:
 Every developer uses the same `/review` command (project command, committed to git). Reviews are consistent because the workflow is consistent.
 
 **Layer 3 — CLAUDE.md review standards:**
+
 ```markdown
 ## Code Review Standards
 When reviewing code, always check against [standards list].

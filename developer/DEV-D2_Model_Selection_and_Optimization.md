@@ -107,7 +107,9 @@ Build `bench.py`: 100 labeled items → run Haiku 5.5 / Sonnet 5.5 / Opus 5.5 at
 **Q3.** Sonnet 5.5 `thinking: disabled` returns 400. Fix?
 **Q4.** What is the first thing to try before a multi-model cascade?
 
-<details><summary>Answers</summary>
+<details markdown="1">
+<summary markdown="span">Answers</summary>
+
 
 1. Haiku 5.5 via Batches (+ cached instruction prefix), validated on an eval.
 2. Caches are model-scoped (loses the cached prefix) and thinking blocks may not transfer; use a subagent/separate request.

@@ -450,6 +450,7 @@ The specialist knows to handle the ambiguity — it might ask a clarifying quest
 **Best approach: both, with code as the authority for binary decisions.**
 
 **Code-side routing (deterministic, testable):**
+
 ```python
 # Simple routing — fast, reliable, zero cost
 ROUTING_RULES = {
@@ -465,6 +466,7 @@ def route_task(task_type: str):
 Use code routing when: task types are discrete and well-defined, routing errors have consequences (wrong specialist = wrong answer), you need auditability.
 
 **Claude-side routing (flexible, handles edge cases):**
+
 ```python
 # Claude decides based on context
 coordinator_response = client.messages.create(

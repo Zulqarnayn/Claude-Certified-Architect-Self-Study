@@ -53,15 +53,17 @@ Write pseudocode for a coordinator that runs two subagents with fully isolated c
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Fastest isolation failure</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Fastest isolation failure</b></summary>
+
 
 Reusing a shared `messages` array across multiple subagents or sessions.
 
 </details>
 
-<details>
-<summary><b>Q2 — Default subagent input</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Default subagent input</b></summary>
+
 
 Only the sub-task instruction, relevant system prompt, and required tools for that specific step.
 

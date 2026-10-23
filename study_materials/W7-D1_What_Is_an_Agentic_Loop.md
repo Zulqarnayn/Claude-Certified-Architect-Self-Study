@@ -327,6 +327,7 @@ user: [tool_results]  # Missing the assistant turn between!
 ## Common Loop Bugs — Exam Tested
 
 ### Bug 1 — Missing assistant message before tool results
+
 ```python
 # WRONG — tool results have no preceding assistant message
 messages.append({"role": "user", "content": tool_results})
@@ -337,6 +338,7 @@ messages.append({"role": "user", "content": tool_results})
 ```
 
 ### Bug 2 — Extracting text instead of full content
+
 ```python
 # WRONG — loses all tool_use blocks
 messages.append({"role": "assistant", "content": response.content[0].text})
@@ -346,6 +348,7 @@ messages.append({"role": "assistant", "content": response.content})
 ```
 
 ### Bug 3 — No max_iterations guard
+
 ```python
 # WRONG — can loop forever
 while True:
@@ -362,6 +365,7 @@ raise Exception("Max iterations exceeded")
 ```
 
 ### Bug 4 — Ignoring max_tokens stop_reason
+
 ```python
 # WRONG — silently continues with truncated response
 if response.stop_reason in ("end_turn", "max_tokens"):

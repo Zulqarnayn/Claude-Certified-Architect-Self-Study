@@ -53,8 +53,9 @@ Design a rollout plan for a new Claude prompt update.
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Canary release metrics</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Canary release metrics</b></summary>
+
 
 - Error rate
 - Validation failure rate
@@ -65,8 +66,9 @@ Design a rollout plan for a new Claude prompt update.
 
 </details>
 
-<details>
-<summary><b>Q2 — Safe rollback triggers</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Safe rollback triggers</b></summary>
+
 
 - Metric threshold breach (e.g. error rate +2x)
 - Unexpected user complaints

@@ -523,6 +523,7 @@ python server.py
 ```
 
 Or in Claude Desktop config:
+
 ```json
 {
   "mcpServers": {
@@ -538,6 +539,7 @@ Or in Claude Desktop config:
 ```
 
 In your server code:
+
 ```python
 import os
 API_KEY = os.environ["APP_STORE_API_KEY"]  # Fails fast if not set
@@ -554,6 +556,7 @@ Resources are not automatically read — Claude must decide to read them. For Cl
 1. **Mention it in a tool description:** "To see featured apps, read the resource at appstore://featured."
 
 2. **Add a tool that wraps the resource:**
+
 ```python
 types.Tool(
     name="get_featured_apps",
@@ -578,6 +581,7 @@ The server code as written IS thread-safe because:
 3. The `asyncio` event loop handles concurrency single-threadedly — no true parallel execution in a single process
 
 **What could go wrong if state were mutable:**
+
 ```python
 # Dangerous — shared mutable state
 call_counter = 0
@@ -590,6 +594,7 @@ async def call_tool(name, arguments):
 ```
 
 **Fix for mutable state:**
+
 ```python
 import asyncio
 counter_lock = asyncio.Lock()

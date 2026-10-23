@@ -53,8 +53,9 @@ Build a 2-agent system: one for research, one for summarization.
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Multiple agents vs single agent with more tools</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Multiple agents vs single agent with more tools</b></summary>
+
 
 Multiple agents when:
 - Tasks require genuinely different prompt contexts
@@ -70,8 +71,9 @@ Single agent with more tools when:
 
 </details>
 
-<details>
-<summary><b>Q2 — Preventing infinite loops</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Preventing infinite loops</b></summary>
+
 
 - Set max turn limits per agent
 - Track conversation history to detect loops

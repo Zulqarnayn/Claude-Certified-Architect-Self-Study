@@ -261,6 +261,7 @@ async def read_resource(uri: str) -> str:
 ## Hands-On Task
 
 **Task 1:** Install the MCP Python SDK:
+
 ```bash
 pip install mcp
 ```

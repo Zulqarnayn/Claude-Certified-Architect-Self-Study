@@ -80,6 +80,7 @@ The coordinator must convert a complex task into discrete sub-tasks for each sub
 **Decomposition approaches:**
 
 **Approach A — Fixed decomposition** (task type is known):
+
 ```python
 def decompose_app_research_task(user_query: str) -> dict:
     """Fixed decomposition for app research tasks."""
@@ -91,6 +92,7 @@ def decompose_app_research_task(user_query: str) -> dict:
 ```
 
 **Approach B — Claude decomposes** (task type is variable):
+
 ```python
 def decompose_with_claude(user_query: str) -> dict:
     """Let Claude decompose the task."""

@@ -351,6 +351,7 @@ Your routing thresholds need adjustment. The 0.5-0.7 bucket being as accurate as
 2. Your routing table has four buckets but you effectively only have two: above 0.9 (reliable) and below 0.5 (unreliable)
 
 **Revised routing:**
+
 ```python
 # Based on your calibration data
 if confidence >= 0.90:  # Actually reliable (91% accurate)

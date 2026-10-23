@@ -214,7 +214,61 @@ def plan():
     return out
 
 
+def fix_details(text):
+    """Make <details> bodies parse as Markdown under kramdown (GitHub ignores the attributes)."""
+    text = re.sub(r"<details>\s*<summary>(.*?)</summary>[ \t]*\n?",
+                  lambda m: '<details markdown="1">\n<summary markdown="span">' + m.group(1) + "</summary>\n\n", text)
+    return text
+
+
+def run_fix_details(write):
+    n = 0
+    for p in ROOT.glob("**/*.md"):
+        if any(x in p.parts for x in ("node_modules", "vendor", "docs", "_site")):
+            continue
+        t = p.read_text()
+        new = fix_details(t)
+        if new != t:
+            n += 1
+            if write:
+                p.write_text(new)
+    print(f"{'fixed' if write else 'would fix'} <details> in {n} files")
+
+
+def fix_fences(text):
+    """kramdown needs a blank line before a fenced block; CommonMark does not."""
+    out, fence = [], None
+    for ln in text.split("\n"):
+        m = re.match(r"^(\s*)(`{3,})", ln)
+        if m and fence is None:
+            if out and out[-1].strip() and not out[-1].lstrip().startswith("```"):
+                out.append("")
+            fence = m.group(2)
+        elif m and fence is not None and ln.strip() == fence:
+            fence = None
+        out.append(ln)
+    return "\n".join(out)
+
+
+def run_fix_fences(write):
+    n = 0
+    for p in ROOT.glob("**/*.md"):
+        if any(x in p.parts for x in ("node_modules", "vendor", "docs", "_site")):
+            continue
+        t = p.read_text()
+        new = fix_fences(t)
+        if new != t:
+            n += 1
+            if write:
+                p.write_text(new)
+    print(f"{'fixed' if write else 'would fix'} fences in {n} files")
+
+
 def main():
+    if "--fix-fences" in sys.argv:
+        return run_fix_fences("--write" in sys.argv)
+    if "--fix-details" in sys.argv:
+        return run_fix_details("--write" in sys.argv)
     write = "--write" in sys.argv
     only = sys.argv[sys.argv.index("--diff") + 1] if "--diff" in sys.argv else None
     infos = plan()

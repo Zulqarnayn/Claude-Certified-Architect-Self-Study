@@ -159,6 +159,7 @@ When designing multi-agent systems (Week 8), this trust hierarchy becomes critic
 Open claude.ai or your API console.
 
 **Step 1:** Create this system prompt and test it:
+
 ```
 You are a customer support agent for a fictional company called "BlueSky Phones."
 You only answer questions about BlueSky Phones products.
@@ -220,8 +221,9 @@ If asked anything off-topic, say: "I can only help with BlueSky Phones questions
 
 ---
 
-<details>
-<summary><b>Q1 — System prompt vs user message</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — System prompt vs user message</b></summary>
+
 
 The system prompt is written by the developer and sets the permanent rules of engagement for the entire conversation. It defines Claude's persona, constraints, and context before any user interaction begins. The user never sees it, and it persists unchanged throughout the session.
 
@@ -231,8 +233,9 @@ The user message is dynamic — it changes every turn and comes from the end use
 
 ---
 
-<details>
-<summary><b>Q2 — Legal tool placement</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Legal tool placement</b></summary>
+
 
 **(a) The "not a lawyer" disclaimer** → System prompt. This must appear consistently for every single interaction regardless of what the user asks. It's a legal and ethical constraint that cannot depend on user behaviour.
 
@@ -242,8 +245,9 @@ The user message is dynamic — it changes every turn and comes from the end use
 
 ---
 
-<details>
-<summary><b>Q3 — Prompt injection</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q3 — Prompt injection</b></summary>
+
 
 This is a **prompt injection attack** — the user is attempting to override developer instructions through their input.
 
@@ -255,8 +259,9 @@ However, prompt injection is not 100% impossible to achieve. Never rely solely o
 
 ---
 
-<details>
-<summary><b>Q4 — Assistant prefill for JSON</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q4 — Assistant prefill for JSON</b></summary>
+
 
 ```python
 messages=[
@@ -271,8 +276,9 @@ By starting the assistant turn with `{"sentiment": "`, Claude is forced to compl
 
 ---
 
-<details>
-<summary><b>Q5 — Credentials in system prompt</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q5 — Credentials in system prompt</b></summary>
+
 
 **Why it's terrible:**
 

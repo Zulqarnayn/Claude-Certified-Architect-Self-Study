@@ -427,6 +427,7 @@ The design principle demonstrated: errors are information, not catastrophes. Cla
 **Why it happened:** `{"error": "permission_denied"}` gives Claude no information about why access was denied or what to do differently. Claude interprets the lack of guidance as "maybe try again" — a reasonable inference but the wrong one for a permission error.
 
 **Fix — rich permission error:**
+
 ```python
 {
     "status": "error",
@@ -487,6 +488,7 @@ Only if the user's original question specifically required order history. If the
 This reveals an important design principle: **stop conditions must match the task's success criteria, not a generic "done" signal.** An end_turn with partial data is appropriate for some queries and inappropriate for others.
 
 Consider adding task-specific validation:
+
 ```python
 # For "show my orders" tasks — validate order history is present
 def validate_order_query(output: str) -> tuple[bool, str]:
@@ -563,6 +565,7 @@ This is why fixing root cause (improving tool reliability) is more cost-effectiv
 **Q7 — Ambiguous customer identity**
 
 **Tool result:**
+
 ```python
 {
     "status": "error",

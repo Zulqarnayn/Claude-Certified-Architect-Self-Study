@@ -53,8 +53,9 @@ Choose an industry and design a Claude workflow for one common task.
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Biggest risk in healthcare</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Biggest risk in healthcare</b></summary>
+
 
 - Incorrect medical advice
 - Data leakage of protected health information (PHI)
@@ -63,8 +64,9 @@ Choose an industry and design a Claude workflow for one common task.
 
 </details>
 
-<details>
-<summary><b>Q2 — Industry-specific validation</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Industry-specific validation</b></summary>
+
 
 - Uses domain rules and ontologies
 - Requires specialized schemas and checks

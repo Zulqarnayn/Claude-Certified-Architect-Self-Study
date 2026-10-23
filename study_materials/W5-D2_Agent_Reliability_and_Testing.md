@@ -53,8 +53,9 @@ Write integration tests for your 2-agent system from W5-D1.
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Flaky agent systems</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Flaky agent systems</b></summary>
+
 
 Flaky means outputs are non-deterministic — same input produces different results across runs. Causes:
 - Temperature/randomness in model
@@ -64,8 +65,9 @@ Flaky means outputs are non-deterministic — same input produces different resu
 
 </details>
 
-<details>
-<summary><b>Q2 — Debugging non-deterministic output</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Debugging non-deterministic output</b></summary>
+
 
 - Log all intermediate decisions
 - Seed randomness for reproducibility

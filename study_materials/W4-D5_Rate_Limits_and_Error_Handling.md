@@ -320,8 +320,9 @@ class CircuitBreaker:
 
 ---
 
-<details>
-<summary><b>Q1 — retry-after vs exponential backoff</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — retry-after vs exponential backoff</b></summary>
+
 
 Use whichever is **longer**: `max(retry_after_header, exponential_backoff_value)`.
 
@@ -340,8 +341,9 @@ time.sleep(delay)
 
 ---
 
-<details>
-<summary><b>Q2 — Context window exceeded (400)</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Context window exceeded (400)</b></summary>
+
 
 **Do NOT retry this request.** The 400 error means your input is structurally invalid — too long. Retrying the same request produces the same error. This is a permanent failure for this input.
 
@@ -367,8 +369,9 @@ Context overflow is a special case of 400 — it's recoverable, but only by chan
 
 ---
 
-<details>
-<summary><b>Q3 — Validation retry vs infrastructure retry</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q3 — Validation retry vs infrastructure retry</b></summary>
+
 
 **Validation retry (Week 3):**
 - Triggered by: Claude's output doesn't match your schema
@@ -411,8 +414,9 @@ Infrastructure retry is transparent to the validation loop — the validation lo
 
 ---
 
-<details>
-<summary><b>Q4 — 100 calls/second vs 60 RPM limit</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q4 — 100 calls/second vs 60 RPM limit</b></summary>
+
 
 The solution is a **request queue with rate limiting** — not retry logic.
 
@@ -445,8 +449,9 @@ Retry logic doesn't help here — you'd just be retrying requests that immediate
 
 ---
 
-<details>
-<summary><b>Q5 — 15-minute outage degraded mode</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q5 — 15-minute outage degraded mode</b></summary>
+
 
 **During the outage:**
 

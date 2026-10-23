@@ -116,7 +116,9 @@ What `query()` gives you: the **same agent loop as Claude Code** (plan → tool 
 **Q3.** A client wants an agent in their VPC with no Anthropic-hosted compute. Which options remain?
 **Q4.** When should you stay at "single call"?
 
-<details><summary>Answers</summary>
+<details markdown="1">
+<summary markdown="span">Answers</summary>
+
 
 1. Managed Agents.
 2. Opaque command string: harness cannot gate, audit, or render it. A typed `send_email` tool can require confirmation.

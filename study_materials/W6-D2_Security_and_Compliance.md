@@ -53,8 +53,9 @@ Design a security checklist for a healthcare chatbot using Claude.
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — API key storage</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — API key storage</b></summary>
+
 
 Best places: Environment variables, Key Management Service (AWS KMS), HashiCorp Vault
 
@@ -64,8 +65,9 @@ Use: `export ANTHROPIC_API_KEY=...` locally, secrets manager in production.
 
 </details>
 
-<details>
-<summary><b>Q2 — Defending against prompt injection</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Defending against prompt injection</b></summary>
+
 
 - Prompt injection can't be 100% prevented
 - Defense layers:

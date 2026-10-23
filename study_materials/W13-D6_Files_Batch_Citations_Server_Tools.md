@@ -127,7 +127,9 @@ for entry in client.messages.batches.results(batch.id):
 **Q3.** A web search fails. What does your code see?
 **Q4.** Name three controls against prompt injection in an agent that reads emails.
 
-<details><summary>Answers</summary>
+<details markdown="1">
+<summary markdown="span">Answers</summary>
+
 
 1. API returns 400. Add a verified `quote` field to the schema, or do a citations call then a structuring call.
 2. By `custom_id`.

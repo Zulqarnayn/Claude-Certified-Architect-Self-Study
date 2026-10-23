@@ -149,7 +149,9 @@ Client-side tool `{"type": "memory_20250818", "name": "memory"}`. Claude reads/w
 **Q3.** Why use a subagent with a cheaper model instead of switching models mid-session?
 **Q4.** Context editing or compaction for stale tool output you will never need again?
 
-<details><summary>Answers</summary>
+<details markdown="1">
+<summary markdown="span">Answers</summary>
+
 
 1. Timestamp/UUID in prefix; non-deterministic JSON key order; changing tool set (also: prefix below the minimum size).
 2. The entire `response.content` including the compaction block.

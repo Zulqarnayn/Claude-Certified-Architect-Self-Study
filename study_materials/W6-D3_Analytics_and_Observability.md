@@ -53,8 +53,9 @@ Implement comprehensive logging for your W6-D1 architecture.
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Key metrics for chatbots</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Key metrics for chatbots</b></summary>
+
 
 Top tier:
 - Cost per request
@@ -70,8 +71,9 @@ Secondary:
 
 </details>
 
-<details>
-<summary><b>Q2 — Detecting hallucinations</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Detecting hallucinations</b></summary>
+
 
 - User feedback ("this is wrong")
 - Fact-check queries against known data

@@ -95,7 +95,7 @@ This is where negative prompting earns its keep in production systems.
 
 When you need pure JSON output, Claude's defaults actively break your parser:
 
-```
+````
 ❌ Without negative prompting, Claude might output:
 
 "Sure! Here's the analysis you requested in JSON format:
@@ -108,7 +108,8 @@ When you need pure JSON output, Claude's defaults actively break your parser:
 ```
 
 Let me know if you'd like a different format!"
-```
+
+````
 
 Every word outside the JSON object breaks `JSON.parse()`.
 
@@ -121,6 +122,7 @@ System: "Output ONLY valid JSON. No introduction. No explanation.
 
 Output:
 {"sentiment": "positive", "score": 0.87}
+
 ```
 
 ---
@@ -140,6 +142,7 @@ For critical constraints, rephrase negatives as positives where possible:
 
 ❌ "Don't give medical advice."
 ✅ "Direct all medical questions to: 'Please consult your healthcare provider.'"
+
 ```
 
 The positive framing tells Claude exactly what to do, rather than what to suppress.
@@ -239,6 +242,7 @@ Negative: "Do not provide lists, pros and cons, or multiple options.
 
 Positive: "Give exactly one recommendation. State it in the first sentence. 
            Follow with one sentence of justification. Nothing else."
+
 ```
 
 The pairing is important — the negative removes Claude's default (balanced options), and the positive specifies exactly what replaces it.
@@ -264,6 +268,7 @@ Do not write any text before the opening brace or after the closing brace.
 Do not wrap the JSON in markdown code fences (no backticks).
 Do not add explanations, summaries, or follow-up offers.
 Every character in your response must be part of the JSON object."
+
 ```
 
 The redundancy is intentional — state the same constraint multiple ways to reinforce it. For machine-to-machine output, over-specifying is better than under-specifying.
@@ -292,6 +297,7 @@ not directly related to elementary maths or reading.
 Redirect, don't refuse. Children should always feel safe and encouraged.
 Use language a 6-year-old can understand. Maximum 2 sentences per response.
 Always end with an encouraging phrase or a question that continues the lesson.
+
 ```
 
 Note the pattern: specify what TO do (redirect with exact phrasing), specify what NOT to engage with (list of off-limit topics), and give Claude a positive replacement behaviour (redirect rather than refuse).

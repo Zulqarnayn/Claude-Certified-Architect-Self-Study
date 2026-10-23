@@ -53,15 +53,17 @@ Define a starter workflow for using Claude Code to implement and verify one bug 
 
 ## Answer Guide
 
-<details>
-<summary><b>Q1 — Core architecture difference</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q1 — Core architecture difference</b></summary>
+
 
 Claude Code integrates directly with local repo and shell tooling, while raw API requires you to build that orchestration layer yourself.
 
 </details>
 
-<details>
-<summary><b>Q2 — Permission importance</b></summary>
+<details markdown="1">
+<summary markdown="span"><b>Q2 — Permission importance</b></summary>
+
 
 Permissions control risk by limiting what commands and files the agent can access or modify.
 
